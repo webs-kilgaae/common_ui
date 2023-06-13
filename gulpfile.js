@@ -155,29 +155,6 @@ function mainJsCompile(done){
 };
 
 
-// 파트너 script 배포
-function patnerCompile(done){
-	return src('./project/src/assets/js/ptnr-pc-common.js', { sourcemaps: true })
-			.pipe(cached(patnerCompile))
-		    // .pipe(babel())
-			// .pipe(uglify())
-			.pipe(dest(paths.scripts.dest))
-			.pipe( browserSync.reload({stream: true}) );
-	done();
-};
-
-// 온세일 전화신청  script 배포
-function onsaletelCompile(done){
-	return src('./project/src/assets/js/onsale_tel.js', { sourcemaps: true })
-			.pipe(cached(onsaletelCompile))
-		    // .pipe(babel())
-			// .pipe(uglify())
-			.pipe(dest(paths.scripts.dest))
-			.pipe( browserSync.reload({stream: true}) );
-	done();
-};
-
-
 //scss compile
 function scssCompile(done){
 
@@ -203,76 +180,7 @@ function scssCompile(done){
 	done();
 };
 
-//event-sm scss compile
-function eventScss(done){
 
-	//scss compile option
-	let scssOptions = {
-		outputStyle : "expanded", // Values : nested, expanded, compact, compressed
-		indentType : "space", // Values : space , tab
-		indentWidth : 0, // outputStyle 이 nested, expanded 인 경우에 사용
-		precision: 4, // 컴파일 된 CSS 의 소수점 자리수
-		sourceComments: true // 컴파일 된 CSS 에 원본소스의 위치와 줄수 주석표시.
-	};
-
-	return src(paths.eventStyles.src)
-			.pipe(sourcemaps.init())
-			.pipe(changed(paths.eventStyles.dest))
-			.pipe(scss(scssOptions.normal).on('error', scss.logError))
-			.pipe(minifycss())
-			.pipe(dest(paths.eventStyles.dest), { sourcemaps:  true })
-			.pipe(browserSync.reload({stream: true}) );
-	done();
-
-};
-
-
-//파트너 scss compile
-function patnerScss(done){
-
-	//scss compile option
-	let scssOptions = {
-		outputStyle : "expanded", // Values : nested, expanded, compact, compressed
-		indentType : "space", // Values : space , tab
-		indentWidth : 0, // outputStyle 이 nested, expanded 인 경우에 사용
-		precision: 4, // 컴파일 된 CSS 의 소수점 자리수
-		sourceComments: true // 컴파일 된 CSS 에 원본소스의 위치와 줄수 주석표시.
-	};
-
-	return src(paths.partnershipStyles.src)
-			.pipe(sourcemaps.init())
-			.pipe(changed(paths.partnershipStyles.dest))
-			.pipe(scss(scssOptions.normal).on('error', scss.logError))
-			.pipe(minifycss())
-			.pipe(dest(paths.partnershipStyles.dest), { sourcemaps:  true })
-			.pipe(browserSync.reload({stream: true}) );
-	done();
-
-};
-
-
-//온세일 전화신청 scss compile
-function onsaletelScss(done){
-
-	//scss compile option
-	let scssOptions = {
-		outputStyle : "expanded", // Values : nested, expanded, compact, compressed
-		indentType : "space", // Values : space , tab
-		indentWidth : 0, // outputStyle 이 nested, expanded 인 경우에 사용
-		precision: 4, // 컴파일 된 CSS 의 소수점 자리수
-		sourceComments: true // 컴파일 된 CSS 에 원본소스의 위치와 줄수 주석표시.
-	};
-
-	return src(paths.onsale_tel.src)
-			.pipe(sourcemaps.init())
-			.pipe(changed(paths.onsale_tel.dest))
-			.pipe(scss(scssOptions.normal).on('error', scss.logError))
-			.pipe(minifycss())
-			.pipe(dest(paths.onsale_tel.dest), { sourcemaps:  true })
-			.pipe(browserSync.reload({stream: true}) );
-	done();
-
-};
 
 // js 플러그인, 라이브러리 import 배포
 function importJS(done){
@@ -393,19 +301,14 @@ function watchFiles() {
 	watch('./project/src/assets/js/libraries/*.js', series([libraryJS]));
 	watch('./project/src/assets/js/plugins/*.js', series([pluginJS]));
 	watch('./project/src/assets/js/main.js', series([mainJsCompile]));
-	watch('./project/src/assets/js/ptnr-pc-common.js', series([patnerCompile]));
-	watch('./project/src/assets/js/onsale_tel.js', series([onsaletelCompile]));
 	watch(['./project/src/assets/scss/**/*.scss','!./project/src/assets/scss/event-sm.scss'], series([scssCompile]));
-	watch(['./project/src/assets/scss/event-sm.scss'], series([eventScss]));
-	watch(['./project/src/assets/scss/ptnr-pc-common.scss'], series([patnerScss]));
-	watch(['./project/src/assets/scss/onsale_tel.scss'], series([onsaletelScss]));
 	watch(paths.assets.images.src, series([libraryImages]));
 	watch(paths.assets.mov.src, series([libraryMovs]));
 	watch(paths.wsg.src, series([libraryWsg]));
 };
 
 exports.default = series(parallel(serverStart, liveServer, watchFiles)); // 기본 task liveserver용으로
-exports.build = series(parallel(clean, htmlCompile, jsCompile, mainJsCompile, patnerCompile, onsaletelCompile,  importJS, libraryJS, pluginJS, scssCompile, eventScss, patnerScss,  onsaletelScss,  libraryImages, spritesImage, libraryMovs, libraryWsg, libraryFonts)); // 전체 빌드 task
-exports.semi = series(parallel(htmlCompile ,jsCompile, mainJsCompile, patnerCompile, onsaletelCompile, scssCompile, patnerScss,  onsaletelScss,  libraryImages, libraryMovs)); // 세미 빌드 task
+exports.build = series(parallel(clean, htmlCompile, jsCompile, mainJsCompile, importJS, libraryJS, pluginJS, scssCompile, libraryImages, spritesImage, libraryMovs, libraryWsg, libraryFonts)); // 전체 빌드 task
+exports.semi = series(parallel(htmlCompile ,jsCompile, mainJsCompile, scssCompile, libraryImages, libraryMovs)); // 세미 빌드 task
 exports.sprite = series(parallel(spritesImage)); // 이미지 스프라이프 태스크
 exports.optImage = series(parallel(optImage)); // 이미지 최적화
