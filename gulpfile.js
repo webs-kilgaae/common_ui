@@ -309,6 +309,6 @@ function watchFiles() {
 
 exports.default = series(parallel(serverStart, liveServer, watchFiles)); // 기본 task liveserver용으로
 exports.build = series(parallel(clean, htmlCompile, jsCompile, mainJsCompile, importJS, libraryJS, pluginJS, scssCompile, libraryImages, spritesImage, libraryMovs, libraryWsg, libraryFonts)); // 전체 빌드 task
-exports.semi = series(parallel(htmlCompile ,jsCompile, mainJsCompile, scssCompile, libraryImages, libraryMovs)); // 세미 빌드 task
+exports.semibuild = series(parallel(htmlCompile ,jsCompile, mainJsCompile, scssCompile, libraryImages, libraryMovs)); // 세미 빌드 task
 exports.sprite = series(parallel(spritesImage)); // 이미지 스프라이프 태스크
 exports.optImage = series(parallel(optImage)); // 이미지 최적화
