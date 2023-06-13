@@ -1,6 +1,6 @@
-# publish uplussave
+# DKBMC UI 컴퍼논트
 
-유모바일 홈페이지, 다이렉트몰 퍼블리싱용
+DKBMC 공통컴포넌트 제작용
 
 ## Getting started
 
