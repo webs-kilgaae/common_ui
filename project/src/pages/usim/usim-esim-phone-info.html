@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 정보 등록 | U+유모바일',
+    ogTitle: '휴대폰 정보 등록 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item usim-esim-phone-info">
+            <div class="popup-header">
+                <strong class="txt-main">휴대폰 정보 등록</strong>
+            </div>
+            <div class="popup-body">
+                <ul class="step-staus-list">
+                    <!-- 활성화 된 페이지에 on 클래스 추가 -->
+                    <li class="on">
+                        <span class="number">1</span>
+                        <span class="page-txt">휴대폰 정보</span>
+                    </li>
+                    <li>
+                        <span class="number">2</span>
+                        <span class="page-txt">고유번호 등록</span>
+                    </li>
+                </ul>
+                <div class="inner">
+                    <div class="page-desc">
+                        <h2>eSIM을 이용할 휴대폰 정보를 먼저 등록해주세요.</h2>
+                    </div>
+
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">브랜드</h3>
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2" name="dan2" checked>
+                                <label for="dan2" class="icon-iphone">
+                                    아이폰
+                                </label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-1" name="dan2">
+                                <label for="dan2-1" class="icon-galaxy">
+                                    갤럭시
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box-select unit-item">
+                        <label for="select1" class="select-label">요금제</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">선택</option>
+                            <option value="2">iPhone 13</option>
+                            <option value="3">iPhone 13</option>
+                            <option value="4">iPhone 13</option>
+                        </select>
+                    </div>
+
+                    <!-- 기종 선택 안했을 때 -->
+                    <section class="no-result">
+                        <p class="no-result-txt">
+                            <span class="small-txt">eSIM 가입 가능한 휴대폰인지 확인을 위해<br>
+                                브랜드와 모델명을 선택해 주세요.</span>
+                        </p>
+                    </section>
+
+                    <!-- 기종 선택 했을때 -->
+                    <section>
+                        <div class="box-table unit-item">
+                            <h3 class="table-title no-border">이용할 휴대폰과 일치하는 모델코드를 선택하세요.</h3>
+                            <table class="table-type-04">
+                                <caption class="hidden">이용할 휴대폰과 일치하는 모델코드를 선택하세요.</caption>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="40%">
+                                    <col width="40%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">용량</th>
+                                        <th scope="col">모델코드</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="btn-radio-type2">
+                                                <input type="radio" id="radio1" name="table-radio" checked>
+                                                <label for="radio1">
+                                                    <strong><span class="ico-radio"></span></strong>
+                                                    <strong>256GB</strong>
+                                                    <strong>A2097-256</strong>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="btn-radio-type2">
+                                                <input type="radio" id="radio2" name="table-radio">
+                                                <label for="radio2">
+                                                    <strong><span class="ico-radio"></span></strong>
+                                                    <strong>512GB</strong>
+                                                    <strong>A2097-512</strong>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="btn-radio-type2">
+                                                <input type="radio" id="radio3" name="table-radio">
+                                                <label for="radio3">
+                                                    <strong><span class="ico-radio"></span></strong>
+                                                    <strong>64GB</strong>
+                                                    <strong>A2097-64</strong>
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cardList-wrap unit-item">
+                            <h3 class="cardList-title">선택 휴대폰 모델명/모델코드</h3>
+                            <div class="cardList">
+                                <dl>
+                                    <dt>모델명</dt>
+                                    <dd>iPhone XS</dd>
+                                    <dt>모델 코드</dt>
+                                    <dd>A2097-512</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!-- 에러 시 .box-input에 error 클래스 추가 -->
+                        <div class="box-input unit-item">
+                            <label for="input1" class="input-label">
+                                휴대폰 일련번호
+                                <div class="box-btn">
+                                    <a href="#" class="btn-text-right">일련번호 확인 방법</a>
+                                </div>
+                            </label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="일련번호를 입력하세요." class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러메세지</span>
+
+                        </div>
+                    </section>
+
+
+                    <div class="btn-group btn-fix">
+                        <button class="btns w-sm md-ripples ripples-light">다음</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

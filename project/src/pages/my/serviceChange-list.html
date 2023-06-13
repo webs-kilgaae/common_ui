@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 변경 | U+유모바일',
+    ogTitle: '부가서비스 변경 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입정보', '요금제 변경', '부가서비스 변경', '일시정지 신청']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">부가서비스 변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#" class="on">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts serviceChange-list">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>부가서비스 변경</h1>
+            </div>
+
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="box-icon-info my-bundle">
+                        <div class="txt-wrap">
+                            <h3 class="main-txt">내가 이용 중인 부가 서비스 <span class="txt-vt">00</span>개</h3>
+                            <p class="desc">
+                                <strong>유료 <span class="txt-vt">00</span>개</strong>
+                                <strong>무료 <span class="txt-vt">00</span>개</strong>
+                             </p>
+                             <div class="btn-box">
+                                <a href="#" class="btn-text-right">부가서비스 전체 보기</a>
+                             </div>
+
+                        </div>
+                        <div class="icon-wrap">
+                            <img src="../../assets/images/pc/icon/phone-service.png" alt="">
+                        </div>
+                    </div>
+                    <section class="cardList-wrap my-bundle">
+                        <h3 class="cardList-title">유료 부가서비스</h3>
+                        <div class="cardList money-right">
+                            <dl>
+                                <dt>
+                                    <strong>통화연결음(필링)</strong>
+                                    <p>신청일 YYYY-MM-DD</p>
+                                </dt>
+                                <dd>
+                                    <strong class="txt-vt"> 월 990원</strong>
+                                    <p>(부가세 포함)</p>
+                                </dd>
+                            </dl>
+                            <div class="btn-group">
+                                <button class="btns md-ripples ripples-light" type="button">설정</button>
+                                <button class="btns lightgray  md-ripples ripples-dark" type="button">해지</button>
+                            </div>
+                        </div>
+                        <div class="cardList money-right">
+                            <dl>
+                                <dt>
+                                    <strong>하루 데이터 로밍</strong>
+                                    <p>신청일 YYYY-MM-DD</p>
+                                </dt>
+                                <dd>
+                                    <strong class="txt-vt"> 월 6,600원</strong>
+                                    <p>(부가세 포함)</p>
+                                </dd>
+                            </dl>
+                            <div class="btn-group">
+                                <button class="btns md-ripples ripples-light" type="button">설정</button>
+                                <button class="btns lightgray  md-ripples ripples-dark" type="button">해지</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cardList-wrap my-bundle">
+                        <h3 class="cardList-title">무료 부가서비스</h3>
+                        <div class="cardList money-right">
+                            <dl>
+                                <dt>
+                                    <strong>통화연결음(필링)</strong>
+                                    <p>신청일 YYYY-MM-DD</p>
+                                </dt>
+                                <dd>
+                                    <strong class="txt-vt">무료</strong>
+                                </dd>
+                            </dl>
+                            <div class="btn-group">
+                                <button class="btns md-ripples ripples-light" type="button">설정</button>
+                                <button class="btns lightgray  md-ripples ripples-dark" type="button">해지</button>
+                            </div>
+                        </div>
+                        <div class="cardList money-right">
+                            <dl>
+                                <dt>
+                                    <strong>하루 데이터 로밍</strong>
+                                    <p>신청일 YYYY-MM-DD</p>
+                                </dt>
+                                <dd>
+                                    <strong class="txt-vt">무료</strong>
+                                </dd>
+                            </dl>
+                            <div class="btn-group">
+                                <button class="btns md-ripples ripples-light" type="button">설정</button>
+                                <button class="btns lightgray  md-ripples ripples-dark" type="button">해지</button>
+                            </div>
+                        </div>
+                        <div class="cardList money-right">
+                            <dl>
+                                <dt>
+                                    <strong>발신자미표시번호 차단</strong>
+                                    <p>신청일 YYYY-MM-DD</p>
+                                </dt>
+                                <dd>
+                                    <strong class="txt-vt">무료</strong>
+                                </dd>
+                            </dl>
+                            <div class="btn-group">
+                                <button class="btns lightgray  md-ripples ripples-dark" type="button">해지</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <li>부가서비스 신청 당일 해지는 불가합니다.</li>
+                            <li>필수로 제공되는 부가서비스는 해지하실 수 없습니다.</li>
+                            <li>부가서비스 월중 신청/해지시 해당월 월정액 및 무료제공 혜택 은 각각 사용 일수만큼 적용 됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

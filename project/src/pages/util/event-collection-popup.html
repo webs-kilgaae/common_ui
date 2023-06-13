@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '약관 자세히 보기 | U+유모바일',
+    ogTitle: '약관 자세히 보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show terms">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <section class="agree-cont">
+                    <h3 class="body-tit">이벤트 및 마케팅 수신동의</h3>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">고객 혜택정보 및 광고 수신 동의(선택)</h3>
+                        <p class="txt-sub">
+                            1. 회원가입 시 고객 혜택정보 및 광고 수신동의(선택) 항목에서 수집한 개인정보, 고객세분화정보, 선호도 및 라이프스타일 정보, 전산조회이력정보 및 상담이력정보, 고객 간 관계에 관한 예측 정보 및 이 정보들에 대한 통계·분석데이터를 해지 시까지 수집·이용·분석하여 각종 서비스·상품(주)미디어로그가 제공하는 이동통신, 금융서비스, 결합·제휴상품, 스토리지 등 데이터·콘텐츠서비스, 부가서비스, 전자상거래서비스, 위치정보서비스, it솔루션, Smart health서비스, 신규서비스·상품 포함), 제휴사와 결합된 서비스 및 제휴사의 서비스에 대하여 홍보, 가입권유, 프로모션, 생활정보, 멤버십정보, 이벤트, 해외로밍 안내(공항 또는 항만 위치 시 로밍 이용방법, 진행중인 이벤트 등 안내) 및 설문조사 목적으로 수집·이용·활용하는 것, 본인에게 혜택정보, 광고정보를 각종 통신방식[전화, SMS, LMS, MMS, WAP Push,이메일, 우편, APP안내 및 팝업, APP PUSH]으로 전송하는 것에 동의합니다.
+                        </p>
+                </section>
+                <div class="table-list-wrap">
+                    <table class="table-list center">
+                        <caption class="hidden">개인정보 수집 및 이용 제공</caption>
+                        <colgroup>
+                            <col width="20%">
+                            <col width="80%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>수집방법</th>
+                                <th>통신방식</th>
+                            </tr>
+                            <tr>
+                                <td>회원가입</td>
+                                <td>전화, SMS, LMS, MMS, WAP Push, 이메일, 우편, APP안내 및 팝업,APP PUSH, 카카오알림톡, 카카오친구톡</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+                 <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

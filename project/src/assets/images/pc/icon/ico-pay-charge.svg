@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="ov66mn6k9a" x="2" y="13" width="69" height="47" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="95n7dt2b6b" x="40" y="36" width="38" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="0y78sajk9c" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 484209">
+        <g style="filter:url(#ov66mn6k9a)">
+            <rect data-name="사각형 348809" width="63" height="41" rx="10" transform="translate(4.999 13.998)" style="fill:#dadef8"/>
+        </g>
+        <path data-name="패스 862626" d="M0 0h63v4H0z" transform="translate(5 25.5)" style="fill:#aeaae8"/>
+        <g data-name="그룹 484168">
+            <path data-name="선 444" transform="translate(16 45)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="M0 0h8"/>
+        </g>
+        <g data-name="그룹 485990">
+            <g style="filter:url(#95n7dt2b6b)">
+                <path data-name="bg" d="M119.645 85.353a16 16 0 1 0-16 16 16 16 0 0 0 16-16z" transform="translate(-44.643 -32.346)" style="fill:url(#0y78sajk9c)"/>
+            </g>
+            <g data-name="그룹 484099">
+                <path data-name="선 442" transform="translate(52.725 53.178)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="m0 0 3.688 3.688"/>
+                <path data-name="선 443" transform="translate(56.411 48.569)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px" d="M8.297 0 0 8.297"/>
+            </g>
+        </g>
+    </g>
+</svg>

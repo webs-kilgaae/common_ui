@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '입고 알림 신청하기 | U+유모바일',
+    ogTitle: '입고 알림 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+</head>
+<body>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap phone show">
+        <div class="layer-popup-item product-receipt">
+            <div class="popup-header">
+                <strong class="txt-main">입고 알림 신청하기</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="rq-form">
+                    <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                    <div class="box-input">
+                        <label for="input1" class="input-label">이름</label>
+                        <div class="input-wrap">
+                            <input id="input1" type="text" placeholder="이름 입력
+                            " class="input-default is-delete">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">이름을 입력해 주세요.</span>
+                    </div>
+                   <div class="box-flex">
+                        <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                        <div class="box-input">
+                            <label for="input4" class="input-label">휴대폰번호</label>
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">인증 요청</button>
+                        </div>
+                    </div>
+                    <div class="box-flex">
+                        <!-- 인증완료 시 .box-input 에 success 클래스 추가 -->
+                        <!-- 인증요청시 .box-input 에 sending 클래스 추가 -->
+                        <!-- 인증완료시 .box-input 에 success 클래스 추가 -->
+                        <div class="box-input sending">
+                            <label for="input4" class="input-label">인증번호</label>
+                            <div class="input-wrap">
+                                <input id="input5" type="text" placeholder="숫자 6자리 입력
+                                " class="input-default is-delete is-time" title="인증번호">
+                                <span class="txt-time">02:30</span>
+                                <button class="ico-delete" style="display: none;" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <!-- 에러 시 나오는 안내문구 -->
+                            <span class="txt-error">휴대폰 번호를 정확히 입력해 주세요.</span>
+                            <!-- 인증요청 시 나오는 안내문구 -->
+                            <span class="txt-sending">인증번호를 발송했습니다. 3분 이내에 입력해 주세요.</span>
+                            <!-- 인증완료시 나오는 텍스트 -->
+                            <span class="txt-description">인증이 완료되었습니다.</span>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">인증번호 확인</button>
+                        </div>
+                    </div>
+                    <div class="cardList-wrap">
+                        <div class="cardList">
+                            <dl>
+                                <dt>휴대폰</dt>
+                                <dd>삼성 갤럭시 A52s</dd>
+                                <dt>원하는 색상</dt>
+                                <dd>어썸 화이트</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="btn-check-wrap">
+                        <h3 class="normal-txt">입고 알림 이용 동의</h3>
+                        <div class="btn-box btn-check btn-text-line">
+                            <input type="checkbox" id="check999">
+                            <label for="check999">
+                                <span class="ico-check"></span> 개인정보 수집 이용 동의  <strong> (필수)</strong>
+                            </label>
+                            <a href="#" class="link-underline">보기</a>
+                        </div>
+                    </div>
+
+                    <div class="notification-wrap">
+                        <h3>입고 알림 신청시 유의 사항</h3>
+                        <ul class="notification">
+                            <li>신청일 순으로 알림  문자메시지가 발송되며,  빠른 품절 시 문자메시지가 발송되지 않을 수 있어요.</li>
+                            <li>제조사 사정에 의해  추가입고가 어려울 수 있어요.</li>
+                            <li>신청일 기준 30일 이후에는 입고알림이 자동취소돼요.</li>
+                            <li>공시지원금(휴대폰 가격 할인), 추가지원금 등은 미디어로그의 사정에 따라 변경될 수 있어요.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light" type="button">입고 알림 신청하기</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

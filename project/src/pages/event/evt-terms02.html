@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '약관 자세히 보기 | U+유모바일',
+    ogTitle: '약관 자세히 보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+<body>
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap terms show">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <div class="page-tit">
+                    <h1>고객 혜택 정보 및 광고 수신을 위한 개인정보 처리 위탁 동의  (필수)</h1>
+                </div>
+                <section class="info-desc">
+                        <div>
+                            <h3>제공 받는 자</h3>
+                            <ul class="notification">
+                                <li>㈜지온컴즈, ㈜GS리테일</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>제공 목적</h3>
+                            <ul class="notification">
+                                <li>경품 당첨에 따른 고객 연락 및 상품 발송</li>
+                                <li>상품홍보 및 가입 권유를 위한 문자메시지 (SMS, LMS, MMS 등) 발송</li>
+                                <li>아웃바운드 TM 진행</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>제공 항목</h3>
+                            <ul class="notification">
+                                <li>고객명, 휴대폰번호</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>보유 기간</h3>
+                            <ul class="notification">
+                                <li>동의일로부터 2개월</li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+           <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+
+                <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

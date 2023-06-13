@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '친구 추천 안내 | U+유모바일',
+    ogTitle: '친구 추천 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['친구 추천 안내', '내 추천내역', '친구 추천 랭킹']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '이벤트/혜택',
+            depth3: '친구 추천',
+            depth4: '친구 추천 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이벤트/혜택</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#" class="on">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">친구 추천</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#" class="on">친구 추천</a></li>
+                <li><a href="#">U Point</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">친구 추천 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">친구 추천 안내</a></li>
+                <li><a href="#">내 추천내역</a></li>
+                <li><a href="#">친구 추천 랭킹</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container event">
+        <div class="sub-conts friend">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>친구 추천 안내</h1>
+            </div>
+            <div>
+                <section class="sec-common intro">
+                    <a href="#" class="btn-position">내추천내역 보기</a><!-- 09.02 클래스 수정-->
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img-intro.jpg" alt="추천할수록 쌓이는 포인트 유모바일 친구 추천">
+                    </div>
+                </section>
+                <section class="sec-common sec01">
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img01.jpg" alt="혜택1 친구 추천할떄마다 10,000포인트 적립">
+                    </div>
+                </section>
+                <section class="sec-common sec02">
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img02.jpg" alt="혜택2 친구추천 포인트 적립 안내">
+                    </div>
+                </section>
+                <section class="sec-common sec03">
+                    <a href="#" class="btn-position">유심 선물하기</a><!-- 09.02 클래스 수정-->
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img03.jpg" alt="혜택3 내 친구는 유심비 면제">
+                    </div>
+                </section>
+                <section class="sec-common sec04">
+                    <a href="#"  class="btn-position">추천 URL 공유하기</a><!-- 09.02 클래스 수정-->
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img04.jpg" alt="잠깐, 친구 추천 방법을 살펴보세요">
+                    </div>
+                </section>
+                <section class="sec-common sec05">
+                    <a href="#" class="btn-position">유알모 포인트 적립 사용안내</a><!-- 09.02 클래스 수정-->
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img05.jpg" alt="포인트 이용안내 적립한 포인트는 어디에 쓰나요?">
+                    </div>
+                </section>
+                <section class="sec-common sec06">
+                    <a href="#" class="btn-position">친구추천안내</a><!-- 09.02 클래스 수정-->
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/friends/recommend-img06.jpg" alt="포인트 이용안내 적립한 포인트는 어디에 쓰나요?">
+                    </div>
+                </section>
+            </div>
+            <div class="btn-group sticky">
+                <button class="btns lightgray wid md-ripples ripples-light" type="button">
+                    <img src="/assets/images/pc/subpage/friends/friend-btn01.png" alt="유심선물하기">
+                </button>
+                <button class="btns wid md-ripples ripples-light" type="button">
+                    <img src="/assets/images/pc/subpage/friends/friend-btn02.png" alt="추천URL 공유하기">
+                </button>
+            </div>
+            <section class="fix-unit-group">
+                <h3 class="unit-tit-s">유의사항</h3>
+                <ul class="notification">
+                    <li>추천 포인트는 추천인과 추천받으시는 분이 동일 시 적립되지 않습니다.</li>
+                    <li>추천 받으신 분이 가입신청서 작성시 추천하신 분(추천인) 정보를 기재해 주셔야 정상 적립됩니다.
+                        <ul>
+                            <li>- 추천 URL을 통해 가입신청서 작성 시 추천인 정보가 자동 입력되어 있습니다.</li>
+                            <li>- 추천인 변경을 희망하는 경우 신청서 작성 완료 후 개통센터로 문의해주시기 바랍니다. (가입 후 28일 이내)</li>
+                            <li>- 포인트 적립시점 미납/일시정지/명의 변경 시 적립 대상에서 제외될 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        추천 포인트 안내 (22년 2월 21일 이후 가입 신청서 작성한 건부터 적용)
+                        <ul>
+                            <li>
+                                1) 추천 가입 포인트 : 추천인에게 10,000 포인트 적립 (1회)
+                                <p>- 추천 받으신 분이 30일 이상 개통을 유지한 경우, 개통일+30일에 10,000 포인트</p>
+                                <p>- 다추천인의 경우, 추천 건별 10,000 포인트 1회 적립</p>
+                            </li>
+                            <li>
+                                2) 추천 유지 포인트 : 추천인에게 매월 본인 기본 요금의 1% 적립 (최대 24개월)
+                                <p>- ‘기본 요금’은 초과사용료, 할부료, 소액결제수수료 제외한 기본 요금을 뜻함</p>
+                                <p>- ‘기본 요금의 1%’ 금액은 십원 단위 이하 절사됨 (EX. 33,990원 X 1% = 339원이나, 330원으로 산정하여 지급)</p>
+                                <p>- 추천 받으신 분의 요금 납부 확인 이후 적립 (EX. 3월 가입 - 5월 납부금액 확인 및 적립)</p>
+                                <p>- 다추천인의 경우, 매월 적립율은 누적 추천건수에 따라 산정 (추천건수별 기본요금 X 1%로 산정하되, 원 단위 금액 절사) (2022년 2월 21일 이후 가입 신청서 작성한 건부터 적용)</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        다회선 고객님의 경우, 추천 유지 포인트는 대표번호 요금제 (납부금 기준)의 1%가 적립됩니다.
+                        <ul>
+                            <li>- 추천 받으신 분이 30일 이상 개통을 유지한 경우, 개통일+30일에 10,000 포인트</li>
+                            <li>- 대표번호 변경은 홈페이지(로그인 - 할인혜택 > 유알모 포인트 : 추천할동 내역 탭)와 고객센터App(내 포인트 - 추천활동내역)에서 할 수 있습니다.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        추천 포인트 정상 적립 기준
+                        <ul>
+                            <li>- 추천인 : 추천 받으신 분이 개통 유지 시 정상 적립</li>
+                            <li>- 포인트 적립 이전에 추천인/추천받으신 분이 해지 시 적립 대상에서 제외됩니다.</li>
+                        </ul>
+                    </li>
+                    <li>비정상적이거나 부정한 방법으로 참여(추천개통)시 지급 대상에서 제외됩니다.</li>
+                    <li>당사 사정에 따라 추천 포인트 혜택은 사전 예고 없이 조기 종료 및 변경될 수 있습니다.</li>
+                    <li>
+                        포인트 적립 또는 사용 실적에 따라 소득세 원천징수 신고대상이 될 수 있습니다.
+                        <ul>
+                            <li>- 포인트 유효기간은 3년이며, 타인에게 양도/매매 불가합니다.</li>
+                            <li>- 해지 및 유효기간(3년) 경과 시, 미사용 포인트는 자동 소멸됩니다.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

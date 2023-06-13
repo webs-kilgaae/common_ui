@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금 즉시 납부 | U+유모바일',
+    ogTitle: '요금 즉시 납부 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['청구요금 조회', '요금 즉시 납부', '납부 내역 확인', '앱마켓 결제 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '요금 즉시 납부'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금/납부 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금 즉시 납부</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">청구요금 조회</a></li>
+                <li><a href="#" class="on">요금 즉시 납부</a></li>
+                <li><a href="#">납부 내역 확인</a></li>
+                <li><a href="#">앱마켓 결제 내역</a></li>
+                <li><a href="#">휴대폰 소액 결제 내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts bill-immediate">
+            <!-- 컨텐츠 -->
+            <section>
+                <div class="page-tit">
+                    <h1>요금 즉시 납부</h1>
+                </div>
+                <div class="my-conts">
+                    <div class="fix-area">
+                        @@include('./pages/includes/my-use-amount.html', {
+                            titTxt: '가입 휴대폰번호',
+                            plan: true
+                        })
+                    </div>
+                    <div class="info-area">
+                        <div class="my-month type-total my-bundle">
+                            <div class="total">
+                                <dl class="this-month">
+                                    <dt>이번 달 요금</dt>
+                                    <dd class="txt-vt">
+                                        <span>16,462</span>원
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>미납 요금</dt>
+                                    <dd class="txt-rd">
+                                        <span>16,462</span>원
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="total-bottom">
+                                <h2 class="detail-desc"><span>$06월$</span> 현재 납부하실 금액</h2>
+                                <div class="detail-total">
+                                    <a href="#" class="btn-text-right">
+                                        <strong class="txt-vt"><span>32,924</span>원</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ####케이스 별 안내문구#### -->
+                        <!-- (APIM 리턴번호 = '1' OR '2') AND (납부방법코드 = 'DD' OR 'CM') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                오늘 오전에 은행으로 자동이체 출금이 요청 되었습니다.
+                                고객의 계좌에서는 내일 출금 될 예정입니다.
+                            </strong>
+                        </div>
+                        <!--  (APIM 리턴번호 = '3' OR '4') AND (납부방법코드 = 'DD') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                오늘 은행을 통해 자동이체 출금이 진행 되고 있습니다.
+                            </strong>
+                        </div>
+                        <!-- (APIM 리턴번호 = '3' OR '4') AND (납부방법코드 = 'FB' OR 'CM') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                오늘 은행을 통해 자동이체 출금이 진행 되고 있습니다.
+                            </strong>
+                            <p>
+                                내일부터 전산을 통해 출금결과를 확인할 수 있습니다.
+                            </p>
+                        </div>
+                        <!-- (APIM 리턴번호 = '5') AND (납부방법코드 = 'DD') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                은행 자동이체 계좌에서 출금이 완료되어 결과가 집계되고 있습니다.<br>익일(영업일 기준)부터 전산을 통해 출금결과를 확인할 수 있습니다.
+                            </strong>
+                        </div>
+                        <!-- (APIM 리턴번호 = '6') AND (납부방법코드 = 'CC') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                오늘 카드사로 자동이체 요금 결제가 요청 되었습니다.
+                                내일 이후 카드사로 문의하시면 정상 결제여부를 확인하실 수 있습니다.
+                            </strong>
+                            <p>
+                                (만약 두 번 결제가 발생되면 카드 자동이체 승인분은 자동으로
+                                카드사에 취소 요청됩니다. 단 외환,농협카드 제외)
+                            </p>
+                        </div>
+                        <!-- (APIM 리턴번호 = '7' OR '8') AND (납부방법코드 = 'CC') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>
+                                현재 카드사를 통해 자동이체 요금 결제가 진행되고 있습니다.
+                            </strong>
+                            <p>
+                                (만약 두 번 결제가 발생되면 카드 자동이체 승인분은 자동으로<br>
+                                카드사에 취소 요청됩니다. 단 외환,농협카드 제외)
+                            </p>
+                        </div>
+                        <!-- (APIM 리턴번호 = '9') AND (납부방법코드 = 'CC') 인 경우 -->
+                        <div class="info-case my-bundle">
+                            <strong>카드자동이체 결과가 오늘 야간에 전산반영 될 예정입니다. 내일부터 결제 결과를 확인 할 수 있습니다.</strong>
+                            <p>(만약 두 번 결제가 발생되면 카드 자동이체 승인분은 자동으로 카드사에 취소 요청됩니다. 단 외환,농협카드 제외)</p>
+                        </div>
+
+
+                        <div class="btn-group my-bundle">
+                            <button class="btns md-ripples ripples-light">요금 납부</button>
+                        </div>
+
+                        <!-- 내역 없을 시 -->
+                        <div class="no-result">
+                            <p class="no-result-txt">납부내역이 존재하지 않습니다</p>
+                        </div>
+
+                        <!-- 2022.11.14 꼭 확인하세요 추가 -->
+                        <div class="notification-wrap">
+                            <h3>꼭 확인하세요!</h3>
+                            <ul class="notification">
+                                <li>요금 즉시 납부 금액은 1천원이상 ~ 30만원 미만 내에서 납부하실 수 있습니다. </li>
+                                <li>요금 즉시 납부 결제자 정보는, 휴대폰 가입 명의자와 일치해야 합니다. 1회 즉시 납부 요금이 5만원 이상일경우 할부 가능합니다.</li>
+                                <li>미납요금이 있는 경우에만 요금을 즉시 납부 하실 수 있습니다. </li>
+                                <li>중복결제주의 : 은행이나 카드 자동이체 결제기간 중 신용카드 납부, 입금전용계좌 납부를 하시면 두 번 결제 될 수 있으니 납부 전에 거래 내역을 꼭 확인해 주시기 바랍니다. </li>
+                                <li>중복 결제되면 등록된 납부방법 및 금액에 따라 자동으로 환불되거나 다음달 요금에서 미리 결제됩니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

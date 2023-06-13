@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금 즉시 납부 | 요금납부조회 | U+유모바일',
+    ogTitle: '요금 즉시 납부 | 요금납부조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '요금 즉시 납부'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금/납부 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금 즉시 납부</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">청구요금 조회</a></li>
+                <li><a href="#" class="on">요금 즉시 납부</a></li>
+                <li><a href="#">납부 내역 확인</a></li>
+                <li><a href="#">앱마켓 결제 내역</a></li>
+                <li><a href="#">휴대폰 소액 결제 내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts bill-immediate-payment">
+            <!-- 컨텐츠 -->
+            <section>
+                <div class="page-tit">
+                    <h1>요금 즉시 납부</h1>
+                </div>
+                <div class="my-conts">
+                    <div class="fix-area">
+                        @@include('./pages/includes/my-use-amount.html', {
+                            titTxt: '가입 휴대폰번호',
+                            plan: true
+                        })
+                    </div>
+                    <div class="info-area">
+                        <div class="field-tit">
+                            <b>요금을 납부할 카드의 소유자 정보를 알려 주세요</b>
+                            <p>요금 즉시 납부는 본인 명의의 신용카드로만 결제할 수 있습니다.</p>
+                        </div>
+
+                        <fieldset>
+                            <legend class="hidden">카드 소유주 정보 입력</legend>
+                            <div class="inquir-box">
+                                <h2 class="default-txt">납부 유형</h2>
+                                <ul class="btn-radio-group group-free">
+                                    <li class="btn-radio">
+                                        <input type="radio" id="dan2-1" name="dan2" checked="checked">
+                                        <label for="dan2-1">개인</label>
+                                    </li>
+                                    <li class="btn-radio">
+                                        <input type="radio" id="dan2-2" name="dan2">
+                                        <label for="dan2-2">개인사업자</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-input">
+                                <label for="input1" class="input-label">이름</label>
+                                <div class="input-wrap">
+                                    <input id="input1" type="text" placeholder="카드 소유주명" class="input-default is-delete">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">카드 소유주명은 2글자 이상 입력하셔야 합니다.</span>
+                            </div>
+                            <div class="box-input">
+                                <label for="input1" class="input-label">생년월일</label>
+                                <div class="input-wrap">
+                                    <input id="input1" type="text" placeholder="생년월일 입력 (YYYY-MM-DD)" class="input-default is-delete">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">에러 입니다</span>
+                            </div>
+                            <div class="box-input">
+                                <label for="input1" class="input-label">사업자등록번호</label>
+                                <div class="input-wrap">
+                                    <input id="input1" type="text" placeholder="사업자등록번호 입력" class="input-default is-delete">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">에러 입니다</span>
+                            </div>
+                            <div class="inquir-box">
+                                <h2 class="default-txt">성별</h2>
+                                <ul class="btn-radio-group group-free">
+                                    <li class="btn-radio">
+                                        <input type="radio" id="dan4-1" name="dan4" checked="checked">
+                                        <label for="dan4-1">여성</label>
+                                    </li>
+                                    <li class="btn-radio">
+                                        <input type="radio" id="dan4-2" name="dan4">
+                                        <label for="dan4-2">남성</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+
+                        <div class="btn-group ">
+                            <button class="btns md-ripples ripples-light">요금 결제</button>
+                        </div>
+
+                        <div class="notification-wrap">
+                            <h3>꼭 확인하세요!</h3>
+                            <ul class="notification">
+                                <li>은행이나 카드 자동 결제 기간에 따로 신용카드나 입금전용계좌를 통해 납부하시면 두 번 결제될 수 있습니다. 납부 전에 거래 내역을 꼭 확인해 주세요.</li>
+                                <li>두 번 결제된 경우 등록된 납부 방법과 금액에 따라 자동으로 환불되거나 다음 달 요금에서 <span class="txt-vt">미리 낸 요금만큼 차감하고 청구됩니다.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

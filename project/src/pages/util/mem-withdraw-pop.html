@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '이벤트 및 마케팅 수신 철회 | U+유모바일',
+    ogTitle: '이벤트 및 마케팅 수신 철회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap util show">
+        <div class="layer-popup-item mem-withdraw-pop">
+            <div class="popup-header">
+                <strong class="txt-main">이벤트 및 마케팅 수신</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>이벤트 및 마케팅 정보 수신 동의 <b>(선택)</b></h2>
+                    <p>U<sup>+</sup> 유모바일 서비스에서 이벤트 또는 광고 등을 포함한 마케팅 정
+                        보를 받을 수 있으며, <br>회원탈퇴 또는 동의해제 즉시 파기됩니다.</p>
+                </div>
+                <section class="cardList-wrap">
+                    <div class="cardList is-scroll">
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.<br>
+                        전문보기 상세 내용이 노출됩니다.
+                    </div>
+                </section>
+                <section class="cardList-wrap">
+                    <div class="cardList">
+                        <dl>
+                            <dt>동의일자</dt>
+                            <dd>YYYY-MM-DD</dd>
+                        </dl>
+                    </div>
+                </section>
+                <div class="btn-check">
+                    <input type="checkbox" id="check2">
+                    <label for="check2"><span class="ico-check"></span>동의를 해제하시겠습니까?
+                    </label>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">닫기</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

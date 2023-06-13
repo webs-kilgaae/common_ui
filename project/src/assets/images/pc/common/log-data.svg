@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+    <g data-name="데이터 아이콘">
+        <g data-name="그룹 471811">
+            <path data-name="선 126629" transform="translate(5.65 5.711)" style="fill:none;stroke:#7c40ce;stroke-linecap:round;stroke-width:2px" d="M0 0v11.412"/>
+            <path data-name="패스 845801" d="m267.5 113.917 3.072 3.072 3.072-3.072" transform="translate(-264.922 -99.697)" style="stroke-linejoin:round;fill:none;stroke:#7c40ce;stroke-linecap:round;stroke-width:2px"/>
+            <path data-name="선 126630" transform="rotate(180 8.313 8.646)" style="fill:none;stroke:#7c40ce;stroke-linecap:round;stroke-width:2px" d="M0 0v11.412"/>
+            <path data-name="패스 845802" d="m0 0 3.072 3.072L6.144 0" transform="rotate(180 9.849 4.392)" style="stroke-linejoin:round;fill:none;stroke:#7c40ce;stroke-linecap:round;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>

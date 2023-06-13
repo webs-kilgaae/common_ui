@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '유모바일에서 구매하기 | 유심칩 구매 | U+유모바일',
+    ogTitle: '유모바일에서 구매하기 | 유심칩 구매 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '']
+    })
+
+    <main class="container usim">
+        <div class="sub-conts directmall">
+            <!-- 컨텐츠 -->
+            <section>
+                <div class="purchase-num">
+                    <h2>구매 수량</h2>
+                    <div class="box-num">
+                        <button class="btn-minus">-</button>
+                        <input class="num" type="text" title="구매수량" value="1" disabled>
+                        <!-- input 대신 span 사용 가능 -->
+                        <button class="btn-plus">+</button>
+                    </div>
+                </div>
+
+                <div class="payment-method">
+                    <h2>결제 수단</h2>
+                    <ul class="btn-radio-group group4">
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-1" name="dan4" checked="checked">
+                            <label for="dan4-1">신용카드</label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-2" name="dan4">
+                            <label for="dan4-2">실시간 계좌이체</label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-3" name="dan4">
+                            <label for="dan4-3"><img src="../../assets/images/pc/icon/ico-paynow.png" alt="Paynow"></label>
+                        </li>
+                        <li class="btn-radio">
+                           <input type="radio" id="dan4-4" name="dan4">
+                            <label for="dan4-4"><img src="../../assets/images/pc/icon/ico-lgpay.png" alt="LG Pay"></label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-5" name="dan4">
+                            <label for="dan4-5"><img src="../../assets/images/pc/icon/ico-samsungpay.png" alt="samsung Pay"></label>
+                        </li>
+                        <li class="btn-radio">
+                           <input type="radio" id="dan4-6" name="dan4">
+                            <label for="dan4-6"><img src="../../assets/images/pc/icon/ico-lpay.png" alt="L.pay"></label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ualmo-point">
+                    <h2>유알모 포인트 사용</h2>
+                    <div class="box-flex box-unit">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <!-- 단위있는 인풋의 경우 is-unit 클래스추가 -->
+                                <input id="input555" type="text" placeholder="숫자만 입력" class="input-default is-unit" title="사용 포인트 입력">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                <span class="input-unit">원</span>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">전액사용</button>
+                        </div>
+                    </div>
+                    <p class="noti">보유유알모포인트 : <span class="txt-vt">21,000</span> (1포인트=1원)</p>
+                </div>
+
+                <div class="agree-wrap">
+                    <h2>유심 구매 이용 동의</h2>
+                    <div class="btn-check-type2">
+                        <input type="checkbox" id="agreeAll">
+                        <label for="agreeAll"> <span>전체 동의</span></label>
+                    </div>
+                    <div class="agree-group">
+                        <div class="btn-check">
+                            <input type="checkbox" id="agree1">
+                            <label for="agree1"> <span><strong>(필수)</strong> 개인정보 수집,활용 동의</span></label>
+                            <a href="#" class="ico-arrow-right">더보기</a>
+                        </div>
+                        <div class="btn-check">
+                            <input type="checkbox" id="agree2">
+                            <label for="agree2"> <span><strong>(필수)</strong> 결제 취소,반품 조건에 대한 동의</span></label>
+                            <a href="#" class="ico-arrow-right">더보기</a>
+                        </div>
+                        <div class="btn-check">
+                            <input type="checkbox" id="agree3">
+                            <label for="agree3"> <span><b>(선택)</b> 고객 혜택정보 및 광고 수신 동의</span></label>
+                            <a href="#" class="ico-arrow-right">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="btn-group  btn-sum">
+                <div class="payment-sum">
+                    <h2>결제금액</h2>
+                    <span class="sum"><strong>8,800원</strong>(VAT 포함)<span>
+                </div>
+                <button class="btns white md-ripples ripples-light">이전</button>
+                <button class="btns md-ripples ripples-light">결제하기</button>
+            </div>
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

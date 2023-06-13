@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '개인정보 수집, 활용 동의 | U+유모바일',
+    ogTitle: '개인정보 수집, 활용 동의 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap terms show">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <div class="page-tit">
+                    <!---2022-11-07 유플러스 ->  U+ 변경-->
+                    <h1>㈜미디어로그 (U+ 유모바일) 귀중</h1>
+                </div>
+                <div class="agree-cont">
+
+                    <!---2022-11-07 유플러스 ->  U+ 변경-->
+                    <h3 class="hidden">㈜미디어로그 (U+ 유모바일) 귀중</h3>
+                    <p>
+                        당사는 귀하의 구매하신 상품 배송 및 상담 업무처리를 위해 관련 법령에 따라 다음과 같이 귀하의 개인정보를 수집ㆍ활용하고 관련 업무 취급 위탁사에 제공합니다. 회사가 외부 전문업체에 고객의 개인정보를 취급위탁하는 경우 그 위탁업무의 내용, 수탁자는 홈페이지에 고지되어 있는 개인정보 취급방침에서 자세히 확인하실 수 있습니다.
+                    </p>
+                    <p>유플러스 유모바일 유심 구매를 위해 필요한 최소한의 개인정보이므로 동의를 하셔야 서비스를 이용하실 수 있습니다.</p>
+                </div>
+                <div class="table-list-wrap">
+                    <table class="table-list center">
+                        <caption class="hidden">개인정보 수집 및 이용 제공</caption>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="60%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th colspan="2" scope="col">개인정보 수집 및 이용</th>
+                            </tr>
+                            <tr>
+
+                                <td>개인정보의 수집 · 이용 목적</td>
+                                <td>이동통신서비스 가입, 이동전화 단말기 구매 및 가입을 위한 해피콜 (outbound) 상담</td>
+                            </tr>
+                            <tr>
+
+                                <td>수집하는<br> 개인정보</td>
+                                <td>이용자 이름, 이용자 전화번호, 이용자 배송지 주소</td>
+                            </tr>
+                            <tr>
+
+                                <td>개인정보 보유 · 이용기간</td>
+                                <td>동의일로부터 1년</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-list-wrap">
+                    <table class="table-list center">
+                        <caption class="hidden">개인정보 취급 위탁 업무내용 제공</caption>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="60%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th colspan="2" scope="col">개인정보 취급 위탁 업무내용</th>
+                            </tr>
+                            <tr>
+
+                                <td>개인정보 취급 위탁 업무내용</td>
+                                <td>신청한 상품에 대한 배송 및 상담처리 등 개통센터 업무 처리</td>
+                            </tr>
+                            <tr>
+                                <td>수탁자</td>
+                                <td>체인로지스(두발히어로), ㈜지온컴즈, ㈜고암, (주)원데이로지스(원더스), 윌앤비전</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+                 <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

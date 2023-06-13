@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '법정대리인 휴대폰번호 입력 | U+유모바일',
+    ogTitle: '법정대리인 휴대폰번호 입력 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts join util-width">
+            <div class="page-tit">
+                <h1>회원가입</h1>
+            </div>
+            <div class="rq-form">
+                <div class="main-txt-group">
+                    <h2 class="main-txt">법정대리인의 휴대폰번호를 알려 주세요.</h2>
+                </div>
+                <!-- 컨텐츠 -->
+                <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                <div class="box-input">
+                    <label for="input1" class="input-label">법정대리인 휴대폰번호</label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="휴대폰번호 입력" class="input-default is-delete">
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">에러메세지</span>
+                </div>
+            </div>
+
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">다음</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

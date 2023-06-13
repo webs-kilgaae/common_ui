@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="559k190y9a" x="9" y="11" width="62" height="62" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486127">
+        <g style="filter:url(#559k190y9a)">
+            <g data-name="타원 8784" transform="translate(12 12)" style="stroke:#aeaae8;stroke-width:8px;fill:none">
+                <circle cx="28" cy="28" r="28" style="stroke:none"/>
+                <circle cx="28" cy="28" r="24" style="fill:none"/>
+            </g>
+        </g>
+        <path data-name="패스 862633" d="m-1605.047-1566.809-36.137 36.137" transform="translate(1663.307 1588.933)" style="stroke:#aeaae8;stroke-width:8px;fill:none"/>
+    </g>
+</svg>

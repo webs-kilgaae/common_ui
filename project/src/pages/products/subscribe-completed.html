@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '생활 구독 서비스 | U+유모바일',
+    ogTitle: '생활 구독 서비스 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '상품',
+            depth3: '생활 구독 서비스',
+            depth4: ''
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">생활 구독 서비스</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#" class="on">생활 구독 서비스</a></li>
+                <li><a href="#">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container products">
+        <div class="sub-conts subscribe-completed">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>구독 신청하기</h1>
+            </div>
+
+            <div class="fix-unit-group">
+                <section class="cardList-wrap">
+                    <h2 class="cardList-title">상품정보</h2>
+                    <div class="cardList">
+                        <dl>
+                            <dt>상품명</dt>
+                            <dd>네이버 MY-BOX 80GB 1개월 이용권</dd>
+                            <dt>월 결제금액</dt>
+                            <dd>1,320 원 (부가세 포함)</dd>
+                            <dt>유모바일 가입자<br> 월 지급 포인트</dt>
+                            <dd>130 P</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="cardList-wrap">
+                    <h2 class="cardList-title">신청 정보</h2>
+                    <div class="cardList">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>홍길동</dd>
+                            <dt>휴대폰</dt>
+                            <dd>010-**11-**11</dd>
+                            <dt>배송지</dt>
+                            <dd>
+                                04310
+                                서울특별시 마포구 월드컵북로 416(상암동)
+                                LG유플러스
+                            </dd>
+                            <dt>요청 사항</dt>
+                            <dd>개 조심. 문 앞에 놓고 가주세요.</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="cardList-wrap">
+                    <h2 class="cardList-title">자동결제 정보</h2>
+                    <div class="cardList">
+                        <dl>
+                            <dt>결제카드</dt>
+                            <dd>현대카드</dd>
+                            <dt>카드번호</dt>
+                            <dd>403*-****-****-6911</dd>
+                        </dl>
+                    </div>
+                </section>
+                <ul class="notification">
+                    <li>매월 <span class="txt-vt">%숫자%</span> 자동결제됩니다.</li>
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button class="btns md-ripples ripples-light" type="button">확인</button>
+            </div>
+
+            <div class="notification-wrap">
+                <h3>유의사항 안내</h3>
+                <ul class="notification">
+                    <li>
+                        첫 결제 완료일 기준하여 매월 자동 결제 됩니다.
+                        (예시. 첫 결제 : 3월 4일 결제 →  2회차 : 4월 4일 결제 이후 동일)
+                    </li>
+                    <li>
+                        첫 결제 완료일이 익월에 없을 경우, 익월 마지막일자에 결제 됩니다.
+                        (예시. 첫 결제 1월 31일 결제 → 2회차 : 2월 28일 결제 → 3월 31일 결제 이후 동일)
+                    </li>
+                    <li>구독 서비스 신청 시 입력 된 정보로 혜택 제공 됩니다. (이름,휴대전화번호,배송정보)</li>
+                    <li>구독 서비스 관한 문의(환불/취소/상품 하자 등)가 있을 경우 당사 고객센터로 문의 하시기 바랍니다.</li>
+                    <li>구독 서비스 해지는 언제든지 가능합니다.</li>
+                    <li>U+유모바일 회선보유 고객 기준 매월 유알모 포인트를 제공합니다. (결제완료 30일 후 자동적립)</li>
+                    <li>유알모 포인트는 구독 서비스 가입 기간에만 제공되며 구독 해지 시 제공되지 않습니다. (포인트 제공일 기준 구독서비스 사용 필수)</li>
+                    <li>
+                        본 상품은 매월 자동 결제 후 혜택이 제공됩니다.
+                        <ul class="list-hyphen">
+                            <li>서비스 이용권: <span class="txt-vt">등록하신 연락처 번호로 이용 쿠폰번호를 발송</span> (결제 완료 즉시)
+                            <li>모바일 상품권/교환권: <span class="txt-vt">등록하신 연락처 번호로 상품권/교환권을 발송</span> (결제 완료 익 영업일 오전 10시까지)
+                            <li>정기 배송권: 고객님의 <span class="txt-vt">요청 배송지로 택배 발송</span> (결제 완료 익 영업일 배송시작)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

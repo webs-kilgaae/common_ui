@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+<div id="test-layer01" class="layer-popup my show">
+    <div class="layer-popup-item pause-pause-appli">
+        <div class="popup-header">
+            <strong class="txt-main">
+                <span class="txt-vt">$010-12**-45**$</span> 번호가<br>
+                <span class="txt-vt">$경제적 사유$</span>로<br>
+                <span class="txt-vt">$000$</span>일동안 일시정지 상태로 전환됩니다.
+            </strong>
+        </div>
+
+        <div class="popup-body">
+            <p class="txt-sub">일시정지 기간 <span class="txt-vt">$YYYY-MM-DD ~YYYY-MM-DD$</span></p>
+        </div>
+
+        <div class="popup-footer">
+           <div class="btn-group">
+               <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

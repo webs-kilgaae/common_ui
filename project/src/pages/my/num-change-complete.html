@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts num-change-complete">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>번호변경</h1>
+            </div>
+
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <section class="complete-template my-bundle">
+                        <h2 class="sub-contents-title"><span class="txt-vt">$010-1231-4567$</span> 번호로 <br>변경되었습니다.</h2>
+                    </section>
+                    <section class="page-desc my-bundle">
+                        <div class="box-icon-info">
+                            <div class="txt-wrap">
+                                <h3 class="main-txt">번호변경 후 30분 안에 개통해 주세요.</h3>
+                                <p>개통하지 않으면 전화나 문자메시지 등 사용이 어려울 수 있습니다.</p>
+                            </div>
+                            <div class="icon-wrap">
+                                <img src="../../assets/images/pc/icon/num-change-complete.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="my-bundle">
+                        <h2 class="main-txt">아이폰</h2>
+                        <p>아이폰 사용 고객님께서는 휴대폰을 껐다가 다시 켜 주세요.</p>
+                    </section>
+                    <section class="my-bundle">
+                        <h2 class="main-txt">안드로이드</h2>
+                        <p>안드로이드 사용 고객님께서는 아래 방법대로 진행해 주세요.</p>
+                        <ol class="num-process-wrap">
+                            <li>
+                                <span class="number">1</span>
+                                <div class="txt-wrap">
+                                    <p>
+                                        전화 숫자 키패드로 <br>#5487587#682# <br>입력
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">2</span>
+                                <div class="txt-wrap">
+                                    <p>
+                                        개통하시겠습니까? <br>안내 문구가 뜨면 <br>“예“를 선택
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">3</span>
+                                <div class="txt-wrap">
+                                    <p>
+                                        변경된 번호로 <br>자동 재개통 처리
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">4</span>
+                                <div class="txt-wrap">
+                                    <p>
+                                        개통되면 자동으로 <br>껐다 켜짐
+                                    </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <section class="my-bundle">
+                        <p class="default-txt">휴대폰을 껐다 켜도 개통되지 않으면 가까운 LG U+ 직영점 또는 대리점에서 개통해 주세요.</p>
+                        <div class="box-btn">
+                            <a href="#" class="btn-text-right-s">LG U+ 매장 찾기</a>
+                        </div>
+                    </section>
+                    <div class="btn-group my-bundle">
+                        <button class="btns md-ripples ripples-light" type="button">확인</button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('../src/pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

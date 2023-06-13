@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts num-change-info">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>번호변경</h1>
+            </div>
+
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <section class="page-desc my-bundle">
+                        <h2>셀프 번호 변경</h2>
+                        <ul class="notification">
+                            <li>셀프 번호 변경은 본인인증 후 하루 1회, 90일 동안 2회까지 할 수 있습니다.</li>
+                            <li>유심(가입자 정보 저장) 카드만 개통한 경우 휴대폰 정보를 등록한 후 번호를 변경할 수 있습니다.</li>
+                            <li>번호가 변경된 후에는 취소할 수 없습니다.</li>
+                        </ul>
+                    </section>
+                    <section class="my-bundle">
+                        <h2 class="main-txt">번호변경 방법 안내</h2>
+                        <ol class="num-process-wrap">
+                            <li>
+                                <span class="number">1</span>
+                                <div class="txt-wrap">
+                                    <p>본인인증</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">2</span>
+                                <div class="txt-wrap">
+                                    <p>번호 변경</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">3</span>
+                                <div class="txt-wrap">
+                                    <p>번호변경 완료</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">4</span>
+                                <div class="txt-wrap">
+                                    <p>반드시 30분 이내에<br>휴대폰에 번호 등록</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="btn-group my-bundle">
+                        <button class="btns md-ripples ripples-light" type="button">본인확인</button>
+                    </div>
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <li>번호변경 후 30분 안에 개통해 주세요.</li>
+                            <li>
+                                LG U+용 안드로이드 기기 : 전화 앱 실행 → 숫자 키패드로 ‘#5487587%682#’ 입력 → ‘개통하시겠습니까?’ 안내문구에서 [예] 선택 → 변경된 번호로 재개통되며, 자동으로 기기가 껐다 켜짐
+                            </li>
+                            <li>아이폰 : 휴대폰 껐다 켜기</li>
+                            <li>
+                                수입 휴대폰 : 휴대폰 껐다 켜기
+                                <p>※ 휴대폰을 껐다 켜도 개통되지 않으면 가까운 LG U+ 직영점 또는 대리점에서 개통해 주세요.</p>
+                                <div class="box-btn">
+                                    <a href="#" class="btn-text-right-s">LG U+ 매장 찾기</a>
+                                </div>
+                            </li>
+                            <li>
+                                금융기관 등에서 문자메시지 알림 서비스를 이용하고 있는 경우, 해당 기관에 바뀐 휴대폰 번호를 알려 주세요.
+                            </li>
+                            <li>
+                                번호를 변경하면 음성사서함 비밀번호가 초기화되니 다시 설정한 후 이용해 주세요.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('../src/pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

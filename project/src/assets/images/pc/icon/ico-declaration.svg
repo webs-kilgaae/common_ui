@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="588ww31lba" x="11.666" y="59.333" width="56.667" height="18" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486248">
+        <g data-name="그룹 484245">
+            <g data-name="그룹 484243">
+                <path data-name="사각형 348912" d="M19.528 0a19.528 19.528 0 0 1 19.528 19.528v25.694H0V19.528A19.528 19.528 0 0 1 19.528 0z" transform="translate(20.47 18.378)" style="fill:#f76bb8"/>
+                <g style="filter:url(#588ww31lba)">
+                    <rect data-name="사각형 348913" width="50.667" height="12" rx="6" transform="translate(14.666 60.328)" style="fill:#d2d5e8"/>
+                </g>
+                <path data-name="선 126806" transform="rotate(90 6 45)" style="stroke:#fff;stroke-linejoin:round;stroke-width:4px;fill:none;stroke-linecap:round" d="M0 0h12"/>
+            </g>
+            <g data-name="그룹 484244">
+                <path data-name="패스 862534" d="M-4721.5 1401.314v6.667" transform="translate(4761.5 -1396.647)" style="stroke:#dadef8;stroke-width:3px;fill:none;stroke-linecap:round"/>
+                <path data-name="패스 862586" d="M0 0v6" transform="rotate(-40 24.798 -19.793)" style="stroke:#dadef8;stroke-width:3px;fill:none;stroke-linecap:round"/>
+                <path data-name="패스 862587" d="M0 6V0" transform="rotate(-140 31.582 -2.2)" style="stroke:#dadef8;stroke-width:3px;fill:none;stroke-linecap:round"/>
+            </g>
+        </g>
+    </g>
+</svg>

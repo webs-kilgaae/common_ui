@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '사은품 안내 | U+유모바일',
+    ogTitle: '사은품 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap phone show">
+        <div class="layer-popup-item phone-gifts">
+            <div class="popup-header">
+                <strong class="txt-main">사은품 안내</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>U<sup>+</sup>유모바일에서 개통 완료하면 사은품을 드립니다.</h2>
+                    <p>가입신청서 작성 시 받고 싶은 사은품을 선택해 주세요.</p>
+                    <p class="txt-vt">2021. 07 .01 ~ 2021. 07. 15 개통 완료 기준</p>
+                </div>
+                <section class="fix-unit-group">
+                    <h3 class="unit-tit-s">(100%지급) 휴대폰 가입 사은품 (<span>n</span>개 선택 가능)</h3>
+                    <p class="unit-txt">U모바일 휴대폰을 구매하신 고객님들께 사은품 중 n개를 지급해드립니다. </p>
+                    <ul class="gift-list">
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-01.jpg" alt="">
+                            </div>
+                            <div class="item-txt">신세계상품권 3만원</div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-02.jpg" alt="">
+                            </div>
+                            <div class="item-txt">라온 위생키트 3종</div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-03.jpg" alt="">
+                            </div>
+                            <div class="item-txt">신라면 20봉</div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="fix-unit-group">
+                    <h3 class="unit-tit-s">추첨을 통해 사은품을 드려요</h3>
+                    <ul class="gift-list">
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-04.jpg" alt="">
+                            </div>
+                            <div class="item-txt">왓챠 3개월 무료 이용권</div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-05.jpg" alt="">
+                            </div>
+                            <div class="item-txt">유튜브 프리미엄 3개월 무료 이용권</div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="fix-unit-group">
+                    <h3 class="unit-tit-s">선착순 사은품</h3>
+                    <p class="unit-txt">개통하신 고객님께  선착순으로  사은품을 드립니다.</p>
+                    <ul class="gift-list">
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-06.jpg" alt="">
+                            </div>
+                            <div class="item-txt">LG 프라엘 마스크(5명)</div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-07.jpg" alt="">
+                            </div>
+                            <div class="item-txt">브리츠 블루투스 이어폰(10명)</div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="/assets/images/pc/subpage/gift-08.jpg" alt="">
+                            </div>
+                            <div class="item-txt">스타벅스 텀블러(20명)</div>
+                        </li>
+                    </ul>
+                </section>
+                <div class="notification-wrap">
+                    <h3>유의사항</h3>
+                    <ul class="notification">
+                        <li>지급 기간이 지난 후 개통하면 사은품이 무작위로 발송됩니다.</li>
+                        <li>사은품은 개통월로부터 2달 후 발송됩니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

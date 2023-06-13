@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['이용내역 조회', '결제 차단/해제', '차단/설정 변경이력확인']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container my">
+        <div class="sub-conts subscript-select-discount">
+            <div class="page-tit">
+                <h1>선택약정 가입 신청서</h1>
+            </div>
+            <div class="box-tab">
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="javascript:;" class="on">내 가입정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">할부 약정 정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">할인반환금 예상 금액</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">휴대폰 정보 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">명의 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">번호 변경</a></li>
+                </ul>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="rq-form my-bundle">
+                        <div class="main-txt-group">
+                            <h2 class="main-txt">선택약정 할부 기간을 선택해 주세요.</h2>
+                        </div>
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">할부 약정 기간 선택</h3>
+                            <ul class="btn-radio-group group-free">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-1" name="dan4" checked>
+                                    <label for="dan4-1">12개월</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">24개월</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <section class="cardList-wrap">
+                            <h3 class="cardList-title">현재 사용 중인 요금제</h3>
+                            <div class="cardList money-right">
+                                <h4 class="main-txt">데이터 넉넉히 (15GB/100분)</h4>
+                                <dl>
+                                    <dt>월 기본료 (부가세 포함 금액)</dt>
+                                    <dd class="fz24 txt-vt">33,000원</dd>
+                                    <dt><span class="txt-vt">$12개월$</span> 약정금액</dt>
+                                    <dd class="txt-vt">- 3,300원</dd>
+                                    <dt>선택약정 25% 할인금액</dt>
+                                    <dd class="txt-vt">- 8,250원</dd>
+                                </dl>
+                            </div>
+                        </section>
+                        <section class="check-wrap">
+                            <strong class="wrap-tit">선택약정 할인 신청 시 꼭 아래 내용을 확인해 주세요.</strong>
+                            <div class="box-btn">
+                                <a href="#" class="btn-text-right-s">상세 가입 및 이용 조건</a>
+                            </div>
+                            <ul class="notification">
+                                <li>선택약정할인은 휴대폰 요금제 가입 후 2년 이상 이용한 장기고객님께 제공되는 할인 혜택입니다.</li>
+                                <li>선택약정할인 기간은 1년 또는 2년 중 선택 가능하며, 할인율은 서로 같습니다.</li>
+                            </ul>
+
+                            <div class="box-btn">
+                                <a href="#" class="btn-text-right-s">할인반환금 안내</a>
+                            </div>
+                            <ul class="notification">
+                                <li>
+                                    선택 약정 할인(통신 요금 35% 할인) 이용 중 아래의 경우 약정할인은 중단되며, 할인반환금이 발생합니다.<br>
+                                    - 개통해지, 선택 약정 해지 등 약정기간 만료 전 해지<br>
+                                    - 선택 약정 할인 미적용 요금제로 변경<br>
+                                    - 지원금이 제공되는 단말기로 기기변경<br>
+                                    ※ 단, 요금제를 유지하면서 유심만 바꿔 꽂아 사용하는 경우는 할인반환금이 발생하지 않습니다.<br>
+                                    - 명의 변경 시 명의 받는 사람이 약정을 이어받지 않음
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="approve-form">
+                            <h3 class="form-tit">선택 약정 할인에 관한 내용을 확인한 후 가입 신청에 동의해 주세요.</h3>
+                            <div class="btn-box btn-check btn-text-line">
+                                <input type="checkbox" id="check999">
+                                <label for="check999"> <span class="ico-check"></span>선택약정 가입신청 동의 <strong>(필수)</strong></label>
+                                <a href="#" class="link-underline">보기</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="btn-group my-bundle">
+                        <button class="btns md-ripples ripples-light" type="button">신청 완료</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

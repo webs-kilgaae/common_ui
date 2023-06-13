@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <filter id="8hhho6lg8a" x="7.5" y="12.5" width="105" height="105" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486066">
+        <g data-name="그룹 484447">
+            <g style="filter:url(#8hhho6lg8a)">
+                <path data-name="bg" d="M177.645 114.353a45 45 0 1 0-45 45 45 45 0 0 0 45-45z" transform="translate(-72.64 -54.35)" style="fill:#42ccb0"/>
+            </g>
+            <g data-name="그룹 484099">
+                <path data-name="선 442" transform="translate(44.424 61.659)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px" d="m0 0 9.848 9.778"/>
+                <path data-name="선 443" transform="translate(54.267 49.439)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px" d="M22.157 0 0 22"/>
+            </g>
+        </g>
+    </g>
+</svg>

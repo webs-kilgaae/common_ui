@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+    <g transform="translate(-293 -967)">
+        <rect data-name="사각형 116" width="54" height="54" rx="27" transform="translate(293 967)" style="fill:#662d91"/>
+        <path transform="translate(305 979)" style="fill:transparent;opacity:.3" d="M0 0h30v30H0z"/>
+        <g data-name="icon" transform="translate(292.474 969.485)">
+            <rect data-name="사각형 341591" width="2" height="28" rx="1" transform="rotate(44.03 1.774 52.487)" style="fill:#fff"/>
+            <rect data-name="사각형 341592" width="2" height="28" rx="1" transform="rotate(135.97 12.405 24.595)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

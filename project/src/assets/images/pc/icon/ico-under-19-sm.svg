@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <linearGradient id="b2cs1231tb" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+        <filter id="1hoy3l9rta" x="9" y="11" width="62" height="62" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 484408">
+        <g style="filter:url(#1hoy3l9rta)">
+            <circle data-name="타원 8766" cx="28" cy="28" r="28" transform="translate(12 12)" style="fill:url(#b2cs1231tb)"/>
+        </g>
+        <g data-name="그룹 484464">
+            <path data-name="알뜰모바일 뉴다이렉트몰 (H1)" d="M4.576-13.992c-.924.264-1.826.638-2.75.946-.858.264-1.474.77-1.364 1.694.088.9.814 1.078 1.584.99.242 0 1.76-.242 1.848-.506 0 3.916-.066 7.568.132 11.418 0 .484.022 1.078.55 1.254a2.033 2.033 0 0 0 1.716-.132c.616-.44.462-1.276.462-1.892v-11.242a7.079 7.079 0 0 0-.132-2.266c-.242-.506-1.056-.506-1.5-.4-.172.028-.348.092-.546.136zm9.966 15.928c3.96 0 6.138-3.388 6.138-8.338 0-3.036-.506-4.752-1.584-5.9a5.239 5.239 0 0 0-4.114-1.628 5.218 5.218 0 0 0-5.5 5.346c0 2.948 2.068 4.84 5.214 4.84a6.288 6.288 0 0 0 3.014-.792 3.466 3.466 0 0 1-3.1 4.026 3.458 3.458 0 0 1-2.31-.682c-.528-.484-.968-1.056-1.738-.594-1.188.7-.44 1.87.33 2.574a5.3 5.3 0 0 0 3.65 1.148zm.506-13.2a3.143 3.143 0 0 1 1.65.572 2.505 2.505 0 0 1 .4 3.5 3.09 3.09 0 0 1-4.136.418 2.691 2.691 0 0 1 .616-4.29 4.351 4.351 0 0 1 1.47-.2z" transform="translate(21.452 46.766)" style="fill:#fff"/>
+            <g data-name="icon_+">
+                <path data-name="패스 842328" d="M1.385 0h9.231A1.275 1.275 0 0 1 12 1.125a1.275 1.275 0 0 1-1.385 1.125h-9.23A1.275 1.275 0 0 1 0 1.125 1.275 1.275 0 0 1 1.385 0z" transform="rotate(-90 49.227 -2.758)" style="fill:#fff"/>
+                <path data-name="패스 842329" d="M.385 0h9.23A1.275 1.275 0 0 1 11 1.125 1.275 1.275 0 0 1 9.615 2.25H.385A1.275 1.275 0 0 1-1 1.125 1.275 1.275 0 0 1 .385 0z" transform="translate(48.11 39.344)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

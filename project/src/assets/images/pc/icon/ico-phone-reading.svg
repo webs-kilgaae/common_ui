@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="5xuyl4n7na" x="3.331" y="29" width="20.669" height="38.667" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="54d009xdxb" x="10.666" y="7.333" width="58.003" height="60.334" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="envzpjmuyc" x="39" y="39" width="38" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="사각형 340932" transform="translate(20.127 6.898)" style="fill:none" d="M0 0h46.689v66.898H0z"/>
+    <g data-name="그룹 486256">
+        <g data-name="그룹 486220">
+            <g data-name="그룹 484269">
+                <g style="filter:url(#5xuyl4n7na)" data-name="그룹 486018">
+                    <path data-name="패스 853520" d="M255.873 370.092v23.246a8.8 8.8 0 0 1-7.378 8.864c-4.12-.529-7.289-3.7-7.289-7.55v-23.79a1.114 1.114 0 0 1 1.178-1.319l13.449-.007" transform="translate(-234.869 -339.538)" style="fill:#aeaae8"/>
+                </g>
+                <g style="filter:url(#54d009xdxb)">
+                    <path data-name="합치기 88" d="M1.178 55.334A8.6 8.6 0 0 1 0 55.245a8.9 8.9 0 0 0 7.338-8.906V16.334h-.005V11q0-.189.007-.376v-.239.182A10 10 0 0 1 17.333 1H42a10 10 0 0 1 10 9.78v-.394c.005-1.153 0-2.306 0 35.952a8.768 8.768 0 0 1-7.174 8.906 7.368 7.368 0 0 1-1.09.089z" transform="translate(13.671 7.333)" style="fill:#dadef8"/>
+                </g>
+            </g>
+            <g data-name="그룹 486255">
+                <path data-name="선 126605" transform="translate(33.123 22.941)" style="stroke:#fff;stroke-linecap:round;stroke-width:4px;fill:none" d="M0 0h22.667"/>
+                <path data-name="선 126607" transform="translate(33.124 34.274)" style="stroke:#fff;stroke-linecap:round;stroke-width:4px;fill:none" d="M0 0h12"/>
+            </g>
+        </g>
+        <g style="filter:url(#envzpjmuyc)">
+            <path data-name="합치기 63" d="m28.022 31.317-7.652-7.652a12.981 12.981 0 1 1 3.3-3.3l7.651 7.651a2.331 2.331 0 0 1-3.3 3.3z" transform="translate(42.001 40.004)" style="fill:#6f98f8"/>
+        </g>
+        <path data-name="패스 862540" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" transform="translate(46.501 44.499)" style="fill:#fff"/>
+    </g>
+</svg>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '신용카드 정보 입력 | 요금납부조회 | U+유모바일',
+    ogTitle: '신용카드  정보 입력 | 요금납부조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['납부내역 조회', '납부 방법 변경', '납부 전용 입금 계좌 관리']
+    })
+    @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '납부 내역 조회'
+        }
+    })
+
+    <main class="container my">
+        <div class="sub-conts my-payment">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>납부방법 변경</h1>
+            </div>
+            <div class="box-tab">
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="javascript:;">납부 내역 조회</a></li>
+                    <li class="swiper-slide"><a href="javascript:;" class="on">납부 방법 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">납부 전용 입금 계좌 관리</a></li>
+                </ul>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="payment-wrap">
+                        <div class="rq-form">
+                            <div class="main-txt-group">
+                                <h2 class="main-txt">변경할 납부 방법을 알려주세요.</h2>
+                                <p class="txt">납부방법은 본인명의의 계좌 또는 신용카드만 가능합니다.</p>
+                            </div>
+
+                            <div class="box-input">
+                                <label for="input1" class="input-label">카드번호</label>
+                                <div class="input-wrap">
+                                    <input id="input1" type="text" placeholder="- 빼고 숫자만 입력" class="input-default is-delete">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">숫자만 입력하셔야 합니다.</span>
+                            </div>
+
+                            <div class="box-input">
+                                <label for="input1" class="input-label">카드사</label>
+                                <div class="input-wrap">
+                                    <input id="input1" type="text" placeholder="카드번호를 입력해 주세요." class="input-default is-delete" disabled>
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="cardLimit" class="default-txt">카드 유효기간</label>
+                                <div class="box-input">
+                                    <div class="input-wrap">
+                                        <input type="text" id="cardLimit" maxlength="2" placeholder="MM" class="input-default is-delete" title="월">
+                                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                    </div>
+                                    <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                                </div>
+                                <div class="box-input">
+                                    <div class="input-wrap">
+                                        <input type="text" maxlength="2" placeholder="YY" class="input-default is-delete" title="년">
+                                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                    </div>
+                                    <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group ">
+                        <button class="btns md-ripples ripples-light">확인</button>
+                    </div>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <li>은행 → 은행 변경 시, 정규 출금일이 매달 <span class="txt-vt">15</span>일로 적용됩니다.</li>
+                            <li>카드 → 은행 변경 시, 다음달부터 변경된 계좌에서 요금이 출금됩니다.(출금일은 매달 <span class="txt-vt">15</span>일 이며, 휴일인 경우 다음날 출금됩니다.)</li>
+                            <li>은행 → 카드 변경 시, 다음달부터 변경된 카드로 요금이 결제됩니다.(결제일은 매달 11일 경이며 변동될 수 있습니다.)</li>
+                            <li>은행(카드) → 은행(카드) 변경 시, 변경일 +2일 (영업기준일) 후 변경된 계좌(카드)로 반영됩니다. 정상적으로 신청되었는지 추후에 반드시 확인하시기 바랍니다.</li>
+                            <li>정규 출금일에 잔고가 부족할 경우, 추가로 출금됩니다.</li>
+                            <li>상품가입 명의자와 홈페이지회원 명의의 은행계좌나 카드로만 납부방법을 변경하실 수 있습니다.</li>
+                            <li>납부방법을 변경하시려면 휴대폰, 아이핀 인증 중 하나의 방법으로 본인 인증이 필요합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['내 가입정보', '할부 약정 정보', '할인반환금 예상 금액', '휴대폰 정보 변경']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts subscript-join-info">
+            <div class="page-tit">
+                <h1>내 가입정보</h1>
+            </div>
+            <div class="box-tab">
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="javascript:;" class="on">내 가입정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">할부 약정 정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">할인반환금 예상 금액</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">휴대폰 정보 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">명의 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">번호 변경</a></li>
+                </ul>
+            </div>
+            <!-- 컨텐츠 -->
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="rq-form my-bundle">
+                        <section class="cardList-wrap my-bundle">
+                            <h3 class="cardList-title">이용 중인 휴대폰 정보</h3>
+                            <div class="cardList">
+                                <dl>
+                                    <dt>고객명</dt>
+                                    <dd>홍*동</dd>
+                                    <dt>가입일</dt>
+                                    <dd>YYYY-MM-DD</dd>
+                                    <dt>가입대리점</dt>
+                                    <dd>온라인 직영점</dd>
+                                    <dt>휴대폰번호</dt>
+                                    <dd>010-**34-**78</dd>
+                                    <dt>휴대폰모델명</dt>
+                                    <dd>
+                                        RF-SM-G970N
+                                        <a href="#" class="btn-text-right-s ml30">유심 이용 휴대폰 등록</a>
+                                    </dd>
+                                    <dt>휴대폰 약정기간</dt>
+                                    <dd>
+                                       YYYY-MM-DD ~ YYYY-MM-DD
+                                    </dd>
+                                    <dt>이용기간</dt>
+                                    <dd>
+                                       가입한지 <span class="txt-vt"> $2,352$ </span> 일 지났습니다. (YYYY-MM-DD ~ YYYY-MM-DD)
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- 2022.12.07 로딩텍스트 추가 -->
+                            <div class="loading-txt">
+                                고객님의 정보를 불러오고 있습니다.
+                            </div>
+                        </section>
+                        <section class="cardList-wrap my-bundle">
+                            <h3 class="cardList-title">이용 중인 상품 정보</h3>
+                            <div class="cardList">
+                                <dl>
+                                    <dt>요금제</dt>
+                                    <dd class="column">
+                                        <div class="box-btn">
+                                            <a href="#" class="btn-text-right">유심 최강가성비(10GB/200분)</a>
+                                        </div>
+                                        <p>신청일 YYYY-MM-DD</p>
+                                        <strong class="txt-vt">현재 선택약정 25% 통신 요금 할인 중</strong>
+                                    </dd>
+                                    <dt>부가서비스</dt>
+                                    <dd>
+                                        <div class="box-btn">
+                                            <a href="#" class="btn-text-right flex-row">
+                                                유료 <span class="txt-vt">1</span>
+                                                무료 <span class="txt-vt">15</span>
+                                            </a>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- 2022.12.07 로딩텍스트 추가 -->
+                            <div class="loading-txt">
+                                고객님의 정보를 불러오고 있습니다.
+                            </div>
+                        </section>
+                        <section class="cardList-wrap my-bundle">
+                            <h3 class="cardList-title">지정번호 정보</h3>
+                            <p class="info-txt">음성 기본제공량과 상관 없이 자주 통화하는 U+ 또는 U+유모바일 가입자의 휴대폰 번호 1개를 지정하여 <br>무제한으로 통화할 수 있습니다.
+                            <br>
+                            ※ 지정번호는 1달에 1번 변경할 수 있습니다.
+                            </p>
+                            <div class="cardList">
+                                <dl>
+                                    <dt>지정번호</dt>
+                                    <dd class="column">
+                                        <div class="flex-box">
+                                            <strong class="normal-txt">010-**34-**78</strong>
+                                            <div class="box-btn">
+                                                <a href="#" class="btn-text-right-s">지정번호 편집</a>
+                                            </div>
+                                            <div class="box-btn">
+                                                <a href="#" class="btn-text-right-s">지정번호 삭제</a>
+                                            </div>
+                                        </div>
+                                        <p>등록일 YYYY-MM-DD</p>
+                                    </dd>
+                                    <!-- 지정번호 정보가 없을 경우 노출
+                                    <dd>
+                                        <div class="box-btn">
+                                            <a href="#" class="btn-text-right">지정번호를 설정해 주세요.</a>
+                                        </div>
+                                    </dd>-->
+                                </dl>
+                            </div>
+                            <!-- 2022.12.07 로딩텍스트 추가 -->
+                            <div class="loading-txt">
+                                고객님의 정보를 불러오고 있습니다.
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <div class="btn-group my-bundle">
+                        <button class="btns lightgray  md-ripples ripples-dark" type="button">요금제 변경</button>
+                        <button class="btns md-ripples ripples-light" type="button">할부약정정보</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

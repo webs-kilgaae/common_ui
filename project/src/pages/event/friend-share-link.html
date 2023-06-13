@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '추천 URL 공유하기 | U+유모바일',
+    ogTitle: '추천 URL 공유하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap sns-share-bottomSheet show">
+    <div class="layer-popup-item">
+        <div class="popup-header">
+            <strong class="txt-main">추천 URL 공유하기</strong>
+        </div>
+
+        <div class="popup-body">
+            <!-- 2022.10.13 추천인 휴대폰 번호 추가 -->
+            <!-- 다회선일 경우 -->
+            <div class="box-flex">
+                <div class="box-select">
+                    <label for="select1" class="select-label">나의 추천인 휴대폰 번호</label>
+                    <select name="select1" id="select1" class="select-default" title="나의 추천인 휴대폰 번호">
+                        <option value="1">010-1234-5678</option>
+                        <option value="2">010-1234-5678</option>
+                        <option value="3">010-1234-5678</option>
+                        <option value="4">010-1234-5678</option>
+                    </select>
+                </div>
+                <div class="box-btn">
+                    <a href="#" class="btn-dark-gray md-ripples ripples-light" type="button">변경</a>
+                </div>
+            </div>
+            <!-- 단일 회선일 경우 -->
+            <!-- <div class="box-input">
+                <label for="input4" class="input-label">나의 추천인 휴대폰 번호</label>
+                <div class="input-wrap">
+                    <input id="input4" type="text" placeholder="010-1234-5678" class="input-default input-sm" readonly>
+                </div>
+            </div> -->
+            <div class="box-input url-link-wrap">
+                <label for="input1" class="input-label">나의 추천인 URL</label>
+                <div class="input-wrap">
+                    <input id="input1" type="text" placeholder="https://www.uplussave.com/shop/mgm" class="input-default is-delete">
+                    <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                </div>
+            </div>
+            <ul class="list-sns">
+                <li>
+                    <button type="button">
+                        <img src="../../assets/images/pc/icon/ico-sns-kakao.png" alt="카카오톡">
+                        <span>카카오톡</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../assets/images/pc/icon/ico-sns-faceBook.png" alt="페이스북">
+                        <span>페이스북</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../assets/images/pc/icon/ico-sns-naverBlog.png" alt="네이버 블로그">
+                        <span>네이버<br>블로그</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="../../assets/images/pc/icon/ico-url-share.png" alt="URL 복사">
+                        <span>URL 복사</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-footer">
+           <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+       </div>
+
+    </div>
+</div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+
+
+</body>
+</html>

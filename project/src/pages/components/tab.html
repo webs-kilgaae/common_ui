@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('../src/pages/includes/guide/head.html', {title: '탭 가이드 - DK BMC'})
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html" class="guideOn">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+            <section class="sample">
+                <h2 class="sampleTitle">탭 2번째</h2>
+                <div class="sampleContent">
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <div class="box-tab02 tab-ctrl">
+                        <ul class="tab-btn-wrap tab-wid">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li><a href="javascript:;" class="on">진행중인 이벤트</a></li>
+                            <li><a href="javascript:;">지난 이벤트</a></li>
+                        </ul>
+                        <div class="tab-contents-wrap">
+                            <div aria-hidden="true">
+                                진행중인 이벤트 내용
+                            </div>
+                            <div aria-hidden="true">
+                                지난 이벤트 내용
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li><a href="javascript:;" class="on">진행중인 이벤트</a></li>
+                            <li><a href="javascript:;">지난 이벤트</a></li>
+                        </ul>
+                        <div class="tab-contents-wrap">
+                            <div aria-hidden="true">
+                                진행중인 이벤트 내용
+                            </div>
+                            <div aria-hidden="true">
+                                지난 이벤트 내용
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">라인탭</h2>
+                <div class="sampleContent">
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap line-tab">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li><a href="javascript:;" class="on">Salesforce</a></li>
+                            <li><a href="javascript:;">MuleSoft</a></li>
+                            <li><a href="javascript:;">Tableau</a></li>
+                        </ul>
+                        <div class="tab-contents-wrap">
+                            <div aria-hidden="true">
+                                Salesforce Contents
+                            </div>
+                            <div aria-hidden="true">
+                                MuleSoft Contents
+                            </div>
+                            <div aria-hidden="true">
+                                Tableau Contents
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+
+</html>

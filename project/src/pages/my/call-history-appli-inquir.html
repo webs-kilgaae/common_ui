@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+
+    <main class="container my">
+        <div class="sub-conts call-history-appli-inquir">
+            <!-- 컨텐츠 -->
+            <div class="page-tit tit-bang">
+                <h1>열람하실 내용과 수신방법을<br> 알려주세요.</h1>
+            </div>
+            <div class="inquir-box">
+                <section>
+                    <h2 class="cont-tit">열람 내용 선택</h2>
+                    <ul class="btn-radio-group group4">
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-1" name="dan4" checked>
+                            <label for="dan4-1">음성</label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-2" name="dan4">
+                            <label for="dan4-2">음성+문자</label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan4-3" name="dan4">
+                            <label for="dan4-3">음성+문자+데이터</label>
+                        </li>
+                        <li class="btn-radio etc-btn">
+                            <input type="radio" id="dan4-4" name="dan4">
+                            <label for="dan4-4">데이터</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="cont-sec">
+                    <h2 class="cont-tit">수신방법</h2>
+                    <div class="period-set">
+                        <div class="btn-radio-group rec">
+                            <div class="btn-radio ">
+                                <input type="radio" id="emailCheck" name="dan2" checked>
+                                <label for="emailCheck">이메일</label>
+                            </div>
+                            <div class="btn-radio ">
+                                <input type="radio" id="faxCheck" name="dan2">
+                                <label for="faxCheck">FAX</label>
+                            </div>
+                        </div>
+                        <div class="box-input emailBox">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="이메일 입력" class="input-default is-delete" title="이메일 입력">
+                                <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-input faxBox">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="FAX 번호 입력" class="input-default is-delete" title="FAX번호 입력">
+                                <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="btn-group ">
+                <button class="btns white md-ripples ripples-dark">이전</button>
+                <button class="btns md-ripples ripples-light">다음</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

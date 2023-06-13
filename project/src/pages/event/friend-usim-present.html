@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '친구 추천 안내 | U+유모바일',
+    ogTitle: '친구 추천 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['친구 추천 안내', '내 추천내역', '친구 추천 랭킹']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '이벤트/혜택',
+            depth3: '친구 추천',
+            depth4: '친구 추천 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이벤트/혜택</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#" class="on">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">친구 추천</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#" class="on">친구 추천</a></li>
+                <li><a href="#">U Point</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">친구 추천 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">친구 추천 안내</a></li>
+                <li><a href="#">내 추천내역</a></li>
+                <li><a href="#">친구 추천 랭킹</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container event">
+        <div class="sub-conts event-friend friend-usim">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>유심 선물하기</h1>
+            </div>
+
+            <div class="page-desc">
+                <!-- 09.02 포인트 태그 추가 / 09.21 홍길동에 태그 추가-->
+                <!-- 2022.10.04 타이틀 p 태그로 문단 분리 -->
+                <h2>
+                    <p><strong class="mem">홍길동</strong>님은 <span class="txt-vt">VIP</span>등급!</p>
+                    <p> 이번달 선물 가능한 유심이 <span class="txt-vt">4개</span> 남았어요</p>
+                </h2>
+                <!-- //09.02 포인트 태그 추가 / 09.21 홍길동에 태그 추가-->
+                <button class="btn-text-right">유심 선물이력 보기</button>
+            </div>
+
+            <div class="rq-form type-col">
+                <h2 class="main-txt">받는 사람</h2>
+
+                <!-- error 시 .box-input 에 error 클래스 추가 -->
+                <div class="box-input rq-short"><!-- 09.02 클래스 추가-->
+                    <label for="input1" class="input-label">이름</label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="이름" class="input-default is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">최대 20자까지 입력 가능합니다.</span>
+                </div>
+
+                <div class="box-input rq-short"><!-- 09.02 클래스 추가-->
+                    <label for="input4" class="input-label">휴대폰 번호</label>
+                    <div class="input-wrap">
+                        <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <!-- 에러 시 나오는 안내문구 -->
+                    <span class="txt-error">휴대폰 번호를 정확히 입력해 주세요.</span>
+                    <!-- 완료 시 나오는 안내문구 -->
+                    <span class="txt-description">인증번호가 발송되었습니다.</span>
+                </div>
+
+                <div class="input-depth">
+                    <div class="box-flex">
+                        <div class="box-input">
+                            <label for="input5-1" class="input-label">배송 주소</label>
+                            <div class="input-wrap">
+                                <input id="input5-1" type="text" placeholder="우편번호" class="input-default is-delete" title="우편번호"><!-- 09.02 텍스트 수정-->
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">우편번호 찾기</button><!-- 09.02 텍스트 수정-->
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <input id="input5-2" type="text" placeholder="기본주소" class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">에러에러</span>
+                    </div>
+                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <input id="input5-3" type="text" placeholder="상세주소 (선택)" class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">주소를 입력해주세요.</span>
+                    </div>
+                    <!--상세주소 없음 추가 2022-08-01-->
+                    <div class="btn-check">
+                        <input type="checkbox" id="check5">
+                        <label for="check5"><span class="ico-check"></span>상세 주소 없음</label>
+                    </div>
+                </div>
+
+                <div class="box-select delivery-rq">
+                    <label for="select1" class="select-label">배송시 요청사항</label>
+                    <select name="select1" id="select1" class="select-default is-textArea">
+                        <option value="1">배송 요청사항(선택)</option>
+                        <option value="2">부재 시 경비실에 맡겨 주세요.</option>
+                        <option value="3">부재 시 연락 주세요.</option>
+                        <!-- 2022.10.24 value에 self 값 삭제 후 etc-select 클래스 추가 -->
+                        <option value="4" class="etc-select">직접 입력</option>
+                    </select>
+                    <!-- 에러 시 .textarea-wrap 에 error 클래스 추가 -->
+                    <div class="textarea-wrap self-write-wrap">
+                        <div class="box-textarea box-input">
+                            <textarea type="textarea" placeholder="배송시 요청사항 입력" class="input-default is-delete" title="배송시 요청사항 입력"></textarea>
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">에러에러</span>
+                    </div>
+                </div>
+
+                <div class="approve-form-wrap">
+                    <strong class="wrap-tit">이용약관</strong> <!-- 09.02 타이틀 태그 추가-->
+                    <div class="approve-form">
+                        <div class="btn-box btn-check btn-text-line">
+                            <input type="checkbox" id="check999">
+                            <label for="check999"> <span class="ico-check"></span><em class="txt-vt">(필수)</em>개인정보 수집 이용 동의</label>
+                            <a href="#" class="ico-arrow-right">더보기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--버튼 추가 2022-08-01-->
+            <div class="btn-group ">
+                <button class="btns h-sm  md-ripples ripples-light" type="button">신청하기</button>
+            </div>
+
+            <div class="notification-wrap">
+                <h3>유의사항</h3>
+                <ul class="notification">
+                    <li>매월 선물용 유심 2개 신청 가능합니다.(매월 1일자 업데이트)</li>
+                    <li>배송정보 오입력으로 인한 상품 미수령(오배송)은 당사에서 책임지지 않습니다.</li>
+                    <li>해당 이벤트를 통해 수령한 유심으로 가입하는 경우에만 유심비 면제 혜택이 적용됩니다.</li>
+                    <li>
+                        추천인과 피추천인이 동일한 경우 혜택대상에서 제외됩니다.<br>
+                        (추천인=나, 피추천인=가족/친구)
+                    </li>
+                    <li>
+                        포인트 적립은 친구추천 기본보상정책에 따라 적용됩니다.<br>
+                        (적립포인트는 변경될 수 있으며, 자세한 내용은 추천페이지 유의사항을 확인해주세요.)
+                    </li>
+                    <li>해당 이벤트는 당사 사정에 따라 조기종료 될 수 있습니다.</li>
+                    <li>유심은 신청하기 버튼 클릭 후 30분 내로 취소가 가능합니다. 이후에는 취소가 불가합니다.</li>
+                </ul>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 추천 | U+유모바일',
+    ogTitle: '휴대폰 추천 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap phone show">
+        <div class="layer-popup-item phone-recommend">
+            <div class="popup-header">
+                <strong class="txt-main">휴대폰 추천</strong>
+            </div>
+            <div class="popup-body">
+                <div class="step-process-wrap">
+                    <div class="step-process">
+                        <ol>
+                            <li class="complete">STEP 1</li>
+                            <li>STEP 2</li>
+                            <li >STEP 3</li>
+                            <li>STEP 3</li>
+                            <li>STEP 3</li>
+                        </ol>
+                    </div>
+                    <!-- <p class="step-count">
+                        <span class="now">01</span> / <span>05</span>
+                    </p> -->
+                </div>
+                <!---1번째 스텝-->
+                <div class="rq-form hidden">
+                    <h2 class="main-txt">원하는 휴대폰 종류를 선택해 주세요.</h2>
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan1-1" name="dan1">
+                                <label for="dan1-1">새 휴대폰</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan1-2" name="dan1">
+                                <label for="dan1-2">중고폰</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan1-3" name="dan1">
+                                <label for="dan1-3">둘다 추천해 주세요.</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---2번째 스텝-->
+                <div class="rq-form hidden">
+                    <h2 class="main-txt">중고폰 등급을 선택해 주세요. </h2>
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-1" name="dan2">
+                                <label for="dan2-1">S급</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-2" name="dan2">
+                                <label for="dan2-2">A급</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-3" name="dan2">
+                                <label for="dan2-3">둘다 추천해 주세요.</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">이전</button>
+                    </div>
+                </div>
+                <!---3번째 스텝-->
+                <div class="rq-form hidden">
+                    <h2 class="main-txt">원하는 네트워크를 선택해 주세요.</h2>
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3-1" name="dan3">
+                                <label for="dan3-1">5G</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3-2" name="dan3">
+                                <label for="dan3-2">LTE</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3-3" name="dan3">
+                                <label for="dan3-3">둘다 상관 없어요</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">이전</button>
+                    </div>
+                </div>
+                <!---4번째 스텝-->
+                <div class="rq-form hidden">
+                    <h2 class="main-txt">휴대폰 제조사를 선택해 주세요.</h2>
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-1" name="dan4">
+                                <label for="dan4-1">삼성</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-2" name="dan4">
+                                <label for="dan4-2">애플</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-3" name="dan4">
+                                <label for="dan4-3">LG</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-4" name="dan4">
+                                <label for="dan4-4">기타</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">이전</button>
+                    </div>
+                </div>
+                <!---5번째 스텝-->
+                <div class="rq-form">
+                    <h2 class="main-txt">휴대폰 저장 용량을 선택해 주세요.</h2>
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-1" name="dan5">
+                                <label for="dan5-1">512GB 이상</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-2" name="dan5">
+                                <label for="dan5-2">256GB 이상</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-3" name="dan5">
+                                <label for="dan5-3">128GB 이상</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-4" name="dan5">
+                                <label for="dan5-4">64GB 이하</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">이전</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

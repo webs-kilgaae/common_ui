@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts appli-identification">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>본인확인을 위해 아래의 <br>인증 수단을 선택해 주세요.</h1>
+            </div>
+            <a href="#" class="identifi-box">
+                <ul class="ico-list">
+                    <li><img src="../../assets/images/pc/icon/ico-pass.png" alt="pass 휴대폰 인증 아이콘"></li>
+                    <li><img src="../../assets/images/pc/icon/ico-finance.png" alt="금융 아이콘"></li>
+                    <li><img src="../../assets/images/pc/icon/ico-toss.png" alt="토스 아이콘"></li>
+                    <li><img src="../../assets/images/pc/icon/ico-payco.png" alt="페이코 아이콘"></li>
+                </ul>
+                <b>간편인증으로 본인확인</b>
+                <span>회원님의 명의로 등록된 휴대폰을 <br>진행합니다.</span>
+            </a>
+            <a href="#" class="identifi-box">
+                <img src="../../assets/images/pc/icon/ico-phone-check.svg" alt="휴대폰 아이콘">
+                <b>휴대폰으로 본인확인</b>
+                <span>회원님의 명의로 등록된 휴대폰으로<br> 진행합니다.</span>
+            </a>
+            <a href="#" class="identifi-box">
+                <img src="../../assets/images/pc/icon/ico-ipin-purple.svg" alt="아이핀 아이콘">
+                <b>아이핀(i-pin)으로 본인확인</b>
+                <span>아이핀 인증을 통해 진행합니다.</span>
+            </a>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="8xxzdxdlua" x="51.412" y="9.101" width="20.752" height="28.077" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="deic57fecb" x="5.998" y="9" width="59.052" height="59" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="dabu8hoz8c" x="38.462" y="37.999" width="36.076" height="37.58" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486246">
+        <g data-name="그룹 484266">
+            <g data-name="그룹 481565">
+                <g data-name="그룹 484213">
+                    <g style="filter:url(#8xxzdxdlua)">
+                        <path data-name="합치기 49" d="M.668 22.077v-.051L0 22.034V8.681A8.687 8.687 0 0 1 7.419 0c4.143.517 7.33 3.628 7.33 7.394 0 1.46.006 2.773-.01 3.955h.011v6.728a4 4 0 0 1-4 4z" transform="translate(54.405 10.101)" style="fill:#aeaae8"/>
+                    </g>
+                    <g style="filter:url(#deic57fecb)">
+                        <path data-name="합치기 72" d="m6560.2-18178.836-3.354-3.252a2.225 2.225 0 0 0-1.542-.6h-.018a2.227 2.227 0 0 0-1.382.582l-3.349 3.252a2.746 2.746 0 0 1-1.913.742 2.752 2.752 0 0 1-1.922-.742l-3.01-2.918a2.193 2.193 0 0 0-1.382-.592 2.23 2.23 0 0 0-1.011.4l-4.182 3.012a2.9 2.9 0 0 1-1.7.535 3.037 3.037 0 0 1-1.789-.568 1.874 1.874 0 0 1-.8-1.506v-41.773a8.7 8.7 0 0 1 7.316-8.752 7.914 7.914 0 0 1 1.107-.086h43.379a9.429 9.429 0 0 1 1.249.131 8.694 8.694 0 0 0-7.357 8.707v37.564c0 .2-.014.4 0 .6h-.691v3.6a1.872 1.872 0 0 1-.8 1.5 3.03 3.03 0 0 1-1.78.568 2.9 2.9 0 0 1-1.707-.535l-4.164-3.016a2.29 2.29 0 0 0-.92-.375 2.165 2.165 0 0 0-1.414.59l-3.02 2.924a2.772 2.772 0 0 1-1.921.736 2.775 2.775 0 0 1-1.923-.728z" transform="translate(-6523.845 18241.101)" style="fill:#dadef8"/>
+                    </g>
+                    <g data-name="그룹 484224" style="isolation:isolate">
+                        <path data-name="선 126605" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:4px" d="M0 0h23.469" transform="translate(19.884 24.182)"/>
+                        <path data-name="선 126607" transform="translate(19.884 34.911)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:4px" d="M0 0h15.247"/>
+                    </g>
+                </g>
+            </g>
+            <g data-name="그룹 484247">
+                <g style="filter:url(#dabu8hoz8c)">
+                    <path data-name="합치기 34" d="M15.572 31.967 3.038 24.388a2.5 2.5 0 0 1 1.293-4.639h1.035v-15a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4v15H29.4a2.5 2.5 0 0 1 1.293 4.639l-12.534 7.579a2.5 2.5 0 0 1-2.587 0z" transform="translate(39.635 38.252)" style="fill:#f76bb8"/>
+                </g>
+                <path data-name="패스 862744" d="M4.32 1.962A1.8 1.8 0 0 0 5.778.828a4.98 4.98 0 0 0 .234-2.466 2.892 2.892 0 0 0-.72-1.656A2.249 2.249 0 0 0 3.87-3.8a3.6 3.6 0 0 0-1.692.144 2.334 2.334 0 0 0-1.422 1.64A5.063 5.063 0 0 0 .738.306a2.712 2.712 0 0 0 1.3 1.584 3.436 3.436 0 0 0 2.282.072zm-.2-12.582a.718.718 0 0 0-.882-.63c-.792.162-1.26 1.026-1.638 1.692-.36.648-.756 1.332-1.1 2-.9 1.636-1.832 3.292-2.732 4.93-.36.612-.738 1.26-1.08 1.908A3.284 3.284 0 0 0-3.906.81a.747.747 0 0 0 .594.684c1.044.162 1.6-1.062 2.034-1.8.4-.72.774-1.422 1.152-2.124.9-1.638 1.8-3.258 2.718-4.878.342-.63.684-1.242 1.008-1.872a2.41 2.41 0 0 0 .522-1.4zM-2.3-5.9A1.987 1.987 0 0 0-.9-7.092a7.077 7.077 0 0 0 .234-2.754A2.089 2.089 0 0 0-1.35-11.2a2.323 2.323 0 0 0-1.4-.522 4.938 4.938 0 0 0-1.692.18 2.38 2.38 0 0 0-1.44 1.656A5.317 5.317 0 0 0-5.9-7.56a2.5 2.5 0 0 0 1.2 1.548 3.9 3.9 0 0 0 2.4.112zM3.636.612a1.731 1.731 0 0 1-.684-.018c-.81-.162-.684-1.4-.612-1.962a.9.9 0 0 1 .5-.828 1.281 1.281 0 0 1 1.12.036 1.432 1.432 0 0 1 .5 1.206A1.8 1.8 0 0 1 4.086.414a.62.62 0 0 1-.45.198zM-2.97-7.254a2.97 2.97 0 0 1-.7-.018c-.81-.162-.684-1.44-.648-1.98a1 1 0 0 1 .558-.828 1.141 1.141 0 0 1 1.1.054c.414.18.45.756.45 1.134a1.981 1.981 0 0 1-.328 1.422.664.664 0 0 1-.432.216z" transform="translate(56 56.001)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '정회원 전환 완료 | U+유모바일',
+    ogTitle: '정회원 전환 완료 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts join util-width">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>휴대폰번호 등록</h1>
+            </div>
+            <div class="box-ico-txt phone-complete">
+                <h2 class="ico-title"><span>$홍길동$</span> 고객님의 휴대폰 번호가<br>
+                    U<sup>+</sup> 유모바일에 등록되었습니다.</h2>
+                <div class="cardList-wrap">
+                    <div class="cardList">
+                        <dl>
+                            <dt>휴대폰번호</dt>
+                            <dd>010-1234-1324</dd>
+                            <dt>등록일</dt>
+                            <dd>YYYY-MM-DD</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">메인으로</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

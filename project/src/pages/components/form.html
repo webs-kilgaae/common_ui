@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../src/pages/includes/guide/head.html', {title: '폼 요소 가이드 - DK BMC'})
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html" class="guideOn">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+            <section class="sample">
+                <h2 class="sampleTitle">00. sorting 기능</h2>
+
+                <div class="sampleContent">
+                    <h3><strong>sorting 기능</strong></h3>
+                        <div class="is-filter-wrap">
+                        <nav class="is-filter">
+                            <ul class="is-filter-list btn-radio-group">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-1" name="dan3" checked >
+                                    <label for="dan3-1">대림 P&P</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-2" name="dan3">
+                                    <label for="dan3-2">롯데첨단소재</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-3" name="dan3">
+                                    <label for="dan3-3">롯데케미칼</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-4" name="dan3">
+                                    <label for="dan3-4">삼양사 AM BU</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-5" name="dan3">
+                                    <label for="dan3-5">LG 화학</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-6" name="dan3">
+                                    <label for="dan3-6">한화솔루션</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-7" name="dan3">
+                                    <label for="dan3-7">DL건설</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-8" name="dan3">
+                                    <label for="dan3-8">GS건설</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-9" name="dan3">
+                                    <label for="dan3-9">SK건설</label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">01. Input Field</h2>
+
+                <div class="sampleContent">
+                    <h3><strong>기본필드</strong></h3>
+                    <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                    <div class="box-input">
+                        <label for="input1" class="input-label">이름<em class="nec">*</em></label>
+                        <div class="input-wrap">
+                            <input id="input1" type="text" placeholder="이름을 입력하세요." class="input-default is-delete">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>label 없는 input</strong></h3>
+                    <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                    <div class="box-input error">
+                        <div class="input-wrap">
+                            <input type="text" placeholder="사용자 이름" class="input-default is-delete" title="이름">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>오류 필드</strong></h3>
+                    <!-- 에러 인풋 예시 -->
+                    <div class="box-input error">
+                        <label for="input2" class="input-label">이름</label>
+                        <div class="input-wrap">
+                            <input id="input2" type="text" placeholder="사용자 이름" class="input-default is-delete">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>validation 필드</strong></h3>
+                    <!-- validation 체크 메세지 -->
+                    <div class="box-input">
+                        <label for="input3" class="input-label">새 비밀번호</label>
+                        <div class="input-wrap">
+                            <!-- 마스킹 아이콘있는경우, is-masking추가 -->
+                            <input id="input3" type="password" placeholder="신규 비밀번호" class="input-default is-masking is-delete">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            <!-- 마스킹 해제 시 show클래스 추가 -->
+                            <button class="ico-eye"><span class="hidden">마스킹</span></button>
+                        </div>
+                        <ul class="validation-list">
+                            <!-- 성공일경우 success 클래스 추가 -->
+                            <li class="validation-list-item success">8~15자 이내</li>
+                            <!-- 실패일경우 error 클래스 추가 -->
+                            <li class="validation-list-item success">영문대/소문자, 숫자, 특수문자 조합</li>
+                            <li class="validation-list-item success">연속된 숫자, 생년월일, 전화번호 미사용</li>
+                            <!-- 위험 : error -->
+                            <!-- 보통 : success -->
+                            <!-- 안전 : success -->
+                            <li class="validation-list-item error">설정한 비밀번호는 위험</li>
+                            <!-- <li class="validation-list-item success">설정한 비밀번호는 보통</li> -->
+                            <!-- <li class="validation-list-item success">설정한 비밀번호는 안전</li> -->
+                            <li class="validation-list-item">사용 가능</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <div class="box-input error">
+                        <label for="datepicker1" class="input-label">시작일</label>
+                        <input id="datepicker1" type="text" placeholder="YYYY-MM-DD" class="input-default date-picker">
+                        <span class="txt-error">날짜를 선택해 주세요.</span>
+                    </div>
+                </div>
+                <div class="sampleContent">
+                    <div class="box-input error">
+                        <label for="monthpicker1" class="input-label">시작월</label>
+                        <input id="monthpicker1" type="text" placeholder="YYYY-MM-DD" class="input-default month-picker">
+                        <span class="txt-error">날짜를 선택해 주세요.</span>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <div class="select-input-wrap">
+                        <label for="usimNum" class="default-txt">통신사</label>
+                        <div class="box-select">
+                            <select name="select1" id="select1" class="select-default" title="통신사 선택">
+                                <option value="1">SKT</option>
+                                <option value="2">KT</option>
+                                <option value="3">LG U+</option>
+                            </select>
+                        </div>
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input type="text" id="usimNum" maxlength="8" placeholder="숫자 8자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <div class="input-group">
+                        <label for="cardLimit" class="default-txt">카드 유효기간</label>
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input type="text" id="cardLimit" maxlength="2" placeholder="MM" class="input-default is-delete" title="월">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                        </div>
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input type="text" maxlength="2" placeholder="YY" class="input-default is-delete" title="년">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <div class="box-flex flex-btn">
+                        <div class="box-input">
+                            <label for="cardLimit2" class="input-label">카드 유효기간 <em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input type="text" id="cardLimit2" maxlength="2" placeholder="MM" class="input-default is-delete" title="월">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                        </div>
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input type="text" maxlength="2" placeholder="YY" class="input-default is-delete" title="년">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">카드정보 유효성 검사</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">02. Function Input Field</h2>
+
+                <div class="sampleContent">
+                    <h3><strong>버튼과 함께있는 인풋</strong></h3>
+                    <!--- 휴대폰번호 & 인증번호 라벨값이 있을 경우-->
+                    <div class="box-flex">
+                        <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                        <div class="box-input">
+                            <label for="input4" class="input-label">휴대폰번호</label>
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm is-delete">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light">인증 요청</button>
+                        </div>
+                    </div>
+                    <div class="box-flex">
+                        <!-- 인증완료 시 .box-input 에 success 클래스 추가 -->
+                        <!-- 인증요청시 .box-input 에 sending 클래스 추가 -->
+                        <!-- 인증완료시 .box-input 에 success 클래스 추가 -->
+                        <div class="box-input sending">
+                            <label for="input4" class="input-label">인증번호</label>
+                            <div class="input-wrap">
+                                <input id="input5" type="text" placeholder="숫자 6자리 입력
+                                " class="input-default is-delete is-time" title="인증번호">
+                                <span class="txt-time">02:30</span>
+                                <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                            </div>
+                            <!-- 에러 시 나오는 안내문구 -->
+                            <span class="txt-error">휴대폰 번호를 정확히 입력해 주세요.</span>
+                            <!-- 인증요청 시 나오는 안내문구 -->
+                            <span class="txt-sending">인증번호가 발송되었습니다.</span>
+                            <!-- 인증완료시 나오는 텍스트 -->
+                            <span class="txt-description">인증이 완료되었습니다.</span>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light">인증번호 확인</button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input-depth">
+                        <div class="box-flex">
+                            <div class="box-input">
+                                <label for="input5-1" class="input-label">주소</label>
+                                <div class="input-wrap">
+                                    <input id="input5-1" type="text" placeholder="우편번호" class="input-default is-delete" title="우편번호">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="box-btn">
+                                <button class="btn-dark-gray md-ripples ripples-light">검색</button>
+                            </div>
+                        </div>
+                        <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                        <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input5-2" type="text" placeholder="기본주소" class="input-default is-delete">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러에러</span>
+                        </div>
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input5-3" type="text" placeholder="상세주소 (선택)" class="input-default is-delete">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러에러</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>입력시간 있는 인풋</strong></h3>
+                    <!-- 버튼과 함께있는 인풋(상하정렬) -->
+                    <div class="box-flex column">
+                        <div class="box-input">
+                            <label for="input5" class="input-label">인증번호</label>
+                            <!--  입력시간 나오는 input 은 is-time 클래스 추가 -->
+                            <div class="input-wrap">
+                                <input id="input5" type="text" placeholder="인증번호" class="input-default is-delete is-time">
+                                <span class="txt-time">02:30</span>
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <!-- 인증 미완료 시 disabled 추가,md-ripples ripples-light 클래스 제거 -->
+                            <!-- <button class="btns" disabled>인증완료</button> -->
+                            <!-- 인증 완료 시 disabled 삭제 -->
+                            <button class="btns md-ripples ripples-light">인증완료</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>단위 있는 인풋</strong></h3>
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <!-- 단위있는 인풋의 경우 is-unit 클래스추가 -->
+                            <input id="input555" type="text" placeholder="숫자만 입력" class="input-default is-unit is-delete" title="이용한도 설정 변경">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            <span class="input-unit">GB</span>
+                        </div>
+                    </div>
+
+                    <div class="box-flex box-unit">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <!-- 단위있는 인풋의 경우 is-unit 클래스추가 -->
+                                <input id="input555" type="text" placeholder="숫자만 입력" class="input-default is-unit is-delete" title="사용 포인트 입력">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                <span class="input-unit">원</span>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">전액사용</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>휴대폰번호 인풋</strong></h3>
+                    <div class="box-input box-input-phone">
+                        <label for="input-phone-02" class="input-label">번호 입력</label>
+                        <div class="input-wrap">
+                            <input id="input-phone-01" type="text" placeholder="010" class="input-default" disabled>
+                        </div>
+                        <div class="input-wrap">
+                            <input id="input-phone-02" type="text" placeholder="가운데 4자리" class="input-default is-delete" maxlength="4">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <div class="input-wrap">
+                            <input id="input-phone-03" type="text" placeholder="뒤 4자리" class="input-default is-delete" maxlength="4">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                        </div>
+                        <p>가운데 4자리 또는 뒤 4자리로 검색할 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">02-1. 검색필드</h2>
+
+                <div class="sampleContent">
+                    <div class="box-input">
+                        <div class="input-wrap serach-input-wrap">
+                            <input type="text" placeholder="검색어를 입력해주세요." class="input-default" title="검색어 입력">
+                            <button class="ico-search">검색</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <div class="box-flex search-input-wrap">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="월드컵북로" class="input-default input-sm" title="배송지 주소 찾기">
+                                <button class="ico-delete" style="display: none;" type="button">
+                                    <span class="hidden">삭제</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">03.textarea</h2>
+
+                <div class="sampleContent">
+                    <!-- error시 textarea-wrap에 error 클래스 추가 -->
+                    <div class="textarea-wrap">
+                        <label for="reason" class="input-label">내용</label>
+                        <div class="box-textarea box-input">
+                            <textarea id="reason" type="textarea" placeholder="사유는 상세히 작성 필요" class="input-default is-delete"></textarea>
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">에러에러</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">03. Dropdown Field</h2>
+                <div class="box-select">
+                    <select name="select1" id="select1" class="box-select">
+                            <option value="1">FACEBOOK</option>
+                            <option value="2">TWITTER</option>
+                            <option value="3">INSTARGRAM</option>
+                    </select>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>기본 셀렉트01</strong></h3>
+                    <div class="box-select">
+                        <label for="select1" class="select-label">고객사</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">선택</option>
+                            <option value="2">대웅제약</option>
+                            <option value="3">삼성바이오로직스</option>
+                            <option value="4">올림푸스</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sampleContent">
+                    <h3><strong>기본 셀렉트02</strong></h3>
+                    <div class="box-select">
+                        <label for="select1" class="select-label">고객사</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">선택</option>
+                            <option value="2">대웅제약</option>
+                            <option value="3">삼성바이오로직스</option>
+                            <option value="4">올림푸스</option>
+                        </select>
+                    </div>
+
+                    <!-- 2depth select일경우 select-more 클래스 추가 -->
+                    <div class="box-select select-more">
+                        <select name="select2" id="select2" class="select-default">
+                            <option value="1">선택</option>
+                            <option value="2">대웅제약</option>
+                            <option value="3">삼성바이오로직스</option>
+                            <option value="4">올림푸스</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="sampleContent">
+                    <h3><strong>비활성화 셀렉트</strong></h3>
+                    <div class="box-select">
+                        <label for="select3" class="select-label">고객사</label>
+                        <!-- 비활성화 select 는 disabled 추가 -->
+                        <select name="select3" id="select3" class="select-default" disabled>
+                            <option value="1">선택</option>
+                            <option value="2">대웅제약</option>
+                            <option value="3">삼성바이오로직스</option>
+                            <option value="4">올림푸스</option>
+                        </select>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Radio Button</h2>
+                    <div class="box-btn">
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">1단 구성</h3>
+                            <div class="btn-radio">
+                                <input type="radio" id="dan1" name="dan1">
+                                <label for="dan1">대한항공</label>
+                            </div>
+                        </div>
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">2단 구성 타이틀</h3>
+                            <ul class="btn-radio-group">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan2" name="dan2">
+                                    <label for="dan2">대한항공</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan2-1"  name="dan2">
+                                    <label for="dan2-1">LX판토스</label>
+                                </li>
+                            </ul>
+                        </div>
+                         <div class="radio-group-wrap">
+                            <h3 class="group-tit">3단 구성 타이틀</h3>
+                            <ul class="btn-radio-group">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-1" name="dan3">
+                                    <label for="dan3-1">대한항공</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-2" name="dan3">
+                                    <label for="dan3-2">LX판토스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan3-3" name="dan3">
+                                    <label for="dan3-3">케이티앤지</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">4단 구성 타이틀</h3>
+                            <ul class="btn-radio-group group4">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-1" name="dan4">
+                                    <label for="dan4-1">대한항공</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">LX판토스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-3" name="dan4">
+                                    <label for="dan4-3">케이티앤지</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-4" name="dan4">
+                                    <label for="dan4-4">오뚜기</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">6단 구성 타이틀</h3>
+                            <ul class="btn-radio-group group6">
+                                <li class="btn-radio">
+                                 <input type="radio" id="dan4-1" name="dan4">
+                                <label for="dan4-1">대한항공</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">LX판토스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-3" name="dan4">
+                                    <label for="dan4-3">케이티앤지</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-4" name="dan4">
+                                    <label for="dan4-4">오뚜기</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-3" name="dan4">
+                                    <label for="dan4-3">올림푸스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio"  id="dan4-4" name="dan4">
+                                    <label for="dan4-4">삼성바이오로직스</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <section class="radio-group-wrap">
+                            <h2 class="group-tit">8단구성</h2>
+                            <ul class="btn-radio-group group8">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-1" name="dan-8">
+                                    <label for="dan-8-1">대한항공</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-2" name="dan-8">
+                                    <label for="dan-8-2">LX판토스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-3" name="dan-8">
+                                    <label for="dan-8-3">케이티앤지</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-4" name="dan-8">
+                                    <label for="dan-8-4">오뚜기</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-5" name="dan-8">
+                                    <label for="dan-8-5">올림푸스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-6" name="dan-8">
+                                    <label for="dan-8-6">삼성바이오로직스</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-7" name="dan-8">
+                                    <label for="dan-8-7">대웅제약</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-8" name="dan-8">
+                                    <label for="dan-8-8">한라시멘트</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-9" name="dan-8">
+                                    <label for="dan-8-9">세아베스틸</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan-8-10" name="dan-8">
+                                    <label for="dan-8-10">효성인포메이션시스템</label>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- <br><br><h3><strong>자유 구성</strong></h3><br>
+                        <ul class="btn-radio-group group-free">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan-free1" name="dan-free">
+                                <label for="dan-free1">전체</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan-free2" name="dan-free">
+                                <label for="dan-free2">3GB 이하</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan-free3" name="dan-free">
+                                <label for="dan-free3">5~7GB</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan-free4" name="dan-free">
+                                <label for="dan-free4">10~15GB</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan-free5" name="dan-free">
+                                <label for="dan-free5">15GB이상</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-6" name="dan-free">
+                                <label for="dan-free6">15GB이상~15GB이상</label>
+                            </li>
+                        </ul> -->
+                        <br><br><h3><strong>라디오 리스트</strong></h3><br>
+                        <div class="btn-radio-group radio-list">
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list" name="radio-list">
+                                <label for="radio-list">대한항공</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-1" name="radio-list">
+                                <label for="radio-list-1">LX판토스</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-3" name="radio-list">
+                                <label for="radio-list-3">케이티앤지</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-4" name="radio-list">
+                                <label for="radio-list-4">오뚜기</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-5" name="radio-list">
+                                <label for="radio-list-5">올림푸스</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-6" name="radio-list">
+                                <label for="radio-list-6">삼성바이오로직스</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-7" name="radio-list">
+                                <label for="radio-list-7">대웅제약</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-8" name="radio-list">
+                                <label for="radio-list-8">한라시멘트</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-9" name="radio-list">
+                                <label for="radio-list-9">세아베스틸</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-10" name="radio-list">
+                                <label for="radio-list-10">효성인포메이션시스템</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-11" name="radio-list">
+                                <label for="radio-list-11">카페24</label>
+                            </div>
+                            <div class="btn-radio">
+                                <input type="radio" id="radio-list-12" name="radio-list">
+                                <label for="radio-list-12">해성DS</label>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">Radio Button-type2</h2>
+                    <div class="box-btn">
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="type2"  name="type2">
+                            <label for="type2"><span class="ico-radio"></span>없음</label>
+                        </div>
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="type2-1" name="type2">
+                            <label for="type2-1"><span class="ico-radio"></span>부재시 경비실에 맡겨주세요.</label>
+                        </div>
+                    </div>
+            </section>
+
+
+            <section class="sample">
+                <h2 class="sampleTitle">checkbox</h2>
+                    <div class="box-btn">
+                        <h3><strong>선택되었을 때</strong></h3><br>
+                        <div class="btn-check">
+                            <input type="checkbox" id="check2">
+                            <label for="check2"><span class="ico-check"></span> 서비스 이용약관 <strong>(필수)</strong> </label>
+                        </div>
+                         <div class="btn-check fw600">
+                            <input type="checkbox" id="check3">
+                            <label for="check3"><span class="ico-check"></span>서비스 이용약관 <strong>(필수)</strong></label>
+                        </div>
+                        <br><br><h3><strong>선택불가</strong></h3><br>
+                        <div class="btn-check">
+                            <input type="checkbox" id="check4" disabled>
+                            <label for="check4"><span class="ico-check"></span> (필수) 서비스 이용약관</label>
+                        </div>
+
+                        <br><br><h3><strong>타입4</strong></h3><br>
+                        <div class="btn-check-type4">
+                            <input type="checkbox" id="check6">
+                            <label for="check6"> <span>체크박스1</span></label>
+                            <input type="checkbox" id="check7">
+                            <label for="check7"> <span>체크박스2</span></label>
+                        </div>
+                    </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    <!-- LAYER POPUP -->
+    <!-- @@include('./pages/includes/layerpopup.html') -->
+</body>
+
+</html>

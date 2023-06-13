@@ -1,0 +1,175 @@
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '사전 예약 신청, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '사전 예약 신청 | U+유모바일',
+    ogTitle: '사전 예약 신청 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap event show">
+        <div class="layer-popup-item evt-reservation">
+            <div class="popup-header">
+                <strong class="txt-main">사전 예약 신청</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>원하시는 휴대폰의 상세 스펙을 선택해 주세요.</h2>
+                </div>
+
+                <div class="rq-form">
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">가입 유형</h3>
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2" name="dan2">
+                                <label for="dan2">번호이동</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-1" name="dan2">
+                                <label for="dan2-1">신규가입</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan2-2" name="dan2">
+                                <label for="dan2-2">기기변경</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">용량</h3>
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3" name="dan3">
+                                <label for="dan3">64GB</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3-1" name="dan3">
+                                <label for="dan3-1">128GB</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan3-2" name="dan3">
+                                <label for="dan3-2">256GB</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">색상</h3>
+                        <ul class="btn-radio-group">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4" name="dan4">
+                                <label for="dan4">화이트</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-1" name="dan4">
+                                <label for="dan4-1">블랙</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-2" name="dan4">
+                                <label for="dan4-2">미드나잇 블루</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">할부 개월</h3>
+                        <ul class="btn-radio-group group-free">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5" name="dan5">
+                                <label for="dan5">12</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-1" name="dan5">
+                                <label for="dan5-1">24</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-2" name="dan5">
+                                <label for="dan5-2">30</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-3" name="dan5">
+                                <label for="dan5-3">36</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan5-4" name="dan5">
+                                <label for="dan5-4">일시불</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="box-select-group">
+                        <div class="box-select">
+                            <label for="select1" class="select-label">요금제</label>
+                            <select name="select1" id="select1" class="select-default">
+                                <option value="1">5G</option>
+                                <option value="2">3G</option>
+                            </select>
+                        </div>
+                        <div class="box-select">
+                            <select name="select1" id="select1" class="select-default">
+                                <option value="1">선택</option>
+                                <option value="2">최강요금제</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 09.02 : "필수" 위치 이동-->
+                    <div class="agree-wrap">
+                        <div class="btn-box btn-check btn-text-line">
+                            <input type="checkbox" id="agreeAll">
+                            <label for="agreeAll"> <span class="ico-check"></span>전체 동의 (필수)</label>
+                            <a href="#" class="ico-arrow-right">더보기</a>
+                        </div>
+
+                        <div class="agree-group">
+                            <div class="btn-box btn-check">
+                                <input type="checkbox" id="agree1">
+                                <label for="agree1"> <span class="ico-check"></span>개인정보 수집 및 마케팅 정보 수신 동의 (필수)</label>
+                                <a href="#" class="ico-arrow-right">더보기</a>
+                            </div>
+
+                            <div class="btn-box btn-check">
+                                <input type="checkbox" id="agree2">
+                                <label for="agree2"> <span class="ico-check"></span>고객 혜택 정보 및 광고 수신을 위한 개인정보 처리 위탁 동의 (필수)</label>
+                                <a href="#" class="ico-arrow-right">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- //09.02 : "필수" 위치 이동-->
+
+                    <p class="txt">
+                        사전예약 신청을 위해 개인정보 수집 및 개인 정보 처리 위탁에 동의해 주세요.<br>
+                        개인 정보의 수집 및 이용에 대한 동의를 거부할 수 있으며, 이 경우 사전예약 신청이 제한됩니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">신청완료</button>
+                </div>
+
+                <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

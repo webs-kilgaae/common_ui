@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '편의점 조회 | U+유모바일',
+    ogTitle: '편의점 조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item  buy-store-pop buy-pickup">
+            <div class="popup-header">
+                <strong class="txt-main">편의점 조회</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>방문 전 반드시 매장에 유심 카드가 있는지 전화로 확인해 주세요.</h2>
+                </div>
+                <section class="filter-wrap">
+                    <div class="radio-group-wrap">
+                        <ul class="btn-radio-group group6">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-1" name="dan4">
+                            <label for="dan4-1">전체</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-2" name="dan4">
+                                <label for="dan4-2">GS25</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-3" name="dan4">
+                                <label for="dan4-3">이마트24</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-4" name="dan4">
+                                <label for="dan4-4">세븐일레븐</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-3" name="dan4">
+                                <label for="dan4-3">홈플러스</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-flex">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="주소 또는 매장명" class="input-default input-sm is-delete" title="주소 또는 매장명 입력">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="place-search-result">
+                    <p class="info">검색결과 <span class="txt-vt">총 10</span>건</p>
+                    <div class="result-list cms">
+                        <div class="place-address loc">
+                            <dl>
+                               <dt><h3>GS25 강릉 교동점</h3></dt>
+                                <dd>
+                                    <ul>
+                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                        <li class="txt-vt">재고 12개</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <a href="#" class="btn-loc">지도보기</a>
+                        </div>
+                        <div class="place-address loc">
+                            <dl>
+                                <dt><h3>GS25 강릉 교동점</h3></dt>
+                                <dd>
+                                    <ul>
+                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                        <li class="txt-vt">재고 12개</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <a href="#" class="btn-loc">지도보기</a>
+                        </div>
+                        <div class="place-address loc">
+                            <dl>
+                                <dt><h3>GS25 강릉 교동점</h3></dt>
+                                <dd>
+                                    <ul>
+                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                        <li class="txt-vt">재고 12개</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <a href="#" class="btn-loc">지도보기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light" type="button">더보기</button>
+                </div>
+                <!-- 검색 전 hidden 클래스 제거 -->
+                <div class="no-result hidden">가까운 편의점 및 마트를 검색하세요.</div>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <clipPath id="zdhjvxk28a">
+            <path data-name="사각형 352981" transform="translate(3)" style="fill:none" d="M0 0h48v42.785H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(3 9)" style="clip-path:url(#zdhjvxk28a)">
+        <g data-name="사각형 352982" transform="translate(33 2)" style="stroke:#191919;stroke-width:2px;fill:#fff">
+            <rect width="10" height="21" rx="3" style="stroke:none"/>
+            <rect x="1" y="1" width="8" height="19" rx="2" style="fill:none"/>
+        </g>
+        <g style="fill:#fff">
+            <path d="M4.484 7.5H.5V.822l3.84 1.986.144 4.692z" style="stroke:none" transform="translate(42 18)"/>
+            <path d="M1 1.643V7h2.969l-.12-3.883L1 1.643M0 0l4.83 2.499L5 8H0V0z" style="fill:#fff;stroke:none" transform="translate(42 18)"/>
+        </g>
+        <path data-name="패스 871446" d="M38-2.218v14.966c0 4.023-1.582 7.284-6 7.284H10c-4.418 0-6-3.261-6-7.284V-2.218l17.131-16.4z" transform="translate(5.5 20.718)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#191919;stroke-width:2px;fill:#fff"/>
+        <path data-name="합치기 106" d="m-8613.412-9489.508-21.867-20.9-21.864 20.9a1.09 1.09 0 0 1-.769.317 1.09 1.09 0 0 1-.769-.317 1.09 1.09 0 0 1 0-1.54l22.633-21.633a1.084 1.084 0 0 1 .77-.318 1.084 1.084 0 0 1 .771.318l22.634 21.633a1.1 1.1 0 0 1 0 1.54 1.1 1.1 0 0 1-.771.317 1.085 1.085 0 0 1-.768-.317z" transform="translate(8661.998 9513.999)" style="fill:#191919;stroke:transparent;stroke-miterlimit:10"/>
+        <g data-name="사각형 352980" style="stroke:#191919;stroke-width:2px;fill:#fff">
+            <path d="M7 0a7 7 0 0 1 7 7v11H0V7a7 7 0 0 1 7-7z" style="stroke:none" transform="translate(20 23.7)"/>
+            <path d="M7 1a6 6 0 0 1 6 6v10H1V7a6 6 0 0 1 6-6z" style="fill:none" transform="translate(20 23.7)"/>
+        </g>
+    </g>
+</svg>

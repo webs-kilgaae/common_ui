@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/* response */
+@mixin response($screen-width) {
+    @if $screen-width == "pc" {
+        /* 1441 ~ 1650 */
+        @media (min-width: 1441px) and (max-width: 1650px) {
+            @content;
+        }
+    } @else if $screen-width == "tablet" {
+        /* 769 ~ 1440 */
+        @media (min-width: 769px) and (max-width: 1440px) {
+            @content;
+        }
+    } @else if $screen-width == "mobile" {
+        /* ~ 768 */
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin hidden {
+    display: none !important;
+    // position: absolute;
+    overflow: hidden;
+    // margin: -1px;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+// 백그라운드 이미지
+@mixin backgroundImg($url, $position: center, $size: auto) {
+    background: url($url) no-repeat $position;
+    background-size: $size;
+}
+
+// SVG 아이콘
+@mixin svgIcon($width, $height, $url) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 아이콘 버튼 */
+@mixin iconBtn($url) {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    overflow: hidden;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url($url);
+    background-position: center;
+    vertical-align: middle;
+}
+
+// TEXT
+@mixin text($weight, $size, $height: 1.5, $color: $gray05, $spacing: 0) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+// 적용 시 display 속성 필수(block, inline-block)
+@mixin ellipsis {
+    display: block !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 1 ;
+}
+
+// Ellipsis for 2 line
+@mixin ellipsis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    // line-height: 1.25em;
+    // max-height: 2.5em;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        padding-right: 1em;
+        &::before {
+            content: '...';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 1em;
+            height: 1em;
+            margin-top: 0.2rem;
+            background: #fff;
+        }
+    }
+}
+// Ellipsis for 3 line
+@mixin ellipsis3 {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    // line-height: 1.25em;
+    // max-height: 4em;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        padding-right: 1em;
+        &::before {
+            content: '...';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 1em;
+            height: 1em;
+            margin-top: 0.2rem;
+            background: transparent;
+        }
+    }
+}
+
+// Ellipsis for 4 line
+@mixin ellipsis4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+// Ellipsis for 5 line
+@mixin ellipsis5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+// SVG Icon
+// @function svgIcon($name, $color) {
+// 	$path: map-get($symbol-list, $name);
+// 	$data: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' style='fill: rgba(" + red($color) + "," + green($color) + "," + blue($color) + ",1)'%3E%3Cpath d='#{$path}'/%3E%3C/svg%3E";
+// 	@return url($data);
+// }
+
+// @function svgIcon2($name, $color, $w:16, $h:16) {
+// 	$path: map-get($symbol-list, $name);
+// 	$data: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='#{$w}' height='#{$h}' viewBox='0 0 #{$w} #{$h}' style='fill: rgba(" + red($color) + "," + green($color) + "," + blue($color) + ",1)'%3E%3Cpath d='#{$path}'/%3E%3C/svg%3E";
+// 	@return url($data);
+// }

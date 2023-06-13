@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금 상세내역 | U+유모바일',
+    ogTitle: '요금 상세내역 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+</head>
+<body>
+
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap show my">
+    <div class="layer-popup-item bill-payment-detail" >
+        <div class="popup-header">
+            <strong class="txt-main">요금 상세내역</strong>
+        </div>
+
+        <div class="popup-body ">
+            <div class="box-input my-bundle">
+                <label for="input1" class="input-label">조회하실 휴대폰번호</label>
+                <div class="input-wrap">
+                    <input id="input1" type="text" value="010-**34-**78" placeholder="조회하실 휴대폰번호" class="input-default" readonly>
+                </div>
+            </div>
+            <div class="my-month-wrap my-bundle">
+                <div class="my-month-date">
+                    <strong class="main-txt"><span>$09월$</span> 이용요금</strong>
+                    <span class="date-num">YYYY-MM-DD ~ YYYY-MM-DD</span>
+                </div>
+                <div class="my-month type-charge type-02">
+                    <strong class="main-txt">총 청구금액 (A+B)</strong>
+                    <div class="detail">
+                        <strong class="txt-vt"><span>63,455</span>원</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-list-wrap my-bundle">
+                <h2 class="table-title">
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-right-s">청구서 재발행</a>
+                    </div>
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-right-s">납부내역 조회</a>
+                    </div>
+                </h2>
+                <table class="table-default2">
+                    <caption class="hidden">이번 달 요금 상세 내역</caption>
+                    <colgroup>
+                        <col width="100%">
+                    </colgroup>
+                    <thead>
+                        <tr class="table-result">
+                            <th>
+                                <dl>
+                                    <dt>이번 달 요금 계 (A)</dt>
+                                    <dd class="txt-vt"><span>53,455</span>원</dd>
+                                </dl>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="item-title">
+                            <th>
+                                <dl>
+                                    <dt>이동통신요금</dt>
+                                    <dd><span>20,414</span>원</dd>
+                                </dl>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>기본요금</dt>
+                                    <dd><span>25,276</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>할인요금</dt>
+                                    <!-- 금액이 - 일경우 .txt-vt 클래스 추가 -->
+                                    <dd class="txt-vt"><span>- 6,319</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr class="depth-02">
+                            <td>
+                                <dl>
+                                    <dt>선택약정할인</dt>
+                                    <dd class="txt-vt"><span>- 570</span>원</dd>
+                                    <dt>추가 할인</dt>
+                                    <dd class="txt-vt"><span>- 877</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>이전 통신사 요금</dt>
+                                    <dd><span>20,000</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>부가서비스</dt>
+                                    <dd><span>20,000</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr class="depth-02">
+                            <td>
+                                <dl>
+                                    <dt>통화 연결음</dt>
+                                    <dd><span>570</span>원</dd>
+                                    <dt>통화 연결음 + 매달1곡</dt>
+                                    <dd><span>877</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>통화료</dt>
+                                    <dd><span>10,000</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr class="depth-02">
+                            <td>
+                                <dl>
+                                    <dt>발송/행사문자 전송료</dt>
+                                    <dd>&nbsp;</dd>
+                                    <dt>해외 로밍요금</dt>
+                                    <dd>&nbsp;</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr class="item-title">
+                            <th>
+                                <dl>
+                                    <dt>세금 및 공통요금</dt>
+                                    <dd><span>2,040</span>원</dd>
+                                </dl>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>부가가치세</dt>
+                                    <dd><span>2,041</span>원</dd>
+                                    <dt>10원미만 할인</dt>
+                                    <dd class="txt-vt"><span>-1</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr class="item-title">
+                            <td>
+                                <dl>
+                                    <dt>휴대폰 월 할부금</dt>
+                                    <dd><span>11,000</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <dt>월할부금</dt>
+                                    <dd><span>11,000</span>원</dd>
+                                </dl>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table-default2">
+                    <caption class="hidden">이번 달 요금 상세 내역</caption>
+                    <colgroup>
+                        <col width="100%">
+                    </colgroup>
+                    <tbody>
+                        <tr class="c-hotpink">
+                            <th>
+                                <dl>
+                                    <dt>미납요금 (B)</dt>
+                                    <dd><span>10,000</span>원</dd>
+                                </dl>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="notification-wrap">
+                <h3>꼭 확인하세요!</h3>
+                <ul class="notification">
+                    <li>원단위 절사 등의 사유로 실 청구금액과 다를 수 있음</li>
+                    <li>제휴카드 할인내역은 표기되지 않으며, 카드사 이용요금 명세서에서 확인하시기 바랍니다.</li>
+                    <li>
+                        제휴카드 신청 고객은 해당 카드로 납부 방법을 변경하셔야 할인이 적용됩니다.
+                        <span class="box-btn">
+                            <a href="#" class="btn-text-right-s">납부방법 변경하기</a>
+                        </span>
+                    </li>
+                    <li>사용 신청한 포인트 납부 후 잔여 포인트는 ‘포인트 조회 / 사용 > 사용예정’ 메뉴를 통해 확인 가능합니다.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="popup-footer">
+            <div class="btn-group">
+                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+            </div>
+            <button class="btn-close-x" type="button">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT IMPORT -->
+@@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

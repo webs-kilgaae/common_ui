@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'eSIM 지원 단말 확인 | U+유모바일',
+    ogTitle: 'eSIM 지원 단말 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: 'https://www.uplussave.com/static/shop/images/pc/img_header_logo.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item usim-esim-support">
+            <div class="popup-header">
+                <strong class="txt-main">eSIM 지원 단말 확인</strong>
+            </div>
+            <div class="popup-body">
+                <div class="box-tab tab-ctrl">
+                    <ul class="tab-btn-wrap">
+                        <!-- 활성화 된 메뉴에 on class 추가 -->
+                        <li><a href="#" class="on">아이폰</a></li>
+                        <li><a href="#">갤럭시</a></li>
+                    </ul>
+                    <div class="tab-contents-wrap">
+                        <div aria-hidden="false">
+                            <div class="cardList-wrap">
+                                <div class="cardList">
+                                    <ul class="phone-list">
+                                        <li>iPhone XR</li>
+                                        <li>iPhone XS</li>
+                                        <li>iPhone 11</li>
+                                        <li>iPhone 11 Pro </li>
+                                        <li>iPhone 12</li>
+                                        <li>iPhone 12 Pro</li>
+                                        <li>iPhone 13</li>
+                                        <li>iPhone 13 Pro</li>
+                                        <li>iPhone XS MAX</li>
+                                        <li>iPhone SE (2세대)</li>
+                                        <li>iPhone 11 Pro MAX</li>
+                                        <li>iPhone SE (3세대)</li>
+                                        <li>iPhone 12 Pro MAX</li>
+                                        <li>iPhone 12 Mini</li>
+                                        <li>iPhone 13 Pro MAX</li>
+                                        <li>iPhone 13 Mini</li>
+                                        <li>iPhone 14</li>
+                                        <li>iPhone 14 Pro</li>
+                                        <li>iPhone 14 Plus</li>
+                                        <li>iPhone 14 Pro MAX</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-hidden="true">
+                            <div class="cardList-wrap">
+                                <div class="cardList">
+                                    <ul class="phone-list">
+                                        <li>갤럭시 Z 플립 4</li>
+                                        <li>갤럭시 Z 폴드 4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

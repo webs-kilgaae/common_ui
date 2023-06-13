@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '약관 자세히 보기 | U+유모바일',
+    ogTitle: '약관 자세히 보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">약관 보기</strong>
+            </div>
+            <div class="popup-body">
+                <section class="agree-cont">
+                    <h3 class="body-tit">U+유모바일 서비스 이용안내 상세</h3>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[계약의 성립]</h3>
+                        <p class="txt-sub">
+                            1. 고객님은 구비서류 제출과 함께 이용계약서를 작성하셔야 하며, 회사는 이용계약서 및 구비 서류를 이미지로 보관할 수 있습니다. (이용계약서는 고객님이 보관하시면 됩니다.)<br>2. 대리인이 신청할 경우 회사는 고객 본인에게 가입신청 위임부탁 여부를 전화 등으로 확인할 수 있습니다.<br>3.가입비는 가입신청에 소요되는 실비로서 해지 시 반환되지 않습니다
+                        </p>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[지원금]</h3>
+                        <p class="txt-sub">
+                            1. 회사는 의무사용 약정을 체결하는 등 회사가 공시하는 지급요건을 충족하는 고객님에게 지원금을 제공할 수 있으며, 지원금은 출고가에서 깎아 (에누리하여) 단말기를 판매하는 방식 등으로 제공될 수 있습니다.<br>2. 지원금은 제공일 기준 요금이 미납된 상태이거나, 기존 약정기간이 남아 있는 경우 등에는 제공되지 않습니다.<br>3. 회사는 홈페이지에 지원금 내용에 대하여 공시합니다.
+                        </p>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[계약의 변경]</h3>
+                        <p class="txt-sub">
+                            1. 주소변경 , 부가서비스 신청 (해지) 등은 방문 외에 고객센터 등으로 신청할 수 있으며 , 단말기 변경, 명의변경 <br>(타인에게 이용권을 양도 또는 승계) 의 경우에는 대리점 등에 방문하셔야 됩니다. (요청 업무별로 별도의 구비서류를 요청할 수 있으며, 구비서류<br>양식은 회사 홈페이지 > 고객지원 > 이용안내 > 신청서류양식받기에서 확인 가능합니다.)<br>2. 요금 미납, 약정내용 위반, 단말기 압류, 가압류 등의 경우에는 계약내용 변경이 제한됩니다.<br>[요금에 대한 이의신청]<br>청구된 요금에 이의가 있을 경우 6개월 내에 이의신청 가능하며 회사에 귀책사유(잘못)가 있을 때에는 그러하지 아니합니다.
+                        </p>
+                </section>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+                 <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

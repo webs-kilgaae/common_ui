@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '부가서비스 신청하기, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 신청하기 | U+유모바일',
+    ogTitle: '부가서비스 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div class="products">
+        <div class="popup-space">
+            <div class="popup-body addition-service-pop">
+                <div class="page-desc">
+                    <h2>부가서비스 해지하기</h2>
+                </div>
+                <!-- 서비스 해지 전 -->
+                <div style="display:block;">
+                    <section class="cardList-wrap">
+                        <h2 class="cardList-title"><span> %서비스명%</span> 서비스를 해지하겠습니까?</h2>
+                        <div class="cardList">
+                            <dl>
+                                <dt>휴대폰 번호</dt>
+                                <dd>010-**34-**78</dd>
+                                <dt>신청일</dt>
+                                <dd>2022-06-16</dd>
+                                <dt>이용금액</dt>
+                                <dd>13,200원 / 1일</dd>
+                                <dt>요금제 적용 기준시간</dt>
+                                <dd>한국시간</dd>
+                                <dt>이용시작시간</dt>
+                                <dd>2022-07-31  15시 00분</dd>
+                                <dt>방문국가선택</dt>
+                                <dd>미국</dd>
+                            </dl>
+                        </div>
+                    </section>
+                </div>
+                <!-- //서비스 해지 전-->
+
+                <!-- 서비스 해지 완료 -->
+                <div style="display:block;">
+                    <section class="cardList-wrap">
+                        <h2 class="cardList-title"><span> %서비스명%</span> 서비스가 해지되었습니다.</h2>
+                        <div class="cardList">
+                            <dl>
+                                <dt>휴대폰 번호</dt>
+                                <dd>010-**34-**78</dd>
+                                <dt>신청일</dt>
+                                <dd>2022-06-16</dd>
+                                <dt>이용금액</dt>
+                                <dd>13,200원 / 1일</dd>
+                                <dt>요금제 적용 기준시간</dt>
+                                <dd>한국시간</dd>
+                                <dt>이용시작시간</dt>
+                                <dd>2022-07-31  15시 00분</dd>
+                                <dt>방문국가선택</dt>
+                                <dd>미국</dd>
+                            </dl>
+                        </div>
+                    </section>
+                </div>
+                <!-- //서비스 해지 완료 -->
+
+                <!-- 서비스 해지 실패-->
+                <div style="display:block;">
+                    <div class="appli-result">
+                        <h2><span> %서비스명%</span> 서비스 해지에 실패했습니다.</h2>
+                        <p class="u-cube-msg">
+                            %U Cube 실패 메시지 출력 영역%
+                        </p>
+                    </div>
+                </div>
+                <!-- //서비스 해지 실패 -->
+
+                <!---서비스 해지 전-->
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소하기</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">해지하기</button>
+                </div>
+
+                <!---서비스 해지 후-->
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

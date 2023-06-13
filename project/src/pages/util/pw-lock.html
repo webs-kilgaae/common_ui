@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '비밀번호 잠금 안내 | U+유모바일',
+    ogTitle: '비밀번호 잠금 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts find-no-data util-width">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>비밀번호 잠금</h1>
+            </div>
+            <div class="box-ico-txt pw-lock">
+                <h2 class="ico-title">비밀번호 잠금 안내</h2>
+                <p class="ico-txt">
+                    비밀번호를 연속 5회 이상 틀렸습니다. 비밀번호를 다시 설정해 주세요.
+                </p>
+            </div>
+
+            <div class="round-box">
+                <strong class="normal-txt">개인정보 유출을 막기 위해, <br>비밀번호를 연속 5회 이상 틀리면 로그인이 차단됩니다.</strong>
+                <p>
+                    비밀번호를 다시 설정한 후에 서비스를 이용할 수 있습니다. <br>안전한 서비스 이용을 위해 비밀번호를 다시 설정해 주세요.
+                </p>
+            </div>
+
+
+            <div class="btn-group btn-fix">
+                <button class="btns md-ripples ripples-light">비밀번호 다시 설정</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

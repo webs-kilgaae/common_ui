@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<section class="full-popup products">
+    <header>
+        <h2>휴대폰 인증</h2>
+        <button>팝업 닫기</button>
+    </header>
+    <div class="full-popup-conts subscribe-phone-info">
+        <!-- step 갯수에 맞춰서 숫자 넣어주세요 -->
+        <div class="step-process">
+            <ol>
+                <li class="complete">STEP 1</li>
+                <li class="complete">STEP 2</li>
+                <li>STEP 3</li>
+                <li>STEP 4</li>
+            </ol>
+        </div>
+        <div class="inner">
+            <div class="sub-conts login">
+            <!-- 컨텐츠 -->
+            <!-- <div class="page-tit">
+                <h1>U+ 유모바일에 가입된<br>휴대폰번호를 확인해 주세요.</h1>
+            </div> -->
+            <div class="box-flex">
+                <div class="box-input">
+                    <label for="input4" class="input-label">휴대폰번호</label>
+                    <div class="input-wrap">
+                        <input id="input4" type="text" placeholder="휴대폰번호 입력
+                        " class="input-default is-delete">
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                </div>
+                <div class="box-btn">
+                    <button class="btn-dark-gray md-ripples ripples-light">인증번호 요청</button>
+                    <!-- 요청 버튼 클릭 후 재요청시 -->
+                    <!-- <button class="btn-dark-gray md-ripples ripples-light">인증번호 재요청</button> -->
+                </div>
+            </div>
+
+            <div class="box-flex column">
+                <div class="box-input">
+                    <label for="input5" class="input-label">인증번호</label>
+                    <!--  입력시간 나오는 input 은 is-time 클래스 추가 -->
+                    <div class="input-wrap">
+                        <input id="input5" type="text" placeholder="숫자 6자리 입력
+                        " class="input-default is-delete is-time">
+                        <span class="txt-time">02:30</span>
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group ">
+                <!-- 활성화 disabled 속성제거 -->
+                <!-- <button class="btns md-ripples ripples-light">등록 완료</button> -->
+
+                <!-- 비활성화 disabled 속성추가,md-ripples ripples-light 클래스 제거  -->
+                <button class="btns" disabled>등록 완료</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+        </div>
+    </div>
+    <div class="btn-group sticky">
+        <button class="btns white md-ripples ripples-dark">이전</button>
+        <button class="btns md-ripples ripples-light" disabled>인증완료</button>
+    </div>
+</section>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

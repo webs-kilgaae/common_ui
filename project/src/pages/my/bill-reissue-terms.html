@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '청구서 재발행 개인정보 수집·이용 동의 약관 상세 | U+유모바일',
+    ogTitle: '청구서 재발행 개인정보 수집·이용 동의 약관 상세 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+</head>
+<body>
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap show terms">
+    <div class="layer-popup-item" >
+        <div class="popup-header">
+            <strong class="txt-main">약관 자세히 보기</strong>
+        </div>
+
+        <div class="popup-body">
+            <!-- 약관 내용 -->
+            <div class="page-tit">
+                <h1>청구서 수신을 위한 개인정보 수집·이용 동의</h1>
+            </div>
+            <div class="agree-cont">
+                <h3 class="hidden">청구서 수신을 위한 개인정보 수집·이용 동의</h3>
+                <p>
+                    1. 수집항목 : 이름, 성별, 생년월일, 휴대폰번호, 이메일
+                </p>
+                <p>2. 수집 이용목적 : 청구서 재발행</p>
+                <p>3. 보유,이용기간 및 파기 : 자료 제공 후 1개월 후 지체없이 파기</p>
+            </div>
+            <!-- //약관 내용 -->
+        </div>
+
+        <div class="popup-footer">
+            <div class="btn-group">
+                <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">동의 안함</button>
+                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">동의</button>
+            </div>
+            <button type="button" class="btn-close-x">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT IMPORT -->
+@@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

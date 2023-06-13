@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '법인회원이 요금 납부 시도 시 | U+유모바일',
+    ogTitle: '법인회원이 요금 납부 시도 시 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+</head>
+<body>
+    <div id="test-layer01" class="layer-popup show">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">
+                    법인 고객은 고객센터로 연락해 주세요.
+                </strong>
+            </div>
+
+            <div class="popup-body">
+                <p class="txt-sub">
+                    U+유모바일 휴대폰 114(무료) / 1644-5353(유료)<br>
+                    상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시 ~ 13시 제외)
+                </p>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

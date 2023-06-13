@@ -1,0 +1,32 @@
+<ul class="breadcrumb">
+    <li><a href="#">@@breadcrumb.depth1</a></li>
+    <li><a href="#">@@breadcrumb.depth2</a></li>
+    @@if(breadcrumb.depth3) {
+        <li>
+            <a href="#">@@breadcrumb.depth3</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">나의 주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+    }
+    @@if(breadcrumb.depth4) {
+        <li>
+            <a href="#">@@breadcrumb.depth4</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#" class="on">나의 구독 서비스</a></li>
+                <li><a href="#">나의 주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+    }
+</ul>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+
+    <main class="container my">
+        <div class="sub-conts call-history-select-receiving">
+            <!-- 컨텐츠 -->
+            <div class="page-tit tit-bang">
+                <h1>조회할 기간을 선택해 주세요.</h1>
+            </div>
+
+            <p class="bang-notice">
+                당월 포함 최대 12개월 전까지 신청이 가능합니다.
+            </p>
+
+            <div class="inquir-box">
+                <h2 class="cont-tit">오늘로부터</h2>
+                <ul class="btn-radio-group group4">
+                    <li class="btn-radio">
+                        <input type="radio" id="dan4-1" name="dan4">
+                        <label for="dan4-1">1개월</label>
+                    </li>
+                    <li class="btn-radio">
+                        <input type="radio" id="dan4-2" name="dan4" checked="checked">
+                        <label for="dan4-2">3개월</label>
+                    </li>
+                    <li class="btn-radio">
+                        <input type="radio" id="dan4-3" name="dan4">
+                        <label for="dan4-3">6개월</label>
+                    </li>
+                    <li class="btn-radio etc-btn">
+                        <input type="radio" id="dan4-4" name="dan4">
+                        <label for="dan4-4">직접입력</label>
+                    </li>
+                </ul>
+                <div class="period-set etc-input">
+                    <h2 class="cont-tit">조회기간</h2>
+                    <div class="box-input">
+                        <label for="datepicker1" class="input-label">시작일</label>
+                        <input id="datepicker1" type="text" placeholder="YYYY-MM-DD" class="input-default date-picker" disabled><!-- 직접 입력시 disabled제거 -->
+                        <span class="txt-error">날짜를 선택해 주세요.</span>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="datepicker2" class="input-label">종료일</label>
+                        <input id="datepicker2" type="text" placeholder="YYYY-MM-DD" class="input-default date-picker" disabled><!-- 직접 입력시 disabled제거 -->
+                        <span class="txt-error">날짜를 선택해주세요.</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="btn-group ">
+                <!-- 2022.07.15 이전버튼 추가 -->
+                <button class="btns white md-ripples ripples-dark">이전</button>
+                <button class="btns md-ripples ripples-light">다음</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    <!-- 임시 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <!--
+    <script>
+    $(function() {
+        $("#datepicker1").datepicker({
+            dateFormat: 'yy.mm.dd',
+            showOtherMonths: true,
+            selectOtherMonths: true
+        });
+    });
+    </script>
+    * datepicker 옵션은 ui.common.js에서 제어
+    -->
+    <!-- //임시 -->
+</div>
+</body>
+</html>

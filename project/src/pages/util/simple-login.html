@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'main-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts login">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>U+ 유모바일에 가입된<br>정보를 입력해 주세요.</h1>
+            </div>
+            <!-- 2022.07.14 radio 구조변경 -->
+            <div class="box-radio">
+                <span class="radio-title">구분</span>
+                <div class="btn-radio-group">
+                    <div class="btn-radio">
+                        <input type="radio" id="dan1" name="dan1" checked>
+                        <label for="dan1">개인/개인사업자</label>
+                    </div>
+                    <!-- 2022.07.15 name,for 속성 수정 -->
+                    <div class="btn-radio">
+                        <input type="radio" id="dan1-1" name="dan1">
+                        <label for="dan1-1">외국인</label>
+                    </div>
+                </div>
+            </div>
+            <!-- 2022.07.14 성별추가 -->
+            <div class="box-radio">
+                <span class="radio-title">성별</span>
+                <div class="btn-radio-group">
+                    <div class="btn-radio">
+                        <input type="radio" id="dan2" name="dan2" checked>
+                        <label for="dan2">여성</label>
+                    </div>
+                    <div class="btn-radio">
+                        <input type="radio" id="dan2-1" name="dan2">
+                        <label for="dan2-1">남성</label>
+                    </div>
+                </div>
+            </div>
+            <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+            <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+            <div class="box-input">
+                <label for="input1" class="input-label">이름</label>
+                <div class="input-wrap">
+                    <!-- 2022.07.14 placeholder 텍스트수정 -->
+                    <input id="input1" type="text" placeholder="가입자 이름" class="input-default is-delete">
+                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                </div>
+                <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+            </div>
+            <div class="box-input">
+                <label for="input2" class="input-label">생년월일</label>
+                <div class="input-wrap">
+                    <input id="input2" type="text" placeholder="가입자 생년월일 6자리 (YYMMDD)" class="input-default is-delete">
+                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                </div>
+                <span class="txt-error">에러에러</span>
+            </div>
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">다음</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

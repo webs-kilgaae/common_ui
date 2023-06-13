@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '이용자 피해예방 안내 | U+유모바일',
+    ogTitle: '이용자 피해예방 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['이용자 피해예방 안내', '웹툰으로 보는 피해예방법', '동영상으로 보는 피해예방법', '최신 이용자 피해예방법']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '고객 보호',
+            depth4: '이용자 피해예방 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">고객 보호</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#" class="on">고객 보호</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이용자 피해예방 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">부정가입ㆍ명의도용 방지</a></li>
+                <li><a href="#" class="on">이용자 피해예방 안내</a></li>
+                <li><a href="#">웹툰으로 보는 피해예방법</a></li>
+                <li><a href="#">동영상으로 보는 피해예방법</a></li>
+                <li><a href="#">최신 이용자 피해예방 정보</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <!-- 09.15 html 재작업 -->
+
+        <div class="sub-conts customer-protect spam fix-unit-wide"><!-- 09.15 wide관련 클래스 추가-->
+            <!-- 컨텐츠 -->
+            <div class="page-tit unit-origin"><!-- 09.15 wide관련 클래스 추가-->
+                <h1>이용자 피해예방 안내</h1>
+            </div>
+
+            <!-- tab -->
+            <div class="box-tab on unit-origin"><!-- 09.15 wide관련 클래스 추가-->
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="#" class="on">스팸</a></li>
+                    <li class="swiper-slide"><a href="#">스미싱</a></li>
+                    <li class="swiper-slide"><a href="#">보이스피싱</a></li>
+                    <li class="swiper-slide"><a href="#">불법 텔레마케팅(TM)</a></li>
+                    <li class="swiper-slide"><a href="#">파밍</a></li>
+                    <li class="swiper-slide"><a href="#">큐싱</a></li>
+                    <li class="swiper-slide"><a href="#">발신번호 변작</a></li>
+                    <li class="swiper-slide"><a href="#">예방 관련 사이트</a></li>
+                    <li class="swiper-slide"><a href="#">스마트 통신서비스 스쿨</a></li>
+                </ul>
+            </div>
+            <!-- //tab -->
+
+            <!-- 09.15 html 재작업 -->
+            <div class="protect-visual unit-wide">
+                <div class="visual">
+                    <h3 class="title">스팸이란?</h3>
+                    <p class="desc">
+                        불특정 다수에 대량으로 발송되는 문자메시지 또는 음성 전화로서 광고, 대출 등의 무차별적인 정보제공을 목적으로 하는 것을 말합니다.<br> 다만, 스팸이란 개인별 특성에 따라 유익할 수도 무익할 수도 있어 개인 스스로 가려 받을 수 있는 능력을 갖추는 것이 매우 중요합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="fix-unit-group unit-origin">
+                <h2 class="unit-tit-b">스팸 문자메시지와 음성 전화 차단 방법</h2>
+                <h3 class="unit-tit-m">1. 스팸 문자메시지 차단 서비스 가입 <span class="txt-vt">(무료)</span></h3>
+                <p class="unit-txt">스팸 문자메시지와 음성전화 차단 서비스란?</p>
+                <p class="unit-txt">
+                    국가기관 KISA(한국인터넷진흥원)에 신고된 도박, 음란, 불법대출 등 불법적 메시지를 매일 업데이트하여 자동으로 차단해 주는 무료 부가서비스로, 최초 개통 시 자동으로 가입됩니다.
+                </p>
+                <section class="topGray-card-wrap">
+                    <dl>
+                        <dt><strong>직접 가입 신청</strong></dt>
+                        <dd>
+                            <p class="unit-txt">
+                                U<sup>+</sup>유모바일 홈페이지 또는 유모바일 앱에서<br>
+                                ‘스팸차단 서비스 신청’
+                            </p>
+                            <div class="unit-link">
+                                <a href="#" class="btn-text-right-s underline-bk">스팸 차단 서비스 신청하러 가기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><strong>고객센터 문의</strong></dt>
+                        <dd>
+                            <p class="txt">
+                                휴대폰에서 <span class="ico-red-phone"></span>114(무료) 또는 <span class="ico-red-phone"></span>1644 - 5353(유료) 연락해 스팸 차단 서비스 신청
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt> <strong>방문 신청</strong></dt>
+                        <dd>
+                            <p class="txt">
+                                LG U<sup>+</sup> 직영점에 방문하여 스팸차단 서비스 신청
+                            </p>
+                            <div class="unit-link">
+                                <a href="#" class="btn-text-right-s underline-bk">LG U<sup>+</sup> 직영점 찾기</a>
+                            </div>
+                        </dd>
+                    </dl>
+                </section>
+
+                <h3 class="unit-tit-m">2. 휴대폰에서 스팸 번호 및 특정 문구로 차단</h3>
+                <p class="unit-txt">스팸 번호 및 특정 문구로 차단 설정</p>
+                <div class="unit-box-img">
+                    <div class="wrap">
+                        <strong class="unit-tit-s">안드로이드</strong>
+                        <ul class="next-list img150">
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-android-step01.jpg" alt="">
+                                <p class="txt">1. 메시지함에서<br> (…) 버튼 누르기</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-android-step02.jpg" alt="">
+                                <p class="txt">2. 설정 선택</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-android-step03.jpg" alt="">
+                                <p class="txt">3. 번호 및 메세지<br> 차단 선택</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-android-step04.jpg" alt="">
+                                <p class="txt">4. 수신차단 또는 <br>차단 문구 선택</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-android-step05.jpg" alt="">
+                                <p class="txt">5. 차단 문구 선택 시, <br>문구 작성 후 [*] <br>선택하여 등록</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="wrap">
+                        <strong class="unit-tit-s">아이폰(iOS)</strong>
+                        <ul class="next-list img150">
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-ios-step01.jpg" alt="">
+                                    <p class="txt">1. 메시지가 열린 상태에서 <br>본문 내용을 길게 누르기</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/pc/subpage/spam-ios-step02.jpg" alt="">
+                                <p class="txt">2. 스팸번호로 신고 선택 후, 확인</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="unit-tit-m">3. 전화/홈페이지를 이용한 차단 신고</h3>
+                <p class="unit-txt">
+                    스팸 번호로 신고 시 한국인터넷진흥원 불법대응센터<span class="ico-red-phone"></span>118(유료), <a href="https://spam.kisa.or.kr/spam/main.do" target="_blank" class="underline-vt">https://spam.kisa.or.kr/spam/main.do</a>로 바로 신고됩니다.
+                </p>
+                <div class="unit-box-img">
+                    <ul class="next-list img200">
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-report-step01.jpg" alt="">
+                            <p class="txt">1. 메시지가 열린 상태에서 <br>본문 내용을 길게 누르기</p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-report-step02.jpg" alt="">
+                            <p class="txt">2.스팸번호로 신고 선택 후, 확인</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="unit-tit-m">4. 스팸차단 앱을 이용한 차단/신고</h3>
+                <p class="unit-txt">이용 가능 앱: 구글 플레이 스토어 또는 앱스토어에서 &lsquo;U<sup>+</sup> 스팸차단&rsquo; &lsquo;후후&rsquo;  &lsquo;후스콜&rsquo;을 내려받으세요.</p>
+                <div class="unit-box-img">
+                    <strong class="unit-tit-s">U<sup>+</sup>스팸차단 사용 방법</strong>
+                    <ul class="next-list img200">
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-app-report-step01.jpg" alt="">
+                            <p class="txt">1. [스팸 차단] 누르기</p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-app-report-step02-1.jpg" alt="">
+                            <p class="txt">2. 스팸 차단 번호 등록</p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-app-report-step02-2.jpg" alt="">
+                            <!-- 2022.11.09 텍스트 수정 -->
+                            <p class="txt">3. 스팸 차단 문구 등록</p>
+                        </li>
+                        <li>
+                            <img src="/assets/images/pc/subpage/spam-app-report-step03.jpg" alt="">
+                            <p class="txt">4. 등록 완료</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="unit-tit-m">5. 스팸 차단 내역 조회</h3>
+                <p class="unit-txt">
+                    특정 전화번호나 문구로 스팸 차단 설정을 한 경우 스팸 문자메시지가 아닌 일반 문자메시지가 차단되기도 합니다. 이 경우 스팸 차단 내역 조회를 통해 문자메시지 내용을 확인할 수 있습니다.
+                </p>
+                <div class="unit-box-txt">
+                    <ul class="notification">
+                        <li>[U+스팸차단] 앱(APP)에서 [스팸 메시지함] 바로가기 선택 → 스팸 차단내역 보기</li>
+                        <li>휴대폰에서 [문자 메시지] → 설정 또는 우상단 상세메뉴 클릭 → 스팸 관리 → 스팸함</li>
+                        <li>기타 후후, 후스콜 등 앱에서 제공하는 스팸 차단 서비스 활용</li>
+                    </ul>
+                </div>
+
+                <h2 class="unit-tit-b">전화번호 수신거부 앱</h2>
+                <p class="unit-txt">구글 플레이 스토어 또는 앱스토어 등에서 검색한 후 내려 받으세요</p>
+                <ul class="app_list">
+                    <li>
+                        <span class="app-img"><img src="../../assets/images/pc/icon/ico-moyaweb.png" alt="뭐야이번호"></span>
+                        <dl>
+                            <dt>뭐야이번호</dt>
+                            <dd>
+                                스팸차단 &amp; 발신자 정보확인
+                                <i class="app-link">
+                                    <a href="https://play.google.com/store/apps/details?id=com.andr.evine.who&hl=ko" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/logo-playstore.png" alt="플레이스토어"></a>
+                                    <a href="https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000299844" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/logo-onestore.png" alt="원스토어"></a>
+                                </i>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span class="app-img"><img src="../../assets/images/pc/icon/ico-whoscall.png" alt="whoscall"></span>
+                        <dl>
+                            <dt>whoscall</dt>
+                            <dd>
+                                스팸차단 &amp; 보이스피싱 &amp; 모르는 전화번호 식별
+                                <i class="app-link">
+                                    <a href="https://play.google.com/store/apps/details?id=gogolook.callgogolook2&hl=ko" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/logo-playstore.png" alt="플레이스토어"></a>
+                                    <a href="https://apps.apple.com/kr/app/%ED%9B%84%EC%8A%A4%EC%BD%9C/id929968679" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/ico-cir-apple-store.png" alt="앱스토어"></a>
+                                </i>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <span class="app-img"><img src="../../assets/images/pc/icon/ico-whowho.png" alt="whowh"></span>
+                        <dl>
+                            <dt>whowho</dt>
+                            <dd>
+                                스팸 잡는 1등 전화
+                                <i class="app-link">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ktcs.whowho&hl=ko" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/logo-playstore.png" alt="플레이스토어"></a>
+                                    <a href="https://apps.apple.com/kr/app/%ED%9B%84%ED%9B%84-%EC%8A%A4%ED%8C%B8-%EC%B0%A8%EB%8B%A8%EA%B3%BC-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EC%A0%84%ED%99%94/id1033450260" target="_blank" title="새창 열림"><img src="../../assets/images/pc/icon/ico-cir-apple-store.png" alt="앱스토어"></a>
+                                </i>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <!-- //09.15 html 재작업 -->
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

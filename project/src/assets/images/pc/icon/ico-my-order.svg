@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 492578">
+        <g data-name="그룹 484269">
+            <g data-name="그룹 484268" transform="translate(9.261 4.911)">
+                <rect data-name="사각형 350226" width="18" height="26" rx="4" transform="translate(-.261 .088)" style="stroke-width:1.5px;stroke:#191919;fill:#fff"/>
+                <path data-name="선 126807" transform="translate(7.238 3.087)" style="stroke-linejoin:round;fill:none;stroke-linecap:round;stroke-width:1.5px;stroke:#191919" d="M0 0h3"/>
+                <g data-name="그룹 492576">
+                    <path d="M101.645 76.353a7 7 0 1 0-7 7 7 7 0 0 0 7-7z" transform="translate(-77.907 -52.279)" style="stroke-width:1.5px;stroke:#191919;fill:#fff"/>
+                    <g data-name="그룹 484099">
+                        <path data-name="선 442" transform="translate(13.75 23.925)" style="stroke:#000;stroke-linejoin:round;fill:none;stroke-linecap:round;stroke-width:1.5px" d="m0 0 1.937 1.937"/>
+                        <path data-name="선 443" transform="translate(15.687 21.504)" style="stroke:#000;stroke-linejoin:round;fill:none;stroke-linecap:round;stroke-width:1.5px" d="M4.359 0 0 4.359"/>
+                    </g>
+                </g>
+                <g data-name="그룹 492577" style="isolation:isolate">
+                    <path data-name="선 126605" transform="translate(4.239 8.088)" style="fill:none;stroke-linecap:round;stroke-width:1.5px;stroke:#191919" d="M0 0h9"/>
+                    <path data-name="선 126607" transform="translate(4.239 12.088)" style="fill:none;stroke-linecap:round;stroke-width:1.5px;stroke:#191919" d="M0 0h6"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

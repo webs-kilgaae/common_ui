@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '일시정지 신청 | U+유모바일',
+    ogTitle: '일시정지 신청 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap util show">
+        <div class="layer-popup-item mem-withdraw-account-pop">
+            <div class="popup-header">
+                <strong class="txt-main">회원탈퇴</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>U<sup>+</sup> 유모바일을 탈퇴하시면</h2>
+                    <!-- <p>회원탈퇴 시 U+유모바일에서 제공하고 있는 온라인 서비스이용이 불가합니다.</p> -->
+                </div>
+                <div class="txt-sub-wrap">
+                    <p class="txt-sub">
+                        U<sup>+</sup> 유모바일을 탈퇴하시면 U<sup>+</sup> 유모바일에서 제공하는 실시간
+                        사용량, 청구 요금 확인과 납부, 부가서비스, 통화이력, 가입사실, 유심잠금해제 등의 개인정보 열람 서비스를 이용할 수 없습니다.
+                    </p>
+                    <p class="txt-sub">또한, <strong>지금까지 적립된 포인트가 모두 사라집니다.
+                    </strong> </p>
+                    <p class="txt-sub">회원 탈퇴하면 <strong>고객님의 모든 정보가 즉시파기</strong>되며, 다시 가입해도 정보를 되돌릴 수 없습니다.
+                        </p>
+                </div>
+                <div class="btn-check">
+                    <input type="checkbox" id="check2">
+                    <label for="check2"><span class="ico-check"></span>모든 정보 삭제에 동의하십니까?</label>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">회원탈퇴</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

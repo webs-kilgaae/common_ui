@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <linearGradient id="r5p1guyxyb" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+        <filter id="1qhbjrgqna" x="7.5" y="39.5" width="99" height="72" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 484463">
+        <g data-name="그룹 465493">
+            <g style="filter:url(#1qhbjrgqna)">
+                <path data-name="패스 862543" d="M0 0h84v41a16 16 0 0 1-16 16H16A16 16 0 0 1 0 41z" transform="translate(14.997 42.002)" style="fill:url(#r5p1guyxyb)"/>
+            </g>
+            <g data-name="그룹 484265">
+                <path data-name="패스 862482" d="M50.111 27.209v-10a10 10 0 1 1 10 10z" transform="translate(6.887 1.79)" style="fill:none;stroke:#dadef8;stroke-linejoin:round;stroke-width:4.5px"/>
+                <path data-name="패스 862482" d="M70.111 27.209v-10a10 10 0 1 0-10 10z" transform="translate(-13.113 1.79)" style="fill:none;stroke:#dadef8;stroke-linejoin:round;stroke-width:4.5px"/>
+            </g>
+            <path data-name="패스 862542" d="M8 0h78a8 8 0 0 1 8 8v6a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8z" transform="translate(9.999 26.999)" style="fill:#dadef8"/>
+            <path data-name="사각형 348899" transform="rotate(-90 76.499 22.5)" style="fill:#dadef8" d="M0 0h72v8H0z"/>
+        </g>
+        <g data-name="그룹 486140">
+            <g data-name="그룹 484415" transform="translate(0 92)">
+                <circle data-name="타원 8479" cx="2.667" cy="2.667" r="2.667" transform="translate(7.333)" style="fill:url(#r5p1guyxyb)"/>
+                <circle data-name="타원 8480" cx="2.667" cy="2.667" r="2.667" transform="translate(7.333 14.667)" style="fill:url(#r5p1guyxyb)"/>
+                <g data-name="그룹 465280" transform="rotate(90 6.333 13.667)">
+                    <circle data-name="타원 8481" cx="2.667" cy="2.667" r="2.667" style="fill:url(#r5p1guyxyb)"/>
+                    <circle data-name="타원 8482" cx="2.667" cy="2.667" r="2.667" transform="translate(0 14.667)" style="fill:url(#r5p1guyxyb)"/>
+                </g>
+            </g>
+            <g data-name="그룹 484430" transform="translate(100 12)">
+                <circle data-name="타원 8479" cx="2.667" cy="2.667" r="2.667" transform="translate(7.333)" style="fill:url(#r5p1guyxyb)"/>
+                <circle data-name="타원 8480" cx="2.667" cy="2.667" r="2.667" transform="translate(7.333 14.667)" style="fill:url(#r5p1guyxyb)"/>
+                <g data-name="그룹 465280" transform="rotate(90 6.333 13.667)">
+                    <circle data-name="타원 8481" cx="2.667" cy="2.667" r="2.667" style="fill:url(#r5p1guyxyb)"/>
+                    <circle data-name="타원 8482" cx="2.667" cy="2.667" r="2.667" transform="translate(0 14.667)" style="fill:url(#r5p1guyxyb)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

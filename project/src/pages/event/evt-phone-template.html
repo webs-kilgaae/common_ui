@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '진행중인 이벤트 | U+유모바일',
+    ogTitle: '진행중인 이벤트 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <div id="wrap">
+        @@include('../src/pages/includes/header.html', {
+            type : 'sub-type',
+            gnb : true,
+            subDepth: false,
+            subArr : ['진행중인 이벤트', '지난 이벤트', '대상자 발표']
+        })
+        <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '이벤트/혜택',
+            depth3: '이벤트',
+            depth4: '진행중인 이벤트'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이벤트/혜택</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#" class="on">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">이벤트</a></li>
+                <li><a href="#">친구 추천</a></li>
+                <li><a href="#">U Point</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">진행중인 이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">진행중인 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+                <li><a href="#">대상자 발표</a></li>
+            </ul>
+        </li>
+    </ul>
+
+        <main class="container event">
+            <div class="sub-conts evt-phone-template template fix-unit-wide">
+                <!-- 컨텐츠 -->
+                <div class="page-tit">
+                    <h1>진행중인 이벤트</h1>
+                </div>
+
+                <section class="template-tit unit-origin">
+                    <div class="title-wrap">
+                        <h2 class="tit">이벤트 상세 제목은 최대 두줄까지 표시되며 추가된 문구는 말줄임 표시말로 표시됩니다.벤트 상세 제목은 최대 두줄까지 표시되며 추가된 문구는 말줄임 표시말로 표시됩니다벤트 상세 제목은 최대 두줄까지 표시되며 추가된 문구는 말줄임 표시말로 표시됩니다벤트 상세 제목은 최대 두줄까지 표시되며 추가된 문구는 말줄임 표시말로 표시됩니다</h2>
+                        <p class="period">2022.05.24 ~ 2022.05.31</p>
+                    </div>
+                    <button class="ico-share" data-popup="test-bottom01">공유아이콘</button>
+                </section>
+
+                <!-- 09.01 : 이벤트 타이머 태그 변경 / a태그 삭제 / 메세지박스 소스교체 -->
+                <section class="template-view unit-wide">
+                    <div class="evt-count">
+                        <p>이벤트 마감까지<span><em class="dday">D-15</em> <em>13</em> : <em>25</em></span>남았어요!</p>
+                    </div>
+
+                    <div class="evt-banner" style="background-color:#222f76;">
+                        <img src="../../assets/images/pc/icon/ico-moyaweb.png" alt="테스트 이미지">
+                    </div>
+
+                    <p class="marketing-msg">오늘 셀프개통하시면 신세계 상품권 3만원 증정!!</p>
+                </section>
+                <!-- //09.01 : 이벤트 타이머 태그 변경 / a태그 삭제 / 메세지박스 소스교체 -->
+
+                <!-- 슬라이드 -->
+                <section class="template-info unit-wide evt-movie" style="background-color:#f3f9fe;">
+                    <div class="unit-origin">
+                        <div class="info-tit">
+                            <h2 class="tit">
+                                자급제폰은 유알모가 국룰이지<br>
+                                Z플립3 &amp; Z폴드3 실물 리뷰 | 뼈때리뷰
+                            </h2>
+                            <p class="txt">꿀조합 알뜰폰 요금제 &amp; 보험 대공개!</p>
+                        </div>
+
+                        <div class="slick-default">
+                            <div>
+                                <a href="#" target="_blank" class="btn-play">
+                                    <img src="/assets/images/pc/temp/imsi-listCard.png" height="400" alt="유알모 임시 이미지">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" target="_blank" class="btn-play">
+                                    <img src="/assets/images/pc/temp/imsi-listCard.png" height="400" alt="유알모 임시 이미지">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //슬라이드-->
+
+                <!--CMS에 등록한 이미지 노출-->
+                <!-- 09.01 : html 전체 교체 -->
+                <section class="template-info unit-wide evt-cms-img">
+                    <div class="img-wrap">
+                        <!-- cms 영역-->
+                        <div style="background:#000;">
+                            <img src="/assets/images/pc/temp/temp-friend-present-800.jpg" alt="">
+                        </div>
+
+                        <div style="background:#222f76;">
+                            <img src="/assets/images/pc/temp/temp-evt-view-800.jpg" alt="테스트 이미지">
+                        </div>
+                        <!-- //cms 영역-->
+                    </div>
+                </section>
+                <!-- //09.01 : html 전체 교체 -->
+                <!--CMS에 등록한 이미지 노출-->
+
+                <!-- 주력폰 리스트-->
+                <section class="template-info unit-wide evt-product" style="background-color:#f3f9fe;">
+                    <div class="unit-origin">
+                        <div class="info-tit">
+                            <h2 class="tit">
+                                올 여름한정 제공하는<br>
+                                특별한 가격, 놀라운 혜택
+                            </h2>
+                            <p class="txt">똑똑한 알뜰폰 요금제 선택 가이드 확인해보세요.</p>
+                        </div>
+
+                        <div class="cardList-wrap product-imgCard">
+                            <div class="cardList">
+                                <div class="chip-wrap">
+                                    <span class="chip deepblue">BEST</span>
+                                    <span class="chip pink">상품권 최대 2만원</span>
+                                </div>
+
+                                <div class="phone-info">
+                                    <div class="phone-color-box">
+                                        <ul class="phone-img">
+                                            <li class="on">
+                                                <img src="/assets/images/pc/temp/imsi-phone.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="/assets/images/pc/temp/imsi-listCard.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="/assets/images/pc/temp/temp-slider.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                        <ul class="color-type">
+                                            <li class="on">
+                                                <span style="background-color: #f6f6f6"></span>
+                                            </li>
+                                            <li>
+                                                <span style="background-color:#191919"></span>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="phone-txt-box">
+                                        <div class="box-tit">
+                                            <h2 class="tit">갤럭시 S10 128G</h2>
+                                            <p class="txt">프로급 카메라. 프로급 디스플레이, 프로급 성능</p>
+                                        </div>
+
+                                        <div class="phone-charge-box">
+                                            <div class="total-box">
+                                                <strong>월 예상 납부금 (ⓐ+ⓑ)</strong>
+                                                <span class="txt-vt">45,900원</span>
+                                            </div>
+                                            <div class="charge-wrap">
+                                                <div>
+                                                    <strong class="plan-title">
+                                                        월 통신료 (ⓐ)
+                                                        <span class="plan-name">(데이터 넉넉히 (15GB+/100분))</span>
+                                                    </strong>
+
+                                                    <b class="plan-price">25,900원</b>
+                                                </div>
+                                                <!-- 아코디언 타입 -->
+                                                <div class="accordian type-02">
+                                                    <button class="title acc-trigger"  type="button">
+                                                        <strong class="plan-title">
+                                                            휴대폰 월 할부금 (ⓑ)
+                                                            <span class="plan-name">(24개월/할부이자 포함)</span>
+                                                        </strong>
+
+                                                        <b class="plan-price">23,770원</b>
+                                                    </button>
+                                                    <div class="acc-conts" aria-hidden="true">
+                                                        <div class="cardList-wrap">
+                                                            <div class="cardList money-right">
+                                                                <dl>
+                                                                    <dt>정상가</dt>
+                                                                    <dd>349,800원</dd>
+                                                                    <dt>공시지원금 할인</dt>
+                                                                    <dd>-149,800원</dd>
+                                                                    <dt>정상가</dt>
+                                                                    <dd>-100,000원</dd>
+                                                                    <dt class="txt-bk-b">기기 최종 혜택가 (ⓑ)</dt>
+                                                                    <dd class="txt-bk-b">100,000원</dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<a href="#" class="btn-text-right">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span> 등 사은품 택</a>-->
+                                        <div class="txt">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span>  등 사은품 택</div>
+                                        <div class="box-btn">
+                                            <button class="btns md-ripples ripples-light" type="button">지금 가입하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList">
+                                <div class="chip-wrap">
+                                    <span class="chip deepblue">BEST</span>
+                                    <span class="chip pink">상품권 최대 2만원</span>
+                                </div>
+
+                                <div class="phone-info">
+                                    <div class="phone-color-box">
+                                        <ul class="phone-img">
+                                            <li class="on">
+                                                <img src="/assets/images/pc/temp/imsi-phone.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="/assets/images/pc/temp/imsi-listCard.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img src="/assets/images/pc/temp/temp-slider.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                        <ul class="color-type">
+                                            <li class="on">
+                                                <span style="background-color: #f6f6f6"></span>
+                                            </li>
+                                            <li>
+                                                <span style="background-color:#191919"></span>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="phone-txt-box">
+                                        <div class="box-tit">
+                                            <h2 class="tit">갤럭시 S10 128G</h2>
+                                            <p class="txt">프로급 카메라. 프로급 디스플레이, 프로급 성능</p>
+                                        </div>
+
+                                        <div class="phone-charge-box">
+                                            <div class="total-box">
+                                                <strong>월 예상 납부금 (ⓐ+ⓑ)</strong>
+                                                <span class="txt-vt">45,900원</span>
+                                            </div>
+                                            <div class="charge-wrap">
+                                                <div>
+                                                    <strong class="plan-title">
+                                                        월 통신료 (ⓐ)
+                                                        <span class="plan-name">(데이터 넉넉히 (15GB+/100분))</span>
+                                                    </strong>
+                                                    <b class="plan-price">25,900원</b>
+                                                </div>
+                                                <!-- 아코디언 타입 -->
+                                                <div class="accordian type-02">
+                                                    <button class="title acc-trigger"  type="button">
+                                                        <strong class="plan-title">
+                                                            휴대폰 월 할부금 (ⓑ)
+                                                            <span class="plan-name">(24개월/할부이자 포함)</span>
+                                                        </strong>
+                                                        <b class="plan-price">23,770원</b>
+                                                    </button>
+                                                    <div class="acc-conts" aria-hidden="true">
+                                                        <div class="cardList-wrap">
+                                                            <div class="cardList money-right">
+                                                                <dl>
+                                                                    <dt>정상가</dt>
+                                                                    <dd>349,800원</dd>
+                                                                    <dt>공시지원금 할인</dt>
+                                                                    <dd>-149,800원</dd>
+                                                                    <dt>정상가</dt>
+                                                                    <dd>-100,000원</dd>
+                                                                    <dt class="txt-bk-b">기기 최종 혜택가 (ⓑ)</dt>
+                                                                    <dd class="txt-bk-b">100,000원</dd>
+                                                                </dl>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<a href="#" class="btn-text-right">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span> 등 사은품 택</a>-->
+                                        <p class="txt">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span>  등 사은품 택</p>
+                                        <div class="box-btn">
+                                            <button class="btns md-ripples ripples-light" type="button">지금 가입하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //주력폰 리스트-->
+
+                <!-- 판매량 best 리스트-->
+                <section class="template-info unit-origin evt-product">
+                    <div class="info-tit">
+                        <h2 class="tit">올 여름한정 제공하는 특별한 가격, 놀라운 혜택</h2>
+                        <p class="txt">똑똑한 알뜰폰 요금제 선택 가이드 확인해보세요.</p>
+                    </div>
+
+                    <div class="is-filter-wrap">
+                        <nav class="is-filter">
+                            <ul class="is-filter-list btn-radio-group">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-1" name="dan3" checked="">
+                                    <label for="dan3-1">판매량 Best 스마트폰</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-2" name="dan3">
+                                    <label for="dan3-2">6월 한정 특가 스마트폰</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan3-3" name="dan3">
+                                    <label for="dan3-3">상품권 최대 5만원 스마트폰
+                                    </label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="cardList-wrap product-imgCard type-simple">
+                        <div class="cardList">
+                            <div class="chip-wrap">
+                                <span class="chip deepblue">BEST</span>
+                            </div>
+                            <div class="phone-info">
+                                <div class="phone-color-box">
+                                    <ul class="phone-img">
+                                        <li class="on">
+                                            <img src="/assets/images/pc/temp/imsi-phone.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="/assets/images/pc/temp/temp-evt-view-800.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="/assets/images/pc/temp/imsi-listCard.png" alt="">
+                                        </li>
+                                    </ul>
+
+                                    <ul class="color-type">
+                                        <li class="on"><span style="background-color: #f6f6f6"></span></li>
+                                        <li><span style="background-color:#191919"></span></li>
+                                        <li><span></span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="phone-txt-box">
+                                    <div class="box-info">
+                                        <div class="box-tit">
+                                            <h2 class="tit">갤럭시 S10 128G</h2>
+                                            <p class="txt">프로급 카메라. 프로급 디스플레이, 프로급 성능</p>
+                                        </div>
+
+                                        <p class="item-price">
+                                            <strong>20,900원</strong>
+                                            <span>(월 예상 납부금)</span>
+                                        </p>
+                                    </div>
+
+                                    <ul class="notification">
+                                        <li>데이터 넉넉히(15GB+/100분), 24개월/할부이자 포함)</li>
+                                        <li>기기 최종 혜택가 100,000원(정상가 352,000원)</li>
+                                    </ul>
+
+                                    <div class="box-item">
+                                        <!--<a href="#" class="btn-text-right">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span> 등 사은품 택</a>-->
+                                        <p class="txt">지금 가입하면 <span class="txt-vt">신세계 상품권 3만원</span>  등 사은품 택</p>
+                                    </div>
+
+                                    <div class="box-btn">
+                                        <button class="btns h-sm  md-ripples ripples-light" type="button" tabindex="0">지금 구매하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardList">
+                            <div class="chip-wrap">
+                                <span class="chip deepblue">BEST</span>
+                            </div>
+                            <div class="phone-info">
+                                <div class="phone-color-box">
+                                    <ul class="phone-img">
+                                        <li class="on">
+                                            <img src="/assets/images/pc/temp/imsi-phone.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="/assets/images/pc/temp/temp-evt-view-800.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="/assets/images/pc/temp/imsi-listCard.png" alt="">
+                                        </li>
+                                    </ul>
+
+                                    <ul class="color-type">
+                                        <li class="on"><span style="background-color: #f6f6f6"></span></li>
+                                        <li><span style="background-color:#191919"></span></li>
+                                        <li><span></span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="phone-txt-box">
+                                    <div class="box-info">
+                                        <div class="box-tit">
+                                            <h2 class="tit">갤럭시 S10 128G</h2>
+                                            <p class="txt">프로급 카메라. 프로급 디스플레이, 프로급 성능</p>
+                                        </div>
+
+                                        <p class="item-price">
+                                            <strong>20,900원</strong>
+                                            <span>(월 예상 납부금)</span>
+                                        </p>
+                                    </div>
+
+                                    <ul class="notification">
+                                        <li>데이터 넉넉히(15GB+/100분), 24개월/할부 이자 포함)</li>
+                                        <li>기기 최종 혜택가 100,000원(정상가 352,000원)</li>
+                                    </ul>
+
+                                    <div class="box-btn">
+                                        <button class="btns h-sm  md-ripples ripples-light" type="button" tabindex="0">지금 구매하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--//판매량 best 리스트-->
+
+                 <!--CMS에 등록한 이미지 노출-->
+                 <!-- 09.01 : html 전체 교체 -->
+                <section class="template-info unit-wide evt-cms-img">
+                    <div class="img-wrap">
+                        <!-- cms 영역-->
+                        <div style="background:#573267;">
+                            <img src="https://www.uplussave.com/static/shop/images/event/event611_main01_0804.jpg" alt="쓰던 폰, 번호 그대로 유심만 바꿔서 U+유모바일을 경험해보세요. 최대 5개월 요금을 상품권으로 돌려드려요. 서비스가 만족스럽지 않다면, 언제든 해지할 수 있어요.">
+                        </div>
+
+                        <div style="background:#fffbdb;">
+                            <img src="https://www.uplussave.com/static/shop/images/event/event611_main02_0804.jpg" alt="유심칩을 무료로 당일배송 받고, 전문 상담원을 통해 가입하거나, 셀프로 개통 할 수 있어요. 유심을 구매해보세요.">
+                        </div>
+                        <!-- //cms 영역-->
+                    </div>
+                </section>
+                <!-- 09.01 : html 전체 교체 -->
+                <!--CMS에 등록한 이미지 노출-->
+
+                <!--유의사항-->
+                <section class="template-info unit-origin">
+                    <div class="fix-info-tit"><!-- 09.01 클래스 변경-->
+                        <h2 class="tit">유의사항</h2>
+                    </div>
+                    <ul class="accordian-list">
+                        <li class="accordian type-01">
+                            <button class="title acc-trigger" >유심 요금제 할인 이벤트 관련</button>
+                                <div class="acc-conts" aria-hidden="false">
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                            </div>
+                        </li>
+                        <li class="accordian type-01">
+                            <button class="title acc-trigger" >모바일 상품권 증정 공통사항</button>
+                                <div class="acc-conts" aria-hidden="false">
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                                내용<br>
+                            </div>
+                        </li>
+                        <li class="accordian type-01">
+                            <button class="title acc-trigger" >["혜택1" 유알모 셀프개통 사은품 증정]</button>
+                            <div class="acc-conts" aria-hidden="false">
+                                <div class="fix-unit-group">
+                                    <p class="unit-txt">1. 본 프로모션은 대상 요금제로 셀프개통을 완료한 고객님께 사은품을 증정하는 프로모션입니다.</p>
+                                    <ul class="list-hyphen">
+                                        <li>기간 : 6월 21일~6월 30일까지</li>
+                                        <li>대상요금제 : 유심 최강가성비(10GB+/200분), 유심 통화마음껏 데이터 7GB+, 유심 통화마음껏 데이터 6GB+, 유심통화마음껏데이터4.5GB+, 유심 최강가성비(5GB+/200분)</li>
+                                        <li>사은품 : 신세계 상품권 3만원</li>
+                                    </ul>
+
+                                    <p class="unit-txt">2. 발송 예정일 : 8월 10일 경</p>
+                                    <p class="unit-txt">3. 대상 요금제를 신규 가입/ 번호 이동으로 셀프개통한 고객님 대상으로 증정됩니다. (휴대폰 요금제/ 선불 요금제 개통건 제외)</p>
+                                    <ul class="list-hyphen">
+                                        <li>신규가입 : 신규 번호로 개통한 경우</li>
+                                        <li>번호이동 : 기존 사용중인 번호로 다른 통신사에서 U+유모바일로 통신사를 변경해서 개통한 경우</li>
+                                    </ul>
+                                    <p class="unit-txt">4. 본 이벤트는 당사 사정에 따라 조기종료, 변경될 수 있습니다.</p>
+                                    <p class="unit-txt">5. 사은품 발송 시점에 개통한 요금제를 변경, 해지, 일시정지, 명의변경 시 상품권 증정 대상에서 제외됩니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!--//유의사항-->
+
+                <!-- 다른이벤트 -->
+                <section class="template-info unit-origin">
+                    <div class="fix-info-tit"><!-- 09.01 클래스 변경-->
+                        <h2 class="tit">다른 이벤트도 살펴보세요.</h2>
+                    </div>
+
+                    <ul class="other-evt">
+                        <li>
+                            <a href="#"><img src="https://www.uplussave.com/upload/direct/img/evnt/220802_8llow 기획전_목록배너(4).jpg" alt="유알모 임시 이미지"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="https://www.uplussave.com/upload/direct/img/evnt/220802_8llow 기획전_목록배너(4).jpg" alt="유알모 임시 이미지"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../../assets/images/pc/icon/ico-whowho.png" alt="테스트 이미지"></a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- //다른이벤트 -->
+
+                <div class="template-btn unit-origin">
+                    <button class="btns line" type="button">목록</button>
+                </div>
+                <!-- //컨텐츠 -->
+            </div>
+        </main>
+
+        @@include('./pages/includes/footer.html')
+
+        <!-- 공유하기 바텀시트 -->
+        <div id="test-bottom01" class="layer-popup bottom-sheet-wrap sns-share-bottomSheet">
+            <div class="layer-popup-item">
+                <div class="popup-header">
+                    <strong class="txt-main">공유하기</strong>
+                    <!-- 09.16 삭제
+                    <button class="popup-close"><span class="hidden">닫기</span></button>
+                -->
+                </div>
+                <div class="popup-body">
+                    <ul class="list-sns">
+                        <li>
+                            <button>
+                                <img src="../../assets/images/pc/icon/ico-sns-kakao.png" alt="카카오톡 아이콘">
+                                <span>카카오톡</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="../../assets/images/pc/icon/ico-sns-faceBook.png" alt="페이스북 아이콘">
+                                <span>페이스북</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="../../assets/images/pc/icon/ico-sns-naverBlog.png" alt="네이버 블로그 아이콘">
+                                <span>네이버<br> 블로그</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="../../assets/images/pc/icon/ico-url-share.png" alt="URL 복사 아이콘">
+                                <span>URL 복사</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 09.16 추가 -->
+                <div class="poppup-footer">
+                    <button type="butoon" class="btn-close-x">닫기</button>
+                </div>
+                <!-- //09.16 추가 -->
+            </div>
+        </div>
+
+        <script src="https://d1s5ibsnlco9or.cloudfront.net/prod/vreview-initial-script/script.js?vrid=6a7f0f1e-7fb0-4f70-8e6e-115a927f03f2"></script>
+
+        <!-- SCRIPT IMPORT -->
+        @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    </div>
+</body>
+</html>

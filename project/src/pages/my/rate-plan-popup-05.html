@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금제 변경 안내 | U+유모바일',
+    ogTitle: '요금제 변경 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <style>
+        .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+        .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+    </style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap my show">
+        <div class="layer-popup-item rate-plan-popup rate-plan05">
+            <div class="popup-header">
+                <strong class="txt-main">요금제 변경 안내</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2><span class="txt-vt">$선택한 하위 요금제명$</span> 요금제로 변경하시겠습니까?</h2>
+                </div>
+
+                <div class="box-table">
+                    <h2 class="table-title no-border">변경 요금제 정보</h2>
+                    <table class="table-type-04">
+                        <caption class="hidden">통화,문자,데이터의 기본제공량으로 월 기본요금 정보 제공</caption>
+                        <colgroup>
+                            <col width="152px">
+                            <col width="200px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="charge-month">월 기본 요금</th>
+                                <th scope="col" colspan="2" class="charge-money">
+                                    <span class="origin-pay">37,900원</span>
+                                    <span class="discount-pay">27,900원</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="3">기본 제공량</th>
+                                <td>통화</td>
+                                <td>집/이동전화 무제한</td>
+                            </tr>
+                            <tr>
+                                <td>문자</td>
+                                <td>기본</td>
+                            </tr>
+                            <tr>
+                                <td>데이터</td>
+                                <td>
+                                    6.6GB<br>
+                                    <span class="txt-vt">(소진 시 3Mbps 속도로 계속 이용)</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="guide-txt"><span class="txt-vt">요금제 변경 시 변경일 기준으로 프로모션 할인 혜택이 종료됩니다.</span></p>
+                <p class="txt">(다음달 15일 이후 청구 요금 내역에서 확인할 수 있습니다.)</p>
+
+                <div class="notification-wrap">
+                    <h3>변경 전 유의사항</h3>
+                    <ul class="notification">
+                        <li>월 중 요금제를 변경하시면 추가 요금이 발생할 수 있습니다.</li>
+                        <li>
+                            변경 전/후 기본 요금 및 기본 제공량(통화, 문자, 데이터 등)은 이용한 날짜에 따라 계산되며, <br>
+                            계산된 제공량을 초과 이용하신 경우 추가 요금이 발생할 수 있습니다.
+                        </li>
+                        <li>요금제는 마지막 변경일로부터 30일(1개월) 경과 후 변경하실 수 있습니다. </li>
+                        <li>요금제는 월별 진행되는 프로모션에 따라 할인 금액이 달라집니다.</li>
+                        <li>비할인 요금제로 변경하신 후에는 할인금액이 재적용되지 않으니, 이점 유의하시기 바랍니다.</li>
+                        <li>이용 중인 요금제가 신규 가입/변경할 수 없는 요금제인 경우, 변경 이후 다시 이전 요금제로 변경하실 수 없습니다.</li>
+                        <li>추가 요금에 대한 상세 안내는 U+유모바일 고객센터, 전국 LG U+ 고객지원 매장에서 받으실 수 있습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="btn-box btn-check btn-text-line">
+                    <input type="checkbox" id="check999">
+                    <label for="check999"> <span class="ico-check"></span>유의사항을 확인했습니다. <strong> (필수)</strong></label>
+
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">요금제 변경</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <path style="fill:transparent" d="M0 0h120v120H0z"/>
+    <g transform="translate(17 10.001)">
+        <path data-name="패스 69983" d="M56.017 94.444H10.383A8.393 8.393 0 0 1 2 86.04V10.4A8.393 8.393 0 0 1 10.383 2h45.634a8.393 8.393 0 0 1 8.383 8.4v75.64a8.393 8.393 0 0 1-8.383 8.4" transform="translate(-2 -2)" style="fill:none"/>
+        <rect data-name="사각형 340931" width="62" height="92" rx="10" transform="translate(.444 .267)" style="stroke-width:4px;stroke-linejoin:round;stroke-linecap:round;stroke:#191919;fill:none"/>
+        <path data-name="선 440" transform="translate(1.444 77.267)" style="stroke-width:4px;stroke-linejoin:round;stroke-linecap:round;stroke:#191919;fill:none" d="M0 0h61"/>
+        <path data-name="선 441" transform="translate(26.444 85.267)" style="stroke-width:4px;stroke-linejoin:round;stroke-linecap:round;stroke:#191919;fill:none" d="M0 0h10"/>
+        <g data-name="타원 8469" transform="translate(22.318 16.99)" style="stroke:#000;fill:#fff;stroke-width:4px">
+            <circle cx="10.046" cy="10.046" r="10.046" style="stroke:none"/>
+            <circle cx="10.046" cy="10.046" r="8.046" style="fill:none"/>
+        </g>
+        <path data-name="패스 842164" d="M2 40.743h0C2 31.5 9.758 24 19.329 24h3.851c9.57 0 17.329 7.5 17.329 16.743" transform="translate(10.691 17.267)" style="stroke-miterlimit:10;stroke:#000;stroke-width:4px;stroke-linecap:round;fill:none"/>
+    </g>
+    <g data-name="패스 842165">
+        <path data-name="패스 70055" d="M26 50a24.007 24.007 0 0 1-9.341-46.115 24.007 24.007 0 0 1 18.683 44.23A23.849 23.849 0 0 1 26 50z" style="fill:#fff" transform="translate(51.001 59)"/>
+        <path data-name="패스 70056" d="M26 4a22.007 22.007 0 0 0-8.562 42.273A22.007 22.007 0 0 0 34.562 5.727 21.859 21.859 0 0 0 26 4m0-4A26 26 0 1 1 0 26 26 26 0 0 1 26 0z" style="fill:#191919" transform="translate(51.001 59)"/>
+    </g>
+    <path data-name="선 465" transform="rotate(45 -67.717 121.05)" style="stroke-width:4px;stroke-linecap:round;stroke:#191919;fill:none" d="M0 0h11.901"/>
+    <path data-name="선 466" transform="rotate(-45 147.884 -43.76)" style="stroke-width:4px;stroke-linecap:round;stroke:#191919;fill:none" d="M0 0h19.834"/>
+</svg>

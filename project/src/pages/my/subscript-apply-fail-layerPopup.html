@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '선택약정 할인 신청실패 팝업 | U+유모바일',
+    ogTitle: '선택약정 할인 신청실패 팝업 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+    <div id="test-layer01" class="layer-popup show">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">가입 신청할 수 없습니다.<br>고객센터로 문의해 주세요.</strong>
+            </div>
+
+            <div class="popup-body">
+                <p class="txt-sub">
+                    U+유모바일 휴대폰 114(무료)<br>
+                    1644-5353(유료)<br>
+                    상담 가능 시간 : 평일 9시 ~ 18시<br>
+                    (점심시간 12시 ~ 13시 제외)
+                </p>
+            </div>
+
+            <div class="popup-footer">
+               <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close">확인</button>
+                </div>
+                                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LAYER POPUP -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+
+
+</body>
+</html>

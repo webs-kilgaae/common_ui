@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '셀프개통 | U+유모바일',
+    ogTitle: '셀프개통 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['셀프개통', '바로픽업', '배송 안내','제휴카드 할인', '선택약정 할인','휴대폰 정보 등록']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '상품',
+            depth3: '이용안내',
+            depth4: '셀프개통'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이용안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#">생활 구독 서비스</a></li>
+                <li><a href="#">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#" class="on">이용안내</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">셀프개통</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">셀프개통</a></li>
+                <li><a href="#">바로픽업</a></li>
+                <li><a href="#">배송 안내</a></li>
+                <li><a href="#">제휴카드 할인</a></li>
+                <li><a href="#">선택약정 할인</a></li>
+                <li><a href="#">휴대폰 정보 등록</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container products">
+        <div class="sub-conts use-self-opening">
+            <!-- 09.07 신규 구성 -->
+            <div class="page-tit">
+                <h1>셀프개통</h1>
+            </div>
+
+            <div class="banner bnr-beige">
+                <div class="left">
+                    <h3 class="title">더 이상 기다림은 No! ‘셀프 개통’으로 시간까지 절약하세요.</h3>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/img-woman.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <section class="fix-unit-group">
+                <h2 class="unit-tit-m">셀프개통 가능 시간</h2>
+                <p class="unit-txt">셀프개통은 다음 시간에만 진행이 가능합니다.</p>
+                <ul class="notification">
+                    <li>번호이동 : <span class="txt-vt">오전 10시 ~ 오후 8시</span> (일요일, 신정/설/추석 당일 제외)</li>
+                    <li>신규가입 : <span class="txt-vt">오전 8시 ~ 오후 10시 </span> (요일제한 없음)</li>
+
+                </ul>
+
+                <h2 class="unit-tit-m">개통 방법</h2>
+                <!--2022-11-10 pc 클래스명 추가-->
+                <ol class="img-txt-method pc">
+                    <li>
+                        <div class="method">
+                            <strong>1.유심 카드 구매</strong>
+                            <p>셀프개통 전 유심 카드를 미리 준비해 주세요.</p>
+
+                            <ul class="notification">
+                                <li>
+                                     <!-- 2022.11.24 [CU 바로픽업 기능 추가] 텍스트 수정 -->
+                                    <p class="txt">
+                                        <span class="txt-vt">U<sup>+</sup>유모바일</span>에서 오늘배송/택배으로 수령 또는 바로픽업<br>
+                                        (GS25, 이마트24, 세븐일레븐, CU) 신청 후 교환 쿠폰 수신 및 픽업
+                                    </p>
+                                    <a href="#" class="btn-text-right">유모바일 구매</a>
+                                </li>
+                                <li>
+                                     <!-- 2022.11.24 [CU 바로픽업 기능 추가] 텍스트 수정 -->
+                                    <p class="txt">
+                                        <span class="txt-vt">편의점</span>(GS25, 이마트24, 세븐일레븐, CU) 에서 구매
+                                    </p>
+                                    <a href="#" class="btn-text-right">편의점 구매</a>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        <span class="txt-vt">오픈마켓</span>(네이버, 쿠팡) 에서 구매
+                                    </p>
+                                    <a href="#" class="btn-text-right">오픈마켓 구매</a>
+                                </li>
+                            </ul>
+
+                            <div class="unit-box">
+                                <h4 class="unit-tit-s">오늘배송 서비스란?</h4>
+                                <p class="unit-txt">평일 오후 1시까지 주문하면, 당일 배송해 드리는 무료 배송 서비스입니다.</p>
+                                <i class="link-box">
+                                    <button class="btn-text-right">서비스 지역 자세히 보기</button>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="/assets/images/pc/subpage/img-self-opening01.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening02.png" alt="">
+                        </div>
+                        <div class="method">
+                            <strong>2-1. 유심 셀프개통의 경우</strong>
+                            <p>유심 메뉴의 <span class="txt-vt">&lsquo;유심 개통&rsquo; 메뉴를 선택</span>하여 가입신청서 화면으로 이동합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method">
+                            <strong>2-2. 휴대폰 셀프개통의 경우</strong>
+                            <!---2022-11-10 br 태그 수정 -->
+                            <p>
+                                개통을 희망하는 휴대폰과 요금제를 선택한 후 <br>
+                                <span class="txt-vt">&lsquo;휴대폰 가입 신청하기&rsquo; 버튼을 선택</span>하여
+                                가입신청서 화면으로<br> 이동합니다.
+                            </p>
+                        </div>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening03.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening04.png" alt="">
+                        </div>
+                        <div class="method">
+                            <strong>
+                                <!---2022-11-10 <br>태그 수정-->
+                                3. 가입 신청서에서 개통방식을 &lsquo;셀프개통&rsquo;으로<br> 선택합니다.
+                            </strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method">
+                            <!---2022-11-10 <br>태그 수정-->
+                            <strong>
+                                4. 준비한 유심카드의 일련번호를
+                                입력하거나, <br>카드를 촬영하여 <span class="txt-vt">유심 정보를 입력</span>해 주세요.
+                            </strong>
+                        </div>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening05.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img src="/assets/images/pc/subpage/img-self-opening06.png" alt="">
+                        </div>
+                        <div class="method">
+                            <strong>5. 가입을 희망하는 요금제를 선택합니다.</strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method">
+                            <strong>6. 본인인증을 진행해 주세요.</strong>
+                            <p>
+                                <span class="txt-vt">간편인증</span>(네이버, 카카오, 토스, PASS, 금융인증서)<span class="txt-vt">,신용카드,
+                                범용 공동인증서</span> 중 선택하여 진행할 수 있습니다.
+                            </p>
+                            <ul class="notification">
+                                <li>인증 앱 (app)에 가입되어있지 않은 경우, 각 인증서 별 안내에 따라 가입 후 이용해주세요.</li>
+                            </ul>
+                        </div>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening07.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening08.png" alt="">
+                        </div>
+                        <div class="method">
+                            <strong>
+                                <!---2022-11-10 <br> 태그 수정 -->
+                                7. 본인확인 정보를 입력합니다.<br>
+                                신분증을 촬영하면 신분증 정보가
+                                자동으로 <br>입력됩니다.
+                            </strong>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method">
+                            <strong>
+                                8. 번호이동을 진행하는 경우 <br>
+                                <span class="txt-vt">기존 통신사 인증</span>이 필요합니다.
+                            </strong>
+                            <p>1) 휴대폰 일련번호 혹은 2) 통신비 납부정보를 입력해 주세요.</p>
+                        </div>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening09.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening10.png" alt="">
+                        </div>
+                        <div class="method">
+                            <strong>
+                                9. 신청서 작성이 완료되었다면, <br>
+                                개통이 진행됩니다.
+                            </strong>
+                            <p>
+                                셀프개통은 <span class="txt-vt">신청서 작성 완료 시 바로 개통이 진행</span>되며, <br>
+                                개통 처리 과정은 최대 3분 가량 소요될 수 있습니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="method">
+                            <strong >10. 개통이 완료되었습니다.</strong>
+                            <p>
+                                원활한 서비스 이용을 위해 <span class="txt-vt">휴대폰에 유심을 장착</span>한 후 <br>
+                                재시작해 주세요.
+                            </p>
+                            <i class="link-box">
+                                <button class="btn-text-right">유심 장착 방법 안내</button>
+                            </i>
+                        </div>
+                        <div class="img">
+                            <!---2022-11-10 이미지 변경-->
+                            <img src="/assets/images/pc/subpage/img-self-opening11.png" alt="">
+                        </div>
+                    </li>
+                </ol>
+            </section>
+            <!-- //09.07 신규 구성 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

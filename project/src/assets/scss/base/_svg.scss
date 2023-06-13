@@ -1,0 +1,49 @@
+.ico-share{
+    width:40px; height:40px; border-radius:50%; border:1px solid #e6e6e6; font-size:0;
+    @include backgroundImg('../../assets/images/pc/icon/ico-share.svg',center center,40px 40px);
+}
+.ico-call{
+    width:40px; height:40px; font-size:0;
+    @include backgroundImg('../../assets/images/pc/icon/ico-call.svg',center center,40px 40px);
+}
+.ico-message{
+    width:40px; height:40px; font-size:0;
+    @include backgroundImg('../../assets/images/pc/icon/ico-message.svg',center center,40px 40px);
+}
+.ico-accumulate{
+    width:40px; height:40px; font-size:0;
+    @include backgroundImg('../../assets/images/pc/icon/ico-accumulate.svg',center center,40px 40px);
+}
+.ico-downLoad{
+    width:20px; height: 20px; display: block;
+    @include backgroundImg('../../assets/images/pc/icon/ico-downLoad.svg',center center,contain);
+}
+.ico-arrow-right{
+     font-size: 0;  border: none;  display: inline-block;
+    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-right.svg', right,contain);
+    width: 20px; height: 20px;
+}
+.ico-arrow-bottom{
+     font-size: 0;  border: none;  display: inline-block;
+    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-bottom.svg', right,contain);
+    width: 12px; height: 12px;
+}
+.ico-right-diagonal{
+    @include backgroundImg('../../assets/images/pc/icon/ico-right-diagonal.svg',center left, contain);display: inline-block; width: 20px; height: 20px; margin-left: 10px;
+}
+.btn-share {
+    width:40px;height:40px;border-radius:50%;font-size:0;text-indent:-99999px;
+    @include backgroundImg('../../assets/images/pc/icon/ico-share.svg', center center, contain);
+}
+.ico-vice{
+    width:20px;height:20px; display: inline-block; margin-right: 10px; vertical-align: middle;
+    @include backgroundImg('../../assets/images/pc/icon/ico-vice.svg', center center, contain);
+}
+.ico-red-phone{
+    width:24px;height:24px; display: inline-block; vertical-align: middle;
+    @include backgroundImg('../../assets/images/pc/icon/ico-call-fill-red.png', center center, contain);
+}
+.btn-close-x-wh {
+    display:block; width: 16px; height: 16px; font-size: 0;
+    @include backgroundImg('../../assets/images/pc/icon/ico-close-wh.svg', center, 16px 16px);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 정보 등록 완료 | U+유모바일',
+    ogTitle: '휴대폰 정보 등록 완료 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['내 가입정보', '할부 약정 정보', '할인반환금 예상 금액', '휴대폰 정보 변경']
+    })
+
+    <main class="container my">
+        <div class="sub-conts subscript-complete">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>휴대폰 등록이 정상적으로 <br>완료되었습니다.</h1>
+                <p>원활한 서비스 이용을 위해 휴대폰을 <br>1~2회 재시작 해주세요</p>
+            </div>
+            <div class="icon-img">
+                <img src="../../assets/images/pc/icon/ico-opening-success.svg" alt="개통성공 아이콘">
+            </div>
+
+
+            <div class="btn-group ">
+                <button class="btns white md-ripples ripples-light" type="button">다른 휴대폰 등록</button>
+                <button class="btns md-ripples ripples-light" type="button">확인</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

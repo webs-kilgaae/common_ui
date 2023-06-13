@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../src/pages/includes/guide/head.html', {title: '레이아웃 가이드 - U+유모바일'})
+
+<body>
+
+<!-- 임시 -->
+<style>
+.sample-area {display:flex;justify-content:center;align-items:center;width:100%;height:100%;color:#191919;font-family:'Arial',sans-serif;text-align:center}
+#snb {margin-bottom:80px;}
+#header #snb.sticky {left:0;width:100vw;margin-left:0;}
+section {margin:0;}
+h1 {margin-top:80px;margin-bottom:30px;font-size:42px;}
+h2 {margin-top:80px;margin-bottom:30px;font-size:32px;}
+h3 {margin-top:20px;margin-bottom:30px;font-size:20px;}
+p {margin-top:10px;margin-bottom:30px;font-size:18px;}
+.subpage {padding-bottom:120px;}
+.subpage-info+h2 {margin-top:50px;}
+.box-ct {margin-top:30px;}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+$(function(){
+    $(window).scroll(function(){
+        var cont_loc = $(window).scrollTop();
+        /*console.log(cont_loc);*//*09.19 주석처리*/
+
+        if(cont_loc > 141){
+            $("#snb").addClass("sticky")
+        }else{
+            $("#snb").removeClass("sticky")
+        }
+    });
+});
+</script>
+<!-- //임시 -->
+
+<div id="wrap">
+    <div id="header">
+        <header style="border:0;">
+            <div class="sample-area" style="background:#ddd;font-size:40px;">GNB</div>
+        </header>
+
+        <nav id="snb" style="width:100%;padding:0;border:none;">
+            <div class="sample-area" style="background:#bebebe;font-size:24px;">LNB</div>
+        </nav>
+    </div>
+
+    <div class="sub-visual">
+        <div class="sample-area" style="flex-direction:column;height:300px;background:#ddd;font-size:24px;">
+            Top Visual
+            <span style="margin-top:15px;color:red">(상황에 따라 유/무 있음)</span>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top:0;">
+        <main class="subpage">
+
+            <!-- 컨텐츠 -->
+            <div class="메뉴명">
+                <section>
+                    <h1>컨텐츠 페이지 전체 타이틀 (H1)</h1>
+                    <div class="sample-area subpage-info" style="flex-direction:column;height:137px;background:#ddd;font-size:30px;">
+                        페이지 타이틀 설명 문구 or 페이지 이동 유도 영역<br>
+                        <span style="margin-top:15px;color:red">(해당 내용이 없을 경우 하단에 정의 된 50PX 간격을 적용)</span>
+                    </div>
+
+                    <h2>서브 타이틀 + 서브 문구일 경우</h2>
+                    <p>서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다. 서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다. 서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다.</p>
+                    <div class="sample-area box-ct" style="height:426px;background:#ddd;font-size:30px;">Contents 01</div>
+
+                    <h2>서브 타이틀 + 소타이틀 + 서브 문구일 경우</h2>
+                    <h3>서브 타이틀 + 소타이틀 + 서브 문구일 경우</h3>
+                    <p>서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다. 서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다. 서브 타이틀에 대한 설명 문구가 노출 될 경우 입니다.</p>
+                    <div class="sample-area box-ct" style="height:426px;background:#ddd;font-size:30px;">Contents 02</div>
+
+                </section>
+            </div>
+            <!-- //컨텐츠 -->
+        </main>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    <!-- LAYER POPUP -->
+    @@include('./pages/includes/layerpopup.html')
+
+    <div id="footer" style="height:317px;padding:0;">
+        <div class="sample-area" style="background:#ddd;font-size:30px;">Footer</div>
+    </div>
+
+</div>
+
+</body>
+</html>

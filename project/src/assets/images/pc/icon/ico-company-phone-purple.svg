@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <linearGradient id="l4hmuig4ub" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+        <filter id="7449gtheza" x="17" y="6" width="46" height="72" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486206">
+        <g data-name="그룹 486199">
+            <g data-name="그룹 486198">
+                <g data-name="그룹 484205">
+                    <g data-name="그룹 484204">
+                        <g style="filter:url(#7449gtheza)">
+                            <rect data-name="사각형 348906" width="40" height="66" rx="10" transform="translate(19.997 7.003)" style="fill:#e3e6f9"/>
+                        </g>
+                        <path data-name="선 126776" transform="translate(37 14.001)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px" d="M0 0h6"/>
+                        <g data-name="그룹 486163" transform="translate(28 33)">
+                            <circle data-name="타원 24" cx="14" cy="14" r="14" transform="translate(-2 -2)" style="fill:url(#l4hmuig4ub)"/>
+                            <path data-name="패스 862742" d="M5.38-11.34a1.506 1.506 0 0 0-1.36-1.22 1.431 1.431 0 0 0-1.5 1.32 70.837 70.837 0 0 1-.26 7.76 3.184 3.184 0 0 1-.32 1.02A2.364 2.364 0 0 1 .12-1.18a2.028 2.028 0 0 1-2.02-.84 7.037 7.037 0 0 1-.68-3.78c0-.84.12-3.78 0-5.56a1.292 1.292 0 0 0-.2-.68 1.6 1.6 0 0 0-2.36-.04 4.423 4.423 0 0 0-.38 2.32c-.04 1.08 0 3.26 0 4.3-.02 2.2.22 4.18 1.82 5.74A4.975 4.975 0 0 0 .06 1.7 5.107 5.107 0 0 0 4.22-.58a9.1 9.1 0 0 0 .74-1.68 31.009 31.009 0 0 0 .42-9.08z" transform="translate(12 18)" style="fill:#fff"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g data-name="그룹 486311">
+        <g data-name="그룹 486224" transform="translate(63.229 11.999)">
+            <circle data-name="타원 8479" cx="1.778" cy="1.778" r="1.778" transform="translate(4.889)" style="fill:#dadef8"/>
+            <circle data-name="타원 8480" cx="1.778" cy="1.778" r="1.778" transform="translate(4.889 9.778)" style="fill:#dadef8"/>
+            <g data-name="그룹 465280" transform="rotate(90 4.222 9.111)">
+                <circle data-name="타원 8481" cx="1.778" cy="1.778" r="1.778" style="fill:#dadef8"/>
+                <circle data-name="타원 8482" cx="1.778" cy="1.778" r="1.778" transform="translate(0 9.778)" style="fill:#dadef8"/>
+            </g>
+        </g>
+        <g data-name="그룹 486225" transform="translate(3.895 54.392)">
+            <circle data-name="타원 8479" cx="1.778" cy="1.778" r="1.778" transform="translate(4.889)" style="fill:#dadef8"/>
+            <circle data-name="타원 8480" cx="1.778" cy="1.778" r="1.778" transform="translate(4.889 9.778)" style="fill:#dadef8"/>
+            <g data-name="그룹 465280" transform="rotate(90 4.222 9.111)">
+                <circle data-name="타원 8481" cx="1.778" cy="1.778" r="1.778" style="fill:#dadef8"/>
+                <circle data-name="타원 8482" cx="1.778" cy="1.778" r="1.778" transform="translate(0 9.778)" style="fill:#dadef8"/>
+            </g>
+        </g>
+    </g>
+</svg>

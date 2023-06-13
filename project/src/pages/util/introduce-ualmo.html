@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '브랜드 | U+유모바일',
+    ogTitle: '브랜드 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입정보', '요금제 변경', '부가서비스 변경', '일시정지 신청']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: 'UTIL',
+            depth3: 'U+유모바일 소개',
+            depth4: '보도자료'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">유모바일</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#" class="on">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">브랜드</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">브랜드</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">영상</a></li>
+                <li><a href="#">유모바일 SNS</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container util pb0">
+        <div class="sub-conts fix-unit-wide introduce-ualmo">
+            <!-- 컨텐츠 -->
+            <div class="page-tit unit-origin">
+                <h1>브랜드</h1>
+            </div>
+            <section class="brand-banner main-visual unit-wide">
+                <div class="txt-wrap unit-origin">
+                    <p>당신 중심, 당신을 위한 유모바일</p>
+                    <!-- 2022.11.01 텍스트수정 -->
+                    <!-- 2022.11.07 텍스트수정 -->
+                    <h2 class="brand-main-txt">U<sup>+</sup> 알뜰모바일이 U<sup>+</sup> 유모바일로<br>
+                        새롭게 태어났어요!</h2>
+                </div>
+            </section>
+            <section class="app-capture unit-origin">
+                <div class="txt-wrap">
+                    <h2 class="brand-main-txt">
+                        유모바일은<br>
+                        <span class="txt-vt">시간과 비용을 아껴줘요</span>
+                    </h2>
+                    <p class="brand-sub-txt">합리적인 가격과 혜택은 기본,<br>쉽고 빠른 가입과 개통! 간편한 고객서비스까지</p>
+                </div>
+                <div class="img-wrap">
+                    <img src="/assets/images/pc/subpage/introduce-ualmo/app-capture.png" alt="유모바일은 시간과 비용을 아껴줘">
+                </div>
+            </section>
+            <section class="brand-banner easy-ualmo unit-wide">
+                <div class="unit-origin">
+                    <div class="txt-wrap">
+                        <h2 class="brand-main-txt">유모바일은<br>쉽고 간편해요.</h2>
+                        <p class="brand-sub-txt">탐색하고 개통하고 사용하는 모든 가입 과정이<br>정말 쉽고 간편해요.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="rolling-area unit-wide">
+                <div class="not-rolling">
+                    <div class="txt-wrap">
+                        <h2 class="brand-main-txt">유모바일은<br><span class="txt-vt">새로운 재미, 즐거움이</span><br>가득해요.</h2>
+                        <p class="brand-sub-txt">원할 때 원하는 대로 상품을 변경하는 즐거움!<br>
+                            친구나 가족을 추천하고 포인트를 쌓는 재미!<br>
+                            포인트를 현금처럼 사용하는 기쁨!</p>
+                    </div>
+                </div>
+                <div class="rolling-banner" data-slick="infinite: true; dots: false; arrows: false; slidesToShow: 1,variableWidth: true,autoplay: true,autoplaySpeed: 2000,pauseOnHover:false,pauseOnFocus:false,draggable:false,">
+                    <div class="rolling-item item-01">
+                        <div class="rolling-txt">
+                            <span class="item-chip">요금제</span>
+                            <p>취향 저격 유모바일<br>요금제 바로 보기</p>
+                        </div>
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/rolling-01.png" alt="취향 저격 유모바일 요금제 바로 보기" class="rolling-icon">
+                    </div>
+                    <div class="rolling-item item-02">
+                        <div class="rolling-txt">
+                            <span class="item-chip">eSIM</span>
+                            <p>유심이 필요 없는<br>eSIM</p>
+                        </div>
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/rolling-02.png" alt="유심이 필요 없는 eSIM" class="rolling-icon">
+                    </div>
+                    <div class="rolling-item item-03">
+                        <div class="rolling-txt">
+                            <span class="item-chip">셀프개통</span>
+                            <p>원하는 시간에 기다리지 않고<br>빠른 개통</p>
+                        </div>
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/rolling-03.png" alt="원하는 시간에 기다리지 않고 빠른 개통" class="rolling-icon">
+                    </div>
+                    <div class="rolling-item item-04">
+                        <div class="rolling-txt">
+                            <span class="item-chip">오늘배송</span>
+                            <p>유모바일 오늘배송으로<br>배송 걱정 NO!</p>
+                        </div>
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/rolling-04.png" alt="유모바일 오늘배송으로 배송 걱정 NO!" class="rolling-icon">
+                    </div>
+                    <div class="rolling-item item-05">
+                        <div class="rolling-txt">
+                            <span class="item-chip">친구추천</span>
+                            <p>친구를 추천할수록<br>쌓이는 포인트</p>
+                        </div>
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/rolling-05.png" alt="친구를 추천할수록 쌓이는 포인트" class="rolling-icon">
+                    </div>
+                </div>
+            </section>
+            <section class="qr-area unit-wide">
+                <div class="unit-origin">
+                    <div class="txt-wrap">
+                        <strong>아껴주니까, 쉽고 간편하니까, 즐거우니까,</strong>
+                        <h2 class="brand-main-txt">Your Smart Mobile Life</h2>
+                        <!-- 2022.11.07 텍스트수정 -->
+                        <p>지금 U<sup>+</sup> 유모바일을 경험해보세요.</p>
+                        <div class="app-download">
+                            <a href="https://play.google.com/store/apps/details?id=com.medialog.umobi.customerservice" target="_blank">
+                                <img src="/assets/images/pc/subpage/introduce-ualmo/logo-google.svg" alt="구글 플레이스토어">
+                                <span class="hidden">구글 플레이스토어 바로가기</span>
+                            </a>
+                            <a href="https://apps.apple.com/kr/app/%EC%9C%A0%EB%AA%A8%EB%B9%84-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B3%A0%EA%B0%9D%EC%84%BC%ED%84%B0/id1094148310" target="_blank">
+                                <img src="/assets/images/pc/subpage/introduce-ualmo/logo-appstore.svg" alt="애플 앱스토어">
+                                <span class="hidden">애플 앱스토어 바로가기</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="qr-wrap">
+                        <img src="/assets/images/pc/subpage/introduce-ualmo/qr.svg" alt="qr 코드">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+// chips color class
+.hotpink {background-color: $hotpink;}
+.red {background-color: $red;}
+.lightbrick {background-color: $lightbrick;}
+.brick {background-color: $brick;}
+.purple {background-color: $purple;}
+.lightpurple {background-color: $lightpurple;}
+.pinkpurple {background-color: $pinkpurple;}
+.lightgray {background-color: $gray06;}
+.pink {background-color: $pink;}
+.deeppink {background-color: $deeppink;}
+.lightorange {background-color: $lightorange;}
+.yellow {background-color: $yellow;}
+.orange {background-color: $orange;}
+.blue {background-color: $blue;}
+.skyblue {background-color: $skyblue;}
+.deepblue {background-color: $deepblue;}
+.paleblue {background-color: $paleblue;}
+.purpleblue {background-color: $purpleblue;}
+.green {background-color: $green;}
+.lightgreen {background-color: $lightgreen;}
+.deepgreen {background-color: $deepgreen;}
+.yellowgreen {background-color: $yellowgreen;}
+.mint {background-color: $mint;}
+.silver {background-color: $silver;}
+.gold {background-color: $gold;}
+.jade {background-color: $jade;}
+.gray {background-color: $gray05;}
+
+.txt-rd {
+    color: $red !important;font-size:inherit;font-weight:inherit;line-height:inherit;
+    &-b {color: $red !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
+}
+.txt-vt {
+    color: $purple !important;font-size:inherit;font-weight:inherit;line-height:inherit;
+    &-b {color: $purple !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
+}
+.txt-bk {
+    color: $black !important;font-size:inherit;font-weight:inherit;line-height:inherit;
+    &-b {color: $black !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
+}
+.txt-gy {
+    color: $gray05 !important;font-size:inherit;font-weight:inherit;line-height:inherit;
+    &-b {color: $gray05 !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
+}

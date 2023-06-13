@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '부가서비스 신청하기, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 신청하기 | U+유모바일',
+    ogTitle: '부가서비스 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <!--바텀 시트-->
+    <div class="products">
+        <div class="popup-space">
+            <div class="popup-body addition-service-pop add-forwarding">
+                <div class="page-desc hidden">
+                    <h2>부가서비스 신청하기</h2>
+                </div>
+                <section class="cardList-wrap top-infobox">
+                    <h2 class="cardList-title"><span>%부가서비스 명%</span> 서비스를 신청하겠습니까?</h2>
+                    <div class="cardList">
+                        <dl>
+                            <dt>휴대폰 번호</dt>
+                            <dd>010-**34-**78</dd>
+                            <dt>신청일</dt>
+                            <dd>2022-06-16</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <div class="radio-group-wrap">
+                    <h3 class="group-tit">신청 서비스 선택<span>(부가세 포함 금액)</span></h3>
+                    <ul class="btn-radio-group">
+                        <li class="btn-radio">
+                            <input type="radio" id="dan1" name="dan1" checked>
+                            <label for="dan1">
+                                <span>착신전환 (통화만)</span>
+                                <span>월 770원</span>
+                            </label>
+                        </li>
+                        <li class="btn-radio">
+                            <input type="radio" id="dan1-1" name="dan1">
+                            <label for="dan1-1">
+                                <span>착신전환 (통화와 문자)</span>
+                                <span>월 1,650원</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="notification-wrap">
+                    <h3>꼭 알아두세요!!</h3>
+                    <p class="txt">
+                        매너콜 서비스 가입 고객은 할인이 적용됩니다.<br>
+                        단, 할인 혜택은 매너콜 서비스를 유료로 이용 중인 고객에게만 해당합니다.<br>
+                        요금제 혜택으로 무료로 매너콜 서비스를 이용 중인 고객은 해당하지 않습니다.
+                    </p>
+                </div>
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소하기</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">신청하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

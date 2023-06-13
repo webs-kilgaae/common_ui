@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '진행중인 이벤트 | U+유모바일',
+    ogTitle: '진행중인 이벤트 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['진행중인 이벤트', '지난 이벤트', '대상자 발표']
+    })
+
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이벤트/혜택</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#" class="on">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">이벤트</a></li>
+                <li><a href="#">친구 추천</a></li>
+                <li><a href="#">U Point</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">진행중인 이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">진행중인 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+                <li><a href="#">대상자 발표</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container event">
+        <div class="sub-conts evt-default-template template fix-unit-wide">
+            <div class="page-tit">
+                <h1>진행중인 이벤트</h1>
+            </div>
+
+            <section class="template-tit unit-origin">
+                <div class="title-wrap">
+                    <h2 class="tit">새롭게 더 새롭게 매일 래플</h2>
+                    <p class="period">2022.05.24 ~ 2022.05.31</p>
+                </div>
+                <button class="ico-share" data-popup="test-bottom01">공유아이콘</button>
+            </section>
+
+            <section class="template-view unit-wide event-benefit-221109">
+                @@include('../src/pages/includes/event-css.html', {
+                    eventScssPath : '/assets/css/event-sm.css'
+                })
+                <!-- 이벤트 컨텐츠 -->
+                <div class="evt-section intro">
+                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/intro-bg-1201.jpg" alt="한 눈에 보는 12월의 혜택 총집합">
+                </div>
+                <div class="evt-section tab-wrap">
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap tab-wid">
+                            <li><button  class="on" type="button">uSim</button></li>
+                            <li><button type="button">eSim</button></li>
+                            <li><button type="button">휴대폰</button></li>
+                        </ul>
+                        <div class="tab-contents-wrap evt-conts">
+                            <div class="tab01 conts">
+                                <div class="rel sec01-01">
+                                    <a href="https://www.uplusumobile.com/product/guide/activePhoneProcedure" target="_blank" class="link">셀프개통 자세히 보기</a>
+                                    <a href="https://www.uplusumobile.com/event-benefit/event/ongoing/10252" target="_blank" class="link link02-01">best 유심 이벤트 바로가기</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab01-sec01-01-1201.jpg" alt="신규 가입 셀프개통시 웰컴 사은품 증정 택1 가장 마음에 드는 상품을 가입 신청 시 선택하세요!">
+                                </div>
+                                <div class="rel sec01-02">
+                                     <a href="https://cu.bgfretail.com/store/list.do?category=store" target="_blank" class="link link-01">CU 편의점 찾기 바로가기</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab01-sec01-02-1201.jpg" alt="CU편의점 USIM으로 가입하면 추가 혜택 증정 USIM칩 구입 후 신규가입/개통 시">
+                                </div>
+                                <!--div class="rel sec01-03">
+                                     <a href="https://www.uplusumobile.com/product/guide/usimUsePhoneEdit" target="_blank" class="link">휴대폰 등록하기</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab01-sec01-03.jpg" alt="자급제 갤럭시Z4시리즈 / 아이폰 14시리즈 가입 시 추가 혜택 증정 U+ 유모바일 USIM/eSIM 공통">
+                                </div-->
+                                <div class="rel sec01-04"> 
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab01-sec01-04-1201.jpg" alt="모두의 유심 원칩 구매 후 가입시">
+                                </div>
+                                <div class="rel sec01-05">
+                                    <a href="https://www.uplusumobile.com/event-benefit/event/ongoing/10252" target="_blank" class="link">
+                                        11월 유심 이벤트 best만 모았다.
+                                     </a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab01-sec01-05-1201.jpg" alt=" 11월 유심 이벤트 best만 모았다. ">
+                                </div>
+                            </div>
+                            <div class="tab02 conts">
+                                <div class="rel sec01-01">
+                                    <a href="https://www.uplusumobile.com/shop/self/openingGuideEsim" target="_blank" class="link">셀프개통 자세히 보기</a>
+                                    <a href="https://www.uplusumobile.com/event-benefit/event/ongoing/10251" target="_blank" class="link link02-01">esim 이벤트 바로가기</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab02-sec01-02-1201.jpg" alt="신규가입 셀프 개통 시 웰컴 사은품 증정 택1">
+                                </div>
+                                <div class="rel sec01-02">
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab02-sec01-02.jpg" alt="eSim 요금제 가입시 eSim 다운로드 비용 무료">
+                                </div>
+                                <!--div class="rel sec01-03">
+                                    <a href="https://www.uplusumobile.com/product/guide/usimUsePhoneEdit" target="_blank" class="link">휴대폰 등록하기</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab02-sec01-03.jpg" alt="자급제 갤럭시 Z4시리즈 아이폰14시리즈 가입 시 추가혜택 증정 U+ 유모바일 USIM/eSim 공통">
+                                </div-->
+                                <div class="rel sec01-04">
+                                    <a href="https://www.uplusumobile.com/event-benefit/event/ongoing/10252" target="_blank" class="link">쉽고 빠른 가입 & 개통 배송 필요없는 eSIM!</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab02-sec01-04.jpg" alt="eSIM 다운로드 추가 무료 혜택">
+                                </div>
+                            </div>
+                            <div class="tab03 conts">
+                                <div>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab03-sec01-01-1201.jpg" alt="휴대폰 신규 / 기변 시 웰컴 사은품 증정 택1 가장 마음에 드는 상품을 가입 신청시 선택하세요!">
+                                </div>
+                                <div class="rel sec01-04">
+                                    <a href="https://www.uplusumobile.com/event-benefit/event/ongoing/10033" target="_blank" class="link">11월 휴대폰 이벤트 많이 팔린 인기모델!</a>
+                                    <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/tab03-sec01-04-1201.jpg" alt="휴대폰 이벤트 모음 전 바로가기">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="evt-conts">
+                            <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/sec02.jpg" alt="친구 추천 혜택 / U포인트">
+                        </div>
+                        <div class="evt-conts">
+                            <img src="@@include('./pages/includes/event-img-path.html')/benefit221109/sec03.jpg" alt="이용 후기 포인트!">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '최근 본 상품 | U+유모바일',
+    ogTitle: '최근 본 상품 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입정보', '요금제 변경', '부가서비스 변경', '일시정지 신청']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '주문/신청 내역',
+            depth4: '최근 본 상품'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">내정보</a></li>
+        <li>
+            <a href="#">주문/신청 내역</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#" class="on">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">최근 본 상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">최근 가입신청 이력</a></li>
+                <li><a href="#">유심 카드 구매 내역</a></li>
+                <li><a href="#">입고 알림 신청 내역</a></li>
+                <li><a href="#" class="on">최근 본 상품</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts view-prodcuts-rate">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>최근 본 상품</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li><a href="javascript:;" class="on">요금제</a></li>
+                            <li><a href="javascript:;">휴대폰</a></li>
+                        </ul>
+                    </div>
+                    <section>
+                        <ul class="muti-check-wrap">
+                            <li class="btn-check muti-check">
+                                <input type="checkbox" id="check1">
+                                <label for="check1">
+                                    <h3 class="title">유심LTE (1GB+/무제한)</h3>
+                                    <div class="flex-box">
+                                        <div class="pay-amount">
+                                            <span class="origin-pay">월 23,500원</span>
+                                            <strong class="discount-pay">월 9,900원</strong>
+                                        </div>
+                                        <span class="ico-check"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="btn-check muti-check">
+                                <input type="checkbox" id="check2">
+                                <label for="check2">
+                                    <h3 class="title">유심 최강가성비(15GB+/300분)</h3>
+                                    <div class="flex-box">
+                                        <div class="pay-amount">
+                                            <span class="origin-pay">월 55,000원</span>
+                                            <strong class="discount-pay">월 9,900원</strong>
+                                        </div>
+                                        <span class="ico-check"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="btn-check muti-check">
+                                <input type="checkbox" id="check3">
+                                <label for="check3">
+                                    <h3 class="title">자급제폰케어 Freedom</h3>
+                                    <div class="flex-box">
+                                        <div class="pay-amount">
+                                            <span class="origin-pay">월 49,390원</span>
+                                            <strong class="discount-pay">월 33,990원</strong>
+                                        </div>
+                                        <span class="ico-check"></span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="btn-check muti-check">
+                                <input type="checkbox" id="check4">
+                                <label for="check4">
+                                    <h3 class="title">이십세 15GB+Special</h3>
+                                    <div class="flex-box">
+                                        <div class="pay-amount">
+                                            <span class="origin-pay">월 49,390원</span>
+                                            <strong class="discount-pay">월 33,990원</strong>
+                                        </div>
+                                        <span class="ico-check"></span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="btn-group">
+                            <button class="btns lightgray md-ripples ripples-dark" type="button">전체 삭제</button>
+                            <button class="btns md-ripples ripples-light" type="button">삭제 <span>1</span></button>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="no-result">
+                            <p class="no-result-txt">
+                                최근 본 상품이 없습니다.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'USIM/eSIM 가입 | U+유모바일',
+    ogTitle: 'USIM/eSIM 가입 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        headerTitle: 'USIM/eSIM 가입',
+        gnb : true,
+        subDepth: true,
+        subArr : ['USIM/eSIM 가입','USIM 카드구매','USIM/eSIM 가입 안내']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: 'USIM/eSIM',
+            depth3: 'USIM/eSIM 가입',
+            depth4: ''
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">USIM/eSIM</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">USIM/eSIM 가입</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">USIM/eSIM 가입</a></li>
+                <li><a href="#">USIM 카드 구매</a></li>
+                <li><a href="#">USIM/eSIM 가입 안내</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container usim">
+        <div class="sub-conts usim-esim-join">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>USIM/eSIM가입</h1>
+            </div>
+            <div class="flex-layout">
+                <div class="cardList-wrap payment-imgCard-btn">
+                    <h2 class="cardList-title">USIM</h2>
+                    <div class="cardList">
+                        <div class="item-top">
+                            <img src="/assets/images/pc/subpage/usim-thumb.png" alt="유심">
+                            <div class="txt-top">
+                                <p>휴대폰 슬롯에 물리적 SIM을 끼워 넣는 방식</p>
+                                <div class="box-btn">
+                                    <a href="#" class="btn-text-right">USIM 개통방법</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-bottom">
+                            <a href="#" class="btns h-sm  md-ripples ripples-light" type="button">USIM 가입</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardList-wrap payment-imgCard-btn">
+                    <h2 class="cardList-title">eSIM</h2>
+                    <div class="cardList">
+                        <div class="item-top">
+                            <img src="/assets/images/pc/subpage/esim-thumb.png" alt="e심">
+                            <div class="txt-top">
+                                <p>휴대폰에 내장된 SIM으로 다운로드 받는 방식</p>
+                                <div class="box-btn">
+                                    <a href="#" class="btn-text-right">eSIM 지원 단말 확인</a>
+                                    <a href="#" class="btn-text-right">eSIM 개통방법</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-bottom">
+                            <a href="#" class="btns h-sm  md-ripples ripples-light" type="button">eSIM 가입</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

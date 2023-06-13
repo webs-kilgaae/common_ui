@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+// 초기 라인탭
+.box-tab{
+    margin:24px 0 50px; overflow: hidden;
+    .tab-btn-wrap {
+        display:flex;justify-content:flex-start;gap:0 20px;flex-wrap: wrap;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        li{
+            flex-shrink: 0; width: auto;
+            a{
+                display: block; height: 60px; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center; overflow: hidden;
+                @include mainTxt; color: $gray05;
+                &.on{
+                    background-color: $purple; color: $white;
+                }
+            }
+        }
+        &.tab-wid{
+            display: flex; width:100%;
+            li{
+                 flex:1;
+                a{
+                    border-radius: 0; width:100%; padding:37px 0;
+                }
+            }
+        }
+        &.line-tab{
+            gap: 0;
+            li{
+                flex: 1;
+                a {
+                    @include mainTxt; color: $gray05;background: none; border-bottom: 2px solid $gray02; border-radius: 0;
+                    span{@extend %fontInherit;}
+                    &.on{
+                        background: none; color: $purple; border-color: $purple;
+                    }
+                }
+            }
+        }
+        &.swiper-wrapper {gap:20px;}
+    }
+    &.tab-ctrl {
+        .tab-contents-wrap {
+            & > * {display: none;}
+            [aria-hidden="false"] {display: block;}
+        }
+    }
+}
+.box-tab02{
+    width:100%;margin:24px 0 50px; overflow: hidden;
+    .tab-btn-wrap {
+        display:flex;justify-content:flex-start;gap:0 20px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        li{
+            flex-shrink: 0; width: auto;
+            a{
+                display: block; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center;
+                @include mainTxt; color: $gray05;
+                &.on{
+                    background-color: $purple; color: $white;
+                }
+            }
+        }
+        &.tab-wid{
+            display: flex; width:100%;
+            li{
+                 flex:1;
+                a{
+                    border-radius: 0; width:100%; padding:37px 0;
+                }
+            }
+        }
+    }
+    &.tab-ctrl {
+        .tab-contents-wrap {
+            & > * {display: none;}
+            & > div:first-child{
+                display: block;
+            }
+        }
+    }
+}
+.sub-conts, .full-popup-conts{
+    .box-tab.tab-ctrl,.box-tab02.tab-ctrl{
+        margin: 0;  padding-left: 0;
+        .tab-btn-wrap{
+            margin-bottom: 60px;
+        }
+    }
+    .box-tab,.box-tab{
+        margin: 0 0  50px 0; padding-left: 0;
+    }
+}

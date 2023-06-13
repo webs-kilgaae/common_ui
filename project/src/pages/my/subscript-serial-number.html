@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : ' 기기명/일련번호 확인 방법 | U+유모바일',
+    ogTitle: ' 기기명/일련번호 확인 방법 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap my show">
+        <div class="layer-popup-item subscript-serial-number">
+            <div class="popup-header">
+                <strong class="txt-main">기기명/일련번호 확인 방법</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="box-tab tab-ctrl">
+                    <!-- 2022.11.09 swiper-wrapper 클래스 제거 -->
+                    <ul class="tab-btn-wrap">
+                        <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                        <!-- 2022.11.09 swiper-slide 클래스 제거 -->
+                        <li><a href="javascript:;" class="on">안드로이드</a></li>
+                        <li><a href="javascript:;">애플(iOS)</a></li>
+                    </ul>
+
+                    <div class="tab-contents-wrap">
+                        <!-- 안드로이드 -->
+                        <div aria-hidden="true">
+                            <div class="cardList-wrap">
+                                <h2 class="cardList-title">삼성</h2>
+                                <!-- 2022.10.10 dd태그 텍스트 수정 -->
+                                <div class="cardList one-title">
+                                    <dl>
+                                        <dt>기기명 확인 방법</dt>
+                                        <dd>휴대폰 설정 > 일반 > 휴대전화 정보 > 기기명 확인</dd>
+                                        <dt>일련번호 확인 방법</dt>
+                                        <dd>휴대폰 설정 > 일반 > 휴대전화 정보 > 일련번호 확인</dd>
+                                    </dl>
+                                    <!--2022-10-10 이미지 명 확인-->
+                                    <div class="unit-img"><img src="/assets/images/pc/subpage/smaple-serial-img01.png" alt=""></div>
+                                </div>
+                            </div>
+                            <!-- 2022-10-10  LG영역 삭제
+                                <div class="cardList-wrap">
+                                <h2 class="cardList-title">LG</h2>
+                                <div class="cardList one-title">
+                                    <dl>
+                                        <dt>기기명 확인 방법</dt>
+                                        <dd>휴대폰 설정 > 일반 >휴대전화 정보 > 기기명 확인</dd>
+                                        <dt>일련번호 확인 방법</dt>
+                                        <dd>휴대폰 설정 > 일반 > 휴대전화 정보 > 일련번호 확인</dd>
+                                    </dl>
+                                    <div class="unit-img"><img src="/assets/images/pc/subpage/smaple-mac-img01.png" alt=""></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- //안드로이드 -->
+
+                        <!-- iOS -->
+                        <div aria-hidden="true">
+                            <div class="cardList-wrap">
+                                <h2 class="cardList-title">아이폰</h2>
+                                <div class="cardList one-title">
+                                    <!-- 2022.11.22 텍스트 수정 -->
+                                    <dl>
+                                        <dt>모델번호 확인 방법</dt>
+                                        <!-- 2022.11.22 텍스트 추가 -->
+                                        <dd>
+                                            휴대폰 설정 > 일반 > 정보 > 모델번호 확인<br>
+                                            모델번호 숫자 영역을 "클릭"하여 확인
+                                        </dd>
+                                        <dt>일련번호 확인 방법</dt>
+                                        <dd>휴대폰 설정 > 일반 > 정보 > 일련번호 확인</dd>
+                                    </dl>
+                                    <div class="unit-img"><img src="/assets/images/pc/subpage/smaple-serial-img02.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //iOS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+                                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

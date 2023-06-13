@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 분실/파손 보험 | U+유모바일',
+    ogTitle: '휴대폰 분실/파손 보험 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <div id="wrap">
+
+        @@include('../src/pages/includes/header.html', {
+            type : 'sub-type',
+            gnb : true,
+            subDepth: false,
+            subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+        })
+        <!--09.29
+            @@include('./pages/includes/breadcrumb.html', {
+            breadcrumb: {
+                depth1: '홈',
+                depth2: '상품',
+                depth3: '휴대폰 분실/파손 보험',
+                depth4: ''
+            }
+        })-->
+        <ul class="breadcrumb">
+            <li><a href="#">홈</a></li>
+            <li>
+                <a href="#">상품</a>
+                <ul class="breadcrumb-sub">
+                    <li><a href="#">USIM/eSIM</a></li>
+                    <li><a href="#">휴대폰</a></li>
+                    <li><a href="#" class="on">상품</a></li>
+                    <li><a href="#">이벤트/혜택</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="#">유모바일</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">휴대폰 분실/파손 보험</a>
+                <ul class="breadcrumb-sub">
+                    <li><a href="#">요금제</a></li>
+                    <li><a href="#">생활 구독 서비스</a></li>
+                    <li><a href="#">통신 부가 서비스</a></li>
+                    <li><a href="#" class="on">휴대폰 분실/파손 보험</a></li>
+                    <li><a href="#">고객 후기</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <main class="container products">
+            <div class="sub-conts breakage-insurance-step04">
+                <!-- 컨텐츠 -->
+                <div class="page-tit">
+                    <h1>휴대폰 분실/파손 보험</h1>
+                </div>
+
+                <!-- 09.14 html 재작업 -->
+                <h2>분실/파손 보험 선택</h2>
+                <div class="box-table">
+                    <table class="table-type-04">
+                        <caption class="hidden">선택할 분실/파손 보험에 대한 보험상품명,보상범위,월보험료,최대가입기간,최대가입금액,자기부담금,선택 정보로 제공</caption>
+                        <colgroup>
+                            <col ><col ><col ><col ><col ><col ><col >
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">보험상품명</th>
+                                <th scope="col">보상범위</th>
+                                <th scope="col">월보험료</th>
+                                <th scope="col">최대가입기간</th>
+                                <th scope="col">최대가입금액</th>
+                                <th scope="col">자기부담금</th>
+                                <th scope="col">선택</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>폰 분실/파손 보험 110</td>
+                                <td>분실, 도난, 파손 (침수, 화재)</td>
+                                <td>5,400원</td>
+                                <td>36개월</td>
+                                <td>110만원</td>
+                                <td>손해액의 30% (최소 3만원)</td>
+                                <td>
+                                    <!--<div class="btn-check">
+                                        <input type="checkbox" id="check1">
+                                        <label for="check1"><span class="ico-check"></span>선택</label>
+                                    </div>-->
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="type2-1" name="type2" checked="checked">
+                                        <label for="type2-1"><span class="ico-radio"></span>선택</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>폰 파손 보험 40</td>
+                                <td>파손</td>
+                                <td>1,800원</td>
+                                <td>36개월</td>
+                                <td>40만원</td>
+                                <td>손해액의 30% (최소 3만원)</td>
+                                <td>
+                                    <!--<div class="btn-check">
+                                        <input type="checkbox" id="check2">
+                                        <label for="check2"><span class="ico-check"></span>선택</label>
+                                    </div>-->
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="type2-2" name="type2">
+                                        <label for="type2-2"><span class="ico-radio"></span>선택</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>휴대폰 분실/파손 보험 설명서</h3>
+                <div class="agree-wrap">
+                    <div class="btn-box btn-check btn-text-line">
+                        <input type="checkbox" id="check999">
+                        <label for="check999"> <span class="ico-check"></span>휴대폰 분실/파손 보험 가입신청서 내용을 확인했고, 휴대폰 분실/파손 보험 가입에 동의합니다. <strong>(필수)</strong></label>
+                        <a href="#" class="link-underline">보기</a>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btns lightgray" type="button">이전</button>
+                    <button class="btns md-ripples ripples-light" type="button">다음</button>
+                </div>
+                <!-- //09.14 html 재작업 -->
+            </div>
+            <!-- //컨텐츠 -->
+        </main>
+    </div>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

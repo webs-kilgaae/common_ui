@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="121.725" height="120" viewBox="0 0 121.725 120">
+    <defs>
+        <filter id="xki8h082ya" x="41.245" y="7.5" width="80.48" height="76.073" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 485945">
+        <g data-name="그룹 485943" transform="translate(3.801 56.852)">
+            <circle data-name="타원 8745" cx="13" cy="13" r="13" transform="translate(11.199 .148)" style="fill:#dadef8"/>
+            <path data-name="합치기 29" d="M22 0a22 22 0 0 1 22 22v1.84A6.16 6.16 0 0 1 37.84 30H6.16A6.16 6.16 0 0 1 0 23.84V22A22 22 0 0 1 22 0z" transform="translate(2.199 23.148)" style="stroke:transparent;stroke-miterlimit:10;fill:#dadef8"/>
+        </g>
+        <g data-name="그룹 485944">
+            <g data-name="그룹 486227">
+                <g style="filter:url(#xki8h082ya)" data-name="그룹 465504">
+                    <path data-name="합치기 39" d="M18 61.071a18 18 0 0 1-18-18v-16a18 18 0 0 1 18-18h29.48a18.173 18.173 0 0 1 2.19.132L59 .952a3.806 3.806 0 0 1 6.32 2.812l.135 22.353q.025.474.025.955v16a18 18 0 0 1-18 18z" transform="rotate(180 57.113 35.533)" style="fill:#6f98f8"/>
+                </g>
+            </g>
+            <path d="M2.176-14.926c.238 1.6 2.074 3.57 3.672 2.006.986-.918.238-2.006.17-3.128-.1-1.836 2.176-2.958 3.808-2.89a3.4 3.4 0 0 1 2.958 3.774c-.238 1.9-1.564 2.788-2.72 4.114A9.023 9.023 0 0 0 7.99-6.766c-.2 1.326-.272 3.842 1.6 3.91 1.428.034 1.8-1.054 1.938-2.312.17-1.326.17-2.312 1.156-3.366a34.651 34.651 0 0 0 2.72-2.754.119.119 0 0 1 .034-.068c1.87-2.89 2.074-7.106-.782-9.554a8.269 8.269 0 0 0-9.112-1.054A5.931 5.931 0 0 0 2.38-18.53a7.61 7.61 0 0 0-.204 3.604zM11.968 2.04A2.392 2.392 0 0 0 11.22.272 2.268 2.268 0 0 0 9.554-.51a2.2 2.2 0 0 0-1.632.782 2.383 2.383 0 0 0-.714 1.768 2.614 2.614 0 0 0 .714 1.768 2.16 2.16 0 0 0 1.632.748 2.229 2.229 0 0 0 1.666-.748 2.5 2.5 0 0 0 .748-1.768z" transform="translate(70.984 44.363)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'sns link 공유하기 | U+유모바일',
+    ogTitle: 'sns link 공유하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <main class="container event">
+        <div class="sub-conts">
+            <!-- 컨텐츠 -->
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+</div>
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap sns-share-bottomSheet show">
+    <div class="layer-popup-item">
+        <div class="popup-header">
+            <strong class="txt-main">공유하기</strong>
+            <button class="popup-close"><span class="hidden">닫기</span></button>
+        </div>
+
+        <div class="popup-body">
+            <ul class="list-sns">
+                <li>
+                    <button onclick="javascript: uiCommon.toast.init('복사 되었습니다.')">
+                        <img src="../../assets/images/pc/icon/ico-sns-kakao.png" alt="카카오톡 아이콘">
+                        <span>카카오톡</span>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="javascript: uiCommon.toast.init('복사 되었습니다.')">
+                        <img src="../../assets/images/pc/icon/ico-sns-faceBook.png" alt="페이스북 아이콘">
+                        <span>페이스북</span>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="javascript: uiCommon.toast.init('복사 되었습니다.')">
+                        <img src="../../assets/images/pc/icon/ico-sns-naverBlog.png" alt="네이버 블로그 아이콘">
+                        <span>네이버<br> 블로그</span>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="javascript: uiCommon.toast.init('복사 되었습니다.')">
+                        <img src="../../assets/images/pc/icon/ico-url-share.png" alt="URL 복사 아이콘">
+                        <span>URL 복사</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-footer">
+             <!--<div class="btn-group">
+               <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+            </div>-->
+            <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+        </div>
+    </div>
+</div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+
+
+</body>
+</html>

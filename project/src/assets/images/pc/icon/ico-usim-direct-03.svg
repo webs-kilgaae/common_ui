@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="g6pmp4yg0a" x="6.999" y="28" width="66" height="43.999" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="aehjrq3wqb" x="5.998" y="13" width="68.001" height="31.003" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="aa3zhpkclc" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="icon">
+        <g style="filter:url(#g6pmp4yg0a)">
+            <path data-name="합치기 69" d="M10297-5879a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v-34h52v34h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2z" transform="translate(-10285.001 5946)" style="fill:#dadef8"/>
+        </g>
+        <g data-name="사각형 348802" style="stroke-width:2px;stroke:#dadef8;fill:#fff">
+            <path d="M8 0h14a8 8 0 0 1 8 8v12H0V8a8 8 0 0 1 8-8z" style="stroke:none" transform="translate(24.999 46)"/>
+            <path d="M8 1h14a7 7 0 0 1 7 7v11H1V8a7 7 0 0 1 7-7z" style="fill:none" transform="translate(24.999 46)"/>
+        </g>
+        <g data-name="사각형 348803" style="stroke:#dadef8;fill:#dadef8">
+            <path style="stroke:none" d="M0 0h3v19H0z" transform="translate(38.5 46)"/>
+            <path style="fill:none" d="M.5.5h2v18h-2z" transform="translate(38.5 46)"/>
+        </g>
+        <g data-name="사각형 348922" style="stroke:#dadef8;fill:#dadef8">
+            <path style="stroke:none" d="M0 0h4v28H0z" transform="rotate(-90 46.5 20.5)"/>
+            <path style="fill:none" d="M.5.5h3v27h-3z" transform="rotate(-90 46.5 20.5)"/>
+        </g>
+        <g data-name="그룹 484298" transform="translate(11.999 12)">
+            <g style="filter:url(#aehjrq3wqb)">
+                <path data-name="합치기 64" d="M45.761 21.567a9.111 9.111 0 0 1-14.509-.335 9.112 9.112 0 0 1-14.763 0A9.111 9.111 0 0 1 0 15.891v-3.546q0-.43.039-.85Q0 11.047 0 10.589A10.59 10.59 0 0 1 10.589 0h40.82A10.59 10.59 0 0 1 62 10.589q0 .46-.039.911.038.417.039.845v3.546a9.111 9.111 0 0 1-16.238 5.675z" transform="translate(-3 2)" style="fill:url(#aa3zhpkclc)"/>
+            </g>
+            <rect data-name="사각형 348927" width="4.034" height="18" rx="2.017" transform="rotate(-90 15.543 -3.457)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

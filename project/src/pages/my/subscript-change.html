@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '지정번호 등록/변경 | U+유모바일',
+    ogTitle: '지정번호 등록/변경 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap my show">
+        <div class="layer-popup-item subscript-change">
+            <div class="popup-header">
+                <strong class="txt-main">지정번호 등록/변경</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="rq-form">
+                    <div class="main-txt-group">
+                        <h2 class="main-txt">지정번호를 등록 또는 변경하시겠어요?</h2>
+                        <p class="txt">
+                            지정번호를 설정하고, U+나 U+유모바일을 사용하는 친구와 음성통화를 마음껏 즐겨보세요.
+                            <br>
+                            ※ 지정번호로 등록하면 음성통화를 무제한으로 할 수 있습니다.<br>
+                            ※ 지정번호는 1달에 1번 변경할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="input1" class="input-label">현재 지정된 휴대폰번호</label>
+                        <div class="input-wrap">
+                            <input id="input1" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default" value="010-**34-**78" readonly>
+                        </div>
+                        <span class="txt-error">숫자만 입력하셔야 합니다.</span>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="input1" class="input-label">등록/변경할 휴대폰번호</label>
+                        <div class="input-wrap">
+                            <input id="input1" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">숫자만 입력하셔야 합니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light">등록</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

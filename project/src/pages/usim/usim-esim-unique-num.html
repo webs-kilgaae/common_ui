@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 정보 등록 | U+유모바일',
+    ogTitle: '휴대폰 정보 등록 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: 'https://www.uplussave.com/static/shop/images/pc/img_header_logo.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item usim-esim-unique-num">
+            <div class="popup-header">
+                <strong class="txt-main">휴대폰 정보 등록</strong>
+            </div>
+            <div class="popup-body">
+                <ul class="step-staus-list">
+                    <!-- 활성화 된 페이지에 on 클래스 추가 -->
+                    <li>
+                        <span class="number">1</span>
+                        <span class="page-txt">휴대폰 정보</span>
+                    </li>
+                    <li class="on">
+                        <span class="number">2</span>
+                        <span class="page-txt">고유번호 등록</span>
+                    </li>
+                </ul>
+                <div class="inner">
+                    <div class="page-desc">
+                        <h2>휴대폰 고유번호(EID, IMEI1, IMEI2)를 등록해 주세요.</h2>
+                    </div>
+
+                    <section>
+                        <div class="bg-box">
+                            <h3 class="mainTxt">고유번호 확인 방법</h3>
+                            <p>
+                                통화 키패드에서 <span class="txt-vt">*#06#</span> 입력하여 표시되는 화면을 캡처
+                            </p>
+                            <div class="box-btn">
+                                <a href="#" class="btn-text-right">자세히 보기</a>
+                            </div>
+                        </div>
+
+                        <div class="box-btn flex-box">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">직접 입력하기</button>
+                            <!-- 업로드 전 버튼 -->
+                            <button class="btns  md-ripples ripples-light" type="button">캡처한 이미지 업로드</button>
+                            <!-- 업로드 후 버튼 -->
+                            <!-- <button class="btns  md-ripples ripples-light" type="button">업로드 완료 / 다시 업로드</button> -->
+
+                        </div>
+                    </section>
+
+                    <!-- 아이폰의 경우 -->
+                    <section class="phone-unique-num">
+                        <!-- 이미지 업로드 시 노출 -->
+                        <div class="img-wrap">
+                            <img src="/assets/images/pc/temp/temp-iphone-unique-num.png" alt="">
+                        </div>
+
+                        <div class="box-input unit-item">
+                            <label for="input1" class="input-label">EID<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="숫자 32자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <!-- 2022.09.30 클래스명 수정 -->
+                            <span class="txt-gy">입력한 단말정보가 불일치 할 경우 eSIM 개통이 되지 않습니다. 꼭 확인해주세요.</span>
+                        </div>
+                        <div class="box-input unit-item">
+                            <label for="input2" class="input-label">IMEI 1<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input2" type="text" placeholder="숫자 14자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러메세지</span>
+                        </div>
+                        <div class="box-input unit-item">
+                            <label for="input3" class="input-label">IMEI 2<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input3" type="text" placeholder="숫자 14자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러메세지</span>
+                        </div>
+                    </section>
+
+
+                    <!-- 안드로이드의 경우 -->
+                    <section class="phone-unique-num">
+                        <!-- 이미지 업로드 시 노출 -->
+                        <div class="img-wrap">
+                            <img src="/assets/images/pc/temp/temp-galaxy-unique-num.png" alt="">
+                        </div>
+
+                        <div class="box-input unit-item">
+                            <label for="input2" class="input-label">IMEI 1<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input2" type="text" placeholder="숫자 14자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러메세지</span>
+                        </div>
+                        <div class="box-input unit-item">
+                            <label for="input3" class="input-label">IMEI 2<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input3" type="text" placeholder="숫자 14자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러메세지</span>
+                        </div>
+                        <div class="box-input unit-item">
+                            <label for="input1" class="input-label">EID<em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="숫자 32자리" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <!-- 2022.09.30 클래스명 수정 -->
+                            <span class="txt-gy">입력한 단말정보가 불일치 할 경우 eSIM 개통이 되지 않습니다. 꼭 확인해주세요.</span>
+                        </div>
+                    </section>
+
+
+                    <div class="btn-group btn-fix">
+                        <button class="btns w-sm md-ripples ripples-light">입력 완료</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

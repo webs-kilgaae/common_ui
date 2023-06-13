@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <g data-name="그룹 486127">
+        <g data-name="패스 862715" style="fill:none">
+            <path d="M45 0A45 45 0 1 1 0 45 45 45 0 0 1 45 0z" style="stroke:none" transform="translate(15 15)"/>
+            <path d="M45 12c-18.196 0-33 14.804-33 33 0 18.196 14.804 33 33 33 18.196 0 33-14.804 33-33 0-18.196-14.804-33-33-33m0-12c24.853 0 45 20.147 45 45S69.853 90 45 90 0 69.853 0 45 20.147 0 45 0z" style="fill:#aeaae8;stroke:none" transform="translate(15 15)"/>
+        </g>
+        <path data-name="패스 862633" d="m-1583.107-1566.809-58.077 58.077" transform="translate(1672.454 1598.079)" style="stroke:#aeaae8;stroke-width:12px;fill:none"/>
+    </g>
+</svg>

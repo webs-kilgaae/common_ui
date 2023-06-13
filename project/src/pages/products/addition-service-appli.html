@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '부가서비스 신청하기, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 신청하기 | U+유모바일',
+    ogTitle: '부가서비스 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="products">
+        <div class="popup-space addition-service-pop">
+            <div class="popup-body">
+            <div class="page-desc">
+                <h2>부가서비스 신청하기</h2>
+                <!-- <h2>부가서비스 해지하기</h2> -->
+            </div>
+                <section class="cardList-wrap">
+                    <h2 class="cardList-title">발신자미표시번호차단 서비스를 신청하겠습니까?</h2>
+                    <!--<h2 class="cardList-title">발신자미표시번호차단 서비스를 해지하겠습니까?</h2>-->
+                    <div class="box-select">
+                        <select name="select1" id="select1" class="select-default" title="다회선 전화번호">
+                            <option value="1">010-**40-**11</option>
+                            <option value="2">010-**40-**12</option>
+                            <option value="3">010-**40-**13</option>
+                            <option value="4">010-**40-**14</option>
+                        </select>
+                    </div>
+                    <div class="cardList">
+                        <dl>
+                            <dt>신청일</dt>
+                            <dd>2022-06-16</dd>
+                            <dt>이용금액</dt>
+                            <dd>무료</dd>
+                        </dl>
+                    </div>
+                </section>
+                <div class="notification-wrap">
+                    <h3>꼭 알아두세요!!</h3>
+                    <ul class="notification">
+                    <!-- 221129 [로밍 부가서비스 신청/해지 개선] 수정 -->
+                        <!-- CASE1: 통신 부가 서비스 기본 문구 -->
+                        <li>부가서비스는 신청 당일 해지는 불가합니다.</li>
+                        <li>부가서비스 월중 신청/해지 시 해당 월 기본요금 및 무료제공 혜택은 각각 일할 적용됩니다.</li>
+                        <!-- CASE2: 하루 데이터 로밍 서비스, 제로 프리미엄(일반형)일 경우 -->
+                        <li class="txt-rd">다른 데이터 및 음성통화 해외로밍 요금제와 중복으로 이용할 수 없습니다.</li>
+                        <li>해외로밍 이용 요금은 국내 통신료와 별도의 항목으로 구분되어 1개월 이후 청구서에 반영됩니다.</li>
+                        <li>하루 데이터 로밍의 경우, 가입 후 해지하지 않으면 서비스를 이용할 수 있는 국가에서 해당 요금제가 자동으로 적용됩니다.</li>
+                        <li>청소년 요금제 가입 고객은 법정대리인의 동의를 받아야 이용할 수 있습니다.</li>
+                        <li>선불 휴대폰 이용 고객은 가입할 수 없습니다.</li>
+                    <!--// 221129 [로밍 부가서비스 신청/해지 개선] 수정 -->
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소하기</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">신청하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

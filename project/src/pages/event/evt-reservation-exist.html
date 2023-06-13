@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '사전 예약 신청 | U+유모바일',
+    ogTitle: '사전 예약 신청 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <main class="container event">
+        <div class="sub-conts">
+            <!-- 컨텐츠 -->
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    <!-- 레이어 팝업 -->
+    <div id="test-layer01" class="layer-popup evt-pop show">
+        <div class="layer-popup-item" >
+            <div class="popup-header">
+            </div>
+
+            <div class="popup-body">
+                <strong class="txt-main">이미 등록된 사전예약 신청 정보가 있어요.</strong>
+                <dl class="reservation-model-info">
+                    <dt>삼성 갤럭시 S21</dt>
+                    <dd>
+                        - 번호이동<br>
+                        - 64GB / 화이트 / 24개월 할부<br>
+                        - 데이터통화마음껏<br>
+                    </dd>
+                </dl>
+                <span class="txt-sub">
+                    사전예약 신청 취소는 고객센터로 문의해 주세요.<br>
+                    고객센터 : 1644-5353
+                </span>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close">확인</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+
+
+</body>
+</html>

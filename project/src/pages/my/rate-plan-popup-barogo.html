@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '바로고 요금제 변경 안내 | U+유모바일',
+    ogTitle: '바로고 요금제 변경 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+</head>
+<body>
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap my show">
+        <div class="layer-popup-item rate-plan-popup">
+            <div class="popup-header">
+                <strong class="txt-main">바로고 요금제 변경 안내</strong>
+            </div>
+
+            <div class="popup-body">
+                <section class="agree-cont">
+                    <h3 class="body-tit-sm">바로고 요금제 주의사항</h3>
+                    <ol>
+                        <li>1. 바로고 요금제에서 일반 요금제로 변경 시 주유권 지급은 중단 됩니다.<br>
+                            또한 다시 바로고 요금제로 변경이 불가하오니 이점 유의하시기 바랍니다.<br>
+                            (단, 바로고 요금제간 변경은 가능합니다.)</li>
+                        <li>2. 정지 시 주유권 지급은 중단되며 재사용 익월 주유권이 지급됩니다.</li>
+                        <li>3. 정지 기간은 쿠폰지급 가능 기간에 포함 됩니다.</li>
+                        <li>4. 해지 시 주유권 지급은 중단됩니다.</li>
+                    </ol>
+                </section>
+                <section class="agree-cont">
+                    <h3 class="body-tit-sm">쿠폰사용 유의사항</h3>
+                    <p class="txt-sub">
+                        쿠폰은 지급일로 부터 30일간 사용이 가능합니다.<br>
+                        30일 이후 쿠폰은 자동 소멸 되오니 이점 유의하시기 바랍니다.
+                    </p>
+                </section>
+
+
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-light" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">요금제 변경</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

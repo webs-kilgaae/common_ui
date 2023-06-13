@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '고객지원 매장 찾기 | U+유모바일',
+    ogTitle: '고객지원 매장 찾기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['주소/매장명', '지하철', '내위치']
+    })
+    <!--09.23
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '고객지원 매장 찾기'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">고객지원 매장 찾기</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#">고객 보호</a></li>
+                <li><a href="#" class="on">고객지원 매장 찾기</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <div class="sub-conts counseling-find-shop adress">
+            <div class="page-tit">
+                <h1>고객지원 매장</h1>
+            </div>
+            <div class="page-desc">
+                <h2>U+유모바일 고객지원 서비스 안내</h2>
+            </div>
+            <div class="fix-unit-group">
+                <h4 class="unit-tit-s">전국 LG U+ 직영점에서 U+유모바일 고객 서비스를 이용하실 수 있습니다.</h4>
+                <ul class="notification">
+                    <li>더 편리한 서비스 이용을 위해 전화로 확인 후 방문해 주세요.</li>
+                    <li>가까운 매장에서 서비스 되지 않는 경우 U+유모바일 고객센터(1644-5353)에서 안내 받으실 수 있습니다.</li>
+                </ul>
+            </div>
+            <ul class="service-list">
+                <li>
+                    <!---2022-11-03 아이콘 변경-->
+                    <img src="../../assets/images/pc/icon/ico-info-person.svg" alt="">
+                    <dl>
+                        <dt>개인정보 조회</dt>
+                        <dd>통화내역 열람, 명의도용 접수</dd>
+                    </dl>
+                </li>
+                <li>
+                    <!---2022-11-03 아이콘 변경-->
+                    <img src="../../assets/images/pc/icon/ico-phone-change.svg" alt="">
+                    <dl>
+                        <dt>서비스 변경</dt>
+                        <dd>납부방법, 명의변경, 일시 정지</dd>
+                    </dl>
+                </li>
+                <li>
+                    <!---2022-11-03 아이콘 변경-->
+                    <img src="../../assets/images/pc/icon/ico-creditCard-purple.svg" alt="">
+                    <dl>
+                        <dt>납부</dt>
+                        <dd>요금납부(카드)</dd>
+                    </dl>
+                </li>
+                <li>
+                    <!---2022-11-03 아이콘 변경-->
+                    <img src="../../assets/images/pc/icon/ico-declaration.svg" alt="">
+                    <dl>
+                        <dt>분실, 파손 신고</dt>
+                        <dd>분실, 파손</dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="map">
+                <div class="map-list">
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap">
+                            <li><a href="javascript:;" class="on">주소/매장명</a></li>
+                            <li><a href="javascript:;">지하철</a></li>
+                            <li><a href="javascript:;">내위치</a></li>
+                        </ul>
+                        <div class="tab-contents-wrap">
+                            <!-- 주소/매장명 -->
+                            <div aria-hidden="false">
+                                <div class="box-flex search-input-wrap">
+                                    <div class="box-input">
+                                        <div class="input-wrap">
+                                            <input id="input4" type="text" placeholder="주소 또는 매장명 입력" class="input-default input-sm" title="주소 또는 매장명 찾기">
+                                            <button class="ico-delete" style="display: none;" type="button">
+                                                <span class="hidden">삭제</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-btn">
+                                        <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//주소/매장명 -->
+                            <!-- 지하철 -->
+                            <div>
+                                <div class="box-select">
+                                    <select name="select1" id="select1" class="select-default">
+                                        <option value="1">지역</option>
+                                    </select>
+                                    <select name="select1" id="select2" class="select-default">
+                                        <option value="1">지하철 노선</option>
+                                    </select>
+                                    <select name="select1" id="select3" class="select-default">
+                                        <option value="1">지하철역</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--// 지하철 -->
+                            <!--내 위치-->
+                            <div>
+
+                            </div>
+                            <!--//내 위치-->
+                        </div>
+                        <div>
+                            <!-- 검색결과 없을 때 .hidden 삭제시 노출 -->
+                            <!---2022-11-03 no-search-result 클래스명 변경 -->
+                            <div class="no-search-result">
+                                <!---2022-11-03 no-search-result-txt 클래스명 변경-->
+                                <p class="no-search-result-txt">
+                                    검색 결과가 없습니다.
+                                </p>
+                            </div>
+                            <div class="address-list-wrap">
+                                <p class="result-txt">
+                                    <span class="txt-vt">월드컵북로</span> 검색결과 총 <span class="txt-vt">1,430</span>건
+                                </p>
+                                <ul class="address-list">
+                                    <li class="on">
+                                        <a href="javascript:;">
+                                            <strong>구로동 구로디지털단지역점</strong>
+                                            <p>
+                                                [도로명]서울특별시 마포구 월드컵북로 5 (서교동)<br>
+                                                [지번]서울특별시 마포구 서교동 351-18
+                                            </p>
+                                            <span> 070-5017-5046</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <strong>구로동 구로디지털단지역점</strong>
+                                            <p>
+                                                [도로명]서울특별시 마포구 월드컵북로 5 (서교동)<br>
+                                                [지번]서울특별시 마포구 서교동 351-18
+                                            </p>
+                                            <span> 070-5017-5046</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <strong>구로동 구로디지털단지역점</strong>
+                                            <p>
+                                                [도로명]서울특별시 마포구 월드컵북로 5 (서교동)<br>
+                                                [지번]서울특별시 마포구 서교동 351-18
+                                            </p>
+                                            <span> 070-5017-5046</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <strong>구로동 구로디지털단지역점</strong>
+                                            <p>
+                                                [도로명]서울특별시 마포구 월드컵북로 5 (서교동)<br>
+                                                [지번]서울특별시 마포구 서교동 351-18
+                                            </p>
+                                            <span> 070-5017-5046</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-paging">
+                                <button class="paging-first" type="button"><span class="hidden">첫번째 페이지로 이동</span></button>
+                                <button class="paging-prev" type="button"><span class="hidden">이전 페이지로 이동</span></button>
+                                <ul class="paging-list">
+                                    <!-- 활성화 시 active 클래스 추가 -->
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                </ul>
+                                <button class="paging-next" type="button"><span class="hidden">다음 페이지로 이동</span></button>
+                                <button class="paging-end" type="button"><span class="hidden">마지막 페이지로 이동</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- map api 영역 -->
+                <div class="map-api">
+                    <!-- <img src="/assets/images/pc/temp/temp-map02.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

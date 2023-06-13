@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : ' MAC 주소/IMEI 확인 방법 안내 | U+유모바일',
+    ogTitle: ' MAC 주소/IMEI 확인 방법 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <section class="full-popup my">
+        <header>
+            <h2>MAC 주소/IMEI 확인 방법</h2>
+            <button>팝업 닫기</button>
+        </header>
+        <div class="full-popup-conts subscript-serial-number">
+            <div class="inner">
+                    <div class="box-tab tab-ctrl">
+                        <ul class="tab-btn-wrap">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li><a href="javascript:;" class="on">안드로이드</a></li>
+                            <li><a href="javascript:;">iOS</a></li>
+                        </ul>
+                        <div class="page-tit hidden">
+                            <h1>MAC 주소/IMEI 확인 방법</h1>
+                        </div>
+                        <div class="tab-contents-wrap">
+                            <div>
+                                <div class="cardList-wrap">
+                                    <div class="cardList one-title">
+                                        <dl>
+                                            <dt>
+                                                <strong>MAC 주소/IMEI 확인 방법</strong>
+                                                <p>휴대폰 설정 > 휴대전화 정보 > 상태정보</p>
+                                            </dt>
+                                            <dt>
+                                                <div class="unit-img"><img src="/assets/images/pc/subpage/smaple-mac-img01.png" alt=""></div>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="cardList-wrap">
+                                    <div class="cardList one-title">
+                                        <dl>
+                                            <dt>
+                                                <strong>MAC 주소/IMEI 확인 방법</strong>
+                                                <p>휴대폰 설정 > 일반 > 정보 > Wi-Fi 주소, IMEI 확인</p>
+                                            </dt>
+                                            <dt>
+                                                <div class="unit-img"><img src="/assets/images/pc/subpage/smaple-mac-img01.png" alt=""></div>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="btn-group ">
+            <button class="btns md-ripples ripples-light" type="button">확인</button>
+        </div>
+    </section>
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

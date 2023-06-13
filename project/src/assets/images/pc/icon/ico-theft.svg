@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="84.5" viewBox="0 0 80 84.5">
+    <defs>
+        <filter id="dn7u0gkxga" x="12.5" y="6.5" width="55.001" height="33" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="hcdn6msrrb" x="7" y="29" width="66" height="21" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="y88nds2xrc" x="30.434" y="48.5" width="41.066" height="36" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="26iqa4loed" x="8.5" y="48.5" width="41.066" height="36" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486151">
+        <g data-name="그룹 486149">
+            <g style="filter:url(#dn7u0gkxga)" transform="translate(.003 -.003)">
+                <path data-name="빼기 21" d="M48 26H0v-2a24.007 24.007 0 0 1 46.115-9.342A23.851 23.851 0 0 1 48 24v2z" transform="translate(16 8)" style="stroke:transparent;stroke-miterlimit:10;fill:#dadef8"/>
+            </g>
+            <g style="filter:url(#hcdn6msrrb)" transform="translate(.003 -.003)">
+                <rect data-name="사각형 350197" width="60" height="15" rx="7.5" transform="translate(10 30)" style="fill:#dadef8"/>
+            </g>
+        </g>
+        <g data-name="그룹 486320">
+            <g style="filter:url(#y88nds2xrc)" transform="translate(-.001 -.002)">
+                <path data-name="합치기 87" d="M14.454 15.481a10.336 10.336 0 0 0 4.5-.923c3.383-2.134 3.981-9.642-3.556-9.642-6.049-.109-9.843 5.993-9.734 7.167.06.646 3.616 3.4 8.793 3.4M14.277 21a26.694 26.694 0 0 1-4.406-.41C2.235 19.3.3 15.547.032 12.622a9.021 9.021 0 0 1 2.555-6.9A18.022 18.022 0 0 1 15.375 0h.02c6.505 0 9.873 4 10.533 7.956a11.5 11.5 0 0 1-7.248 12.388 13.444 13.444 0 0 1-4.403.656z" transform="translate(37.93 51)" style="fill:#7c76ce"/>
+            </g>
+            <g style="filter:url(#26iqa4loed)" transform="translate(-.001 -.002)">
+                <path data-name="합치기 92" d="M14.454 5.519a10.334 10.334 0 0 1 4.5.923c3.383 2.134 3.981 9.642-3.555 9.642-6.049.109-9.843-5.993-9.734-7.167.06-.646 3.616-3.4 8.793-3.4M14.277 0a26.7 26.7 0 0 0-4.406.41C2.235 1.7.3 5.453.033 8.378a9.021 9.021 0 0 0 2.555 6.9A18.022 18.022 0 0 0 15.375 21h.019c6.506 0 9.873-4 10.533-7.955A11.5 11.5 0 0 0 18.68.656 13.441 13.441 0 0 0 14.277 0z" transform="rotate(180 21.035 36)" style="fill:#7c76ce"/>
+            </g>
+        </g>
+    </g>
+</svg>

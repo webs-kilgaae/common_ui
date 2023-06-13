@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '본인확인(휴대폰,아이핀) - 14세 미만 | U+유모바일',
+    ogTitle: '본인확인(휴대폰,아이핀) - 14세 미만 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts find-finish util-width">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>아이디 찾기</h1>
+            </div>
+            <div class="page-desc">
+                <h2>본인인증 수단을 선택해 주세요.</h2>
+            </div>
+            <section class="cardList-wrap">
+                <!-- 2022-09-26 구조 변경 -->
+                <a href="#" class="icon-txt-card cardList">
+                    <div class="identifi">
+                        <img src="../../assets/images/pc/icon/ico-phone-password.svg" alt="간편인증">
+                        <div class="desc">
+                            <b>간편인증</b>
+                            <span>회원님 명의의 인증서로 본인인증을 할 수 있습니다.</span>
+                        </div>
+                    </div>
+                    <ul class="ico-list">
+                        <li><img src="../../assets/images/pc/icon/ico-pass.png" alt="pass 휴대폰 인증 아이콘"></li>
+                        <li><img src="../../assets/images/pc/icon/ico-finance.png" alt="금융 아이콘"></li>
+                        <li><img src="../../assets/images/pc/icon/ico-toss.png" alt="토스 아이콘"></li>
+                        <li><img src="../../assets/images/pc/icon/ico-payco.png" alt="페이코 아이콘"></li>
+                    </ul>
+                </a>
+                <!--// 2022-09-26 구조 변경 -->
+                <a href="#" class="icon-txt-card cardList">
+                    <div class="card-img">
+                        <img src="../../assets/images/pc/icon/ico-phone-check.svg" alt="">
+                    </div>
+                    <div class="card-txt">
+                        <strong class="main-txt">휴대폰</strong>
+                        <p>회원님 명의의 휴대폰으로 본인인증을 할 수 있습니다.</p>
+                    </div>
+                </a>
+                <a href="#" class="icon-txt-card cardList">
+                    <div class="card-img">
+                        <img src="../../assets/images/pc/icon/ico-ipin-purple.svg" alt="">
+                    </div>
+                    <div class="card-txt">
+                        <strong class="main-txt">아이핀(i-pin)</strong>
+                        <p>아이핀으로 본인인증을 할 수 있습니다.</p>
+                    </div>
+                </a>
+            </section>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

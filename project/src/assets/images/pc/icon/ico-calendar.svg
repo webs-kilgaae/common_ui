@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g transform="translate(4.5 2)">
+        <path transform="translate(-4.5 -2)" style="fill:transparent" d="M0 0h40v40H0z"/>
+        <g data-name="사각형 340884" transform="translate(-4.5 3)" style="stroke:#191919;stroke-linecap:round;stroke-width:4px;fill:none">
+            <rect width="40" height="32" rx="6" style="stroke:none"/>
+            <rect x="2" y="2" width="36" height="28" rx="4" style="fill:none"/>
+        </g>
+        <rect data-name="사각형 340878" width="4" height="4" rx="1" transform="translate(5.5 13)" style="fill:#191919"/>
+        <rect data-name="사각형 340879" width="4" height="4" rx="1" transform="translate(13.5 13)" style="fill:#191919"/>
+        <rect data-name="사각형 340880" width="4" height="4" rx="1" transform="translate(21.5 13)" style="fill:#191919"/>
+        <rect data-name="사각형 340881" width="4" height="4" rx="1" transform="translate(5.5 21)" style="fill:#191919"/>
+        <rect data-name="사각형 340882" width="4" height="4" rx="1" transform="translate(13.5 21)" style="fill:#191919"/>
+        <rect data-name="사각형 340883" width="4" height="4" rx="1" transform="translate(21.5 21)" style="fill:#191919"/>
+        <rect data-name="사각형 340885" width="4" height="8" rx="2" transform="translate(3.5 -2)" style="fill:#191919"/>
+        <rect data-name="사각형 340887" width="4" height="8" rx="2" transform="translate(23.5 -2)" style="fill:#191919"/>
+    </g>
+</svg>

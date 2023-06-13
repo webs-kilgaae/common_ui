@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="sz8wobw34a" x="9" y="11" width="54" height="62" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="ylr1ndhtrb" x="37.334" y="27.668" width="36.667" height="36.667" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 484206">
+        <g data-name="icon">
+            <g style="filter:url(#sz8wobw34a)">
+                <rect data-name="사각형 348902" width="48" height="56" rx="10" transform="translate(11.999 12)" style="fill:#6f98f8"/>
+            </g>
+            <g data-name="그룹 484270">
+                <path data-name="선 126768" transform="translate(24.264 37.766)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" d="M0 0h12"/>
+                <path data-name="선 126757" transform="translate(23.999 27)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px" d="M0 0h22"/>
+            </g>
+        </g>
+        <g style="filter:url(#ylr1ndhtrb)">
+            <path data-name="패스 862489" d="M38.778 62.769 33.253 63.8a1.2 1.2 0 0 1-1.39-.971 1.241 1.241 0 0 1 0-.442l1.019-5.61a2.335 2.335 0 0 1 .636-1.223l21.969-21.829a1.882 1.882 0 0 1 2.692 0l3.771 3.83a1.955 1.955 0 0 1 0 2.736L39.984 62.125a2.272 2.272 0 0 1-1.2.641" transform="translate(8.489 -4.49)" style="fill:#dadef8;fill-rule:evenodd"/>
+        </g>
+    </g>
+</svg>

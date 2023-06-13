@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '진행중인 이벤트 | U+유모바일',
+    ogTitle: '진행중인 이벤트 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['진행중인 이벤트', '지난 이벤트', '대상자 발표']
+    })
+
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이벤트/혜택</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#" class="on">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">이벤트</a></li>
+                <li><a href="#">친구 추천</a></li>
+                <li><a href="#">U Point</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">진행중인 이벤트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">진행중인 이벤트</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+                <li><a href="#">대상자 발표</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container event">
+        <div class="sub-conts evt-default-template template fix-unit-wide">
+            <div class="page-tit">
+                <h1>진행중인 이벤트</h1>
+            </div>
+
+            <section class="template-tit unit-origin">
+                <div class="title-wrap">
+                    <h2 class="tit">새롭게 더 새롭게 매일 래플</h2>
+                    <p class="period">2022.05.24 ~ 2022.05.31</p>
+                </div>
+                <button class="ico-share" data-popup="test-bottom01">공유아이콘</button>
+            </section>
+
+            <section class="template-view unit-wide event-open">
+                @@include('../src/pages/includes/event-css.html', {
+                    eventScssPath : '/assets/css/event-sm.css'
+                })
+                <!-- 이벤트 컨텐츠 -->
+                <div class="evt-section kv">
+                    <div class="evt-conts">
+                        <h2><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-kv.png" alt="새롭게 더 새롭게 매일 래플 4주동안 가장 특별한 혜택 매일 로그인하면 내꺼될 확률 UP"></h2>
+                    </div>
+                </div>
+                <div class="evt-section howto">
+                    <div class="evt-conts">
+                        <h2><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-howto.png" alt="래플은 이렇게 참여하세요"></h2>
+                    </div>
+                </div>
+                <div class="evt-section npay">
+                    <div class="evt-conts">
+                        <h2><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-npay.png" alt="보너스 혜택 회원 가입만 해도 네이버페이 포인트 증정!"></h2>
+                        <p class="total">
+                            <span>누적 <strong>1,000</strong> 명</span>
+                        </p>
+                        <div class="conts760">
+                            <div class="box-table">
+                                <table class="table-type-04">
+                                    <caption class="hidden">네이버페이 포인트 지급 인원 및 혜택 포인트 안내</caption>
+                                    <colgroup>
+                                        <col width="50%">
+                                        <col width="*">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">네이버페이 포인트</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>10,000명 미만</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10,000명 이상</td>
+                                            <td>800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20,000명 이상</td>
+                                            <td>1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30,000명 까지</td>
+                                            <td>1,500</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="notification">
+                                <li>누적 참여수는 평일 오전 10시에 갱신 됩니다.</li>
+                                <li>이벤트 기간 내 선착순 3만명까지 제공 됩니다.</li>
+                                <li>당첨자는 유모바일 공지사항으로 안내됩니다.</li>
+                                <li>회원가입 고객 대상 증정( 마케팅 수신동의 필수)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="evt-section check">
+                    <div class="evt-conts">
+                        <div class="conts760">
+                            <h2><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-check_txt.png" alt="매일 출석체크하고 매일 응모권을 획득하세요."></h2>
+                            <div class="btn-area">
+                                <div class="check-btn">
+                                    <button type="button" class="btn-bk">
+                                        오늘 출석체크
+                                        <span>응모권 1장 증정</span>
+                                    </button>
+                                </div>
+                                <button class="btn-under" data-pop-attr="url:event-open-pop-history.html;target:gift-win; attr:top=0,left=0,width=657,height=850,status=no,menubar=no,toolbar=no,resizable=no">내 응모 내역 확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3주차 -->
+                <div class="evt-section week1">
+                    <div class="evt-conts">
+                        <h2><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-sch-txt.png" alt="매주 화요일 ~ 월요일까지 마음에 드는 상품에 응모하세요. 1회 응모시 응모권 1장이 사용되며 가장 많이 응모한 고객이 당첨됩니다."></h2>
+                        <div class="conts760">
+                            <div class="box-table">
+                                <table class="table-type-04">
+                                    <caption class="hidden">붐업이벤트 주차, 응모기간, 당첨자 발표일 제공</caption>
+                                    <colgroup>
+                                        <col width="33%">
+                                        <col width="33%">
+                                        <col width="*">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">주차</th>
+                                            <th scope="col">응모기간</th>
+                                            <th scope="col">당첨자발표일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1주차</td>
+                                            <td>2022.11.15 ~ 11.21</td>
+                                            <td>11/29</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2주차</td>
+                                            <td>2022.11.22 ~ 11.28</td>
+                                            <td>12/06</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3주차</td>
+                                            <td>2022.11.29 ~ 12.05</td>
+                                            <td>12/13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4주차</td>
+                                            <td>2022.12.06 ~ 12.12</td>
+                                            <td>12/20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>당첨여부는 당첨자 발표 게시판에서 확인하실 수 있으며 개별 연락 드립니다.</p>
+                        </div>
+                        <div class="week-conts">
+                            <h3><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-txt.png" alt="3주차 11.29~12.05"></h3>
+                            <ul class="week-list">
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-img01.png" alt="아이패드Pro 셀룰러 512GB">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            아이패드Pro<br>
+                                            셀룰러 512GB +<br>
+                                            애플펜슬 2세대
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-img02.png" alt="보테가베네타 캔디 카세트백">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            보테가베네타<br>
+                                            캔디 카세트백
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-img03.png" alt="여행 상품권 300만원">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            여행 상품권<br>
+                                            300만원(하나투어)
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-img04.png" alt="다이슨 에어랩">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            다이슨 에어랩
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-three-img05.png" alt="테일러메이드 스텔스 드라이버">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            테일러메이드<br>
+                                            스텔스 드라이버
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <div class="btn-area">
+                                <button type="button" class="btn-enable btn03">옹모하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 3주차 -->
+                <!-- 4주차 -->
+                <div class="evt-section week2">
+                    <div class="evt-conts">
+                        <div class="week-conts">
+                            <h3><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-txt.png" alt="4주차 11.29~12.05"></h3>
+                            <ul class="week-list">
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-img01.png" alt="맥북에어 M2 512GB">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            맥북에어<br>
+                                            M2 512GB
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-img02.png" alt="다이슨 슈퍼소닉">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            다이슨 슈퍼소닉
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-img03.png" alt="프라다 리나일론 백팩">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            프라다 리나일론<br>
+                                            백팩
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-img04.png" alt="그랜드워커힐 숙박권">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            그랜드워커힐<br>
+                                            숙박권
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-four-img05.png" alt="여행 상품권 300만원">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            여행 상품권<br>
+                                            300만원(하나투어)
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <div class="btn-area">
+                                <button type="button" class="btn-expected btn04">오픈 예정</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 4주차 -->
+                <!-- 1주차 -->
+                <div class="evt-section week3">
+                    <div class="evt-conts">
+                        <div class="week-conts">
+                            <h3><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-txt.png" alt="2주차 11.15~11.21"></h3>
+                            <ul class="week-list">
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-img01.png" alt="아이폰  신상 패키지 ">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            아이폰 패키지
+                                            <span>14Pro(256GB) / 워치8(41mm) /<br>에어팟Pro</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-img02.png" alt="LG스타일러오브제 컬렉션">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            LG스타일러오브제<br>
+                                            컬렉션
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-img03.png" alt="태그호이어 CAZ1011.BA084">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            태그호이어<br>
+                                            CAZ1011.BA084
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-img04.png" alt="샤넬 클래식 캐비어 클러치백">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            샤넬 클래식 캐비어<br>
+                                            클러치백
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-one-img05.png" alt="남해 사우스케이프CC (1박2일)">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            남해 사우스케이프CC<br>
+                                            (1박2일)
+                                            <span>36홀 / 석식+조식</span>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <div class="btn-area">
+                                <button type="button" class="btn-disabled btn01">응모마감</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 1주차 -->
+                <!-- 2주차 -->
+                <div class="evt-section week4">
+                    <div class="evt-conts">
+                        <div class="week-conts">
+                            <h3><img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-txt.png" alt="1주차 11.22~11.28"></h3>
+                            <ul class="week-list">
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-img01.png" alt="애플워치8 에르메스">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            애플워치8<br>
+                                            에르메스
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-img02.png" alt="생로랑 클래식 케이트 사첼 숄더백">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            생로랑 클래식 케이트<br>
+                                            사첼 숄더백
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-img03.png" alt="LG코드제로 오제 컬랙렉션">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            LG코드제로<br>
+                                            오제 컬랙렉션
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-img04.png" alt="그랜드하야트 숙박권">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            그랜드하야트<br>
+                                            숙박권
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure>
+                                        <div class="img">
+                                            <img src="@@include('./pages/includes/event-img-path.html')/open/event-open-two-img05.png" alt="PXG L&L 골프백 + 보스톤백">
+                                            <span style="display: none;">응모마감</span>
+                                            <span  style="display: none;">Coming<br>soon</span>
+                                        </div>
+                                        <figcaption>
+                                            PXG L&L 골프백 +<br>
+                                            보스톤백
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <div class="btn-area">
+                                <button type="button" class="btn-disabled btn02">응모마감</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 2주차 -->
+                <!--레이어 팝업 노출시  .show 추가 하시면 노출 가능 "-->
+                <div id="alert06" class="layer-popup">
+                    <div class="layer-popup-item" >
+                        <div class="popup-header">
+                            <strong class="txt-main">로그인 후 응모할 수 있습니다.</strong>
+                        </div>
+                        <div class="popup-body">
+                            <p class="txt-sub">로그인 하시겠습니까?</p>
+                        </div>
+                        <div class="popup-footer">
+                        <div class="btn-group">
+                                <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="alert07" class="layer-popup">
+                    <div class="layer-popup-item" >
+                        <div class="popup-header">
+                            <strong class="txt-main">이미 출석체크 하였습니다.</strong>
+                        </div>
+                        <div class="popup-footer">
+                        <div class="btn-group">
+                                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="alert08" class="layer-popup">
+                    <div class="layer-popup-item" >
+                        <div class="popup-header">
+                            <strong class="txt-main">오늘 출석체크 하고 응모권을 받았습니다.</strong>
+                        </div>
+                        <div class="popup-footer">
+                        <div class="btn-group">
+                                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// 이벤트 컨텐츠 -->
+            </section>
+            <!-- 유의사항-->
+            <section class="template-info unit-origin">
+                <div class="fix-info-tit">
+                    <h2 class="tit">꼭 확인하세요.</h2>
+                </div>
+                <ul class="accordian-list">
+                    <li class="accordian type-01">
+                        <button class="title acc-trigger" >참여 제한</button>
+                        <div class="acc-conts" aria-hidden="false">
+                            <ul class="notification">
+                                <li>유모바일 래플은 부정한 방법으로 응모를 제한하기 위해 사이트 가입자에 한해 참여 가능합니다.</li>
+                                <li>매크로 프로그램, 가상 아이디 사용 등 부장한 방법으로 참여 시 당첨에서 제외 될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordian type-01">
+                        <button class="title acc-trigger" >래플이벤트 참여 유의사항</button>
+                        <div class="acc-conts" aria-hidden="false">
+                            <ul class="notification">
+                                <li>유모바일 앱을 다운로드 또는 기존 고객센터 앱을 업데이트 후 최초로 로그인 한 고객에 한해 응모권 1장이 제공됩니다.</li>
+                                <li>모바일 웹, PC, 앱으로 매일 로그인 시 응모권 1장이 지급되며 이벤트 기간 내 00시 부터 23시 59분까지 해당 됩니다.</li>
+                                <li>본 이벤트는 마케팅 수신동의를 한 고객에 한해 참여 가능하며 마케팅 수신동의를 하지 않는 고객은 이벤트 대상에서 제외 됩니다.</li>
+                                <li>사은품 발송은 2달(다음다음달) 10일경 발송 되며, 발송 시점 해지, 변경, 일시정지, 명의변경 시 증정 대상에서 제외되며, 대상자 변동이 있을 경우 유모바일 공지사항에 안내됩니다.</li>
+                                <li>
+                                    당첨자는 해피콜 나갈 예정입니다.<br>
+                                    - 여러 차례 해피콜 미응답 시 당첨이 취소될 수 있습니다.
+                                </li>
+                                <li>제세공과금이 발생하여, 5만원 이상일 경우 당첨자의 신분증을 요청할 수 있습니다.</li>
+                                <li>상품별 최대 응모 횟수 중복 발생 시 추첨을 통해 당첨 됩니다.</li>
+                                <li>본 이벤트는 유모바일의 사정에 따라 조기 종료, 변경될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordian type-01">
+                        <button class="title acc-trigger" >예비 당첨자</button>
+                        <div class="acc-conts" aria-hidden="false">
+                            <ul class="notification">
+                                <li>추첨을 통해 최초 당첨된 고객 중 연락 두절, 부정 참여, 참여조건 미준수로 인해 당첨이 취소된 경우 차순위 당첨자를 선정하여 공지사항으로 안내됩니다.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="accordian type-01">
+                        <button class="title acc-trigger" >네이버 페이 증정이벤트</button>
+                        <div class="acc-conts" aria-hidden="false">
+                            <ul class="notification">
+                                <li>이벤트 기간 내 3회 로그인 시 자동으로 응모 됩니다.</li>
+                                <li>본 이벤트는 선착순으로 진행 됩니다.(선착순 2만명)</li>
+                                <li>로그인 3회 고객이 2만명에 도달 시 네이버 페이 증정 이벤트는 자동 종료 됩니다. </li>
+                                <li>네이버 페이 당첨자는 공지사항으로 안내됩니다.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- //유의사항-->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

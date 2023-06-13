@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '휴대폰 분실/파손 보험 | U+유모바일',
+    ogTitle: '휴대폰 분실/파손 보험 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <div id="wrap">
+
+        @@include('../src/pages/includes/header.html', {
+            type : 'sub-type',
+            gnb : true,
+            subDepth: false,
+            subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+        })
+        <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+            breadcrumb: {
+                depth1: '홈',
+                depth2: '상품',
+                depth3: '휴대폰 분실/파손 보험',
+                depth4: ''
+            }
+        })-->
+        <ul class="breadcrumb">
+            <li><a href="#">홈</a></li>
+            <li>
+                <a href="#">상품</a>
+                <ul class="breadcrumb-sub">
+                    <li><a href="#">USIM/eSIM</a></li>
+                    <li><a href="#">휴대폰</a></li>
+                    <li><a href="#" class="on">상품</a></li>
+                    <li><a href="#">이벤트/혜택</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">내 정보</a></li>
+                    <li><a href="#">유모바일</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">휴대폰 분실/파손 보험</a>
+                <ul class="breadcrumb-sub">
+                    <li><a href="#">요금제</a></li>
+                    <li><a href="#">생활 구독 서비스</a></li>
+                    <li><a href="#">통신 부가 서비스</a></li>
+                    <li><a href="#" class="on">휴대폰 분실/파손 보험</a></li>
+                    <li><a href="#">고객 후기</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <main class="container products">
+            <div class="sub-conts breakage-insurance-step02">
+                <!-- 컨텐츠 -->
+                <div class="page-tit">
+                    <h1>휴대폰 분실/파손 보험</h1>
+                </div>
+
+                <!-- 09.14 html 재작업-->
+                <!-- 삭제
+                <div class="page-desc">
+                    <h2>가입 휴대폰 정보</h2>
+                </div>
+
+                <div class="my-fix-wrap">
+                    <div class="my-info">
+                        <div class="box-select">
+                            <label for="select1" class="select-label">신청할 휴대폰번호 선택</label>
+                            <select name="select1" id="select1" class="select-default">
+                                <option value="1">010-9919-8998</option>
+                                <option value="2">010-9919-8998</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>-->
+                <section class="rq-form type-col">
+                    <div class="main-txt-group">
+                        <h2 class="main-txt">가입 휴대폰 정보</h2>
+                    </div>
+                    <div class="box-select">
+                        <label for="select1" class="select-label">신청할 휴대폰번호 선택</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">010-**00-**00</option>
+                            <option value="2">010-**00-**01</option>
+                        </select>
+                    </div>
+                </section>
+                <!-- //09.14 html 재작업-->
+
+                <ul class="notification">
+                    <li>가입가능기간 : 휴대폰개통(구입)후30일이내</li>
+                    <li>
+                        가입대상<br>
+                        1) 제조사, 오픈마켓, 공식 리셀러 온/오프라인 매장에서 구입한 신규 자급제 폰 (중고폰, 리퍼폰 불가)<br>
+                        2) U +유모바일에서 개통한 새 휴대폰
+                    </li>
+                    <li>
+                        가입제한대상<br>
+                        1) 선불 휴대폰, 중고 휴대폰(U+유모바일 다이렉트 몰 중고폰 포함), 와이파이 전용패드, 해외에서 구매한 휴대폰, 미개통 휴대폰은 가입할 수 없습니다.<br>
+                        2) 이미 분실되거나 파손된 휴대폰은 가입할 수 없습니다.<br>
+                        3) 분실이나 도난으로 휴대폰 보상을 두 번 받으면 마지막 보상일로부터 1년간 다시 가입할 수 없습니다. <br>
+                        4) 보험상품의 보상범위(단말기 출고가 초과/이하) 기준에 따라 가입이 제한 될 수 있습니다.
+                    </li>
+                </ul>
+
+                <div class="btn-group">
+                    <button class="btns lightgray" type="button">이전</button>
+                    <button class="btns md-ripples ripples-light" type="button">다음</button>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </main>
+    </div>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

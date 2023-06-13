@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="qdjghqvsza" x="17" y="6" width="46" height="72" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486206">
+        <g data-name="그룹 486199">
+            <g data-name="그룹 486198">
+                <g data-name="그룹 484205">
+                    <g data-name="그룹 484204">
+                        <g style="filter:url(#qdjghqvsza)">
+                            <rect data-name="사각형 348906" width="40" height="66" rx="10" transform="translate(19.997 7.003)" style="fill:#e3e6f9"/>
+                        </g>
+                        <path data-name="선 126776" transform="translate(37 14.001)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px" d="M0 0h6"/>
+                        <path data-name="패스 862692" d="m54.6 46 2.2-10.714-8.8-3.215L63.4 16l-2.2 10.714 8.8 3.215z" transform="translate(-19.001 12.999)" style="fill:#7c76ce"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

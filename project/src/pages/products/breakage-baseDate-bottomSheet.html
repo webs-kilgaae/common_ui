@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '기준일 선택 | U+유모바일',
+    ogTitle: '기준일 선택 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap" class="onsale">
+    <main class="container">
+        <div class="sub-conts">
+            <!-- 컨텐츠 -->
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap show transfer-telecom breakage-baseDate-bottomSheet">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">기준일 선택</strong>
+                <button class="popup-close"><span class="hidden">닫기</span></button>
+            </div>
+
+            <div class="popup-body">
+                <div class="telecom-list">
+                    <div class="btn-radio-group radio-list">
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-1" name="telecom">
+                            <label for="telecom-1">2022년 3월 15일 이후</label>
+                        </div>
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-2" name="telecom">
+                            <label for="telecom-2">2022년 3월 14일 까지</label>
+                        </div>
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-3" name="telecom">
+                            <label for="telecom-3">2022년 2월 13일 까지</label>
+                        </div>
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-4" name="telecom">
+                            <label for="telecom-4">2022년 2월 13일 까지</label>
+                        </div>
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-5" name="telecom">
+                            <label for="telecom-5">2020년 11월 10일 까지</label>
+                        </div>
+                        <div class="btn-radio">
+                            <input type="radio" id="telecom-6" name="telecom">
+                            <label for="telecom-6">2020년 3월 13일 까지</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+
+
+</body>
+</html>

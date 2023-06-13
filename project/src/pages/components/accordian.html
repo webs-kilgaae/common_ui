@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('../src/pages/includes/guide/head.html', {title: '아코디언 가이드 - DK BMC'})
+    <body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html" class="guideOn">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer ">
+            <section class="sample">
+                <h2 class="sampleTitle">아코디언</h2>
+                <!-- type 01 -->
+                <div class="accordian type-01">
+                    <button class="title acc-trigger">
+                        아코디언 열기
+                    </button>
+                    <div class="acc-conts">
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                    </div>
+                </div>
+
+                <!-- type 02 -->
+                <div class="accordian type-02">
+                    <button class="title acc-trigger">
+                        아코디언 열기
+                    </button>
+                    <div class="acc-conts">
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                        내용<br>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3>MARKUP</h3>
+                    <p>아래와 같은 구조 사용 acc-trigger와 acc-conts가 같은 레벨에 있어야 함</p>
+                    <br>
+                    <br>
+                    <pre>
+&lt;button class=&quot;acc-trigger&quot;&gt;&lt;/a&gt;<br>
+&lt;div class=&quot;acc-conts&quot;&gt;<br>
+    내용<br>
+&lt;/div&gt;
+                    </pre>
+                </div>
+
+
+
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">아코디언 해제</h2>
+
+                <!-- type 03 -->
+                <div class="notification-wrap">
+                    <h3>Salesforce가 궁금하신가요?</h3>
+                    <ul class="notification">
+                        <li><span class="txt-vt">Sales Cloud</span> : 영업지원(SFA) 도구</li>
+                        <li><span class="txt-vt">Service Cloud</span> : 고객 서비스 지원 도구 </li>
+                        <li><span class="txt-vt">Marketing Cloud</span> : B2C, B2B 마케팅 자동화</li>
+                        <li><span class="txt-vt">Community Cloud</span> : 커뮤니티 지원 도구</li>
+                        <li><span class="txt-vt">Lightning Platform</span> : 개발 및 협업 플랫폼</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    <!-- LAYER POPUP -->
+    @@include('./pages/includes/layerpopup.html')
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <filter id="hai0a7b2na" x=".5" y="11.5" width="105" height="89" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="c3lafjkd5b" x="56.5" y="55.5" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="fafvn8o4yc" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <path data-name="bg" d="M145.035 98.048a28.7 28.7 0 1 0-28.7 28.7 28.7 28.7 0 0 0 28.7-28.7z" transform="translate(-29.945 -15.087)" style="fill:none"/>
+    <g data-name="그룹 484264">
+        <g data-name="그룹 465504">
+            <g style="filter:url(#hai0a7b2na)">
+                <rect data-name="사각형 341209" width="90" height="74" rx="20" transform="translate(7.998 14.002)" style="fill:#e3e6f9"/>
+            </g>
+            <g data-name="그룹 484240">
+                <path data-name="선 126659" transform="translate(64 33.999)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none" d="M0 0h17"/>
+                <path data-name="선 126660" transform="translate(64 45.999)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;fill:none" d="M0 0h17"/>
+            </g>
+            <g data-name="그룹 484248">
+                <path data-name="합치기 29" d="M3.415 27.644A3.415 3.415 0 0 1 0 24.229v-1.463A11.388 11.388 0 0 1 7.824 11.95a6.5 6.5 0 1 1 7.119 0 11.388 11.388 0 0 1 7.823 10.815v1.463a3.415 3.415 0 0 1-3.416 3.416z" transform="translate(24 29.999)" style="fill:#aeaae8;stroke:transparent;stroke-miterlimit:10"/>
+            </g>
+        </g>
+        <g data-name="그룹 486302">
+            <g style="filter:url(#c3lafjkd5b)">
+                <path data-name="box" d="M24 0A24 24 0 1 1 0 24 24 24 0 0 1 24 0z" transform="translate(64.003 58.003)" style="fill:url(#fafvn8o4yc)"/>
+            </g>
+            <g data-name="그룹 486287">
+                <path data-name="알뜰모바일 뉴다이렉트몰 (H1)" d="M4.16-12.72c-.84.24-1.66.58-2.5.86-.78.24-1.34.7-1.24 1.54.08.82.74.98 1.44.9.22 0 1.6-.22 1.68-.46C3.54-6.32 3.48-3 3.66.5c0 .44.02.98.5 1.14a1.848 1.848 0 0 0 1.56-.12c.56-.4.42-1.16.42-1.72v-10.22a6.436 6.436 0 0 0-.12-2.06c-.22-.46-.96-.46-1.36-.36-.16.02-.32.08-.5.12zm9.06 14.48c3.6 0 5.58-3.08 5.58-7.58 0-2.76-.46-4.32-1.44-5.36a4.763 4.763 0 0 0-3.74-1.48 4.743 4.743 0 0 0-5 4.86c0 2.68 1.88 4.4 4.74 4.4a5.717 5.717 0 0 0 2.74-.72 3.151 3.151 0 0 1-2.82 3.66 3.143 3.143 0 0 1-2.1-.62c-.48-.44-.88-.96-1.58-.54-1.08.64-.4 1.7.3 2.34a4.82 4.82 0 0 0 3.32 1.04zm.46-12a2.857 2.857 0 0 1 1.5.52 2.278 2.278 0 0 1 .36 3.18 2.809 2.809 0 0 1-3.76.38 2.446 2.446 0 0 1 .56-3.9 3.955 3.955 0 0 1 1.34-.18z" transform="translate(71.059 87.411)" style="fill:#fff"/>
+                <g data-name="icon_+">
+                    <path data-name="패스 842329" d="M.14 0h7.6a1.1 1.1 0 0 1 1.14 1.059 1.1 1.1 0 0 1-1.14 1.059H.14A1.1 1.1 0 0 1-1 1.059 1.1 1.1 0 0 1 .14 0z" transform="translate(96.059 81.294)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

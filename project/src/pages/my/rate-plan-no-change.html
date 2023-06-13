@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금제 변경 | U+유모바일',
+    ogTitle: '요금제 변경 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['가입정보', '요금제 변경', '부가서비스 변경', '일시정지 신청']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '요금제 변경'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">주문/신청 내역</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금제 변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">가입정보</a></li>
+                <li><a href="#" class="on">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts rate-plan-change">
+            <!-- 컨텐츠 -->
+            <div>
+                <div class="page-tit">
+                    <h1>요금제 변경</h1>
+                </div>
+
+                <div class="my-conts">
+                    <div class="fix-area">
+                        @@include('./pages/includes/my-use-amount.html', {
+                            titTxt: '가입 휴대폰번호',
+                            plan: true
+                        })
+                    </div>
+                    <div class="info-area">
+
+                        <section class="cardList-wrap">
+                            <h3 class="cardList-title">현재 사용중인 요금제</h3>
+                            <div class="cardList one-title">
+                                <dl>
+                                    <dt>
+                                        <strong>유심 LTE(15GB+/300분)</strong>
+                                        <p>
+                                            요금제 가입/변경일
+                                            <span>YYYY-MM-DD</span>
+                                        </p>
+                                    </dt>
+                                </dl>
+                            </div>
+                        </section>
+
+                        <section>
+                            <!-- case 1 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    청소년 고객님께서는 법정대리인의 동의 확인 후 고객센터를 통해 <br>
+                                    요금제를 변경하실 수 있습니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-teen-complete.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 1 -->
+
+                            <!-- case 2 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    법인 고객님께서는 홈페이지 또는 고객센터앱에서 <br>
+                                    요금제를 변경하실 수 있습니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-corp-complete.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 2 -->
+
+                            <!-- case 3 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    청소년/복지 요금제 고객님께서는 홈페이지 또는 고객센터앱에서 <br>
+                                    요금제를 변경하실 수 있습니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-teen-plan.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 3 -->
+
+                            <!-- case 4 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    가입 기간이 30일 미만인 고객님께서는 요금제를 변경하실 수 없습니다.
+                                    <span>일시 정지 기간 제외</span>
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-under-30days.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">가입 기간 30일 경과 후 변경해주세요.</b>
+                                </div>
+                            </div>
+                            <!-- //case 4 -->
+
+                            <!-- case 5 -->
+                            <div class="mem-type-guide" >
+                                <p class="guide-txt">
+                                    고객님께서 가입하신 단말 요금제는 반환금 등이 발생할 수 있어 고객센터를 통해 <br>
+                                    안내를 받으신 후 변경이 가능합니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-call-center-error.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 5 -->
+
+                            <!-- case 6 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    고객님께서 가입하신 요금제는 고객센터를 통해서 변경하실 수 있습니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-happy-call-big.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 6 -->
+
+                            <!-- case 7 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    고객님께서 사용하고 계신 휴대폰번호는 현재 일시정지 상태입니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-pause-big.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">요금제 변경을 원하신다면 일시정지 해제 후 다시 시도해 주세요.</b>
+                                </div>
+                            </div>
+                            <!-- //case 7 -->
+
+                            <!-- case 8 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    요금제 변경은 월 1회만 가능합니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-month-once.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">다음 달에 다시 진행해 주세요.</b>
+                                </div>
+                            </div>
+                            <!-- //case 8 -->
+
+                            <!-- case 9 -->
+                            <div class="mem-type-guide">
+                                <p class="guide-txt">
+                                    고객님께서 가입하신 eSIM 요금제 변경은 고객센터를 통해 안내를 받으신 후 <br>
+                                    변경이 가능합니다.
+                                </p>
+                                <div class="guide-img">
+                                    <!-- 2022.11.04 이미지 경로 수정 -->
+                                    <img src="../../assets/images/pc/icon/ico-way-change.svg" alt="">
+                                </div>
+                                <div class="guide-q-box">
+                                    <b class="tit">고객센터 문의</b>
+                                    <p class="txt">
+                                        자사 휴대폰 114(무료) / 1644-5353(유료)<br>
+                                        상담 가능 시간 : 평일 9시 ~ 18시 (점심시간 12시~13시 제외)
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //case 9 -->
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

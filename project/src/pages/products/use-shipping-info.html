@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '배송 안내 | U+유모바일',
+    ogTitle: '배송 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['셀프개통', '바로픽업', '배송 안내', '제휴카드 할인','선택약정 할인','휴대폰 정보 등록']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '상품',
+            depth3: '이용안내',
+            depth4: '배송 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이용안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#">생활 구독 서비스</a></li>
+                <li><a href="#">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#" class="on">이용안내</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">배송 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">셀프개통</a></li>
+                <li><a href="#">바로픽업</a></li>
+                <li><a href="#" class="on">배송 안내</a></li>
+                <li><a href="#">제휴카드 할인</a></li>
+                <li><a href="#">선택약정 할인</a></li>
+                <li><a href="#">휴대폰 정보 등록</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container products">
+        <div class="sub-conts use-shipping-info">
+            <!-- 09.07 신규 구성 -->
+            <div class="page-tit">
+                <h1>배송 안내</h1>
+            </div>
+
+            <div class="banner bnr-beige">
+                <div class="left">
+                    <h3 class="title">가입신청서를 작성했는데 휴대폰 및 유심은 언제 받을 수 있나요?</h3>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/img-phone-point.png" alt="">
+                    </div>
+                    <button class="btns md-ripples ripples-light" type="button">신청내역 조회하기</button>
+                </div>
+            </div>
+
+            <section class="cardList-wrap">
+                <h3 class="cardList-title">신규가입</h3>
+                <ol class="num-process-wrap">
+                    <li>
+                        <span class="number">1</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-happy-call.svg" alt="">
+                            </span>
+                            <strong>해피콜 진행</strong>
+                            <p>
+                                주문정보와 본인 확인을 위해 <br>
+                                상담사가 전화를 드려요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">2</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <img src="../../assets/images/pc/icon/ico-phone-open.svg" alt="">
+                            </span>
+                            <strong>개통</strong>
+                            <p>
+                                해피콜로 확인된 내용으로 <br>
+                                개통 절차를 진행해요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">3</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                 <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-delivery.svg" alt="">
+                            </span>
+                            <strong>택배발송</strong>
+                            <p>
+                                수도권, 광역시라면 오늘배송 서비스로 <br>
+                                더 빠르게! <br>
+                                선개통된 유심과 휴대폰을 발송합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">4</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-delivery-box.svg" alt="">
+                            </span>
+                            <strong>수령 완료</strong>
+                            <p>
+                                수령한 유심을 휴대폰에 끼워 <br>
+                                확인해 보세요.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="cardList-wrap">
+                <h3 class="cardList-title">번호이동/기기변경</h3>
+                <ol class="num-process-wrap">
+                    <li>
+                        <span class="number">1</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                               <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-happy-call.svg" alt="">
+                            </span>
+                            <strong>해피콜 진행</strong>
+                            <p>
+                                주문정보와 본인 확인을 위해 <br>
+                                상담사가 전화를 드려요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">2</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-delivery.svg" alt="">
+                            </span>
+                            <strong>택배 발송</strong>
+                            <p>
+                                유심 및 휴대폰을 택배/오늘배송으로 <br>
+                                발송합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">3</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <!----2022-11-04 아이콘 변경 -->
+                                <img src="../../assets/images/pc/icon/ico-delivery-box.svg" alt="">
+                            </span>
+                            <strong>수령 완료</strong>
+                            <p>
+                                수령한 휴대폰/유심, <br>
+                                개통 안내문을 살펴보세요.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="number">4</span>
+                        <div class="txt-wrap">
+                            <span class="img">
+                                <img src="../../assets/images/pc/icon/ico-phone-open.svg" alt="">
+                            </span>
+                            <strong>개통</strong>
+                            <p>
+                                동봉되어있는 개통안내문에 따라 <br>
+                                개통센터로 연락주세요. <br>
+                                (별도 요청이 없는 경우 3일 후 <br>
+                                자동 개통됩니다.)
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+            <ul class="notification">
+                <li>셀프개통 신청은 ‘해피콜’ 없이 바로 가입이 가능합니다.</li>
+                <li>휴대폰/유심카드 배송은 해피콜 완료 후 개통 불가 사유가 없는 건부터 배송됩니다.</li>
+                <li>휴대폰/유심카드 배송은 주말을 제외하고 서울 지역은 당일 배송, 그 외 지역은 1~2일 정도 소요됩니다.(단, 도서지역이거나 택배 회사의 사정으로 늦어질 수 있습니다.)</li>
+            </ul>
+            <!--2022-11-10 pc 클래스 명 추가-->
+            <ol class="img-txt-method pc">
+                <li>
+                    <div class="method">
+                        <strong>오늘배송 서비스란?</strong>
+                        <p>
+                            평일 오후 1시까지 주문하면, 당일 배송해 드리는 <br>
+                            무료 배송 서비스입니다.
+                        </p>
+                        <i class="link-box"><button class="btn-text-right">오늘배송 가능 여부 확인하기</button></i>
+
+                        <ul class="notification">
+                            <li>오후 1시까지 신청, 해피콜 완료 시 당일 배송 (주말, 공휴일 제외)</li>
+                            <li>
+                                유심칩 단순 구매 및 셀프개통 신청 등 해피콜 미진행 주문은 오후 1시까지 신청하면, <br>
+                                당일 배송됩니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/img-use-shipping01.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="/assets/images/pc/subpage/img-use-shipping02.png" alt="">
+                    </div>
+                    <div class="method">
+                        <strong>
+                            구매한 휴대폰과 유심이 <br>
+                            지금 어디에 있나요?
+                        </strong>
+                        <p>
+                            신청내역 조회 메뉴에서 가입신청 현황과 배송 현황을 <br>
+                            확인하실 수 있습니다.
+                        </p>
+                        <ul class="notification">
+                            <li>신청 완료일로부터 14일 이내 신청서만 확인 가능합니다.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+            <!-- //09.07 신규 구성 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

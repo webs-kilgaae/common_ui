@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '영상 | U+유모바일',
+    ogTitle: '영상 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['진행중인 이벤트', '지난 이벤트', '대상자 발표']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+           depth1: '홈',
+            depth2: 'UTIL',
+            depth3: 'U+유모바일 소개',
+            depth4: '영상'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">유모바일</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#" class="on">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">영상</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#" class="on">영상</a></li>
+                <li><a href="#">유모바일 SNS</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container util">
+        <div class="sub-conts introduce-video">
+
+            <div class="page-tit">
+                <h1>영상</h1>
+            </div>
+            <div class="board-info">
+                <div class="box-input">
+                    <div class="input-wrap serach-input-wrap">
+                        <input type="text" placeholder="검색어 입력" class="input-default" title="검색어 입력">
+                        <button class="ico-search" type="button">검색</button>
+                    </div>
+                </div>
+            </div>
+            <section class="going-list-wrap">
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi/DwRv9sCuHDQ/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            보험까지?! 자급제폰은 역시 유알모가 국룰!
+                        </h3>
+                        <p class="period"><span>2021-12-14</span></p>
+                    </div>
+                </a>
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi/a0BgQ8HV6Q0/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            역시 자급제폰은 유알모가 국룰이지! Z플립3 & Z폴드3 실물 리뷰
+                        </h3>
+                        <p class="period"><span>2022.05.24</span></p>
+                    </div>
+                </a>
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi/so57xqhjsH4/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            절약하고 싶은 30대 주목! 실제 유알모 고객의 리얼 후기~
+                        </h3>
+                        <p class="period"><span>2022.05.24</span></p>
+                    </div>
+                </a>
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi/g1RYtFLMqX8/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            보험까지?! 자급제폰은 역시 유알모가 국룰!
+                        </h3>
+                        <p class="period"><span>2021-12-14</span></p>
+                    </div>
+                </a>
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi_webp/i3inoZvgoT4/sddefault.webp" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            역시 자급제폰은 유알모가 국룰이지! Z플립3 & Z폴드3 실물 리뷰
+                        </h3>
+                        <p class="period"><span>2022.05.24</span></p>
+                    </div>
+                </a>
+                <a href="#" class="cardList-wrap">
+                    <div class="cardList-img video-img">
+                        <img src="https://i.ytimg.com/vi_webp/E45OK0flGwM/hqdefault.webp" alt="">
+                    </div>
+                    <div class="cardList-desc">
+                        <h3 class="main-title">
+                            절약하고 싶은 30대 주목! 실제 유알모 고객의 리얼 후기~
+                        </h3>
+                        <p class="period"><span>2022.05.24</span></p>
+                    </div>
+                </a>
+            </section>
+            <div class="box-paging">
+                <button class="btn-text-more" type="button">더보기 <span class="count">(1/15)</span></button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

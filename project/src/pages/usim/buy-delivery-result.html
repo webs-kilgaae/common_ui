@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '주소찾기 오늘 배송 가능 지역 | U+유모바일',
+    ogTitle: '주소찾기 오늘 배송 가능 지역 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item subscribe-adress address-result">
+            <div class="popup-header">
+                <strong class="txt-main">주소찾기</strong>
+            </div>
+            <div class="popup-body">
+                <section class="filter-wrap">
+                    <div class="box-flex">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="월드컵북로 416" class="input-default input-sm is-delete" title="주소 또는 매장명 입력">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="result-noti">
+                    <span>해당 주소는 오늘배송이 <span class="txt-vt">가능한 지역</span>입니다.</span>
+                    <img src="../../assets/images/pc/icon/ico-loc-able-3d.png" alt="">
+                </section>
+                <section class="result-noti">
+                    <span>해당 주소는 오늘배송이 <span class="txt-rd">불가한 지역</span>이므로, 택배로 배송 됩니다.</span>
+                    <img src="../../assets/images/pc/icon/ico-loc-unable-3d.png" alt="">
+                </section>
+                <section>
+                    <div class="radio-block">
+                        <ul>
+                            <li>
+                                <div>
+                                    <p>04031</p>
+                                    <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                    <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="bang-notice">오늘배송 서비스는 평일 오후 1시까지 주문하면, 당일 배송해 드리는 무료 배송 서비스입니다.</p>
+                </section>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+                </div>
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

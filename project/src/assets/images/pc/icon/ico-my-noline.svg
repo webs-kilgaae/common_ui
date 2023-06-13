@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="4ps106w8ca" x="23" y="19" width="46" height="36" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="xo68edrb3b" x="9" y="5" width="42" height="61" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="g7q0bvdemc" x="35" y="40" width="38" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="사각형 340932" transform="translate(20.127 6.898)" style="fill:none" d="M0 0h46.689v66.898H0z"/>
+    <g data-name="그룹 484269">
+        <g data-name="그룹 484268">
+            <g style="filter:url(#4ps106w8ca)">
+                <path data-name="사각형 350166" d="M8 0h24a8 8 0 0 1 8 8v22H0V8a8 8 0 0 1 8-8z" transform="translate(26.003 19.996)" style="fill:#aeaae8"/>
+            </g>
+            <path data-name="선 126797" transform="translate(54.333 28.999)" style="stroke-width:2.5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4"/>
+            <path data-name="패스 862676" d="M0 0h4" transform="translate(54.333 35.666)" style="stroke-width:2.5px;stroke:#fff;stroke-linecap:round;fill:none"/>
+            <path data-name="선 126799" transform="translate(55 48.666)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4"/>
+            <g style="filter:url(#xo68edrb3b)">
+                <rect data-name="사각형 348907" width="36" height="55" rx="8" transform="translate(12.003 5.996)" style="fill:#dadef8"/>
+            </g>
+            <g data-name="그룹 486042">
+                <path data-name="선 126777" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577" transform="translate(21.5 16.999)"/>
+                <path data-name="선 126792" transform="translate(21.5 24.679)" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577"/>
+                <path data-name="선 126794" transform="translate(21.5 32.999)" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577"/>
+                <path data-name="선 126790" transform="translate(33.923 16.999)" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577"/>
+                <path data-name="선 126791" transform="translate(33.923 24.679)" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577"/>
+                <path data-name="선 126793" transform="translate(33.923 32.999)" style="stroke-width:3px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h4.577"/>
+            </g>
+        </g>
+        <g data-name="그룹 486278">
+            <g style="filter:url(#g7q0bvdemc)">
+                <path data-name="bg" d="M119.645 85.353a16 16 0 1 0-16 16 16 16 0 0 0 16-16z" transform="translate(-49.647 -28.347)" style="fill:#f76bb8"/>
+            </g>
+            <g data-name="그룹 484083">
+                <path data-name="선 466" transform="rotate(-45 99.34 -28.149)" style="stroke-width:4px;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h14.142"/>
+                <path data-name="선 126605" transform="rotate(-135 42.34 18.78)" style="stroke-width:4px;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h14.142"/>
+            </g>
+        </g>
+    </g>
+</svg>

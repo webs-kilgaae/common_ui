@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '납부 내역 확인 | U+유모바일',
+    ogTitle: '납부 내역 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['납부내역 조회', '납부 방법 변경', '납부 전용 입금 계좌 관리']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '납부 내역 확인'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금/납부 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">납부 내역 확인</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">청구요금 조회</a></li>
+                <li><a href="#">요금 즉시 납부</a></li>
+                <li><a href="#" class="on">납부 내역 확인</a></li>
+                <li><a href="#">앱마켓 결제 내역</a></li>
+                <li><a href="#">휴대폰 소액 결제 내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts my-payment payment-date-change">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>결제일 변경</h1>
+            </div>
+            <div class="box-tab">
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="javascript:;">납부 내역 조회</a></li>
+                    <li class="swiper-slide"><a href="javascript:;" >납부 방법 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;"class="on">결제일 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">납부 전용 입금 계좌 관리</a></li>
+                </ul>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="payment-wrap">
+                        <div class="rq-form">
+                            <section class="cardList-wrap">
+                                <h3 class="cardList-title">현재 납부 방법 안내</h3>
+                                    <div class="cardList">
+                                        <!-- 2022.09.30 항목 추가 -->
+                                        <dl>
+                                            <dt>요금 납부방법</dt>
+                                            <dd>신용카드자동이체</dd>
+                                            <dt>소유주(예금주)</dt>
+                                            <dd>홍*동</dd>
+                                            <dt>카드사(은행)</dt>
+                                            <dd>삼성카드</dd>
+                                            <dt>카드(계좌)번호</dt>
+                                            <dd>5188-****-****-4160</dd>
+                                            <dt>결제일</dt>
+                                            <dd>1차 (9일)</dd>
+                                        </dl>
+                                    </div>
+                            </section>
+                            <div class="group-wrap">
+                                <!-- 2022.11.04 텍스트 수정 -->
+                                <h3 class="group-tit">결제일 변경</h3>
+                                <!-- 2022.09.30 텍스트수정 -->
+                                <ul class="btn-radio-group group-free">
+                                    <li class="btn-radio show-bank-input">
+                                        <input type="radio" id="dan2" name="dan2" checked>
+                                        <label for="dan2">1차 (9일)</label>
+                                    </li>
+                                    <li class="btn-radio show-card-input">
+                                        <input type="radio" id="dan2-1" name="dan2">
+                                        <label for="dan2-1">2차 (18일)</label>
+                                    </li>
+                                    <li class="btn-radio show-card-input">
+                                        <input type="radio" id="dan2-2" name="dan2">
+                                        <label for="dan2-2">3차 (22일)</label>
+                                    </li>
+                                    <li class="btn-radio show-card-input">
+                                        <input type="radio" id="dan2-3" name="dan2">
+                                        <label for="dan2-3">4차 (26일)</label>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="btn-group ">
+                        <button class="btns md-ripples ripples-light">변경하기</button>
+                    </div>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <li class="txt-vt">현재 납부방법이 은행 자동이체 또는 신용카드 자동이체인 경우에만 결제일을 변경할 수 있습니다.</li>
+                            <li>이번 달 결제일 이전에 오늘 이후 날짜로 변경하면 이번 달 부터 적용됩니다.</li>
+                            <li>이번 달 결제일이 지났거나, 오늘 이전 날짜로 변경하면 다음달 부터 적용됩니다.</li>
+                            <li>결제일이 주말 및 공휴일인 경우 다음 평일에 결제됩니다.<br>예시) 카드 1차 결제일인 9일이 토요일이면 다음 평일인 월요일(11일)에 결제되며, 2차 결제일은 15일이 됨</li>
+                            <li>이번 달에 여러 차례 결제일을 변경하시늰 경우는 '이번 달' 또는 '다음달' 반영 안내 메시지가 맞지 않을 수 있습니다.</li>
+                            <li>결제일에 계좌잔고가 부족하면 일부만 결제하고 나머지는 추가 결제일에 다시 결제합니다.</li>
+                            <li>결제일을 변경하려면 휴대폰 인증, 신용카드 인증으로 본인확인을 해야 합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

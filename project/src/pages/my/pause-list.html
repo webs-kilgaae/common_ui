@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '일시정지 신청 | U+유모바일',
+    ogTitle: '일시정지 신청 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입정보', '요금제 변경', '부가서비스 변경', '일시정지 신청']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '일시정지 신청'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">일시정지 신청</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#" class="on">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container my">
+        <div class="sub-conts pause-list"><!-- 09.05 클래스 수정-->
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>일시정지 신청</h1>
+            </div>
+
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+
+                    <!-- 09.20 위치 이동-->
+                    <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+                    <!-- <div class="box-tab tab-ctrl"> -->
+                    <div class="box-tab">
+                        <ul class="tab-btn-wrap swiper-wrapper">
+                            <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                            <li class="swiper-slide"><a href="javascript:;">일시정지 신청/해제</a></li>
+                            <li class="swiper-slide"><a href="javascript:;" class="on">일시정지 내역</a></li>
+                        </ul>
+                    </div>
+                    <!-- //09.20 위치 이동-->
+
+                    <!-- 09.05 소스추가-->
+                    <!--<div class="page-phone-info">
+                        <div class="box-select">
+                            <label for="select1" class="select-label">조회하실 휴대폰번호</label>
+                            <select name="select1" id="select1" class="select-default" style="display: none;">
+                                <option value="1">010-9919-8998</option>
+                                <option value="2">010-9919-8998</option>
+                            </select><div class="nice-select select-default" tabindex="0"><span class="current">010-9919-8998</span><ul class="list"><li data-value="1" class="option selected">010-9919-8998</li><li data-value="2" class="option">010-9919-8998</li></ul></div>
+                        </div>
+                    </div>-->
+                    <!-- //09.05 소스추가-->
+
+                    <!-- 09.05 클래스 수정/삭제-->
+                    <div class="page-desc">
+                        <h2>일시정지를 신청한 내역입니다.</h2>
+                        <p>최근 3년 동안의 일시정지내역 조회가 가능합니다.</p>
+                    </div>
+                    <!-- //09.05 클래스 수정/삭제-->
+
+                    <div class="box-table"><!-- 09.20 클래스 수정-->
+                        <table class="table-type-04 center"><!-- 09.20 클래스 수정-->
+                            <caption class="hidden">상태, 정지사유, 정지일수, 정지기간 정보 제공</caption>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="20%">
+                                <col width="40%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">정지사유</th>
+                                    <th scope="col">정지일수</th>
+                                    <th scope="col">정지기간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>일시정지</td>
+                                    <td>경제적 사유</td>
+                                    <td>00일</td>
+                                    <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                </tr>
+                                <tr>
+                                    <td>정지 해제</td>
+                                    <td>경제적 사유</td>
+                                    <td>00일</td>
+                                    <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                </tr>
+                                <tr>
+                                    <td>일시정지</td>
+                                    <td>군입대 정지</td>
+                                    <td>00일</td>
+                                    <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                </tr>
+                                <tr>
+                                    <td>일시정지</td>
+                                    <td>경제적 사유</td>
+                                    <td>00일</td>
+                                    <td>YYYY-MM-DD ~ YYYY-MM-DD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @@include('./pages/includes/pagination.html')
+
+                    <!-- 조회 내역 없음 -->
+                    <!-- 2022.11.04 텍스트수정 -->
+                    <div class="no-result">
+                        <p class="no-result-txt">최근 3년 동안 이용하신 일시정지 내역이 없습니다.</p>
+                    </div>
+                    <!-- //조회 내역 없음 -->
+
+                </div>
+            </div>
+
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

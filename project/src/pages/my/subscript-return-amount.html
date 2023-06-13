@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['이용내역 조회', '결제 차단/해제', '차단/설정 변경이력확인']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container my">
+        <div class="sub-conts subscript-return-amount">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>할인반환금 예상 금액</h1>
+            </div>
+            <div class="box-tab">
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="javascript:;">내 가입정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">할부 약정 정보</a></li>
+                    <li class="swiper-slide"><a href="javascript:;" class="on">할인반환금 예상 금액</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">휴대폰 정보 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">명의 변경</a></li>
+                    <li class="swiper-slide"><a href="javascript:;">번호 변경</a></li>
+                </ul>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <section class="my-bundle">
+                        <div class="my-month type-charge type-02">
+                            <strong class="main-txt">오늘 해지 시 납부할 금액 (A+B)</strong>
+                            <div class="detail">
+                                <strong class="txt-vt">83,710원</strong>
+                            </div>
+                        </div>
+                        <p class="bang-notice">다음 날 해지하는 경우 납부금액이 달리집니다.</p>
+                    </section>
+                    <div class="table-list-wrap my-bundle">
+                        <h2 class="table-title">상세 납부금액</h2>
+                        <table class="table-default2">
+                            <caption class="hidden">이번 달 요금 상세 내역</caption>
+                            <colgroup>
+                                <col width="100%">
+                            </colgroup>
+                            <thead>
+                                <tr class="table-result">
+                                    <th>
+                                        <dl>
+                                            <dt>이번달 당월 금액 (A)</dt>
+                                            <dd class="txt-vt">50,000 원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="item-title">
+                                    <th>
+                                        <dl>
+                                            <dt>이동통신요금</dt>
+                                            <dd>45,414원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>월 정액</dt>
+                                            <dd>25,276원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>부가서비스</dt>
+                                            <dd> 1,457원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>통화 연결음</dt>
+                                            <dd>570원</dd>
+                                            <dt>통화 연결음 + 매달1곡</dt>
+                                            <dd>877원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>할인 반환금</dt>
+                                            <dd>190,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                 <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>선택약정할인 반환금</dt>
+                                            <dd>180,000원</dd>
+                                            <dt>신규단말지원 반환금</dt>
+                                            <dd>10,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>할인 요금</dt>
+                                            <dd class="txt-vt">- 6,408원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                 <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>발송/행사문자 전송료</dt>
+                                            <dd class="txt-vt">- 6,408원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="item-title">
+                                    <th>
+                                        <dl>
+                                            <dt>세금 및 공통요금</dt>
+                                            <dd>5,000원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>부가가치세</dt>
+                                            <dd>5,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table-default2">
+                            <caption class="hidden">이번 달 요금 상세 내역</caption>
+                            <colgroup>
+                                <col width="100%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="c-hotpink">
+                                    <th>
+                                        <dl>
+                                            <dt>미납요금 (B)</dt>
+                                            <dd> 37,134원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <section class="notification-wrap">
+                        <ul class="notification">
+                            <li>할인반환금을 정확하게 확인하시려면, 고객센터로 문의해 주세요.</li>
+                            <li>
+                                U+유모바일 고객센터
+                                <ul class="list-hyphen">
+                                    <li>U+유모바일 휴대폰 114(무료), 1644-5353(유료)</li>
+                                    <li>상담 가능 시간 : 평일 오전 9시 ~ 오후 6시 (점심시간 12시~13시 제외)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

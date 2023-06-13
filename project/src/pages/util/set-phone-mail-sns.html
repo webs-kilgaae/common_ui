@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts join">
+            <div class="page-tit">
+                <h1>고객님께 필요하신 정보나 <br>
+                    이벤트가 있다면 혜택을 <br>
+                    받을 수 있도록 도와드릴게요 ~:)
+                </h1>
+            </div>
+            <!-- 컨텐츠 -->
+            <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+            <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+            <div class="box-input">
+                <label for="input1" class="input-label">휴대폰 번호</label>
+                <div class="input-wrap">
+                    <input id="input1" type="text" placeholder="휴대폰 번호 입력" class="input-default is-delete">
+                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                </div>
+                <span class="txt-error">에러에러에러</span>
+            </div>
+            <div class="box-input">
+                <label for="input2" class="input-label">이메일</label>
+                <div class="input-wrap">
+                    <input id="input2" type="text" placeholder="이메일 주소 입력" class="input-default is-delete">
+                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                </div>
+                <span class="txt-error">에러에러에러</span>
+            </div>
+            <div class="box-input">
+                <div class="btn-check-type2">
+                    <input type="checkbox" id="check4">
+                    <label for="check4"> <span>이벤트 및 마케팅 수신에 동의 하시겠습니까?</span></label>
+                </div>
+                <div class="btn-check">
+                    <input type="checkbox" id="check1" >
+                    <label for="check1"> <span>알림톡</span></label>
+                    <input type="checkbox" id="check2" >
+                    <label for="check2"> <span>SMS</span></label>
+                    <input type="checkbox" id="check3" >
+                    <label for="check3"> <span>이메일</span></label>
+                </div>
+            </div>
+
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">회원가입 완료</button>
+            </div>
+
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

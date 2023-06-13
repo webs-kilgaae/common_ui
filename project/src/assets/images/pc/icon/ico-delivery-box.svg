@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <linearGradient id="2hgvfy8h7a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 486227">
+        <g data-name="그룹 486142">
+            <g data-name="그룹 481707">
+                <path data-name="합치기 79" d="M27.133 18H2.7C1.3 18-.552 16.836.157 15.75L8.062 1.189C8.379.7 8.683.049 9.245.049L25.2.009A1.158 1.158 0 0 1 25.341 0h3.319a1.158 1.158 0 0 1 .14.009l15.955.04c.562 0 .866.653 1.183 1.139l7.905 14.562C54.553 16.836 52.7 18 51.3 18z" transform="translate(13 24)" style="fill:#dadef8"/>
+                <g data-name="그룹 481706">
+                    <path data-name="사각형 350180" d="M4 0h46a4 4 0 0 1 4 4v21a10 10 0 0 1-10 10H10A10 10 0 0 1 0 25V4a4 4 0 0 1 4-4z" transform="translate(13 37)" style="fill:url(#2hgvfy8h7a)"/>
+                </g>
+                <path data-name="합치기 80" d="M8.2 16a.325.325 0 0 1-.2-.074.325.325 0 0 1-.2.074H.777c-.4 0-.936-1.035-.732-2L2.318 1.056C2.409.624 2.5.044 2.658.044L7.73 0a.111.111 0 0 1 .029 0h.482a.111.111 0 0 1 .029 0l5.072.04c.162 0 .249.581.34 1.013L15.955 14c.2.965-.327 2-.732 2z" transform="translate(32 23)" style="fill:#fff"/>
+                <path data-name="사각형 350181" d="M0 0h16v10a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V0z" transform="translate(32 37)" style="fill:#cfb8f4"/>
+            </g>
+        </g>
+        <g data-name="그룹 486157">
+            <path data-name="패스 862534" d="M-4721.5 1401.314v5.973" transform="translate(4761.771 -1395.314)" style="fill:none;stroke:#e3e6f9;stroke-linecap:round;stroke-width:3px"/>
+            <path data-name="패스 862587" d="M0 5.376V0" transform="rotate(-140 32.321 -2.653)" style="fill:none;stroke:#e3e6f9;stroke-linecap:round;stroke-width:3px"/>
+            <path data-name="패스 862666" d="M0 0v5.376" transform="rotate(-40 25.598 -19.153)" style="fill:none;stroke:#e3e6f9;stroke-linecap:round;stroke-width:3px"/>
+        </g>
+    </g>
+</svg>

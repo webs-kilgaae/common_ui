@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('../src/pages/includes/guide/head.html', {title: '테이블 가이드 - DK BMC'})
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="/status/assets/logo.png" alt="U+ 유모바일"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+
+            <section class="sample">
+                <h2 class="sampleTitle">기본 테이블(상단 항목)</h2>
+                <div class="sampleContent">
+                    <div class="box-list">
+                        <!--<h2>리스트 타이틀</h2>-->
+                        <div class="main-txt-group">
+                            <h2 class="main-txt">리스트 타이틀</h2>
+                            <p class="txt">리스트 타이틀 설명글</p>
+                        </div>
+                        <div class="box-board">
+                            <div class="board-info">
+                                <p class="box-info">
+                                    <strong>43</strong>건의 검색 결과
+                                </p>
+
+                                <div class="box-input">
+                                    <div class="input-wrap serach-input-wrap">
+                                        <input type="text" placeholder="검색어를 입력" class="input-default" title="검색어 입력">
+                                        <button class="ico-search" type="button">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table-list-wrap">
+                                <table class="table-list">
+                                    <caption class="hidden">번호, 제목, 등록일 정보 제공</caption>
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="70%">
+                                        <col width="20%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">등록일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="notice">
+                                            <td>10</td>
+                                            <td class="subject"><a href="#"><span class="txt-vt">[공지]</span> '건강검진' 관련 사칭 주의 안내</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr class="notice">
+                                            <td>9</td>
+                                            <td class="subject"><a href="#"><span class="txt-vt">[종료]</span> '질병관리청 예방접종증명서' 사칭 주의안내</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td class="subject"><a href="#">요금 폭탄 걱정없는 평생 할인</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td class="subject"><a href="#">[종료] 특별 이벤트</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td class="subject"><a href="#">'자녀안심알리미' 사칭 <span class="txt-vt">스미싱</span> 주의안내</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td class="subject"><a href="#">요금 폭탄 걱정없는 평생 할인 폭탄 걱정없는 평생 할인 요금 폭탄 걱정없는 평생 할인 걱정없는 평생 할인 요금 폭탄 걱정없는 평생 할인걱정없는 평생 할인걱정없는 평생 할인 특별 이벤트 특별 이벤트</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td class="subject"><a href="#">코로나 19 수기명부 작성시 개인안심번호 사용 안내</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="subject"><a href="#">[종료] 어린이날 특별 이벤트</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="subject"><a href="#">[종료] 어린이날 특별 이벤트</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="subject"><a href="#">[종료] 어린이날 특별 이벤트</a></td>
+                                            <td>2022-05-24</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 페이징 -->
+                            @@include('./pages/includes/pagination.html')
+                            <!-- //페이징 -->
+
+                            <!-- 검색 결과 없음 -->
+                            <div class="no-result">
+                                <p class="no-result-txt">
+                                    ‘<span class="txt-vt">스미싱</span>’에 대한 검색결과가 없어요.
+                                    <span class="small-txt">단어의 철자가 정확한지 확인하거나, 다른 검색어로 검색해보세요.</span>
+                                </p>
+                            </div>
+                            <!-- //검색 결과 없음 -->
+                        </div>
+
+                        <br><br>
+
+                        <h2>리스트 타이틀</h2>
+                        <div class="table-list-wrap">
+                            <table class="table-list center">
+                                <caption class="hidden">추천 내역의 가입일과 이름, 상태 제공</caption>
+                                <colgroup>
+                                    <col width="33.3%">
+                                    <col width="33.3%">
+                                    <col width="33.3%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">가입일</th>
+                                        <th scope="col">이름</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022.04.11</td>
+                                        <td>김*솔</td>
+                                        <td>이용중</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.04.11</td>
+                                        <td>박*개</td>
+                                        <td>해지</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022.04.11</td>
+                                        <td>김*솔</td>
+                                        <td>해지</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 페이징 -->
+                        <div class="box-paging">
+                            <button class="btn-text-more" type="button">더보기 <span class="count">(1/15)</span></button>
+                        </div>
+                        <!-- //페이징 -->
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3>GUIDE</h3>
+                    <p>
+                        숫자 페이징은<br>
+                        인클루드 include('./pages/includes/pagination.html')<br>
+                        로 사용 가능
+                    </p>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">검색결과와 검색창</h2>
+                <div class="board-info">
+                    <p class="box-info">
+                        <strong>43</strong>건의 검색 결과
+                    </p>
+
+                    <div class="box-input">
+                        <div class="input-wrap serach-input-wrap">
+                            <input type="text" placeholder="검색어를 입력" class="input-default" title="검색어 입력">
+                            <button class="ico-search" type="button">검색</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">검색결과없음 또는 에러</h2>
+
+                <!-- 검색데이터,목록이 없을때 -->
+                <div class="no-result">
+                    <p class="no-result-txt">
+                        ‘<span class="txt-vt">스미싱</span>’에 대한 검색결과가 없어요.
+                        <span class="small-txt">단어의 철자가 정확한지 확인하거나, 다른 검색어로 검색해보세요.</span>
+                    </p>
+                </div>
+                <!-- //검색데이터,목록이 없을때 -->
+
+                <!-- 조회 결과가 없을때 -->
+                <div class="no-search-result">
+                    <p class="no-search-result-txt">
+                        온라인 가입신청서가 존재하지 않습니다.
+                        <span class="small-txt">
+                            가입신청서 열람신청은 2018년 8월 23일 이후<br>
+                            U+유모바일 다이렉트몰을 통해 가입하신 경우에만<br>
+                            조회가 가능 합니다.<br>
+                        </span>
+                    </p>
+                </div>
+                <!-- //조회 결과가 없을때 -->
+
+                <!-- 에러일때 -->
+                <div class="error-result">
+                    <p class="error-result-txt">
+                        선택하신 요금제로 변경하는 과정에서 예상치 못한 오류가 발생했습니다.
+                        <span class="small-txt">잠시 후 다시 시도해 주세요.</span>
+                    </p>
+                </div>
+                <!-- //에러일때 -->
+
+                <div class="description">
+                    <h3>GUIDE</h3>
+                    <p>
+                        1.검색데이터, 검색목록이 없을때<br>
+                        2.조회, 변경 결과가 없을때<br>
+                        3.에러일때
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">기본 테이블(항목 없음)</h2>
+                <div class="sampleContent">
+                    <table class="table-defult">
+                        <caption class="hidden">이달의 추천인 랭킹의 이름과 번호, 점수 제공</caption>
+                        <colgroup>
+                            <col width="13%">
+                            <col width="*">
+                            <col width="33%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p class="c-black">김*호</p>
+                                    <span class="c-gray">2458</span>
+                                </td>
+                                <td>
+                                    <p class="c-purple">34건</p>
+                                    134,100P
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p class="c-black">김*호</p>
+                                    <span class="c-gray">2458</span>
+                                </td>
+                                <td>
+                                    <p class="c-purple">34건</p>
+                                    134,100P
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p class="c-black">김*호</p>
+                                    <span class="c-gray">2458</span>
+                                </td>
+                                <td>
+                                    <p class="c-purple">34건</p>
+                                    134,100P
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p class="c-black">김*호</p>
+                                    <span class="c-gray">2458</span>
+                                </td>
+                                <td>
+                                    <p class="c-purple">34건</p>
+                                    134,100P
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p class="c-black">김*호</p>
+                                    <span class="c-gray">2458</span>
+                                </td>
+                                <td>
+                                    <p class="c-purple">34건</p>
+                                    134,100P
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="bang-notice">
+                        가입신청서에 추천인이 기재되어야 이벤트에 정상 참여 됩니다. 추천인 링크로 가입 신청시 추천인 정보란에 자동 기재됩니다.
+                    </p>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">기본 테이블(좌측 항목)</h2>
+                <div class="sampleContent">
+                    <!--
+                    <div class="table-list-wrap">
+                        <table class="table-list">
+                            <caption class="hidden">상품명과 월 결제 금액, 유알모 가입자 월 지금 포인트 제공</caption>
+                            <colgroup>
+                                <col width="34%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">상품명</th>
+                                    <td>삼다수 2L * 12병</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">월 결제금액</th>
+                                    <td>1,320원 (부가세 포함)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">유알모 가입자 월 지급 포인트</th>
+                                    <td>130P</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-list-wrap">
+                        <h2 class="table-list-title">구매정보</h2>
+                        <table class="table-list">
+                            <caption class="hidden">구매정보의 배송지 주소와 배송시 요청사항 제공</caption>
+                            <colgroup>
+                                <col width="34%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">배송지 주소</th>
+                                    <td>04310 <br>월드컵북로 416 (상암동, (주)엘지유플러스상암사옥) 13층</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">배송 시 요청<br>사항</th>
+                                    <td>부재 시 연락주세요.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-list-wrap">
+                        <h2 class="table-list-title">월 자동결제의 결제 수단 제공</h2>
+                        <table class="table-list">
+                            <caption class="hidden">월 자동결제</caption>
+                            <colgroup>
+                                <col width="34%">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">결제수단</th>
+                                    <td>현대카드<br>4031-****-****-6911</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                -->
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">기본 테이블 (새로운버전)</h2>
+                <div class="sampleContent">
+                    <div class="table-list-wrap">
+                        <h2 class="table-title">이번 달 요금 상세 내역</h2>
+                        <table class="table-default2">
+                            <caption class="hidden">이번 달 요금 상세 내역</caption>
+                            <colgroup>
+                                <col width="100%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="item-title">
+                                    <th>
+                                        <dl>
+                                            <dt>이동통신요금</dt>
+                                            <dd>20,414원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>기본요금</dt>
+                                            <dd>25,276원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>할인요금</dt>
+                                            <dd class="txt-vt">- 6,319원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>선택약정할인</dt>
+                                            <dd>570원</dd>
+                                            <dt>추가 할인</dt>
+                                            <dd>877원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>이전 통신사 요금</dt>
+                                            <dd>20,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>부가서비스</dt>
+                                            <dd>20,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>통화 연결음</dt>
+                                            <dd>570원</dd>
+                                            <dt>통화 연결음 + 매달1곡</dt>
+                                            <dd>877원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>통화료</dt>
+                                            <dd>10,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="depth-02">
+                                    <td>
+                                        <dl>
+                                            <dt>발송/행사문자 전송료</dt>
+                                            <dd>&nbsp;</dd>
+                                            <dt>해외 로밍요금</dt>
+                                            <dd>&nbsp;</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="item-title">
+                                    <th>
+                                        <dl>
+                                            <dt>세금 및 공통요금</dt>
+                                            <dd>2,040원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>10원미만 할인</dt>
+                                            <dd>-1원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr class="item-title">
+                                    <td>
+                                        <dl>
+                                            <dt>휴대폰 월 할부금</dt>
+                                            <dd>11,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <dl>
+                                            <dt>월할부금</dt>
+                                            <dd>11,000원</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <!-- <tr class="c-hotpink">
+                                    <th>
+                                        <dl>
+                                            <dt>미납요금</dt>
+                                            <dd>10,000원</dd>
+                                        </dl>
+                                    </th>
+                                </tr> -->
+                                <tr class="table-result">
+                                    <th>
+                                        <dl>
+                                            <dt>이번 달 요금 계 (A)</dt>
+                                            <dd class="txt-vt">53,455원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <table class="table-default2">
+                            <caption class="hidden">이번 달 요금 상세 내역</caption>
+                            <colgroup>
+                                <col width="100%">
+                            </colgroup>
+                            <tbody>
+                                <tr class="c-hotpink">
+                                    <th>
+                                        <dl>
+                                            <dt>미납요금</dt>
+                                            <dd>10,000원</dd>
+                                        </dl>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="description">
+                        <h3>GUIDE</h3>
+                        <p style="line-height:1.6;">
+                            모바일 소스로 테이블 스타일로 변환
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Table Type01(Basic)</h2>
+                <div class="sampleContent">
+                    <div class="wide-box">
+                        <div class="box-table">
+                            <h2 class="table-title">테이블 타이틀</h2>
+                            <table class="table-type-01">
+                                <caption class="hidden">테이블 타이틀</caption>
+                                <colgroup>
+                                    <col width="50%">
+                                    <col width="50%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <tr>
+                                            <th scope="row">기본요금</th>
+                                            <td>25,276원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">부가서비스</th>
+                                            <td>1,457원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">통화료</th>
+                                            <td>10,000원</td>
+                                        </tr>
+                                        <tr class="is-depth">
+                                            <th scope="row">해외 로밍 요금</th>
+                                            <td>10,000원</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">할인요금</th>
+                                            <td>-6,319원</td>
+                                        </tr>
+                                        <tr class="is-depth">
+                                            <th scope="row">선택약정 할인 25%</th>
+                                            <td>-6,319원</td>
+                                        </tr>
+                                        <tr class="emp-txt">
+                                            <th scope="row">미납요금</th>
+                                            <td>10,000원</td>
+                                        </tr>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row">이번달 요금 합계</th>
+                                        <td class="txt-vt">53,455원</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Table Type02</h2>
+                <div class="sampleContent">
+                    <div class="wide-box">
+                        <div class="radio-block">
+                            <h2 class="normal-txt">검색결과 총 <span class="txt-vt">1,430</span>건</h2>
+                            <ul>
+                                <li>
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="radio1" name="type2" checked>
+                                        <label for="radio1"><span class="ico-radio"></span>
+                                            <div>
+                                                <p>04031</p>
+                                                <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                                <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="radio2" name="type2">
+                                        <label for="radio2"><span class="ico-radio"></span>
+                                            <div>
+                                                <p>04031</p>
+                                                <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                                <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="radio3" name="type2">
+                                        <label for="radio3"><span class="ico-radio"></span>
+                                            <div>
+                                                <p>04031</p>
+                                                <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                                <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-radio-type2">
+                                        <input type="radio" id="radio4" name="type2">
+                                        <label for="radio4"><span class="ico-radio"></span>
+                                            <div>
+                                                <p>04031</p>
+                                                <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                                <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Table Type03</h2>
+                <div class="sampleContent">
+                    <div class="wide-box">
+                        <div class="box-table">
+                            <h2 class="table-title">ARS(자동응답시스템) 단축번호 안내</h2>
+                            <table class="table-type-03">
+                                <caption class="hidden">ARS(자동응답시스템) 단축번호 안내</caption>
+                                <colgroup>
+                                    <col width="60%">
+                                    <col width="40%">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="bg-gray">
+                                        <th scope="row">요금 및 잔여량 조회요금 및 잔여량 조회요금 및 잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">실시간 요금</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">1</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">2</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">3</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">4</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">5</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">잔여량 조회</th>
+                                        <td>
+                                            <span class="ball-purple">4</span>
+                                            <span class="ball-gray">0</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Table Type04</h2>
+                <div class="sampleContent">
+                    <div class="box-table">
+                        <h2 class="table-title no-border">서울, 경기 당일 배송 지역</h2>
+                        <table class="table-type-04">
+                            <caption class="hidden">수도권 배송가능지역 지역명, 배송 가능 지역, 배송 불가 지역 정보제공</caption>
+                            <colgroup>
+                                <col width="40%">
+                                <col width="60%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">지역명</th>
+                                    <th scope="col">제외 지역 (04.05 기준)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>서울</td>
+                                    <td>전 지역 가능</td>
+                                </tr>
+                                <tr>
+                                    <td>군포시</td>
+                                    <td>전 지역 가능</td>
+                                </tr>
+                                <tr>
+                                    <td>동두천시</td>
+                                    <td>전 지역 불가</td>
+                                </tr>
+                                <tr>
+                                    <td>부천시</td>
+                                    <td>대장동 불가</td>
+                                </tr>
+                                <tr>
+                                    <td>계양구</td>
+                                    <td>장기동, 오류동, 상야동, 평동, 노오지동, 선주지동, 하야동, 이화동, 갈현동, 목상동, 둑실동, 다남동, 방축동 불가</td>
+                                </tr>
+                                <tr>
+                                    <td>남동구</td>
+                                    <td>운연동, 수산동 불가</td>
+                                </tr>
+                                <tr>
+                                    <td>동구</td>
+                                    <td rowspan="3">전 지역 가능</td>
+                                </tr>
+                                <tr>
+                                    <td>미추홀구</td>
+                                </tr>
+                                <tr>
+                                    <td>부평구</td>
+                                </tr>
+                                <tr>
+                                    <td>서구</td>
+                                    <td>백석동, 시천동, 공촌동, 오류동, 불로대곡동, 대곡동, 금곡동, 불로동, 검단동, 마전동, 당하동 불가</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Table Type05</h2>
+                <div class="sampleContent">
+                    <div class="box-table">
+                        <h2 class="table-title no-border">유심 선물이력</h2>
+                        <table class="table-type-05">
+                            <caption class="hidden">유심 선물이력</caption>
+                            <colgroup>
+                                <col width="50%">
+                                <col width="50%">
+                            </colgroup>
+                            <tbody>
+                                <!-- 신청 철회인 경우 -->
+                                <tr>
+                                    <td>
+                                        <strong>김*호</strong>
+                                        <strong>010-**23-**87</strong>
+                                    </td>
+                                    <td>
+                                        <button type="button">신청 철회</button>
+                                    </td>
+                                </tr>
+                                <!-- 신청 완료인 경우 -->
+                                <tr>
+                                    <td>
+                                        <strong>김*호</strong>
+                                        <strong>010-**23-**87</strong>
+                                    </td>
+                                    <td>
+                                        <strong>신청 완료</strong>
+                                        <strong>2022.05.31</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

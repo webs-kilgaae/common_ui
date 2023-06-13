@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120.5" viewBox="0 0 120 120.5">
+    <defs>
+        <filter id="x5qze0k00a" x="16.5" y="4.5" width="87" height="75" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="3akzbwoc6b" x="51.935" y="65.123" width="51.419" height="51.419" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="qi7fn3alnc" x="8.5" y="41.5" width="103" height="55" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="6572u9t21e" x="37.5" y="93.5" width="45" height="27" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="3kz5o1wnyd" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <path style="fill:none" d="M0 0h120v120H0z"/>
+    <g data-name="그룹 486141">
+        <g style="filter:url(#x5qze0k00a)" transform="translate(-.001 -.001)">
+            <path data-name="패스 862493" d="M92 70V46.665C92 29.73 106.775 16 125 16a33.824 33.824 0 0 1 21.013 7.062 30.73 30.73 0 0 1 11.969 22.568c.005.023.018.528.018 1.036V70" transform="translate(-65 -4)" style="stroke-width:6px;stroke:#dadef8;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        </g>
+        <g style="filter:url(#3akzbwoc6b)" transform="translate(-.001 -.001)">
+            <path data-name="패스 862495" d="M111 62.4a32.364 32.364 0 0 0 5.09-.423 29.352 29.352 0 0 0 14.854-7.038A33.682 33.682 0 0 0 142.3 31.1" transform="translate(-49.07 41.14)" style="stroke-width:5px;stroke:#dadef8;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        </g>
+        <g style="filter:url(#qi7fn3alnc)" transform="translate(-.001 -.001)">
+            <path data-name="합치기 48" d="M67 29.674v-18a11 11 0 1 1 22 0v18a11 11 0 0 1-22 0zm-66 0v-18a11 11 0 1 1 22 0v18a11 11 0 1 1-22 0z" transform="translate(15 43.33)" style="fill:url(#3kz5o1wnyd)"/>
+        </g>
+        <g style="filter:url(#6572u9t21e)" transform="translate(-.001 -.001)">
+            <rect data-name="사각형 348874" width="30" height="12" rx="6" transform="translate(45 96)" style="fill:#aeaae8"/>
+        </g>
+    </g>
+</svg>

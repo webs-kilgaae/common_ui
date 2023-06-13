@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '개인(신용)정보 조회 동의서 (단말할부 구매고객에 한함/삼성카드 귀중) | U+유모바일',
+    ogTitle: '개인(신용)정보 조회 동의서 (단말할부 구매고객에 한함/삼성카드 귀중) | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap terms show">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <div class="page-tit">
+                    <h1>개인(신용)정보 조회 동의서 (단말할부 구매고객에 한함/삼성카드 귀중)</h1>
+                </div>
+                <div class="agree-cont">
+                    <p>
+                        1. 대리점(판매점)은 위 단말기 매매계약에 따라 구매자에 대하여 보유하는 단말기 할부금 채권을 ㈜미디어로그에게 양도하고, 구매자는 이에 대하여 이의 유보없이 승낙합니다.
+                    </p>
+                    <p>
+                        2. 단말기 할부 구매시 ㈜미디어로그가 할부금 채권 보전을 위해 서울보증보험㈜과 할부신용보험계약을 체결하고, 이에 따라 할부수수료가 청구되는 것에 동의하며, 미동의 시 또는 보험사의 계약체결 거부 시 단말기 할부 구매가 불가합니다.
+                    </p>
+                    <p>
+                        3. 요금등의 청구 및 계약사항 변경에 따른 요금 등의 반환에 대해서는 LTE/CDMA 이용약관에 의합니다.
+                    </p>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '공지사항 | U+유모바일',
+    ogTitle: '공지사항 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '', '']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '공지사항',
+            depth4: ''
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">공지사항</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#">고객 보호</a></li>
+                <li><a href="#" class="on">공지사항</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <div class="sub-conts customer-list">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>공지사항</h1>
+            </div>
+
+            <div class="box-board">
+                <div class="list-wrap type-ul">
+                    <dl class="list-view">
+                        <dt class="date-right"><!-- 09.07 클래스 추가-->
+                            <strong class="view-tit">'질병관리청 예방접종증명서' 사칭 스미싱 주의안내 '질병관리청 예방접종증명서' 사칭 스미싱 주 '질병관리청 예방접종증명서' 사칭 스미싱 주의안내 '질병관리청 예방접종증명서' 사칭 스미싱 주</strong>
+                            <!-- 09.07 태그 변경 -->
+                            <!--<time datetime="2022-05-24">2022-05-24</time>-->
+                            <p class="date">2022-05-24</p>
+                            <!-- //09.07 태그 변경 -->
+                        </dt>
+                        <dd>
+                            <p class="view-txt">
+                                <table class="tbl_list use_pc">
+													<colgroup>
+														<col style="width:10%">
+														<col style="width:10%">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+														<col style="width:*">
+													</colgroup>
+													<thead>
+														<tr>
+															<th>번호유형</th>
+															<th>유형별 개수</th>
+															<th colspan="10">선호번호 뒷자리</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>AAAA</td>
+															<td>10</td>
+															<td>0000</td>
+															<td>1111</td>
+															<td>2222</td>
+															<td>3333</td>
+															<td>4444</td>
+															<td>5555</td>
+															<td>6666</td>
+															<td>7777</td>
+															<td>8888</td>
+															<td>9999</td>
+														</tr>
+														<tr>
+															<td>000A</td>
+															<td>9</td>
+															<td>0001</td>
+															<td>0002</td>
+															<td>0003</td>
+															<td>0004</td>
+															<td>0005</td>
+															<td>0006</td>
+															<td>0007</td>
+															<td>0008</td>
+															<td>0009</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>00AA</td>
+															<td>9</td>
+															<td>0011</td>
+															<td>0022</td>
+															<td>0033</td>
+															<td>0044</td>
+															<td>0055</td>
+															<td>0066</td>
+															<td>0077</td>
+															<td>0088</td>
+															<td>0099</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>AA00</td>
+															<td>9</td>
+															<td>1100</td>
+															<td>2200</td>
+															<td>3300</td>
+															<td>4400</td>
+															<td>5500</td>
+															<td>6600</td>
+															<td>7700</td>
+															<td>8800</td>
+															<td>9900</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td rowspan="10">ABAB</td>
+															<td rowspan="10">90</td>
+															<td>0101</td>
+															<td>0202</td>
+															<td>0303</td>
+															<td>0404</td>
+															<td>0505</td>
+															<td>0606</td>
+															<td>0707</td>
+															<td>0808</td>
+															<td>0909</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>1010</td>
+															<td>1212</td>
+															<td>1313</td>
+															<td>1414</td>
+															<td>1515</td>
+															<td>1616</td>
+															<td>1717</td>
+															<td>1818</td>
+															<td>1919</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>2020</td>
+															<td>2121</td>
+															<td>2323</td>
+															<td>2424</td>
+															<td>2525</td>
+															<td>2626</td>
+															<td>2727</td>
+															<td>2828</td>
+															<td>2929</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>3030</td>
+															<td>3131</td>
+															<td>3232</td>
+															<td>3434</td>
+															<td>3353</td>
+															<td>3636</td>
+															<td>3737</td>
+															<td>3838</td>
+															<td>3939</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>4040</td>
+															<td>4141</td>
+															<td>4242</td>
+															<td>4343</td>
+															<td>4545</td>
+															<td>4646</td>
+															<td>4747</td>
+															<td>4848</td>
+															<td>4949</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>5050</td>
+															<td>5151</td>
+															<td>5252</td>
+															<td>5353</td>
+															<td>5454</td>
+															<td>5656</td>
+															<td>5757</td>
+															<td>5858</td>
+															<td>5959</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>6060</td>
+															<td>6161</td>
+															<td>6262</td>
+															<td>6363</td>
+															<td>6464</td>
+															<td>6565</td>
+															<td>6767</td>
+															<td>6868</td>
+															<td>6969</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>7070</td>
+															<td>7171</td>
+															<td>7272</td>
+															<td>7373</td>
+															<td>7474</td>
+															<td>7575</td>
+															<td>7676</td>
+															<td>7878</td>
+															<td>7979</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>8080</td>
+															<td>8181</td>
+															<td>8282</td>
+															<td>8383</td>
+															<td>8484</td>
+															<td>8585</td>
+															<td>8686</td>
+															<td>8787</td>
+															<td>8989</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>9090</td>
+															<td>9191</td>
+															<td>9292</td>
+															<td>9393</td>
+															<td>9494</td>
+															<td>9595</td>
+															<td>9696</td>
+															<td>9797</td>
+															<td>9898</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>A000</td>
+															<td>9</td>
+															<td>1000</td>
+															<td>2000</td>
+															<td>3000</td>
+															<td>4000</td>
+															<td>5000</td>
+															<td>6000</td>
+															<td>7000</td>
+															<td>8000</td>
+															<td>9000</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>ABCD</td>
+															<td>8</td>
+															<td>0123</td>
+															<td>1234</td>
+															<td>2345</td>
+															<td>3456</td>
+															<td>4567</td>
+															<td>5678</td>
+															<td>6789</td>
+															<td>7890</td>
+															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>특정의미</td>
+															<td>9</td>
+															<td>1472</td>
+															<td>2580</td>
+															<td>3542</td>
+															<td>4989</td>
+															<td>5004</td>
+															<td>7142</td>
+															<td>7179</td>
+															<td>7942</td>
+															<td>8949</td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>ABCD-ABCD</td>
+															<td>1</td>
+															<td>ABCD</td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+														</tr>
+													</tbody>
+												</table>
+                                [봄나들이 추첨 경품 프로모션]<br>
+                                <br>
+                                1. 해당 추첨 사은품은 U+유모바일의 후불 요금제 가입자 대상으로 추첨 진행 됩니다.<br>
+                                2. 추첨 사은품인 CLASSIC 트롤리 보스턴 백 GREEN / 젠틀몬스터 기프트 카드 / 스타벅스 피크닉 보냉백 / 스타벅스 아메리카노 Tall 1잔은 본 프로모션 기간(04/27~05/10)에 U+유모바일 후불 요금제로 개통까지 완료하신 고객 대상으로 추첨 예정입니다.<br>
+                                3. 추첨 경품 당첨자 발표 후 제세공과금(22%, LG유플러스 부담)신고 및 발송정보 확인을 위해 이벤트 응모 시 가입한 휴대폰번호로 개별 연락을 드리며, 3일간 연락이 되지 않을 경우 최종 당첨이 취소 됩니다.<br>
+                                4. 5만원 초과의 경품은 제세공과금 신고를 위해 당첨자 서류 수취가 필요하며, 서류 미제출 시 자동으로 당첨이 취소 됩니다.<br>
+                                5. 5만원 초과의 경품은 제세공과금 신고를 위해 성인만 수령가능하며, 당첨자가 미성년자일 경우 가족관계증명서 확인 후 대신 수령 가능합니다.<br>
+                                6. 이용중인 휴대폰에 스팸 설정이 되어 있는 경우, 경품 대행사의 당첨 및 배송안내 연략을 받지 못할 수 있습니다.<br>
+                                7. 추첨 사은품 취급 및 배송 업무는 ㈜GS리테일에서 위탁진행합니다.<br>
+                            </p>
+                        </dd>
+                    </dl>
+
+                    <!--
+                    <ul class="siblings-article">
+                        <li>
+                            <b>이전글</b>
+                            <p class="no-article">이전글이 없습니다.</p>
+                        </li>
+                        <li>
+                            <b>다음글</b>
+                            <a href="#">'자녀안심알리미' 사칭 스미싱 주의안내 자녀안심 바랍니다.</a>
+                        </li>
+                    </ul>
+                    -->
+                </div>
+
+                <div class="box-btn">
+                    <button class="btns line">목록</button>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

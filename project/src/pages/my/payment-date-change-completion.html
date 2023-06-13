@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '납부 내역 확인 | U+유모바일',
+    ogTitle: '납부 내역 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입사실확인서', '가입신청서', '통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '납부 내역 확인'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금/납부 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">납부 내역 확인</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">청구요금 조회</a></li>
+                <li><a href="#">요금 즉시 납부</a></li>
+                <li><a href="#" class="on">납부 내역 확인</a></li>
+                <li><a href="#">앱마켓 결제 내역</a></li>
+                <li><a href="#">휴대폰 소액 결제 내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts payment-date-change-completion">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>결제일 변경</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                   <div class="page-desc">
+                        <h2>결제일이 정상적으로 변경되었습니다.</h2>
+                   </div>
+                   <div class="no-result my-bundle">
+                        <p class="no-result-txt"><span class="txt-vt"> $홍*동$</span>님의 <span class="txt-vt">$카드사or은행명$</span>의 <span class="txt-vt">$신용카드or계좌이체$</span> 결제일이 <br><span class="txt-vt">$기존 결제일$ -> $변경 결제일$</span>로 변경 되었습니다.</p>
+                    </div>
+                    <div class="btn-group my-bundle">
+                        <a href="#" class="btns md-ripples ripples-light">확인</a>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('../src/pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

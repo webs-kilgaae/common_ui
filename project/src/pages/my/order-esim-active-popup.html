@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'eSIM 활성화 방법 안내 | U+유모바일',
+    ogTitle: 'eSIM 활성화 방법 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+    <style>
+        .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+        .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+    </style>
+
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap show my">
+        <div class="layer-popup-item order-esim-active-popup">
+            <div class="popup-header">
+                <strong class="txt-main">eSIM 활성화 방법 안내</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>3가지 방식 중 1가지로 개통해주세요. </h2>
+                    <p>휴대폰 정보가 불일치 할 경우 개통이 되지 않습니다.</p>
+                </div>
+                <div class="cardList-wrap">
+                    <h2 class="cardList-title">1. 제조사별 자동 개통</h2>
+                    <div class="cardList one-title">
+                        <dl>
+                            <dt>애플</dt>
+                            <dd>eSIM 활성화 App PUSH 수신</dd>
+                            <dt>삼성</dt>
+                            <dd>
+                               <p>휴대폰 설정 단계에서 자동 진행</p>
+                               <p>설정 &gt; SIM 카드관리자 &gt; 모바일 요금제 추가 &gt; 통신사 QR 코드 스캔 </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="cardList-wrap">
+                    <h2 class="cardList-title">2. QR코드 방식</h2>
+                    <p class="bang-notice bang-notice-bt"><span class="txt-vt"> QR코드를 eSIM 개통 단말에서 촬영</span> 후 eSIM 활성화를 진행해주세요.</p>
+                    <div class="cardList one-title">
+                        <div class="unit-img"><img src="../../assets/images/pc/icon/qr-code-img.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="cardList-wrap">
+                    <h2 class="cardList-title">3. 수동개통</h2>
+                    <p class="bang-notice bang-notice-bt">
+                        휴대폰 설정 &gt; 셀룰러 &gt; 셀룰러 요금제 추가 메뉴에서 아래 정보 직접 입력
+                    </p>
+                    <div class="cardList one-title">
+                        <dl>
+                            <dt>아이폰 인 경우 [SM-DP+주소] 입력</dt>
+                            <dd><a href="#" class="txt-vt">SM-V4-0075-A-GTM_PR-GQ-ESMI.COM</a></dd>
+                            <dt>삼성폰 인 경우 [활성화 코드] 입력</dt>
+                            <dd>
+                               <a href="#" class="txt-vt">2AOF184OF77451591C07E8EAD89A5EA</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+                </div>
+                <button class="btn-close-x popup-close" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+
+<!-- SCRIPT IMPORT -->
+@@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

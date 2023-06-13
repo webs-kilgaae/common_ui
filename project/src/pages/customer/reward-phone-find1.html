@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '분실폰 위치 찾기 | U+유모바일',
+    ogTitle: '분실폰 위치 찾기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['분실/파손 접수 및 보상 안내', '분실 등록', '분실 등록 해제', '분실폰 위치 찾기']
+    })
+
+    <main class="container customer">
+        <div class="sub-conts reward-phone-find">
+            <!-- 컨텐츠 -->
+            <div class="page-tit hidden">
+                <h1>분실한 휴대폰번호</h1>
+            </div>
+
+            <div class="contents-wrap">
+                <strong class="default-txt">분실한 휴대폰 번호</strong>
+                <div class="phone-num">010-**34-**78</div>
+            </div>
+
+            <!--다회선일 경우-->
+            <div class="box-select">
+                <label for="select1" class="select-label">분실한 휴대폰 번호 선택</label>
+                <select name="select1" id="select1" class="select-default">
+                    <option value="1">010-**34-**78</option>
+                </select>
+            </div>
+
+            <ul class="notification">
+                <li>분실폰 위치찾기는 사용하고 계셨던 휴대폰 분실 신고 후 조회하실 수 있습니다. </li>
+            </ul>
+
+            <!-- 2022.11.14 클래스추가 mt50 -->
+            <div class="btn-group mt50">
+                <button class="btns md-ripples ripples-light">분실 신고하기</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

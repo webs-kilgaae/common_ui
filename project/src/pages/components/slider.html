@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../src/pages/includes/guide/head.html', {title: '슬라이더 가이드 - DK BMC'})
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html" class="guideOn">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+            <section class="sample">
+                <h2 class="sampleTitle">슬라이더</h2>
+                <p>slick 기본 옵션(infinite: true, dots: true, arrows: false)만 이용시 slick-default 클래스만 추가</p>
+                <div class="slick-default">
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                </div>
+                <p>slick 추가 옵션 사용시 data-slick="infinite: true; dots: true; arrows: true; slidesToShow: 1; autoplay: true; autoplaySpeed: 2000;" 이와 같이 옵션명을 정확히 기입 </p>
+                <div data-slick="infinite: false; dots: true; arrows: false; slidesToShow: 3,">
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                </div>
+                <div data-slick="infinite: true; dots: true; arrows: true; slidesToShow: 1; autoplay: true; autoplaySpeed: 2000;">
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                </div>
+                <div class="description">
+                    <h3>GUIDE</h3>
+                    <p>
+                        <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick.js URL</a>
+                    </p>
+                    <h3>MARKUP</h3>
+                    <pre>
+
+                    </pre>
+                </div>
+                <div>
+
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">center 슬라이더</h2>
+                <p>slick-center 클래스 추가</p>
+                <div class="slick-center-mode" data-slick="centerMode:true; infinite: true; dots: true; arrows: false; slidesToShow: 1; autoplay: true; autoplaySpeed: 19000; centerPadding:'13.8889vw';">
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                    <div><img src="../../status/assets/sample01.png" alt="Customer 360"></div>
+                </div>
+            </section>
+
+            <div class="sample">
+                <h2 class="sampleTitle">range 슬라이더</h2>
+
+                <div class="sampleContent">
+                    <input type="text" class="js-range-slider" name="data_range" value=""/>
+
+                    <br><br><br><br>
+
+                    <div class="products">
+                        <div class="data-range-bar">
+                            <input type="text" class="js-range-slider" name="data_range" value=""/>
+                        </div>
+                    </div>
+
+                    <!--jQuery-->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <!--Plugin CSS file with desired skin-->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+                    <!--Plugin JavaScript file-->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+                    
+                    <script>
+                    $(".js-range-slider").ionRangeSlider({
+                        skin: "round",
+                        grid: true,
+                        grid_num: 14,
+                        min: 1,
+                        max: 100,
+                        values: ["1GB 미만", "1GB", "2.5GB", "4GB", "5GB", "6GB", "7GB", "8GB", "9GB", "10GB", "15GB", "71GB", "150GB", "무제한"]
+                    });
+                    </script>
+                </div>
+
+                <div class="description">
+                    <h3>GUIDE</h3>
+                    <p>
+                        slider가 작동하는 영역내에서는 drag 기능 불가<br>
+                        예)페이지내에서 동작하는 컨텐츠 탭 내에서는 drag 안됨
+                    </p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+
+</html>

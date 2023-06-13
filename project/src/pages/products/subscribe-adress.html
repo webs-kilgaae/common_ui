@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap products show">
+        <div class="layer-popup-item subscribe-adress">
+            <div class="popup-header">
+                <strong class="txt-main">주소찾기</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="adress-step01" >
+                    <div class="box-flex">
+                        <div class="box-input">
+                            <div class="input-wrap">
+                                <input id="input4" type="text" placeholder="월드컵북로" class="input-default input-sm" title="배송지 주소 찾기">
+                                <button class="ico-delete" style="display: none;">
+                                    <span class="hidden">삭제</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light">검색</button>
+                        </div>
+                    </div>
+                    <div class="ligt-gray-box">
+                        <h3>주소 검색 TIP</h3>
+                        <p class="desc">건물명 또는 건물번호를 함께 입력하시면 정확한 검색이 가능합니다.</p>
+                        <ul class="notification">
+                            <li>도로명 검색 : (예)월드컵북로</li>
+                            <li>도로명+건물번호검색 : (예) 월드컵북로 416</li>
+                            <li>건물명 검색 : (예) 엘지 유플러스</li>
+                        </ul>
+                    </div>
+                    <div class="radio-block">
+                        <!---2022-09-15 .normal-txt 변경-->
+                        <h2 class="normal-txt">검색결과 총 <span class="txt-vt">1,430</span>건</h2>
+                        <ul>
+                            <li>
+                                <div class="btn-radio-type2">
+                                    <input type="radio" id="radio1" name="type2" checked="">
+                                    <label for="radio1"><span class="ico-radio"></span>
+                                        <div>
+                                            <p>04031</p>
+                                            <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                            <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-radio-type2">
+                                    <input type="radio" id="radio2" name="type2">
+                                    <label for="radio2"><span class="ico-radio"></span>
+                                        <div>
+                                            <p>04031</p>
+                                            <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                            <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-radio-type2">
+                                    <input type="radio" id="radio3" name="type2">
+                                    <label for="radio3"><span class="ico-radio"></span>
+                                        <div>
+                                            <p>04031</p>
+                                            <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                            <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn-radio-type2">
+                                    <input type="radio" id="radio4" name="type2">
+                                    <label for="radio4"><span class="ico-radio"></span>
+                                        <div>
+                                            <p>04031</p>
+                                            <p>[도로명]서울특별시 마포구 월드컵북로 5 (서교동)</p>
+                                            <p>[지번]서울특별시 마포구 서교동 351-18</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="adress-step02" style="display: none">
+                    <div class="page-tit">
+                        <h1>상세 주소 입력</h1>
+                    </div>
+                    <div class="box-input">
+                        <div class="adress-step02-title">
+                            <span>서울특별시 마포구 월드컵북로 5 (서교동)</span>
+                            <a href="#">뒤로가기</a>
+                        </div>
+                        <!--  입력시간 나오는 input 은 is-time 클래스 추가 -->
+                        <div class="input-wrap">
+                            <input id="input5" type="text" placeholder="상세 주소를 입력해 주세요." class="input-default is-delete" title="상세주소 입력">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                    </div>
+
+                    <div class="box-select">
+                        <label for="select1" class="select-label">배송 요청 사항</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">없음</option>
+                            <option value="2">부재시 경비실에 맡겨주세요.</option>
+                            <option value="3">부재 시 연락주세요.</option>
+                            <option value="self" class="">직접 입력</option>
+                        </select>
+                    </div>
+                    <div class="self-write-wrap textarea-wrap">
+                        <label for="reason" class="input-label">열람사유</label>
+                        <div class="box-textarea box-input">
+                            <textarea id="reason" type="textarea" placeholder="사유는 상세히 작성 필요" class="input-default is-delete"></textarea>
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <p><strong>0</strong>/100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">신청 완료</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

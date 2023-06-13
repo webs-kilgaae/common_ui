@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '분실폰 위치 찾기 | U+유모바일',
+    ogTitle: '분실폰 위치 찾기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['분실/파손 접수 및 보상 안내', '분실 등록', '분실 등록 해제', '분실폰 위치 찾기']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '휴대폰 분실/파손 보상',
+            depth4: '분실폰 위치 찾기'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">휴대폰 분실/파손 보상</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#" class="on">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#">고객 보호</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">분실폰 위치 찾기</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">분실/파손 접수 및 보상 안내</a></li>
+                <li><a href="#">분실 등록</a></li>
+                <li><a href="#">분실 등록 해제</a></li>
+                <li><a href="#" class="on">분실폰 위치 찾기</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <div class="sub-conts reward-phone-find">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>분실휴대폰 위치찾기</h1>
+            </div>
+
+            <div class="my-fix-wrap">
+                <div class="my-info">
+                    <div class="box-select">
+                        <label for="select1" class="select-label">분실한 휴대폰 번호</label>
+                        <select name="select1" id="select1" class="select-default">
+                            <option value="1">010-9919-8998</option>
+                            <option value="2">010-9919-8998</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-wrap">
+                <div class="map">
+                    <!-- 지도 -->
+                    <img src="/assets/images/pc/temp/temp-map.jpg" alt="임시지도">
+                    <!-- //지도 -->
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>내 휴대폰 현재 상태</dt>
+                        <dd><b class="txt-vt">분실</b> 전원켜짐</dd>
+                    </dl>
+                    <dl>
+                        <dt>내 휴대폰 현재 위치</dt>
+                        <dd>
+                            <!-- 2022.09.14 span태그추가 -->
+                            <p>
+                                고객님의 휴대폰은 현재
+                                <span>서울특별시 마포구 상암동 LG 13층<br></span>
+                                부근에서 확인됩니다.
+                            </p>
+                        </dd>
+                    </dl>
+                    <p class="map-guide">지도를 확대할수록 휴대폰 위치를 자세히 확인할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="box-list">
+                <!-- 2022.09.14 table 구조수정 -->
+                <div class="box-table">
+                    <h2 class="table-title no-border">최근 1년 분실폰 위치조회 내역</h2>
+                    <table class="table-type-04">
+                        <caption class="hidden">최근 1년 분실폰 위치조회 내역</caption>
+                        <colgroup>
+                            <col width="50%">
+                            <col width="50%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">휴대폰 번호</th>
+                                <th scope="col">위치정보 조회 일시</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                            <tr>
+                                <td>010-**34-**56</td>
+                                <td>2021-12-01 15:12:33</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이징 -->
+                <div class="box-paging">
+                    <button class="paging-first"><span class="hidden">첫번째 페이지로 이동</span></button>
+                    <button class="paging-prev"><span class="hidden">이전 페이지로 이동</span></button>
+                    <ul class="paging-list">
+                        <!-- 활성화 시 active 클래스 추가 -->
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                    <button class="paging-next"><span class="hidden">다음 페이지로 이동</span></button>
+                    <button class="paging-end"><span class="hidden">마지막 페이지로 이동</span></button>
+                </div>
+                <!-- //페이징 -->
+            </div>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

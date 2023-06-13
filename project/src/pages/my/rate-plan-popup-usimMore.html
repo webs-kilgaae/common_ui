@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금제많이 | U+유모바일',
+    ogTitle: '요금제많이 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+    .layer-popup{display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+</head>
+<body>
+    <!-- 레이어 팝업 -->
+    <div id="test-layer02" class="layer-popup my">
+        <div class="layer-popup-item rate-plan-popup-usimMore">
+            <div class="popup-header">
+                <strong class="txt-main">요금제 변경을 원하실 경우,<br>고객센터로 문의해 주세요</strong>
+            </div>
+
+            <div class="popup-body">
+                <dl class="customer-center">
+                    <dt>문의</dt>
+                    <dd>1644-5353(유료)</dd>
+                    <dd>자사 휴대폰 114(무료)</dd>
+                </dl>
+                <dl class="customer-center">
+                    <dt>상담 가능 시간</dt>
+                    <dd>평일 9시 ~ 18시(점심시간 12시~13시 제외)</dd>
+                </dl>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '약관 자세히 보기 | U+유모바일',
+    ogTitle: '약관 자세히 보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap terms show">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <div class="page-tit">
+                        <h1>개인정보 수집 및 마케팅 정보 수신 동의 (필수)</h1>
+                    </div>
+                    <section class="info-desc">
+                        <div>
+                            <h3>수집 항목</h3>
+                            <ul class="notification">
+                                <li>고객명 휴대폰번호</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>수집 및 이용 목적</h3>
+                            <ul class="notification">
+                                <li>휴대폰 정보성 안내 및 상품 홍보/가입 권유를 위한 문자메시(SMS, LMS, MMS 등) 발송</li>
+                                <li>아웃바운드 TM 진행</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>보유 기간</h3>
+                            <ul class="notification">
+                                <li>동의일로부터 2개월</li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+
+                <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

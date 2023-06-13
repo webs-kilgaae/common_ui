@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="124.5" viewBox="0 0 120 124.5">
+    <defs>
+        <linearGradient id="fxdcx13vvc" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+        <clipPath id="9obwo2e1kb">
+            <path data-name="사각형 118" transform="translate(-.268 .095)" style="fill:#a6eebd" d="M0 0h58v48H0z"/>
+        </clipPath>
+        <filter id="78spbojafa" x=".5" y="5.5" width="119" height="119" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="filter:url(#78spbojafa)">
+        <path data-name="패스 862710" d="M52 0A52 52 0 1 1 0 52 52 52 0 0 1 52 0z" transform="translate(8 8)" style="fill:#e3e6f9"/>
+    </g>
+    <g data-name="그룹 186">
+        <g data-name="icon">
+            <g data-name="그룹 37" transform="translate(30.268 33.905)" style="clip-path:url(#9obwo2e1kb)">
+                <path data-name="합치기 57" d="M9.32 48a4.811 4.811 0 0 1-4.845-4.786V36.5C1.879 35.44 0 32.419 0 28.857s1.879-6.583 4.475-7.646V14.5A4.811 4.811 0 0 1 9.32 9.713h15.755V4.8H21.44a2.415 2.415 0 0 1-2.426-2.4A2.409 2.409 0 0 1 21.44 0h12.113a2.409 2.409 0 0 1 2.425 2.4 2.414 2.414 0 0 1-2.425 2.4h-3.63v4.913h15.754a4.816 4.816 0 0 1 4.848 4.787v6.712C53.119 22.267 55 25.295 55 28.857s-1.881 6.589-4.475 7.652v6.705A4.816 4.816 0 0 1 45.677 48z" transform="translate(1.733 .095)" style="fill:url(#fxdcx13vvc);stroke:transparent;stroke-miterlimit:10"/>
+                <g data-name="그룹 485946">
+                    <path data-name="패스 65" d="M32.3 21.109a4 4 0 1 0 4 4 4 4 0 0 0-4-4" transform="translate(5.438 3.986)" style="fill:#fff"/>
+                    <path data-name="패스 862597" d="M32.3 21.109a4 4 0 1 0 4 4 4 4 0 0 0-4-4" transform="translate(-11.563 3.986)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+        <g transform="translate(67.41 37.724)">
+            <rect data-name="사각형 120" width="32" height="19" rx="9.5" transform="translate(-.41 .276)" style="fill:#fff"/>
+            <g data-name="그룹 39" transform="translate(5.524 7.228)">
+                <circle data-name="타원 10" cx="2.5" cy="2.5" r="2.5" transform="translate(-.433 .047)" style="fill:#9460e3"/>
+                <circle data-name="타원 8746" cx="2.5" cy="2.5" r="2.5" transform="translate(7.566 .047)" style="fill:url(#fxdcx13vvc)"/>
+                <circle data-name="타원 8747" cx="2.5" cy="2.5" r="2.5" transform="translate(15.566 .047)" style="fill:#9460e3"/>
+            </g>
+        </g>
+    </g>
+</svg>

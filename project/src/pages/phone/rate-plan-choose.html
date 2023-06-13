@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금제 선택 | U+유모바일',
+    ogTitle: '요금제 선택 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap phone show">
+        <div class="layer-popup-item rate-plan-choose">
+            <div class="popup-header">
+                <strong class="txt-main">요금제를 선택해 주세요.</strong>
+            </div>
+            <div class="popup-body">
+                <div class="month-data">
+                    <ul>
+                        <li class="data">
+                            <h2>데이터(월)</h2>
+                            <div class="range-slider nunm1">
+                                <!-- slider -->
+                                <input type="text" class="js-range-slider" name="my_range" value="100" />
+                                <!-- //slider -->
+                            </div>
+                        </li>
+                        <li class="voice">
+                            <h2>음성(월)</h2>
+                            <div class="range-slider nunm2">
+                                <!-- slider -->
+                                <input type="text" class="js-range-slider2" name="my_range" value="50" />
+                                <!-- //slider -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-list">
+                    <ul class="select-link">
+                        <li class="on"><a href="#">추천순</a></li>
+                        <li><a href="#">요금제 낮은순</a></li>
+                        <li><a href="#">요금제 높은순</a></li>
+                        <li><a href="#">데이터 많은순</a></li>
+                        <li><a href="#">통화 많은순</a></li>
+                    </ul>
+                    <div class="info-detail">
+                        <div class="payment">
+                            <ul class="cardList-wrap payment-imgCard-btn payment-list">
+                                <li class="cardList">
+                                    <dl>
+                                        <dt>
+                                            <h3 class="main-txt">가성비 좋은 5G(180GB+)</h3>
+                                            <div class="feature">
+                                                <span class="vol">180GB+</span>
+                                                <span class="limit">집,이동전화 무제한</span>
+                                                <span class="supply">기본제공</span>
+                                            </div>
+                                            <ul class="notification">
+                                                <li>소진 시 최대 10Mbps 속도로 계속 사용</li>
+                                            </ul>
+                                        </dt>
+                                        <dd>
+                                            <div class="pay-amount">
+                                                <strong class="discount-pay">월 74,000원</strong>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <input type="radio" id="pay-type1" name="pay-type" checked>
+                                    <label for="pay-type1">선택</label>
+                                </li>
+                                <li class="cardList">
+                                    <dl>
+                                        <dt>
+                                            <h3 class="main-txt">가성비 좋은 5G (150GB+)</h3>
+                                            <div class="feature">
+                                                <span class="vol">150GB</span>
+                                                <span class="limit">집,이동전화 무제한</span>
+                                                <span class="supply">기본제공</span>
+                                            </div>
+                                            <ul class="notification">
+                                                <li>소진 시 최대 10Mbps 속도로 계속 사용</li>
+                                                <li class="tooltip-wrap">
+                                                부가 통화 50분 무료
+                                                <section class="box-tooltip">
+                                                    <p class="btn-tooltip">
+                                                        <span class="hidden">툴팁보기</span>
+                                                    </p>
+                                                    <div class="txt-tooltip qos-guide">
+                                                        <strong class="qos-tit">부가 통화는</strong>
+                                                        <p class="qos-txt">5XX나 16XX로 시작하는 전국 대표번호, 050X로 시작하는 평생 개인번호, 013 등으로 시작하는 주파수공용통신을 말합니다.</p>
+                                                        <ul class="notification">
+                                                            <li>제공되는 통화량 안에서 무료로 이용</li>
+                                                            <li>월 제공량 소진 후 부가 통화 이용 시 정상 요금 부과</li>
+                                                        </ul>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            </ul>
+                                        </dt>
+                                        <dd>
+                                            <div class="pay-amount">
+                                                <strong class="discount-pay">월 69,000원</strong>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <input type="radio" id="pay-type3" name="pay-type">
+                                    <label for="pay-type3">선택</label>
+                                </li>
+                                <li class="cardList">
+                                    <dl>
+                                        <dt>
+                                            <h3 class="main-txt">가성비 좋은 5G (10GB/200분)</h3>
+                                            <div class="feature">
+                                                <span class="vol">10GB</span>
+                                                <span class="limit">200분</span>
+                                                <span class="supply">200분</span>
+                                            </div>
+                                            <ul class="notification">
+                                                <li>소진 시 최대 10Mbps 속도로 계속 사용</li>
+                                            </ul>
+                                        </dt>
+                                        <dd>
+                                            <div class="pay-amount">
+                                                <strong class="discount-pay">월 69,000원</strong>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <input type="radio" id="pay-type3" name="pay-type">
+                                    <label for="pay-type3">선택</label>
+                                </li>
+                                <li class="cardList">
+                                    <dl>
+                                        <dt>
+                                            <h3 class="main-txt">LTE (4.5GB/무제한)</h3>
+                                            <div class="feature">
+                                                <span class="vol">4,5GB</span>
+                                                <span class="limit">집,이동전화 무제한 </span>
+                                                <span class="supply">기본제공</span>
+                                            </div>
+                                        </dt>
+                                        <dd>
+                                            <div class="pay-amount">
+                                                <span class="origin-pay">42,000원</span>
+                                                <strong class="discount-pay">월 34,000원</strong>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <input type="radio" id="pay-type3" name="pay-type">
+                                    <label for="pay-type3">선택</label>
+                                </li>
+                                <li class="cardList">
+                                    <div class="chip-wrap">
+                                        <img src="/assets/images/pc/chips/chip-recommend.png" alt="">
+                                        <img src="/assets/images/pc/chips/chip-reasonable.png" alt="">
+                                        <img src="/assets/images/pc/chips/chip-saving.png" alt="">
+                                    </div>
+                                    <dl>
+                                        <dt>
+                                            <h3 class="main-txt">가성비 좋은 5G(180GB+)</h3>
+                                            <div class="feature">
+                                                <span class="vol">180GB+</span>
+                                                <span class="limit">집,이동전화 무제한</span>
+                                                <span class="supply">기본제공</span>
+                                            </div>
+                                            <ul class="notification">
+                                                <li>소진 시 최대 10Mbps 속도로 계속 사용</li>
+                                                <li>망내 1회선 무제한</li>
+                                            </ul>
+                                        </dt>
+                                        <dd>
+                                            <div class="pay-amount">
+                                                <span class="origin-pay">23,500원</span>
+                                                <strong class="discount-pay">월 9,900원</strong>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <input type="radio" id="pay-type2" name="pay-type">
+                                    <label for="pay-type2">선택</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--해당 요금제가 없을 경우 노출-->
+                    <!-- <div class="no-result-type-02">
+                        <p>조건에 일치하는 요금제가 없습니다.</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">이전</button>
+                    <button class="btns  w-sm  md-ripples ripples-light" type="button">선택</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script>
+        const min = 0,
+        max = 100;
+        function dots($slider,$dotsNum) {
+            let html = '',
+                left = 0,
+                left_p = "",
+                i;
+            for (i = 0; i < $dotsNum; i++) {
+                left = (100 / $dotsNum) * i;
+                left_p = left + "%";
+                html += '<span class="slider-dots" style="left: ' + left_p + '">';
+                html += '</span>';
+            }
+
+            $slider.append(html);
+        };
+        $(".js-range-slider").ionRangeSlider({
+            min: min,
+            max: max,
+            step: 25,
+            grid: true,
+            grid_num: 4,
+            grid_snap: true,
+            force_edges: true,
+            values: ['~3GB','3~7GB','7~15GB','15GB~','전체'],
+            onStart: function(data) {
+                dots(data.slider,4.1);
+            },
+        });
+        $(".js-range-slider2").ionRangeSlider({
+            min: min,
+            max: max,
+            step: 20,
+            grid: true,
+            grid_num: 5,
+            grid_snap: true,
+            force_edges: true,
+            values: ['~120분','160분','200분','3000분','기본제공','전체'],
+            onStart: function(data) {
+                dots(data.slider,5.1);
+            },
+        });
+    </script>
+</body>
+</html>

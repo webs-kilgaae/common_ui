@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="q0ey5ylyla" x="9" y="11" width="62" height="62" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="icon">
+        <g data-name="그룹 486029">
+            <g style="filter:url(#q0ey5ylyla)">
+                <circle data-name="타원 24" cx="28" cy="28" r="28" transform="translate(12 12)" style="fill:#6f98f8"/>
+            </g>
+            <g data-name="그룹 484412">
+                <path data-name="패스 862591" d="M24.808 23.1v-15" transform="translate(15.193 16.899)" style="fill:none;stroke:#fdfdfd;stroke-linecap:round;stroke-width:5px"/>
+                <path data-name="패스 862592" d="M0 13V0" transform="rotate(-90 40 0)" style="fill:none;stroke:#fdfdfd;stroke-linecap:round;stroke-width:5px"/>
+            </g>
+        </g>
+    </g>
+</svg>

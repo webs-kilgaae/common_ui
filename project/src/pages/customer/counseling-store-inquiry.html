@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '제휴문의 | U+유모바일',
+    ogTitle: '제휴문의 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+
+<!--바텀 시트-->
+<div class="customer">
+    <div class="popup-space">
+        <div class="popup-body counseling-legally-admitted counseling-store-inquiry">
+            <div class="page-desc">
+                <h2>제휴문의</h2>
+                <p>유모바일 다이렉트몰은 광고 및 제휴 프로그램 제안에 항상 열려있습니다.</p>
+            </div>
+            <ul class="cardList underLine">
+                <li>
+                    <div>
+                        <div class="ico-img">
+                            <img src="../../assets/images/pc/icon/ico-advert.svg" alt="광고 및 제휴">
+                        </div>
+                        <strong>광고 및 제휴</strong>
+                    </div>
+                </li>
+                <!-- 2022-09-13 공동 프로모션 <> 귀사 - U+유모바일간 채널 연계 위치 변경-->
+                <li>
+                    <div>
+                        <div class="ico-img"><img src="../../assets/images/pc/icon/ico-promotion.svg" alt="공동 프로모션"></div>
+                        <strong>공동 프로모션</strong>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="ico-img">
+                            <img src="../../assets/images/pc/icon/ico-connection.svg" alt="귀사 - U+유모바일 간 채널 연계">
+                        </div>
+                        <strong>귀사 - U+유모바일간<br> 채널 연계</strong>
+                    </div>
+
+                </li>
+                <li>
+                    <div>
+                        <div class="ico-img"><img src="../../assets/images/pc/icon/ico-proposal.svg" alt="기타 활성화 제안"></div>
+                        <strong>기타 활성화 제안</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="page-desc">
+                <h2>수집 정보는 상담 외 용도로 사용되지 않습니다.</h2>
+                <p><em class="txt-rd">*</em> 표시는 필수입력 사항입니다.</p>
+            </div>
+            <div class="rq-form">
+                <div class="textarea-wrap">
+                    <label for="reason" class="input-label">내용 <em class="txt-rd">*</em></label>
+                    <div class="box-textarea box-input">
+                        <textarea id="reason" type="textarea" placeholder="200자 이내로 내용을 입력해 주세요." class="input-default is-delete" title="200자 이내로 내용 입력"></textarea>
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">에러에러</span>
+                </div>
+                <div class="box-input">
+                    <label for="input1" class="input-label">회사명 <em class="txt-rd">*</em></label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="회사명 입력" class="input-default is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">에러.</span>
+                </div>
+                <div class="box-input">
+                    <label for="input1" class="input-label">작성자명 <em class="txt-rd">*</em></label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="작성자명과 직급 입력" class="input-default is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">작성하시는 분의 이름 입력해 주세요.</span>
+                </div>
+                <div class="box-input">
+                    <label for="input1" class="input-label">연락처 <em class="txt-rd">*</em></label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="‘-’ 없이 전화번호 입력" class="input-default is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">‘-’ 없이 전화번호 입력해 주세요.</span>
+                </div>
+                <div class="box-input">
+                    <label for="input1" class="input-label">이메일 <em class="txt-rd">*</em></label>
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="작성자 이메일 주소 입력" class="input-default is-delete">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">작성자 이메일 주소 입력해 주세요.</span>
+                </div>
+                <div class="input-depth">
+                    <div class="box-flex">
+                        <div class="box-input">
+                            <label for="input5-1" class="input-label">근무지 주소 <em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input5-1" type="text" placeholder="우편번호" class="input-default is-delete" title="우편번호">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                        <div class="box-btn">
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">주소찾기</button>
+                        </div>
+                    </div>
+                    <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                    <div class="box-input no-top">
+                        <div class="input-wrap">
+                            <input id="input5-2" type="text" placeholder="기본주소" class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">에러에러</span>
+                    </div>
+                    <div class="box-input no-top">
+                        <div class="input-wrap">
+                            <input id="input5-3" type="text" placeholder="상세주소" class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">에러에러</span>
+                    </div>
+                    <div class="btn-check">
+                        <input type="checkbox" id="check5">
+                        <label for="check5"><span class="ico-check"></span>상세 주소 없음</label>
+                    </div>
+                </div>
+                <div class="btn-box btn-check btn-text-line">
+                    <input type="checkbox" id="check999">
+                    <label for="check999"> <span class="ico-check"></span>개인정보를 수집/이용에 동의합니다.</label>
+                    <a href="#" class="link-underline">보기</a>
+                </div>
+                <ul class="notification">
+                    <li>수집 항목 : 이름, 휴대폰 번호, 이메일</li>
+                    <li>수집, 이용 목적 : 대리점 개설 상담을 위한 정보 제공</li>
+                    <li>보유, 이용기간 및 파기 : 답변 1개월 후 지체 없이 파기</li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">취소</button>
+                <button class="btns w-sm md-ripples ripples-light" type="button">등록</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

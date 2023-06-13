@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+:root {
+    --safe-top: 0vw;
+    --safe-bottom: 0vw;
+
+    // 11.2 미만
+    @supports (--safe-top: constant(safe-area-inset-top)) {
+        --safe-top: constant(safe-area-inset-top);
+        --safe-bottom: constant(safe-area-inset-bottom);
+    }
+
+    // 11.2 이상
+    @supports (--safe-top: env(safe-area-inset-top)) {
+        --safe-top: env(safe-area-inset-top);
+        --safe-bottom: env(safe-area-inset-bottom);
+    }
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, button,figure,figcaption,textarea, header, footer, main{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: $gray05;
+	vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+}
+// * 07.29 : 디자인단과 협의하에 line-Height:1 삭제(기본값 적용되도록)
+body {
+	line-height: normal;
+  -webkit-text-size-adjust: none;
+}
+// hr{
+// 	display: none;
+// }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+sup{font-size: 60%;}
+em{font-style: normal;}
+input{
+	-webkit-apperance: none;
+	display: inline-block;
+	box-sizing: border-box;
+	font-family: 'Pretendard';
+	background-color: $white;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+select{
+	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
+	appearance: none;
+}
+button{
+	border:none;
+	cursor:pointer;
+	font-family: 'Pretendard';
+}
+i {font-style: normal;}
+a {
+	text-decoration: none;
+	font-family: 'Pretendard';
+	font-weight: 400;
+	cursor:pointer;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{max-width: 100%; display: inline-block;}
+
+
+.scrOff {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.hidden{@include hidden;}
+input, textarea, button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+/* input box color */
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0 30px #fff inset ; -webkit-text-fill-color: #666; }
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; }
+input:-webkit-autofill:disabled {-webkit-box-shadow: 0 0 0 30px #f6f6f6 inset; }

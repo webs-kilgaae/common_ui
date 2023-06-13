@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '포인트 사용 | U+유모바일',
+    ogTitle: '포인트 사용 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['포인트 조회', '포인트 사용']
+    })
+   <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '나의 포인트',
+            depth4: '포인트 사용'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">내정보</a></li>
+        <li>
+            <a href="#">나의 포인트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#" class="on">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">포인트 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">포인트 조회</a></li>
+                <li><a href="#" class="on">포인트 사용</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container my">
+        <div class="sub-conts point-use-application">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>포인트 사용</h1><!-- 09.16 텍스트 수정-->
+            </div>
+
+            <!-- 09.19 html 재작업-->
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+
+                <div class="info-area">
+                    <div class="page-desc">
+                        <h2>포인트 사용 신청</h2>
+                        <p>사용 신청한 U+유모바일 포인트만큼 다음 달 청구요금이 할인됩니다.</p>
+                    </div>
+
+                    <div class="rq-form">
+                        <div class="main-txt-group">
+                            <h2 class="main-txt"><span class="txt-vt">$할부금$</span> 납부 신청</h2>
+                        </div>
+
+                        <div class="box-select">
+                            <label for="select1" class="select-label">신청 대상 휴대폰번호</label>
+                            <select name="select1" id="select1" class="select-default">
+                                <option value="1">010-**12-**78</option>
+                                <option value="2">010-**12-**78</option>
+                                <option value="3">010-**12-**78</option>
+                                <option value="4">010-**12-**78</option>
+                            </select>
+                        </div>
+
+                        <div class="box-flex rq-point">
+                            <div class="box-input">
+                                <label for="input4" class="input-label">사용할 수 있는 포인트</label>
+                                <div class="input-wrap">
+                                    <input id="input4" type="text" placeholder="" class="input-default input-sm is-delete">
+                                    <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="box-btn">
+                                <button class="btn-dark-gray md-ripples ripples-light" type="button">전액 사용</button>
+                            </div>
+                        </div>
+                        <div class="box-flex rq-point">
+                            <div class="box-input">
+                                <div class="input-wrap">
+                                    <input id="input4" type="text" placeholder="사용할 포인트를 입력" class="input-default input-sm is-delete" title="사용할 포인트를 입력">
+                                    <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                </div>
+                                <!-- 에러 시 나오는 안내문구 -->
+                                <span class="txt-error">사용하실 포인트는<br> 1,000P부터 가능합니다.</span>
+                            </div>
+                            <div class="box-btn">
+                                <button class="btn-dark-gray md-ripples ripples-light" type="button">포인트 사용</button>
+                            </div>
+                        </div>
+                        <P class="txt">최소 1,000P부터 사용할 수 있습니다. 100P 단위로 입력해 주세요.</P>
+
+                        <div class="box-input">
+                            <h3 class="form-tit">총 사용 포인트</h3>
+                            <div class="input-wrap">
+                                <!-- 단위있는 인풋의 경우 is-unit 클래스추가 -->
+                                <input id="input555" type="text" placeholder="" class="input-default is-unit" title="총 사용 포인트" readonly>
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                <span class="input-unit txt-vt">원</span>
+                            </div>
+                            <p class="txt">
+                                청구 요금이 사용 신청한 포인트보다 적으면 신청 포인트를
+                                다 쓸 때까지 매월 청구요금에 자동으로 적용됩니다.
+                            </p>
+                        </div>
+
+                        <div class="approve-form">
+                            <h3 class="form-tit">포인트 사용 신청을 위해 아래 내용에 동의해 주세요.</h3>
+                            <div class="btn-box btn-check btn-text-line">
+                                <input type="checkbox" id="check999">
+                                <label for="check999"> <span class="ico-check"></span>포인트 사용에 동의 <strong>(필수)</strong></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btns md-ripples ripples-light" type="button">신청</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //09.19 html 재작업-->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

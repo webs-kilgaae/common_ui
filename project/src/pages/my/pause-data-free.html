@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+<div id="test-layer01" class="layer-popup my show">
+    <div class="layer-popup-item pause-data-free">
+        <div class="popup-header">
+            <!-- 09.20 텍스트 변경-->
+            <strong class="txt-main">
+                일시정지 상태에도 24개월 간 제공되는<br>
+                추가 데이터는 사용기간에 포함됩니다.
+            </strong>
+            <!-- //09.20 텍스트 변경-->
+        </div>
+
+        <div class="popup-body">
+            <!-- 09.20 텍스트 변경 / 클래스 변경 -->
+            <p class="txt-sub">일시정지를 신청하시겠습니까?</p>
+            <span class="default-txt">&bull; 종료일자 변경 없음</span>
+            <!-- //09.20 텍스트 변경 클래스 변경 -->
+        </div>
+
+        <div class="popup-footer">
+           <div class="btn-group">
+               <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+               <button class="btns w-sm md-ripples ripples-light" type="button">확인</button>
+            </div>
+            <!-- 09.20 삭제
+            <button type="button" class="btn-close-x">닫기</button>
+            -->
+        </div>
+    </div>
+</div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

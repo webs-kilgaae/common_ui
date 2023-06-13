@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <filter id="합치기_42" x="26.5" y="53.997" width="27" height="18" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#be91ff"/>
+      <stop offset="1" stop-color="#9550ff"/>
+    </linearGradient>
+    <filter id="빼기_4" x="7.846" y="48.804" width="64.308" height="15.196" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_486323" data-name="그룹 486323" transform="translate(-235.332 -346.401)">
+    <rect id="사각형_348692" data-name="사각형 348692" width="80" height="80" transform="translate(235.332 346.401)" fill="#fff" opacity="0"/>
+    <g id="그룹_481582" data-name="그룹 481582" transform="translate(244.499 359.401)">
+      <g id="그룹_481580" data-name="그룹 481580" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -9.17, -13)" filter="url(#합치기_42)">
+          <path id="합치기_42-2" data-name="합치기 42" d="M0,11a.943.943,0,0,1,.03-.235L3.075,0h9.556V0H17.9l3.045,10.67A.987.987,0,0,1,21,11a1.023,1.023,0,0,1-1.047,1H1.127c-.022,0-.05,0-.076,0A1.026,1.026,0,0,1,0,11ZM20.944,10.674Zm-.019-.05a.1.1,0,0,0-.007-.014A.1.1,0,0,1,20.925,10.624Zm-.018-.041a1.01,1.01,0,0,0-.3-.371A1.013,1.013,0,0,1,20.907,10.583ZM.243,10.361a1.053,1.053,0,0,1,.6-.343A1.037,1.037,0,0,0,.243,10.361ZM20.6,10.208l-.03-.02Zm-.061-.042-.018-.01Zm-.046-.028-.012-.007Zm-.058-.031h0Zm-.046-.022-.009,0Zm-.068-.026h0Zm-.021-.006a0,0,0,0,1,0,0A0,0,0,0,0,20.3,10.055ZM20.016,10h0Zm-.04,0h0Z" transform="translate(29.5 55)" fill="#dadef8"/>
+        </g>
+        <g id="그룹_481579" data-name="그룹 481579" transform="translate(0)">
+          <rect id="사각형_348889" data-name="사각형 348889" width="60" height="46" rx="14" transform="translate(0.833)" fill="url(#linear-gradient)"/>
+          <g transform="matrix(1, 0, 0, 1, -9.17, -13)" filter="url(#빼기_4)">
+            <path id="빼기_4-2" data-name="빼기 4" d="M46.823,9.2h-32A13.905,13.905,0,0,1,6.714,6.61,13.964,13.964,0,0,1,1.669,0H59.977a13.964,13.964,0,0,1-5.045,6.61A13.905,13.905,0,0,1,46.823,9.2Z" transform="translate(9.18 49.8)" fill="#dadef8"/>
+          </g>
+          <path id="text" d="M1.261-5.408H3.927v-8.509H1.261ZM2.6-14.8a1.454,1.454,0,0,0,1.574-1.4A1.457,1.457,0,0,0,2.6-17.622,1.462,1.462,0,0,0,1.012-16.2,1.459,1.459,0,0,0,2.6-14.8ZM5.7-9.677h6.858v-2.165H5.7Zm11.861-1.647v-2.684h1.45c1.06,0,1.512.518,1.512,1.342s-.452,1.342-1.512,1.342Zm5.674-1.342c0-1.967-1.34-3.446-4.021-3.446H14.9v10.7h2.665V-9.25h1.652C22.007-9.25,23.238-10.9,23.238-12.666Zm1.387,7.258h2.665v-10.7H24.626Zm11.721-10.7v6.633l-4.458-6.633H29.224v10.7h2.665v-6.6l4.458,6.6h2.665v-10.7Z" transform="translate(10.822 31.691)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

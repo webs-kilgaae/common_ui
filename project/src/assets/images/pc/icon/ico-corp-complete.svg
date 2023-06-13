@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="122.5" viewBox="0 0 120 122.5">
+    <defs>
+        <filter id="2v40uqxa8a" x="29.5" y="27.5" width="75" height="60" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="2s3sjqdcab" x="9.5" y="7.5" width="69" height="97" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="19gkv2fhgc" x="47.5" y="59.5" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="사각형 340932" transform="translate(30.191 10.348)" style="fill:none" d="M0 0h70.033v100.348H0z"/>
+    <g data-name="그룹 484269">
+        <g data-name="그룹 484268">
+            <g style="filter:url(#2v40uqxa8a)">
+                <path data-name="사각형 350166" d="M10 0h40a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z" transform="translate(36.999 29.995)" style="fill:#aeaae8"/>
+            </g>
+            <path data-name="선 126797" transform="translate(79.999 42)" style="stroke-width:4px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h6"/>
+            <path data-name="패스 862676" d="M0 0h6" transform="translate(79.999 52)" style="stroke-width:4px;stroke:#fff;stroke-linecap:round;fill:none"/>
+            <g style="filter:url(#2s3sjqdcab)">
+                <rect data-name="사각형 348907" width="54" height="82" rx="10" transform="translate(16.999 9.995)" style="fill:#dadef8"/>
+            </g>
+            <g data-name="그룹 486042">
+                <path data-name="선 126777" transform="translate(30.999 25.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+                <path data-name="선 126792" transform="translate(30.999 37.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+                <path data-name="선 126794" transform="translate(30.999 50.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+                <path data-name="선 126790" transform="translate(49.999 25.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+                <path data-name="선 126791" transform="translate(49.999 37.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+                <path data-name="선 126793" transform="translate(49.999 50.999)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M0 0h7"/>
+            </g>
+        </g>
+        <g data-name="그룹 486304">
+            <g style="filter:url(#19gkv2fhgc)">
+                <circle data-name="box" cx="24" cy="24" r="24" transform="translate(55.002 62.003)" style="fill:#42ccb0"/>
+            </g>
+            <g data-name="그룹 484099">
+                <path data-name="선 442" transform="translate(69.616 86.639)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="m0 0 5.617 5.617"/>
+                <path data-name="선 443" transform="translate(75.231 79.618)" style="stroke-width:5px;stroke-linejoin:round;stroke:#fff;stroke-linecap:round;fill:none" d="M12.639 0 0 12.639"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '보낼 문자 확인 | U+유모바일',
+    ogTitle: '보낼 문자 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+    <div id="test-layer01" class="layer-popup show customer">
+        <div class="layer-popup-item send-sms-pop">
+            <div class="popup-header">
+                <strong class="txt-main">
+                    고객님의 분실 휴대폰으로 <br>
+                    아래와 같은 내용의 문자가 발송됩니다.
+                </strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="round-box">
+                    <p class="txt-sub">휴대폰을 분실하였습니다.<br>
+                        본 휴대폰을 습득하신 분은 아래의 연락처로 연락(문자/전화/이메일) 부탁 드립니다.
+                    </p>
+                    <ul class="notification">
+                        <li>휴대폰 연락처 : 000-0000-0000</li>
+                        <li>이메일 주소 : dddd@ddd.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+               <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts num-change-want">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>번호변경</h1>
+            </div>
+
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <section class="rq-form">
+                        <div class="main-txt-group">
+                            <h2 class="main-txt">사용하고 싶은 희망번호를 검색하세요.</h2>
+                            <p class="txt">변경할 수 있는 번호가 있는지 확인해 주세요.<br>
+                                원하는 휴대폰 번호의 가운데 4자리 또는 뒤 4자리 번호로 검색한 후 변경하실 번호를 선택하세요.</p>
+                        </div>
+                        <div class="box-input box-input-phone">
+                            <label for="input-phone-02" class="input-label">희망번호 입력</label>
+                            <div class="input-wrap">
+                                <input id="input-phone-01" type="text" placeholder="010" class="input-default" disabled>
+                            </div>
+                            <div class="input-wrap">
+                                <input id="input-phone-02" type="text" placeholder="가운데 4자리" class="input-default is-delete" maxlength="4">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <div class="input-wrap">
+                                <input id="input-phone-03" type="text" placeholder="뒤 4자리" class="input-default is-delete" maxlength="4">
+                                <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            </div>
+                            <div class="box-btn">
+                                <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                            </div>
+                            <p>가운데 4자리 또는 뒤 4자리 번호로 검색할 수 있습니다.</p>
+                        </div>
+                        <div class="radio-group-wrap">
+                            <h3 class="group-tit">변경할 번호를 선택해 주세요.</h3>
+                            <ul class="btn-radio-group group4">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-1" name="dan4" checked>
+                                    <label for="dan4-1">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-3" name="dan4">
+                                    <label for="dan4-3">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-4" name="dan4">
+                                    <label for="dan4-4">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-5" name="dan4">
+                                    <label for="dan4-5">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-6" name="dan4">
+                                    <label for="dan4-6">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-7" name="dan4">
+                                    <label for="dan4-7">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-8" name="dan4">
+                                    <label for="dan4-8">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-9" name="dan4">
+                                    <label for="dan4-9">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-10" name="dan4">
+                                    <label for="dan4-10">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-11" name="dan4">
+                                    <label for="dan4-11">010-1111-2222</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-12" name="dan4">
+                                    <label for="dan4-12">010-1111-2222</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 휴대폰번호 없는경우 -->
+                        <div class="no-search-result">
+                            <p class="no-search-result-txt">
+                                변경할 수 있는 휴대폰 번호가 없습니다.<br>
+                                다른 번호로 다시 검색해 주세요.
+                            </p>
+                        </div>
+                        <div class="box-paging">
+                            <button class="paging-first" type="button"><span class="hidden">첫번째 페이지로 이동</span></button>
+                            <button class="paging-prev" type="button"><span class="hidden">이전 페이지로 이동</span></button>
+                            <ul class="paging-list">
+                                <!-- 활성화 시 active 클래스 추가 -->
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                            </ul>
+                            <button class="paging-next" type="button"><span class="hidden">다음 페이지로 이동</span></button>
+                            <button class="paging-end" type="button"><span class="hidden">마지막 페이지로 이동</span></button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btns md-ripples ripples-light" type="button">번호 변경</button>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('../src/pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

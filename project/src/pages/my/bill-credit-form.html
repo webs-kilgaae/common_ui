@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '신용카드 정보 입력 | 요금납부조회 | U+유모바일',
+    ogTitle: '신용카드 정보 입력 | 요금납부조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap show my">
+    <div class="layer-popup-item bill-credit-form" >
+        <div class="popup-header">
+            <strong class="txt-main">신용카드 결제</strong>
+        </div>
+
+        <div class="popup-body">
+            <div class="page-desc">
+                <h2>납부하실 금액과 소지하고 계신 카드 정보를 입력해 주세요.</h2>
+                <p>요금 즉시 납부는 본인 명의의 신용 카드로만 결제할 수 있습니다.</p>
+            </div>
+
+            <fieldset>
+                <legend class="hidden">신용카드 결제 정보 입력</legend>
+                <div class="box-input-wrap">
+                    <div class="box-input">
+                        <label for="input1" class="input-label">납부 금액</label>
+                        <div class="input-wrap">
+                            <input id="input1" type="text" placeholder="숫자만 입력" class="input-default is-unit is-delete" value="32,924">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                            <span class="input-unit">만원</span>
+                        </div>
+                    </div>
+                    <p class="txt">(1,000원 이상  300,000원 미만인 경우에만 납부할 수 있으며, 부분 납부도 할 수 있습니다.)</p>
+                </div>
+
+                <div class="box-input">
+                    <label for="input2" class="input-label">카드번호</label>
+                    <div class="input-wrap">
+                        <input id="input2" type="text" placeholder="숫자만 입력" class="input-default is-delete">
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                </div>
+
+                <div class="box-input">
+                    <div class="input-wrap">
+                        <label for="input2" class="input-label">카드사</label>
+                        <input id="input555" type="text" placeholder="카드번호 입력 시 자동 조회
+                        " disabled class="input-default">
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="cardLimit" class="default-txt">카드 유효기간</label>
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <input type="text" id="cardLimit" maxlength="2" placeholder="MM" class="input-default is-delete" title="월">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                    </div>
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <input type="text" maxlength="2" placeholder="YY" class="input-default is-delete" title="년">
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">숫자로 입력하셔야 합니다.</span>
+                    </div>
+                </div>
+
+                <div class="box-select">
+                    <label for="select1" class="select-label">할부기간</label>
+                    <select name="select1" id="select1" class="select-default">
+                        <option value="1">일시불</option>
+                        <option value="2">100개월</option>
+                        <option value="3">1000개월</option>
+                        <option value="4">10개월</option>
+                    </select>
+                </div>
+                <p class="txt">5만원 이상 결제 시 할부 가능</p>
+
+            </fieldset>
+        </div>
+
+        <div class="popup-footer">
+          <div class="btn-group">
+                <button class="btns w-sm md-ripples ripples-light popup-close" type="button">지금 결제 요청</button>
+            </div>
+            <button type="button" class="btn-close-x">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPT IMPORT -->
+@@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

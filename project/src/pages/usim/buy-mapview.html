@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '지도보기 | U+유모바일',
+    ogTitle: '지도보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <main class="container usim">
+        <div class="sub-conts">
+            <!-- 컨텐츠 -->
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item  buy-mapview">
+            <div class="popup-header">
+                <strong class="txt-main">지도보기</strong>
+            </div>
+
+            <div class="popup-body">
+                 <h3 class="body-tit">GS25 강릉 교동점</h3>
+                  <p class="txt-sub">강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</p>
+                <div class="map-area" style="line-height: 360px; text-align: center;">
+                    MAP Area
+                </div>
+            </div>
+            <div class="popup-footer">
+                 <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

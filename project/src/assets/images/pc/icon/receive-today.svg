@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g data-name="icon" transform="translate(1.294 3.285)">
+        <path data-name="패스 842229" d="M24.541 12.669V20.2H10.5v7.12h21.418V20.2L28.9 12.669z" transform="translate(-5.847 -7.386)" style="stroke-linejoin:round;stroke-linecap:round;stroke:#7c40ce;fill:none"/>
+        <path data-name="패스 842230" d="M22.643 46.306a2.208 2.208 0 1 1-2.143 2.207 2.175 2.175 0 0 1 2.142-2.207" transform="translate(-12.278 -28.65)" style="fill:#cfb8f4;stroke:#7c40ce"/>
+        <ellipse data-name="타원 8508" cx="2.142" cy="2.207" rx="2.142" ry="2.207" transform="translate(8.223 17.656)" style="stroke-linejoin:round;stroke-linecap:round;stroke:#7c40ce;fill:none"/>
+        <path data-name="패스 842231" d="M48.643 46.306a2.208 2.208 0 1 1-2.143 2.207 2.175 2.175 0 0 1 2.142-2.207" transform="translate(-28.998 -28.65)" style="fill:#cfb8f4;stroke:#7c40ce"/>
+        <ellipse data-name="타원 8509" cx="2.142" cy="2.207" rx="2.142" ry="2.207" transform="translate(17.503 17.656)" style="stroke-linejoin:round;stroke-linecap:round;stroke:#7c40ce;fill:none"/>
+        <path data-name="선 126642" transform="translate(3.046 6.538)" style="stroke-linecap:round;stroke:#7c40ce;fill:none" d="M2.856 0H0"/>
+        <path data-name="선 126643" transform="translate(1.619 9.8)" style="stroke-linecap:round;stroke:#7c40ce;fill:none" d="M4.283 0H0"/>
+        <path data-name="패스 842232" d="M10.82 13.46h13.921V3.471A1.45 1.45 0 0 0 23.314 2h-9.638a2.9 2.9 0 0 0-2.856 2.943" transform="translate(-6.053 -.641)" style="stroke-linejoin:round;stroke-linecap:round;stroke:#7c40ce;fill:none"/>
+        <path data-name="사각형 341151" transform="translate(-.156 -.286)" style="fill:none" d="M0 0h28v24H0z"/>
+    </g>
+</svg>

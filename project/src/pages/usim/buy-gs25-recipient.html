@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '유모바일에서 구매하기 | U+유모바일',
+    ogTitle: '유모바일에서 구매하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '']
+    })
+    <!--09.29
+    @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '유심/eSIM',
+            depth3: 'USIM 카드구매',
+            depth4: '유모바일에서 구매하기'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">USIM/eSIM</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">유심/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">USIM 카드구매</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">유심/eSIM 가입</a></li>
+                <li><a href="#" class="on">USIM 카드구매</a></li>
+                <li><a href="#">USIM/eSIM 가입 안내</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">유모바일에서 구매하기</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">유모바일에서 구매하기</a></li>
+                <li><a href="#">오픈마켓에서 구매하기</a></li>
+                <li><a href="#">편의점에서 구매하기</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container usim">
+        <div class="sub-conts directmall">
+            <!-- 컨텐츠 -->
+            <section>
+                <div class="page-tit unit-origin">
+                    <h1>유모바일에서 구매하기</h1>
+                </div>
+                <div class="rq-form type-col">
+                    <div class="main-txt-group">
+                        <h2 class="main-txt">배송방법 선택</h2>
+                    </div>
+                    <!-- 2022.11.01 top 클래스 추가 -->
+                    <div class="delivery-wrap form-wrap top">
+                        <div class="delivery-tit form-title">
+                            배송방법
+                            <div class="tooltip-wrap">
+                                <div class="box-tooltip">
+                                    <button class="btn-tooltip"><span class="hidden">툴팁보기</span></button>
+                                    <div class="txt-tooltip">
+                                        <div class="info-wrap">
+                                            <strong>오늘배송/택배</strong>
+                                            <p>입력한 배송지로 퀵 또는 택배로 배송하는 방식이에요</p>
+                                        </div>
+                                        <div class="info-wrap">
+                                            <strong>바로 픽업</strong>
+                                            <p>주문 완료 시, 모바일 쿠폰을 발송해 드려요.<br>
+                                                픽업 가능한 편의점에서 모바일 쿠폰을 제시하고 유심 카드를 받는 방식이예요.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="txt">배송 안내</span>
+                            </div>
+                        </div>
+                        <div class="form-cont">
+                            <!-- 2022.11.01 띄어쓰기 수정, 홈플러스 버튼추가 -->
+                            <div class="delivery-way">
+                                <div class="btn-radio">
+                                    <input type="radio" id="dan4-1" name="dan4" checked="checked">
+                                    <label for="dan4-1">
+                                        <img src="../../assets/images/pc/icon/receive-today.svg" alt="오늘배송/택배">
+                                        오늘배송/택배
+                                    </label>
+                                </div>
+                                <div class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">
+                                        <img src="../../assets/images/pc/icon/logo-gs25.svg" alt="GS25 바로픽업">
+                                        바로 픽업
+                                    </label>
+                                </div>
+                                <div class="btn-radio">
+                                    <input type="radio" id="dan4-3" name="dan4">
+                                    <label for="dan4-3">
+                                        <img src="../../assets/images/pc/icon/logo-emart24.svg" alt="이마트25 바로픽업">
+                                        바로 픽업
+                                    </label>
+                                </div>
+                                <div class="btn-radio">
+                                    <input type="radio" id="dan4-4" name="dan4">
+                                    <label for="dan4-4">
+                                        <img src="../../assets/images/pc/icon/logo-seven11.svg" alt="세븐일레븐 바로픽업">
+                                        바로 픽업
+                                    </label>
+                                </div>
+                                <!-- 2022.11.16 홈플러스 삭제라고 전달받음 -->
+                                <!-- <div class="btn-radio">
+                                    <input type="radio" id="dan4-5" name="dan4">
+                                    <label for="dan4-5">
+                                        <img src="../../assets/images/pc/icon/logo-homeplus.svg" alt="홈플러스 바로픽업">
+                                        바로 픽업
+                                    </label>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-txt-group">
+                        <h2 class="main-txt">배송정보</h2>
+                    </div>
+                    <div class="form-wrap">
+                        <strong class="form-title">수령인 이름</strong>
+                        <!-- error 시 .box-input에 error클래스 추가 -->
+                        <div class="form-cont">
+                            <div class="box-input size-sm error">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="수령인 이름 입력" class="input-default is-delete" title="수령인 이름 입력">
+                                    <button class="ico-delete"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">수령인 이름을 입력해 주세요.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrap top">
+                        <strong class="form-title">휴대폰 번호</strong>
+                        <div class="form-cont">
+                            <div class="select-input-wrap">
+                                <div class="box-select">
+                                    <select name="select1" id="select1" class="select-default" title="통신사 선택">
+                                        <option value="1">SKT</option>
+                                        <option value="2">KT</option>
+                                        <option value="3">LG U+</option>
+                                    </select>
+                                </div>
+                                <div class="box-flex">
+                                    <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                                    <!-- 인증완료 시 .box-input 에 success 클래스 추가 -->
+                                    <div class="box-input size-sm">
+                                        <div class="input-wrap">
+                                            <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm is-delete">
+                                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                        </div>
+                                        <!-- 에러 시 나오는 안내문구 -->
+                                        <span class="txt-error">휴대폰 번호를 정확히 입력해 주세요.</span>
+                                    </div>
+                                    <div class="box-btn">
+                                        <button class="btn-dark-gray md-ripples ripples-light" type="button">인증 요청</button>
+                                        <!-- 재요청시 -->
+                                        <!-- <button class="btn-dark-gray md-ripples ripples-light" type="button">인증 재요청</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 인증 -->
+                            <div class="box-flex">
+                                <!-- 인증요청시 .box-input 에 sending 클래스 추가 -->
+                                <!-- 인증완료시 .box-input 에 success 클래스 추가 -->
+                                <div class="box-input size-md sending">
+                                    <div class="input-wrap">
+                                        <input id="input5" type="text" placeholder="인증번호 6자리" class="input-default is-delete is-time" title="인증번호">
+                                        <span class="txt-time">02:30</span>
+                                        <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                                    </div>
+                                    <!-- 인증요청시 나오는 텍스트 -->
+                                    <span class="txt-sending">인증번호를 발송했습니다. 3분 이내에 입력해 주세요.</span>
+                                    <!-- 인증완료시 나오는 텍스트 -->
+                                    <span class="txt-description">
+                                        인증이 완료되었습니다.
+                                    </span>
+                                </div>
+                                <div class="box-btn">
+                                    <button class="btn-dark-gray md-ripples ripples-light">인증 확인</button>
+                                </div>
+                            </div>
+                            <!-- //인증 -->
+                        </div>
+                    </div>
+
+                    <div class="form-wrap">
+                        <!-- 2022.11.16 텍스트수정 -->
+                        <strong class="form-title">유심이 있는 편의점</strong>
+                        <div class="form-cont">
+                            <div class="box-btn find-convenience">
+                                <!-- 2022.11.16 텍스트수정 -->
+                                <!-- $편의점명$ 에 편의점 명 삽입 -->
+                                <button class="btn-dark-gray md-ripples ripples-light" type="button">$편의점명$ 편의점 조회</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="main-txt-group">
+                        <h2 class="main-txt">유심비 결제</h2>
+                    </div>
+                    <div class="form-wrap">
+                        <div class="payment-form">
+                            <div class="payment-img">
+                                <img src="/assets/images/pc/subpage/payment-form-img.png" alt="">
+                            </div>
+                            <ul class="payment-conts">
+                                <li>
+                                    <strong class="conts-title">구매수량</strong>
+                                    <div class="conts-box">
+                                        <div class="count-wrap">
+                                            <!-- count-num이 1이하로 내려가지못하게 1일경우 .minus 에 .disabled 추가 -->
+                                            <button class="count-btn minus disabled"><span class="hidden">빼기</span></button>
+                                            <span class="count-num">1</span>
+                                            <button class="count-btn plus"><span class="hidden">더하기</span></button>
+                                            <p class="total-count"><span>8,800</span>원</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="conts-title">유알모 포인트 사용</strong>
+                                    <div class="conts-box">
+                                        <div class="box-flex box-unit">
+                                            <div class="box-input size-sm">
+                                                <div class="input-wrap">
+                                                    <input id="input555" type="text" placeholder="숫자만 입력" class="input-default is-unit is-delete" title="사용 포인트 입력" value="1000">
+                                                    <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                                    <span class="input-unit">원</span>
+                                                </div>
+                                                <p class="point-info">
+                                                    보유 유알모 포인트 : <span class="txt-vt"><b>21,000</b>원</span> (1포인트=1원)
+                                                </p>
+                                            </div>
+                                            <div class="box-btn">
+                                                <button class="btn-dark-gray md-ripples ripples-light" type="button">전액 사용</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="conts-title">결제 금액</strong>
+                                    <div class="conts-box">
+                                        <p class="payment-amount">
+                                            <strong class="txt-vt"><b>7,800</b>원</strong>
+                                            (VAT 포함)
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="conts-title">결제 수단</strong>
+                                    <div class="conts-box">
+                                        <div class="radio-group-wrap">
+                                            <ul class="btn-radio-group group6">
+                                                <li class="btn-radio">
+                                                <input type="radio" id="dan6-1" name="dan6" checked>
+                                                <label for="dan6-1">신용카드</label>
+                                                </li>
+                                                <li class="btn-radio">
+                                                    <input type="radio" id="dan6-2" name="dan6">
+                                                    <label for="dan6-2">실시간 계좌이체</label>
+                                                </li>
+                                                <li class="btn-radio">
+                                                    <input type="radio" id="dan6-3" name="dan6">
+                                                    <label for="dan6-3">
+                                                        <img src="../../assets/images/pc/icon/logo-samsung.svg" alt="삼성페이">
+                                                    </label>
+                                                </li>
+                                                <li class="btn-radio">
+                                                    <input type="radio" id="dan6-4" name="dan6">
+                                                    <label for="dan6-4">
+                                                        <img src="../../assets/images/pc/icon/logo-lgpay.png" alt="LG pay">
+                                                    </label>
+                                                </li>
+                                                <li class="btn-radio">
+                                                    <input type="radio" id="dan6-5" name="dan6">
+                                                    <label for="dan6-5">
+                                                        <img src="../../assets/images/pc/icon/logo-lpay.svg" alt="L pay">
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-wrap agree-wrap">
+                        <strong class="form-title">아래 내용에 동의해 주세요.</strong>
+                        <div class="btn-box btn-check btn-text-line">
+                            <input type="checkbox" id="check999">
+                            <label for="check999"> <span class="ico-check"></span>모든 약관을 확인 후 동의합니다.</label>
+                        </div>
+                        <div class="btn-box btn-check">
+                            <input type="checkbox" id="check1">
+                            <label for="check1"> <span class="ico-check"></span>개인정보 수집,활용 동의 <strong>(필수)</strong></label>
+                            <a href="#" class="link-underline">보기</a>
+                        </div>
+                        <div class="btn-box btn-check">
+                            <input type="checkbox" id="check2">
+                            <label for="check2"> <span class="ico-check"></span>결제 취소,반품 조건에 대한 동의 <strong>(필수)</strong></label>
+                            <a href="#" class="link-underline">보기</a>
+                        </div>
+                        <div class="btn-box btn-check">
+                            <input type="checkbox" id="check3">
+                            <label for="check3"> <span class="ico-check"></span>고객 혜택정보 및 광고 수신 동의 <b>(선택)</b></label>
+                            <a href="#" class="link-underline">보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">결제하기</button>
+            </div>
+
+            <!-- 편의점 바로 픽업 조회 누르면 나오는 영역 -->
+            <div class="notice-wrap">
+                <div class="main-txt">유의사항</div>
+                <!-- 2022.11.04 텍스트 수정 -->
+                <ul class="notification">
+                    <li>결제 완료 시, 편의점에서 교환 가능한 모바일 쿠폰을 발송해 드립니다.</li>
+                    <li class="txt-vt">픽업 가능한 편의점에서 모바일 쿠폰을 제시하고, 유심 카드를 받으세요.</li>
+                    <li>방문 전 반드시 매장에 바로픽업을 할 수 있는지 전화로 확인해 주세요.</li>
+                </ul>
+            </div>
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

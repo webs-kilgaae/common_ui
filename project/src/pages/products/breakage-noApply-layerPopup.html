@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+    .layer-popup{display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+<body>
+    <!-- 레이어 팝업 -->
+    <div id="test-layer02" class="layer-popup products">
+        <div class="layer-popup-item breakage-noApply-popup">
+            <div class="popup-header">
+                <strong class="txt-main">휴대폰 분실/파손 보험 가입 가능한 회선이<br> 없습니다.</strong>
+            </div>
+
+            <div class="popup-body">
+
+                <div class="breakage-noApply">
+                    <strong>가입대상</strong>
+                    <p>&bull; 제조사, 오픈마켓, 공식 리셀러 온/오프라인 매장 에서 구매한 신규 자급제폰 (중고폰, 리퍼폰 불가)</p>
+                    <p>&bull; U+유모바일에서 개통한 새 휴대폰</p>
+                </div>
+
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+                <!-- 09.21 삭제
+                <button type="button" class="btn-close-x">닫기</button>
+                -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '약관 자세히 보기 | U+유모바일',
+    ogTitle: '약관 자세히 보기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">약관 및 동의 내용 보기</strong>
+            </div>
+            <div class="popup-body">
+                <section class="agree-cont">
+                    <h3 class="body-tit">개인정보 수집 및 이용 안내</h3>
+                    <p>회사는 회원가입에 의한 U+유모바일 서비스제공을 위해 다음과 같이 개인정보를 활용합니다.</p>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">1. 개인정보 수집ㆍ이용</h3>
+                        <p class="txt-sub">
+                           (1) 수집항목
+                        </p>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[14세 이상 개인 고객 가입 시]</h3>
+                        <ul class="notification">
+                            <li>필수 항목: ID, 비밀번호, 휴대폰 번호, 이메일, 본인인증정보(이름, 생년월일, 성별, 가입휴대폰번호)</li>
+                            <li>선택 항목: 광고 수신 동의</li>
+                        </ul>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[14세 미만 개인 고객 가입 시]</h3>
+                        <ul class="notification">
+                            <li>필수 항목: ID, 비밀번호, 휴대폰 번호, 이메일, 법정대리인 이름, 법정 대리인 연락처, 본인인증정보(이름, 생년월일, 성별, 가입휴대폰번호)</li>
+                            <li>선택 항목: 광고 수신 동의</li>
+                        </ul>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[개인 사업자 고객 가입 시]</h3>
+                        <ul class="notification">
+                            <li>필수 항목: 상호명(법인명), 사업자등록번호, ID, 비밀번호, 휴대폰 번호, 이메일, 본인인증정보(상호명/법인명, 사업자등록번호, 이름, 생년월일, 성별, 가입휴대폰번호)</li>
+                            <li>선택 항목: 광고 수신 동의</li>
+                        </ul>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">[법인 사업자 고객 가입 시]</h3>
+                        <ul class="notification">
+                            <li>필수 항목: 상호명(법인명), 사업자등록번호, 법인번호, 휴대폰번호, 인증번호, ID, 비밀번호, 휴대폰 번호, 이메일, 본인인증정보(상호명/법인명, 법인등록번호, 사업자등록번호, 가입휴대폰번호)</li>
+                            <li>선택 항목: 광고 수신 동의</li>
+                        </ul>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">(2) 수집ㆍ이용목적: 서비스 이용에 따른 본인확인 및 가입자 식별, 홈페이지 회원서비스 제공을 위한 회원인증 및 확인, 고지사항 전달, 본인의사 확인, 불만 처리 등 원활한 의사소통 경로 확보, 추가정보 전달.</h3>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">(3) 보유ㆍ이용기간: 회원 가입일부터 회원탈퇴 후 분쟁해결을 위하여 6개월간 보유 및 이용하고 지체 없이 파기합니다. 단, 소송이나 분쟁 등 특정 사유가 있을 경우 이의 해결시점까지 이며, 관계법령에의 규정에 의하여 보존할 필요성이 있는 경우에는 관계 법령에 따라 보관합니다.</h3>
+                </section>
+                <section class="agree-cont">
+                        <h3 class="body-tit-sm">2. 동의 거부권 및 미 동의에 대한 불이익 안내</h3>
+                        <p class="txt-sub">고객님께서는 정보주체로서 개인정보 동의 거부권이 있으시며, 미동의 시 서비스 가입ㆍ이용에 제약이 있을 수 있고 미동의 하신 경우 정보가 제공되지 않습니다.</p>
+                </section>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">동의</button>
+                </div>
+                 <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

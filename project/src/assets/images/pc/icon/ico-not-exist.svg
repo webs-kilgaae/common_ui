@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="121.5" viewBox="0 0 120 121.5">
+    <defs>
+        <filter id="pez5yb4kxa" x="8.499" y="8.5" width="87" height="99" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="r05ff45p0b" x="48.501" y="58.5" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 484206">
+        <g data-name="icon">
+            <g style="filter:url(#pez5yb4kxa)">
+                <rect data-name="사각형 348902" width="72" height="84" rx="12" transform="translate(16.001 11)" style="fill:#d2d5e8"/>
+            </g>
+            <g data-name="그룹 484270">
+                <path data-name="선 126768" transform="translate(34.999 47.001)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:6px" d="M0 0h18"/>
+                <path data-name="선 126757" transform="translate(34.999 31.001)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:6px" d="M0 0h34"/>
+            </g>
+        </g>
+        <g data-name="그룹 486131">
+            <g style="filter:url(#r05ff45p0b)">
+                <path data-name="bg" d="M135.645 93.353a24 24 0 1 0-24 24 24 24 0 0 0 24-24z" transform="translate(-31.637 -8.346)" style="fill:#7c76ce"/>
+            </g>
+            <g data-name="그룹 484083">
+                <path data-name="선 466" transform="rotate(-45 148.26 -40.41)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:6px" d="M0 0h22.627"/>
+                <path data-name="선 126605" transform="rotate(-135 63.26 28.275)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:6px" d="M0 0h22.627"/>
+            </g>
+        </g>
+    </g>
+</svg>

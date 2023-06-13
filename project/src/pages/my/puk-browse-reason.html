@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '유심잠금해제(PUK)번호 | U+유모바일',
+    ogTitle: '유심잠금해제(PUK)번호 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '정보열람 신청',
+            depth4: '유심잠금해제(PUK)번호'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">정보열람 신청</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#" class="on">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">유심잠금해제(PUK)번호</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">가입사실확인서</a></li>
+                <li><a href="#">가입신청서</a></li>
+                <li><a href="#">통화내역</a></li>
+                <li><a href="#" class="on">유심잠금해제(PUK)번호</a></li>
+                <li><a href="#">수사기관 통신자료 제공 사실</a></li>
+                <li><a href="#">열람신청내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts call-history-reason">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>유심잠금해제(PUK) 번호</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="page-desc">
+                        <h2>유심잠금해제(PUK)번호 열람을 위해 아래의 신청서를 작성해 주세요.</h2>
+                        <p>유심 구매 시 전달되는 8자리의 해제코드의 열람이 가능합니다.</p>
+                    </div>
+
+                    <!-- 09.05 소스추가-->
+                    <div class="page-phone-info">
+                        <div class="box-select">
+                            <label for="select1" class="select-label">신청하실 휴대폰번호</label>
+                            <select name="select1" id="select1" class="select-default" style="display: none;">
+                                <option value="1">010-9919-8998</option>
+                                <option value="2">010-9919-8998</option>
+                            </select><div class="nice-select select-default" tabindex="0"><span class="current">010-9919-8998</span><ul class="list"><li data-value="1" class="option selected">010-9919-8998</li><li data-value="2" class="option">010-9919-8998</li></ul></div>
+                        </div>
+                    </div>
+                    <!-- //09.05 소스추가-->
+
+                    <div class="rq-form">
+                        <div class="box-input">
+                            <label for="phone" class="input-label">연락가능한 번호</label>
+                            <div class="input-wrap">
+                                <input id="phone" type="text" placeholder="휴대폰번호 입력" class="input-default is-delete">
+                                <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">최대 11자리까지 입력 가능</span>
+                        </div>
+                        <div class="textarea-wrap">
+                        <label for="reason" class="input-label">열람사유</label>
+                        <div class="box-textarea box-input">
+                            <textarea id="reason" type="textarea" placeholder="사유는 상세히 작성 필요" class="input-default is-delete"></textarea>
+                            <button class="ico-delete"><span class="hidden">삭제</span></button>
+                        </div>
+                    </div>
+                        <div class="approve-form">
+                            <h3 class="form-tit">유심잠금해제(PUK) 번호의 자료 수신을 위한 개인정보 수집·이용 동의를 해주세요.</h3>
+                            <div class="btn-box btn-check btn-text-line">
+                                <input type="checkbox" id="check999">
+                                <label for="check999"> <span class="ico-check"></span>개인정보 수집·이용 동의 <strong>(필수)</strong></label>
+                                <a href="#" class="link-underline">보기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group ">
+                        <!-- 2022.07.15 텍스트수정 -->
+                        <!-- 2022.07.15 이전버튼 추가 -->
+                        <button class="btns white md-ripples ripples-dark">이전</button>
+                        <button class="btns md-ripples ripples-light">확인</button>
+                    </div>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <li>요청하신 이력은 1개월 후에 정보가 파기됩니다.</li>
+                            <li>
+                                USIM 최초 구입할 때 USIM이 끼워져 있던 플라스틱 카드에 해당 USIM의 PUK번호(8자리)를 확인하실 수 있습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('../src/pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

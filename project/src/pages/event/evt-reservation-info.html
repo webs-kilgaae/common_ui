@@ -1,0 +1,143 @@
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '사전 예약 신청, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '사전 예약 신청 | U+유모바일',
+    ogTitle: '사전 예약 신청 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap event show">
+        <div class="layer-popup-item evt-reservation">
+            <div class="popup-header">
+                <strong class="txt-main">사전 예약 신청 정보</strong>
+            </div>
+
+            <div class="popup-body">
+                <section class="cardList-wrap">
+                    <h3 class="cardList-title">1.신청자 정보</h3>
+                    <div class="cardList">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>홍*동</dd>
+                            <dt>휴대폰번호</dt>
+                            <dd>010-**34-**78</dd>
+                            <dt>이메일</dt>
+                            <dd>Use***@naver</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="cardList-wrap">
+                    <h3 class="cardList-title">2.신청 휴대폰 정보</h3>
+                    <div class="cardList">
+                        <div class="phone-info underline">
+                            <strong>삼성 갤럭시 S21(SM-120)</strong>
+                            <p>모든면에서 압도적인 갤럭시 S21</p>
+                        </div>
+                        <dl>
+                            <dt>가입유형</dt>
+                            <dd>번호 이동</dd>
+                            <dt>용량</dt>
+                            <dd>64GB</dd>
+                            <dt>색상</dt>
+                            <dd>블랙</dd>
+                            <dt>할부개월</dt>
+                            <dd>24개월 할부</dd>
+                            <dt>요금제</dt>
+                            <dd>데이터 통화 마음껏 PRO</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <div class="info-txt">
+                    <p class="txt">사전예약 신청 취소는 개통문제로 문의해주세요.</p>
+                    <p class="txt"><b class="txt-bk-b">1670-0283</b>(유료) / <b class="txt-bk-b">080-808-0283</b>(무료)</p>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <!-- 09.02 삭제 -->
+                <!--<div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">신청 완료</button>
+                </div>-->
+                <!-- //09.02 삭제 -->
+
+                <button type="button" class="btn-close-x">닫기</button><!-- 09.02 X닫기 추가-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--    <section class="full-popup event">
+        <header>
+            <h2>사전 예약 신청 정보</h2>
+            <button>팝업 닫기</button>
+        </header>
+        <div class="full-popup-conts evt-reservation">
+            <div class="inner">
+                <div class="page-tit hidden">
+                    <h1>사전 예약 신청 정보</h1>
+                </div>
+                <section class="cardList-wrap">
+                    <h3 class="cardList-title">신청자 정보</h3>
+                    <div class="cardList">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>홍*동</dd>
+                            <dt>휴대폰번호</dt>
+                            <dd>010-**34-**78</dd>
+                            <dt>이메일</dt>
+                            <dd>Use***@naver</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <section class="cardList-wrap">
+                    <h3 class="cardList-title">단말정보</h3>
+                    <div class="cardList">
+                        <div class="phone-info underline">
+                            <strong>삼성 갤럭시 S21(SM-120)</strong>
+                            <p>모든면에서 압도적인 갤럭시 S21</p>
+                        </div>
+                        <dl>
+                            <dt>가입유형</dt>
+                            <dd>번호 이동</dd>
+                            <dt>용량</dt>
+                            <dd>64GB</dd>
+                            <dt>색상</dt>
+                            <dd>블랙</dd>
+                            <dt>할부개월</dt>
+                            <dd>24개월 할부</dd>
+                            <dt>요금제</dt>
+                            <dd>데이터 통화 마음껏 PRO</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <p class="info-txt">
+                    사전예약 신청 취소는 개통문제로 문의해주세요.<br>
+                    1670-0283(유료) / 080-808-0283(무료)
+                </p>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/onsale_tel.css">
+	<script src="/assets/js/libraries/jquery-3.6.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/assets/js/onsale_tel.js"></script>	
+</head>
+<body>
+<div class="pop_wrap call_apply type02">
+	<div class="pop_head">
+		 <div class="call_banner">
+			<p class="blind">간편하게 전화 신청으로 휴대폰을 구매해보세요! <br>U+알뜰모바일에서 전문상담원이 직접 전화하여 상담신청을 도와드립니다.</p>
+			<ol class="blind">
+				<li>전화 상담신청</li>
+				<li>상담원과 전화상담</li>
+				<li>개통완료</li>
+			</ol>
+		 </div>
+	</div>
+	<div class="pop_cont">
+		
+		<div class="tost_msg">
+			<div class="msg_inner icon">
+			  <p>인증번호 전송이 완료되었습니다.</p>
+			</div>
+		</div>
+
+		<!-- 팝업 컨텐츠 시작 -->
+		<div class="call_area">
+			<p class="title point_color01">본 상품은 신규가입/번호이동/기기변경 고객만 신청 가능합니다. </p>
+			<h2 class="title">선택하신 상품을 확인해주세요.</h2>
+			<div class="prd_box">
+				<ul>
+					<li><span>(중고) 갤럭시 S7 edge 32G(골드플래티넘)</span></li>
+					<li><span>번호이동</span></li>
+					<li><span>데이터넉넉히 (15GB+/100분)</span></li>
+				</ul>
+				<p class="add_info">※ 다이렉트몰 내쇼핑정보 메뉴 혹은 상담을 통해 주문 정보 수정 가능합니다. </p>
+				<p class="add_info txt_mt5">※ 제휴카드 신청 고객은 카드 발급 후 해당 카드로 납부방법을 변경하셔야 할인이 적용됩니다.(홈페이지 또는 고객센터 앱에서 납부방법 변경 가능)</p>
+				<p class="add_info txt_mt5">※ 신규가입은 <span class="point_color01">개통하여 발송</span>되며 수령 후 바로 사용 가능합니다.</p>
+				<p class="add_info txt_mt5">※ (주)미디어로그의 서비스에 대해 가입의사가 있음을 확인하며 동의 합니다. </p><!-- 210603[가입신청서 내 본인 가입의사 확인] -->
+			</div>
+
+			<!-- [CASE] 선불유심일 경우 -->
+			<div class="tbl_box">
+				<table class="tbl_vew" cellpadding="0" cellspacing="0">
+					<caption>선택하신 상품 내용 제공</caption>
+					<colgroup>
+						<col style="width:17%">
+						<col style="width:*">
+						<col style="width:17%">
+						<col style="width:*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">가입유형</th>
+							<td colspan="3">
+								<ul class="radio_list">
+									<li class="checked">
+										<input type="radio" name="radio_group" id="radio_group01" class="css-radiobox" title="신규가입" checked="checked">
+										<label for="radio_group01" class="css-radiolabel">신규가입</label>
+									</li>
+									<li>
+										<input type="radio" name="radio_group" id="radio_group02" class="css-radiobox" title="번호이동">
+										<label for="radio_group02" class="css-radiolabel">번호이동</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">요금제</th>
+							<td colspan="3">
+								<div class="select_wrap opt_list">
+									<select title="요금제 선택" data-width="540px">
+										<option>선택해주세요</option>
+										<option selected="selected">선불 300M (국제전화 매일 20분) ( 24,200원 / 문자 300건)</option>
+										<option>선불 300M ( 24,200원 / 데이터300MB / 통화 300분 / 문자 300건)</option>
+										<option>선불기본 ( 24,200원 / 데이터300MB / 통화 300분 / 문자 300건)</option>
+										<option>선불기본 ( 24,200원 / 데이터300MB / 통화 300분 / 문자 300건)</option>
+										<option>선불기본 ( 24,200원 / 데이터300MB / 통화 300분 / 문자 300건)</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="add_info">※ 요금제 표기  금액은 월 통신요금입니다.</p>
+			</div>
+			<!-- //[CASE] 선불유심일 경우 -->
+
+			<div class="tbl_box">
+
+				<!-- [CASE1] 인증 전 -->
+				<table class="tbl_vew" cellpadding="0" cellspacing="0">
+					<caption> 연락 받으실 연락처 입력란 제공</caption>
+					<colgroup>
+						<col style="width:108px">
+						<col style="width:*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><span class="es">신청자 이름</span></th>
+							<td>
+								<div class="inp_wrap">
+									<input type="text" class="inputS" style="width:140px" placeholder="이름을 입력해주세요." title="이름을 입력해주세요.">
+									<span class="err_txt">[* MESSAGE AREA]</span>
+								</div>
+							</td>
+						</tr>
+						<!-- 220418 [통신사 항목 추가] 추가 -->
+						<tr>
+							<th scope="row"><span class="es">이용중인 통신사</span></th>
+							<td>
+								<ul class="radio_list">
+									<li class="checked">
+										<input type="radio" name="radio_group02" id="radio_group02_01" class="css-radiobox" title="SKT" checked="checked">
+										<label for="radio_group02_01" class="css-radiolabel">SKT</label>
+									</li>
+									<li>
+										<input type="radio" name="radio_group02" id="radio_group02_02" class="css-radiobox" title="KT">
+										<label for="radio_group02_02" class="css-radiolabel">KT</label>
+									</li>
+									<li>
+										<input type="radio" name="radio_group02" id="radio_group02_03" class="css-radiobox" title="LG U+">
+										<label for="radio_group02_03" class="css-radiolabel">LG U<sup>+</sup></label>
+									</li>
+									<li>
+										<input type="radio" name="radio_group02" id="radio_group02_04" class="css-radiobox" title="통신사 선택">
+										<label for="radio_group02_04" class="css-radiolabel">
+											<div class="select_wrap telcm">
+												<select title="연락처">
+													<option>알뜰폰</option>
+													<option value="">케이디디아이코리아LG</option>													
+												</select>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<!-- //220418 [통신사 항목 추가] 추가 -->
+						<tr>
+							<th scope="row" rowspan="2"><span class="es">연락처</span></th>
+							<td>
+								<div class="certify_box">
+									<div class="select_wrap">
+										<select title="연락처" data-width="80px">
+											<option>선택</option>
+											<option value="">010</option>
+											<option value="">010</option>
+											<option value="">010</option>
+										</select>
+									</div>
+									<div class="inp_wrap">
+										<input type="text" class="inputS" style="width:220px" placeholder="상담받을 연락처를 입력 해주세요. (-제외)" title="상담받을 연락처를 입력 해주세요. (-제외)" maxlength="8" minlength="7">
+									</div>
+									<a href="#" class="btn_certfy"  onclick="tost()">인증요청</a>
+								</div>
+								<span class="err_txt type01">[* MESSAGE AREA]</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="certify_box">
+									<div class="inp_wrap">
+										<input type="text" class="inputS" style="width:170px" placeholder="인증 번호를 입력해주세요." title="인증 번호를 입력해주세요.">
+										<span class="err_txt">[* MESSAGE AREA]</span>
+									</div>
+									<a href="#" class="btn_certfy">인증하기</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="es">상담 희망 일시</span></th>
+							<td>
+								<div class="certify_box">
+									<div class="select_wrap">
+										<select title="희망일자" data-width="120px">
+											<option>000.01.01(월)</option>
+											<option value="">2000.01.01(월)</option>
+											<option value="">2000.01.02(화)</option>
+											<option value="">2000.01.03(수)</option>
+											<option value="">2000.01.04(목)</option>
+											<option value="">2000.01.05(금)</option>
+											<option value="">2000.01.06(토)</option>
+										</select>
+									</div>
+									<div class="select_wrap">
+										<select title="희망시간" disabled data-width="110px">
+											<option>상담 희망시간</option>
+											<option value="">09:30 ~ 11:00</option>
+											<option value="">11:00 ~ 12:30</option>
+											<option value="">13:30 ~ 15:00</option>
+											<option value="">15:00 ~ 16:30</option>
+											<option value="">16:30 ~ 18:00</option>
+										</select>
+									</div>	
+									<span class="point_color01">※ 다른 상담 희망 일시를 선택해주세요. </span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //[CASE1] 인증 전 -->
+
+				<!-- [CASE2] 인증 후 -->
+				<table class="tbl_vew" cellpadding="0" cellspacing="0">
+					<caption> 연락 받으실 연락처 입력란 제공</caption>
+					<colgroup>
+						<col style="width:108px">
+						<col style="width:*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><span class="es">신청자 이름</span></th>
+							<td>유알모</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2"><span class="es">연락처</span></th>
+							<td class="pd">010 - 1234 - 5678</td>
+						</tr>
+						<tr>
+							<td class="pd"><span class="point_color01">인증이 완료 되었습니다.</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><span class="es">상담 희망 일시</span></th>
+							<td>
+								<div class="certify_box">
+									<div class="select_wrap">
+										<select title="희망일자" data-width="120px">
+											<option>YYYY.MM.DD(W)</option>
+											<option value="" selected="selected">2000.01.01(월)</option>
+											<option value="">2000.01.02(화)</option>
+											<option value="">2000.01.03(수)</option>
+											<option value="">2000.01.04(목)</option>
+											<option value="">2000.01.05(금)</option>
+											<option value="">2000.01.06(토)</option>
+										</select>
+									</div>
+									<div class="select_wrap">
+										<select title="희망시간" data-width="110px">
+											<option>선택해주세요</option>
+											<option value="" selected="selected">09:30 ~ 11:00</option>
+											<option value="">11:00 ~ 12:30</option>
+											<option value="">13:30 ~ 15:00</option>
+											<option value="">15:00 ~ 16:30</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+											<option value="">16:30 ~ 18:00</option>
+										</select>
+									</div>
+									<span class="point_color01">※ 다른 상담 희망 일시를 선택해주세요. </span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="add_info">※ 상담시간 : 평일 09:00 ~ 19:00 / 토요일10:00 ~ 16:00</p>
+				<!-- //[CASE2] 인증 후 -->
+
+			</div>
+
+			<!-- [CASE] 진행중인 신청서가 있을 경우 -->
+			<div class="application_ongoing">
+				<div class="info_box">
+					<p class="info_tit">2주 내  진행중인 신청서가 총 <span class="nbr">5</span>건 있습니다.</p>
+					<p class="info_sub">중복된 신청 건은 없는지 확인 하신 후 신청서를 작성 해주세요.</p>
+					<a href="#none" class="btn_view">보기</a>
+				</div>
+				<div class="ongoing_list">
+					<div class="tbl_dtil">
+						<table cellpadding="0" cellspacing="0">
+							<caption>휴대폰 세부사항 선택 내용으로 가입유형, 색상, 요금제 제공</caption>
+							<colgroup>
+								<col style="width:5%">
+								<col style="width:8%">
+								<col style="width:15%">
+								<col style="width:16%">
+								<col style="width:14%">
+								<col style="width:12%">
+								<col style="width:12%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">NO</th>
+									<th scope="col">신청방법</th>
+									<th scope="col">신청번호(신청일)</th>
+									<th scope="col">상품 </th>
+									<th scope="col">요금제</th>
+									<th scope="col">가입유형</th>
+									<th scope="col">상태</th>
+									<th scope="col">변경</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- 온라인:작성중 -->
+								<tr>
+									<td>6</td>
+									<td>온라인</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">[유심번들]<br /> 삼성 갤럭시 S8</td>
+									<td class="algn_lft">선불 300M(국제전화 매일 20분)</td>
+									<td>번호이동</td>
+									<td><span>작성중</span></td>
+									<td>
+										<div class="btn_area">
+											<a href="#none" class="btn btn_sm02">수정</a>
+										</div>
+									</td>
+								</tr>
+								<!-- 전화:임시저장 -->
+								<tr>
+									<td>5</td>
+									<td>전화</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">[유심번들]<br /> 삼성 갤럭시 S8</td>
+									<td class="algn_lft">선불 300M(국제전화 매일 20분)</td>
+									<td>번호이동</td>
+									<td><span>임시저장</span></td>
+									<td></td>
+								</tr>
+								<!-- 온라인:신청대기 -->
+								<tr>
+									<td>4</td>
+									<td>온라인</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">[유심번들]<br /> 삼성 갤럭시 S8</td>
+									<td class="algn_lft">가성비6</td>
+									<td>번호이동</td>
+									<td><span>신청대기</span></td>
+									<td>
+										<div class="btn_area">
+											<a href="#none" class="btn btn_sm01">상세</a>
+											<a href="#none" class="btn btn_sm01">취소</a>
+											<a href="#none" class="btn btn_sm02">수정</a>
+										</div>
+									</td>
+								</tr>
+								<!-- 온라인:개통대기 -->
+								<tr>
+									<td>3</td>
+									<td>온라인</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">[유심+휴대폰]<br /> 삼성 갤럭시 S8</td>
+									<td class="algn_lft">가성비6</td>
+									<td>기기변경</td>
+									<td><span>개통대기</span></td>
+									<td>
+										<div class="btn_area">
+											<a href="#none" class="btn btn_sm01">상세</a>
+										</div>
+									</td>
+								</tr>
+								<!-- 온라인:개통완료 -->
+								<tr>
+									<td>2</td>
+									<td>온라인</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">선불유심</td>
+									<td class="algn_lft">가성비6</td>
+									<td>기기변경</td>
+									<td><span class="pint_clr">개통완료</span></td>
+									<td>
+										<div class="btn_area">
+											<a href="#none" class="btn btn_sm01">상세</a>
+										</div>
+									</td>
+								</tr>
+								<!-- 온라인:가입취소 -->
+								<tr>
+									<td>1</td>
+									<td>온라인</td>
+									<td>
+										<span>123456</span>
+										<span class="rptg">2018-02-01<br>15:33</span>
+									</td>
+									<td class="algn_lft">선불유심</td>
+									<td class="algn_lft">가성비6</td>
+									<td>신규가입</td>
+									<td><span>가입취소</span></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="pagination">
+						<a href="#" class="first"><span class="ir">처음으로</span></a>
+						<a href="#" class="prev"><span class="ir">이전 페이지</span></a>
+						<strong>1</strong> <!-- 현재페이지 -->
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#" class="next"><span class="ir">다음 페이지</span></a>
+						<a href="#" class="last"><span class="ir">마지막 페이지</span></a>
+					</div>
+				</div>
+			</div>
+			<!-- //[CASE] 진행중인 신청서가 있을 경우 -->
+
+			<h2 class="title">추천인을 입력해주세요. <span>(선택사항)</span></h2>
+
+			<div class="tbl_box">
+
+				<!-- [CASE1] 추천인 인증 전 -->
+				<table class="tbl_vew" cellpadding="0" cellspacing="0">
+					<caption>추천인 입력란 제공</caption>
+					<colgroup>
+						<col style="width:17%">
+						<col style="width:*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름(추천인)</th>
+							<td>
+								<div class="inp_wrap">
+									<input type="text" class="inputS" placeholder="추천인 이름을 입력해주세요. (U+알뜰모바일 가입자)" title="추천인 이름을 입력해주세요">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">휴대폰 번호</th>
+							<td>
+								<div class="certify_box">
+									<span class="emt_inline">010</span>
+									<div class="inp_wrap">
+										<input type="text" class="inputS" style="width:260px" title="추천인 휴대폰 번호를 입력해주세요. (-제외)" placeholder="추천인 휴대폰 번호를 입력해주세요. (-제외)">
+									</div>
+									<a href="#" class="btn_certfy">인증하기</a>
+								</div>
+								<span class="err_txt type02">[* MESSAGE AREA]</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //[CASE1] 추천인 인증 전 -->
+
+				<!-- [CASE2] 추천인 인증 후 -->
+				<table class="tbl_vew" cellpadding="0" cellspacing="0">
+					<caption>추천인 입력란 제공</caption>
+					<colgroup>
+						<col style="width:17%">
+						<col style="width:*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">이름(추천인)</th>
+							<td>유알모</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">휴대폰 번호</th>
+							<td class="pd">010 - 1234 - 5678</td>
+						</tr>
+						<tr>
+							<td class="pd"><span class="point_color01">인증이 완료 되었습니다.</span></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //[CASE2] 추천인 인증 후 -->
+
+				<p class="add_info">※ 추천인 정보는 이벤트 대상 상품 가입 시에 한하여 인정됩니다.</p>
+			</div>
+			
+			<!-- 220804 [부정가입방지] 추가 -->
+			<div class="agree">
+				<div class="agree_head">
+					<input type="checkbox" id="agreement_01" name="agreement_01" class="css-checkbox">
+					<label for="agreement_01" class="css-label">전화 가입상담을 위한 개인정보 수집/활용 동의</label>
+					<a href="#none" class="btn_ctrl">보기</a>
+				</div>
+				<div class="agree_cnt">
+					<h3>㈜미디어로그 (U<sup>+</sup>유모바일) 귀중</h3><!-- 221017 [브랜드명 변경] -->
+					<p>당사는 귀하의 가입 신청 상품 상담 및 개통 업무 처리를 위해 관련 법령에 따라 다음과 같이 귀하의 개인정보를 수집ㆍ활용하고 관련 업무 취급 위탁사에 제공합니다. 회사가 외부 전문업체에 고객의 개인정보를 취급 위탁하는 경우 그 위탁업무의 내용, 수탁자는 홈페이지에 고지되어 있는 개인정보취급방침에서 자세히 확인하실 수 있습니다.</p>
+					<div class="tbl">
+						<table cellpadding="0" cellspacing="0">
+							<caption>개인정보 수집 및 이용</caption>
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="row" colspan="2">개인정보 수집 및 이용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">개인정보의 수집 · 이용 목적</th>
+									<td>이동통신서비스 가입, 이동전화 단말기 구매 및 가입을 위한 해피콜 (outbound) 상담</td>
+								</tr>
+								<tr>
+									<th scope="row">수집하는 개인정보</th>
+									<td>이용자 이름, 이용자 전화번호, 신청하신 휴대폰/유심 종류 및 요금제</td>
+								</tr>
+								<tr>
+									<th scope="row">개인정보 보유 · 이용기간</th>
+									<td>동의일로부터 1개월</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tbl">
+						<table cellpadding="0" cellspacing="0">
+							<caption>개인정보 취급 위탁</caption>
+							<colgroup>
+								<col style="width:50%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="row" colspan="2">개인정보 취급 위탁 업무내용</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">개인정보 취급 위탁 업무내용</th>
+									<td>신청한 상품에 대한 상담 및 개통처리 등 개통센터 업무 처리</td>
+								</tr>
+								<tr>
+									<th scope="row">수탁자</th>
+									<td>(주)알뜰폰, ㈜지온컴즈, (주)윌앤비전</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>U+알뜰모바일 다이렉트몰 전화상담가입을 위해 필요한 최소한의 개인정보이므로 동의를 하셔야 서비스를 이용하실 수 있습니다.</p>
+				</div>				
+			</div>
+
+			<div class="agree">
+				<div class="agree_head">
+					<input type="checkbox" id="denial_prevent" name="agreement_01" class="css-checkbox">
+					<label for="denial_prevent" class="css-label">부정가입 방지 동의</label>
+					<a href="#none" class="btn_ctrl">보기</a>
+				</div>
+				<div class="agree_cnt smp">					
+					<p>본인은 진정한 가입 의사에 따라 가입 신청서를 작성하며, 허위정보가 아님을 확인합니다. <br>본인 여부 확인을 위해 이용약관 16조 1항 및 전기통신사업법 제32조 4항에 따라 당사의 전화 확인 절차 진행에 동의하며 미응답시 부정가입 의도가 있음으로 간주하여 이용정지될 수 있으매 동의합니다.</p>					
+				</div>
+			</div>
+
+			<div class="agree">
+				<div class="agree_head">
+					<input type="checkbox" id="esim_chk" name="agreement_01" class="css-checkbox">
+					<label for="esim_chk" class="css-label">eSIM 동일 단말 내 복수의 이용 제한 동의</label>
+					<a href="#none" class="btn_ctrl">보기</a>
+				</div>
+				<div class="agree_cnt smp">					
+					<p>동일 단말 내 이용신청 고객 본인이 아닌 타인명의의 회선이 존재하는 경우로 확인되는 즉시 이용정지 및 해지될 수 있음을 고객에게 안내합니다.	</p>
+
+					<h3 class="tite txt_mt20">개인정보 수집 및 이용 동의</h3>
+					<div class="tbl">
+						<table>
+							<caption>개인정보 수집 및 이용 동의</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:25%">
+								<col style="width:25%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="row">제공 받는자</th>
+									<th scope="row">제공 목적</th>
+									<th scope="row">제공 항목</th>
+									<th scope="row">보유기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>								
+									<td>한국정보통신진흥협회, 타 통신사</td>
+									<td>방송통신신용정보 공동관리(신용정보 식별, 연체/해제, 복지, 이용정지, 개통정보) 외국인정보인증, 국제전화사기 공동대응, 명의도용 예방 및 분쟁조정, 명의도용방지 SMS안내, 휴대폰 대출방지</td>
+									<td>단말기정보(IMEI, 모델명, 일련번호), 고유식별번호(주민등록번호, 외국인등록번호, 여권번호), 고객명(법인명), 개통일자, 생년월일, 국적(외국인), 회선번호 신분증 기재사항, 당사 가입자여부, 이용내역, 연체금액</td>
+									<td>정보 제공일 부터 서비스 해지 또는 제공 계약 종료일 중 먼저 도래하는 시점 까지 이용 하며, 이용 기간이 종료 한 시점에 파기 단, 다른 법령에 특별한 규정이 있을 경우 관련 법령에 따라 보관 </td>										
+								</tr>														
+							</tbody>
+						</table>
+					</div>
+
+					<h3 class="tite">개인(신용)정보 조회 동의</h3>
+
+					<div class="tbl">
+						<table>
+							<caption>개인(신용)정보 조회 동의</caption>
+							<colgroup>
+								<col style="width:25%">
+								<col style="width:25%">
+								<col style="width:25%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="row">제공 받는자</th>
+									<th scope="row">목적</th>
+									<th scope="row">제공 항목</th>
+									<th scope="row">보유기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>								
+									<td>한국정보통신진흥협회</td>
+									<td>방송통신신용정보 공동관리(신용정보 식별, 연체/해제, 복지, 이용정지, 개통정보)</td>
+									<td>연체금액, 개통일자, 회선번호, 회선수</td>
+									<td>해당업무처리 완료시까지</td>										
+								</tr>														
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="tbl">
+						<table>
+							<caption>개인(신용)정보 조회 동의</caption>
+							<colgroup>
+								<col style="width:20%">
+								<col style="width:20%">
+								<col style="width:20%">
+								<col style="width:20%">
+								<col style="width:*">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="row">제공 하는자</th>
+									<th scope="row">제공 받는자</th>
+									<th scope="row">목적</th>
+									<th scope="row">제공항목</th>
+									<th scope="row">보유기간</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>								
+									<td>한국정보통신진흥협회</td>
+									<td>(주)LG유플러스/(주)미디어로그</td>
+									<td>상품/서비스 가입심사, 이용 및 유지여부(연체정보), 신용 정보의 집중관리 활용 및 교환 분실신고된 단말기 단기간 다회선 가입정보</td>
+									<td>통신요금 체납 여부, 회선수</td>
+									<td>해당업무처리 완료시까지</td>
+								</tr>														
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+			<!-- //220804 [부정가입방지] 추가 -->
+			
+			<!-- 201015 [UI/UX개선] -->
+			<div class="btn_wrap">
+				<a href="#none" class="btn midBtn04">닫기</a>
+				<a href="#none" class="btn midBtn01 disble">신청하기</a>
+			</div>
+			<!-- //201015 [UI/UX개선] -->
+
+			<div class="btn_wrap">
+				<a href="#none" class="btn midBtn04">닫기</a>
+				<a href="#none" class="btn midBtn01">신청하기</a>
+			</div>
+		</div>
+		<!--// 팝업 컨텐츠 종료 -->
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		//220804 [부정가입방지] 수정
+		$('.btn_ctrl').on('click', function(event){
+			event.preventDefault();
+			$(this).toggleClass('on');
+			$(this).parent().next().toggleClass('on');
+
+			if ($(this).hasClass('on')){
+				$(this).text('닫기');
+			}else{
+				$(this).text('보기');
+			}
+		});
+		$('.info_box .btn_view').on('click', function(event){
+			event.preventDefault();
+			$('.info_box .btn_view, .ongoing_list').toggleClass('on');
+			if ($(this).hasClass('on')){
+				$(this).text('닫기');
+			}else{
+				$(this).text('보기');
+			}
+		});
+
+		// 전화로신청팝업 선택상품 높이값
+		/*
+		var mh = 0;
+		var $callPrdBox = $('.pop_wrap.call_apply.type02 .prd_box li');
+		$callPrdBox.each(function () {
+		    if (mh < $(this).innerHeight()) {
+		      mh = $(this).innerHeight();
+		    }
+		})
+		$callPrdBox.height(mh);
+		*/
+	});
+
+	// 전화신청팝업 본인인증 msg
+	function tost() {
+		$('.tost_msg').addClass('on');
+		
+		setTimeout(function(){ $('.tost_msg').removeClass('on');}, 4000);
+	};
+</script>
+
+
+</body>
+</html>

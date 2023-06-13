@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '아이디 찾기 완료 | U+유모바일',
+    ogTitle: '아이디 찾기 완료 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts find-finish util-width">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>아이디 찾기</h1>
+            </div>
+                <div class="page-desc">
+                    <h2>회원님의 정보와 일치하는 아이디입니다.</h2>
+                </div>
+                <section class="cardList-wrap">
+                    <div class="cardList">
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd class="id-txt">asdcf012</dd>
+                            <dt>가입일시</dt>
+                            <dd>YYYY.MM.DD</dd>
+                        </dl>
+                    </div>
+                    <div class="cardList">
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd class="id-txt">asdcf012</dd>
+                            <dt>가입일시</dt>
+                            <dd>YYYY.MM.DD</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <div class="box-btn">
+                    <a href="#" class="btn-text-right">혹시 비밀번호도 잊어버리셨나요?</a>
+                </div>
+
+            <div class="btn-group ">
+                <button class="btns md-ripples ripples-light">로그인</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

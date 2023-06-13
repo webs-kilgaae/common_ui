@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '포인트 조회 | U+유모바일',
+    ogTitle: '포인트 조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['포인트 조회', '포인트 사용']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '나의 포인트',
+            depth4: '포인트 조회'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">내정보</a></li>
+        <li>
+            <a href="#">나의 포인트</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#" class="on">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">포인트 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">포인트 조회</a></li>
+                <li><a href="#">포인트 사용</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts point-lookup">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>포인트 조회</h1><!-- 09.16 텍스트 수정-->
+            </div>
+
+            <!-- 09.19 html 재작업-->
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+
+                <div class="info-area">
+                    <div class="page-desc">
+                        <h2>지금까지 적립된 포인트를 확인해 보세요.</h2>
+                    </div>
+
+                    <section class="point-inquiry">
+                        <div class="point-num">
+                            <dl>
+                                <dt>총 적립 포인트</dt>
+                                <dd>1,100,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용 포인트</dt>
+                                <dd>80,000</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용 신청한 포인트</dt>
+                                <dd>20,000</dd>
+                            </dl>
+                        </div>
+                        <dl class="point-sum">
+                            <dt> 사용 가능한 포인트</dt>
+                            <dd>
+                                <em class="txt-vt">110P</em>
+                                <a href="#" class="btn-text-right-s">포인트 사용</a>
+                            </dd>
+                        </dl>
+                    </section>
+
+                    <div class="rq-form">
+                        <div class="radio-group-wrap search-period">
+                            <h3 class="group-tit">조회기간</h3>
+                            <ul class="btn-radio-group group-free">
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-1" name="dan4" checked>
+                                    <label for="dan4-1">1개월</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-2" name="dan4">
+                                    <label for="dan4-2">3개월</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-3" name="dan4">
+                                    <label for="dan4-3">6개월</label>
+                                </li>
+                                <li class="btn-radio">
+                                    <input type="radio" id="dan4-4" name="dan4">
+                                    <label for="dan4-4" class="btn-direct">직접입력</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 직접입력 검색-->
+                        <!-- ui.common.js에서 click 이벤트 동작 -->
+                        <div class="direct-search">
+                            <div class="box-input-wrap">
+                                <div class="inner">
+                                    <div class="box-input error">
+                                        <input id="datepicker1" type="text" placeholder="YYYY-MM-DD" class="input-default date-picker" title="시작일">
+                                        <span class="txt-error">날짜를 선택해 주세요.</span>
+                                    </div>
+                                    <div class="box-input">
+                                        <input id="datepicker2" type="text" placeholder="YYYY-MM-DD" class="input-default date-picker" title="마지막일">
+                                        <span class="txt-error">날짜를 선택해 주세요.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                        </div>
+                        <!-- //직접입력 검색-->
+                    </div>
+
+                    <div class="result-categ">
+                        <ul>
+                            <li>
+                                <input type="radio" id="categ-all" name="categ" checked>
+                                <label for="categ-all">전체</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="categ-1" name="categ">
+                                <label for="categ-1">적립</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="categ-2" name="categ">
+                                <label for="categ-2">사용</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="categ-3l" name="categ">
+                                <label for="categ-3">사용 신청한 포인트</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <section class="result-list">
+                        <section class="">
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>적립</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>친구 추천 혜택</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$ 가입</span>
+                                            </dt>
+                                            <dd class="txt-vt">+3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>적립</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>CS 포인트</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$<br> $n$월 잔여 데이터 리워드</span>
+                                            </dt>
+                                            <dd class="txt-vt">+3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>사용예정</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>요금납부 - 통신요금</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$ 납부</span>
+                                                <button type="button" class="btn-text-right-s">사용취소</button><!-- 09.19 버튼 추가 -->
+                                            </dt>
+                                            <dd class="txt-rd">-3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>사용예정</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>요금납부 - 통신요금</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$ 납부</span>
+                                                <button type="button" class="btn-text-right-s">사용취소</button><!-- 09.19 버튼 추가 -->
+                                            </dt>
+                                            <dd class="txt-rd">-3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>사용예정</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>요금납부 - 통신요금</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$ 납부</span>
+                                                <button type="button" class="btn-text-right-s">사용취소</button><!-- 09.19 버튼 추가 -->
+                                            </dt>
+                                            <dd class="txt-rd">-3,000P</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="bottom">
+                                        <dl>
+                                            <dt>사용 신청한 포인트</dt>
+                                            <dd class="txt-rd">-30,000P</dd>
+                                        </dl>
+                                        <ul class="notification">
+                                            <li>신청한 포인트가 납부할 통신요금보다 많은 경우 다음 달 청구 요금에서 그만큼 할인됩니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>사용</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>구매 - 유알모마켓</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$스타벅스 아메리카노$</span>
+                                            </dt>
+                                            <dd class="txt-rd">-3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>사용취소</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>요금납부 - 통신요금 취소</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">$010-1111-1111$ 납부</span>
+                                            </dt>
+                                            <dd class="txt-vt">+3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardList-wrap point-sort-card">
+                                <div class="cardList money-right">
+                                    <div class="top">
+                                        <dl>
+                                            <dt>YYYY-MM-DD 00:00</dt>
+                                            <dd>소멸</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="middle">
+                                        <p>구매 - 유알모마켓</p>
+                                        <dl>
+                                            <dt class="strong">
+                                                <span class="use-info">유효기간 만료</span>
+                                            </dt>
+                                            <dd class="txt-rd">-3,000P</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        @@include('./pages/includes/pagination.html')
+
+                        <!--포인트 내역이 존재하지 않을때 -->
+                        <!-- 2022.11.04 클래스 수정 -->
+                        <div class="no-result">
+                            <p class="no-result-txt">
+                                U+유모바일에서 적립/사용하신<br>
+                                포인트 내역이 존재하지 않습니다.
+                            </p>
+                        </div>
+                        <!--//포인트 내역이 존재하지 않을때 -->
+
+                    </section>
+                    <!-- 2022.10.12 꼭알아두세요 추가 -->
+                    <section class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <!-- 2022.10.27 띄어쓰기, 오타수정 -->
+                            <li>
+                                요금(할부금) 납부' 신청시 청구요금이 실제 줄어들기전까지 '사용예정' 탭에서 확인 가능하며, 청구요금이 줄어든 후에는<br>
+                                '사용'탭에서 확인 가능합니다. (매월 23일 업데이트)
+                            </li>
+                            <li>
+                                요금(할부금) 납부 신청시, 포인트 사용 신청일과 포인트 실제 사용일(요금납부일)은 다를 수 있으며, 매월23일 이후<br>
+                                ‘실제사용일(요금납부일)’이 확정됩니다. (사용 신청한 포인트 금액은 변동없음)<br>
+                                * 예시. 1/22 사용신청(사용예정탭에서확인) → 1/23 사용처리 (사용탭으로 이동되어확인)
+                            </li>
+                            <li>당월 포인트 사용 신청 시 익월 청구 요금이 줄어듭니다. (매월 1일까지 포인트사용 신청한 경우 당월청구 요금이 줄어듦)</li>
+                            <li>최소 1,000P이상 100P단위 사용 가능하며, 사용취소는 신청 당일에만 가능합니다.</li>
+                            <li>가입 해지 및 유효기간(3년) 경과시 미사용 포인트는 자동 소멸됩니다.</li>
+                            <li>포인트 유효기간은 3년이며 타인에게 양도/매매/현금교환 불가합니다.</li>
+                            <li>포인트 적립 또는 사용 실적에 따라 소득세원천징수 신고대상이 될 수 있습니다.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <!-- //09.19 html 재작업-->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

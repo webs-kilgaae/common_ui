@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '대상자 발표 당첨 실패 | U+유모바일',
+    ogTitle: '대상자 발표 당첨 실패 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+
+    <!-- 레이어 팝업 -->
+    <div id="test-layer01" class="layer-popup event show">
+        <div class="layer-popup-item unavailable" >
+            <div class="popup-header">
+                <div class="box-icon">
+                    <img src="../../assets/images/pc/icon/ico-phone-wifi.svg" alt="핸드폰 회선 아이콘">
+                </div>
+                <strong class="txt-main">
+                    U+유모바일 회선 고객만<br>
+                    이용할 수 있는 메뉴예요.
+                </strong>
+            </div>
+
+            <div class="popup-body">
+                <span class="txt-sub">U+유모바일 회선으로 가입된 다른 아이디로 로그인해주세요.</span>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">다른 아이디로 로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+
+
+</body>
+</html>

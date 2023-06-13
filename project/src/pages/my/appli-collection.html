@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입사실확인서', '가입신청서', '통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+
+    <main class="container my">
+        <div class="sub-conts appli-admission">
+            <!-- 컨텐츠 -->
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+
+</div>
+
+<!--바텀 시트-->
+<div id="test-bottom01" class="layer-popup bottom-sheet-wrap show" style="z-index: 101; display: flex; opacity: 1;">
+    <div class="layer-popup-item">
+        <div class="popup-header">
+            <strong class="txt-main">가입사실확인서 자료 수신을 위한<br>개인정보 수집·이용 동의를 해주세요.</strong>
+            <button class="popup-close"><span class="hidden">닫기</span></button>
+        </div>
+        <div class="popup-body">
+            <div class="type2-agree">
+                <div class="btn-check-type2">
+                    <input type="checkbox" id="check4">
+                    <label for="check4"><span><strong class="nec">(필수)</strong> 개인정보 수집&middot;이용동의</span></label>
+                    <a href="#" class="ico-arrow-right">더보기</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <div class="box-btn">
+                <!-- 2022.07.20 텍스트수정(신청하기->신청완료) -->
+                <a href="#" role="button" class="btns sticky md-ripples ripples-light">신청 완료</a>
+            </div>
+            <button type="button" class="btn-close-x">닫기</button>
+        </div>
+    </div>
+</div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

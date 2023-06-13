@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <filter id="사각형_348902" x="20.75" y="12.75" width="38.5" height="38.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_492724" data-name="그룹 492724" transform="translate(-1814 -3587)">
+    <g id="그룹_465638" data-name="그룹 465638" transform="translate(193 2643)">
+      <circle id="타원_8476" data-name="타원 8476" cx="40" cy="40" r="40" transform="translate(1621 944)" fill="#ec0c8c"/>
+    </g>
+    <g id="icon" transform="translate(1586 3440)">
+      <rect id="area" width="80" height="80" transform="translate(228 147)" fill="#ff7676" opacity="0"/>
+      <g id="그룹_484206" data-name="그룹 484206" transform="translate(251.999 157)">
+        <g id="icon-2" data-name="icon" transform="translate(1)">
+          <g transform="matrix(1, 0, 0, 1, -25, -10)" filter="url(#사각형_348902)">
+            <rect id="사각형_348902-2" data-name="사각형 348902" width="28" height="28" rx="6" transform="translate(26 15)" fill="none" stroke="#fff" stroke-width="1.5"/>
+          </g>
+          <g id="패스_862759" data-name="패스 862759" transform="translate(8.122 29.799) rotate(-135)" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 6 24 L 5 24 L 0 24 L -1 24 L -1 23 L -1 5.687880039215088 L -1 5.380879878997803 L -0.8277400135993958 5.126760005950928 L 1.672260046005249 1.43887996673584 L 2.5 0.217849999666214 L 3.327739953994751 1.43887996673584 L 5.82774019241333 5.126760005950928 L 6 5.380879878997803 L 6 5.687880039215088 L 6 23 L 6 24 Z" stroke="none"/>
+            <path d="M 2.5 2 L 0 5.68787956237793 L 0 23 L 5 23 L 5 5.68787956237793 L 2.5 2 M 2.5 0 C 3.163229942321777 0 3.78331995010376 0.3287792205810547 4.15546989440918 0.8777599334716797 L 6.65546989440918 4.565639495849609 C 6.879990100860596 4.896839141845703 7 5.287759780883789 7 5.68787956237793 L 7 23 C 7 24.10457038879395 6.104569911956787 25 5 25 L 0 25 C -1.104569911956787 25 -2 24.10457038879395 -2 23 L -2 5.68787956237793 C -2 5.287759780883789 -1.879990100860596 4.896839141845703 -1.65546989440918 4.565639495849609 L 0.8445301055908203 0.8777599334716797 C 1.21668004989624 0.3287792205810547 1.836770057678223 0 2.5 0 Z" stroke="none" fill="#ec0c8c"/>
+          </g>
+        </g>
+      </g>
+      <text id="설문" transform="translate(268 211)" fill="#fff" font-size="16" font-family="Pretendard-SemiBold, Pretendard" font-weight="600" letter-spacing="-0.02em"><tspan x="-13.668" y="0">설문</tspan></text>
+    </g>
+  </g>
+</svg>

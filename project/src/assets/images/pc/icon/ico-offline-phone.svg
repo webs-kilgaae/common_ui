@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+    <g data-name="icon" transform="translate(35.064 27.984)">
+        <rect data-name="사각형 341168" width="45.872" height="60.032" rx="6" transform="translate(2 2)" style="stroke-linejoin:round;fill:none;stroke:#191919;stroke-linecap:round;stroke-width:4px"/>
+        <path data-name="선 126652" transform="translate(19.937 11.774)" style="fill:none;stroke:#191919;stroke-linecap:round;stroke-width:4px" d="M0 0h10"/>
+        <g data-name="그룹 465279" transform="translate(1.372 13)">
+            <circle data-name="타원 8479" cx="2" cy="2" r="2" transform="translate(58 -13)" style="fill:#191919"/>
+            <circle data-name="타원 8480" cx="2" cy="2" r="2" transform="translate(58 -2)" style="fill:#191919"/>
+            <g data-name="그룹 465280" transform="rotate(90 60 -5.5)">
+                <circle data-name="타원 8481" cx="2" cy="2" r="2" transform="translate(58 -13)" style="fill:#191919"/>
+                <circle data-name="타원 8482" cx="2" cy="2" r="2" transform="translate(58 -2)" style="fill:#191919"/>
+            </g>
+        </g>
+        <g data-name="그룹 465281" transform="translate(-71.5 62.032)">
+            <circle data-name="타원 8479" cx="2" cy="2" r="2" transform="translate(58 -13)" style="fill:#191919"/>
+            <circle data-name="타원 8480" cx="2" cy="2" r="2" transform="translate(58 -2)" style="fill:#191919"/>
+            <g data-name="그룹 465280" transform="rotate(90 60 -5.5)">
+                <circle data-name="타원 8481" cx="2" cy="2" r="2" transform="translate(58 -13)" style="fill:#191919"/>
+                <circle data-name="타원 8482" cx="2" cy="2" r="2" transform="translate(58 -2)" style="fill:#191919"/>
+            </g>
+        </g>
+    </g>
+</svg>

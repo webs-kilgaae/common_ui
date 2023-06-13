@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '납부 내역 확인 | U+유모바일',
+    ogTitle: '납부 내역 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['납부내역 조회', '납부 방법 변경', '납부 전용 입금 계좌 관리']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '요금/납부 조회',
+            depth4: '납부 내역 확인'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">요금/납부 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#" class="on">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">납부 내역 확인</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">청구요금 조회</a></li>
+                <li><a href="#">요금 즉시 납부</a></li>
+                <li><a href="#" class="on">납부 내역 확인</a></li>
+                <li><a href="#">앱마켓 결제 내역</a></li>
+                <li><a href="#">휴대폰 소액 결제 내역</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts my-payment payment-inquiry">
+            <!-- 컨텐츠 -->
+            <section>
+                <div class="page-tit">
+                    <h1>납부 내역 조회</h1>
+                </div>
+                <div class="box-tab">
+                    <ul class="tab-btn-wrap swiper-wrapper">
+                        <!-- 활성화 된 메뉴에 on class 추가 -->
+                        <li class="swiper-slide"><a href="javascript:;" class="on">납부 내역 조회</a></li>
+                        <li class="swiper-slide"><a href="javascript:;">납부 방법 변경</a></li>
+                        <li class="swiper-slide"><a href="javascript:;">결제일 변경</a></li>
+                        <li class="swiper-slide"><a href="javascript:;">납부 전용 입금 계좌 관리</a></li>
+                    </ul>
+                </div>
+                <div class="my-conts">
+                    <div class="fix-area">
+                        @@include('./pages/includes/my-use-amount.html', {
+                            titTxt: '가입 휴대폰번호',
+                            plan: true
+                        })
+                    </div>
+                    <div class="info-area">
+                        <div class="page-desc">
+                            <h2>최근 1년간의 납부내역을 조회합니다.</h2>
+                        </div>
+                        <section class="payment-wrap my-bundle">
+                            <div class="box-table">
+                                <table class="table-type-04">
+                                    <caption class="hidden">납부일, 납부(입금)확인일, 납부금액, 납부방법 정보 제공</caption>
+                                    <colgroup>
+                                        <col width="25%">
+                                        <col width="25%">
+                                        <col width="25%">
+                                        <col width="25%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">납부일</th>
+                                            <th scope="col">납부(입금)확인일</th>
+                                            <th scope="col">납부금액</th>
+                                            <th scope="col">납부방법</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>YYYY-MM-DD</td>
+                                            <td>43,890원</td>
+                                            <td>자동이체(카드)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="box-paging">
+                                    <button class="paging-first" type="button"><span class="hidden">첫번째 페이지로 이동</span></button>
+                                    <button class="paging-prev" type="button"><span class="hidden">이전 페이지로 이동</span></button>
+                                    <ul class="paging-list">
+                                        <!-- 활성화 시 active 클래스 추가 -->
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                        <li><a href="#">7</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                        <li><a href="#">10</a></li>
+                                    </ul>
+                                    <button class="paging-next" type="button"><span class="hidden">다음 페이지로 이동</span></button>
+                                    <button class="paging-end" type="button"><span class="hidden">마지막 페이지로 이동</span></button>
+                                </div>
+                            </div>
+                        </section>
+
+                         <!-- 데이터 없을 때  -->
+                        <section class="no-result my-bundle">
+                            <p class="no-result-txt">납부내역이 없습니다.</p>
+                        </section>
+                        <div class="btn-group my-bundle">
+                            <button class="btns md-ripples ripples-light" type="button">납부확인서 발급</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--// 컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+        <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '자동응답 | U+유모바일',
+    ogTitle: '자동응답 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+    })
+
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">통신 부가 서비스</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#">생활 구독 서비스</a></li>
+                <li><a href="#" class="on">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container extra">
+        <div class="sub-conts addition-page fix-unit-wide">
+            <!-- 컨텐츠 -->
+            <div class="page-tit unit-origin">
+                <h1>통신 부가 서비스</h1>
+            </div>
+            <section class="unit-wide info-bg">
+                <div class="info-wrap unit-origin">
+                    <div class="info-img">
+                        <img src="/assets/images/extra/autoresponder.png" alt="자동응답">
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>자동응답</dt>
+                            <dd>전화를 받지 못했을 때 부재중 상태를 안내해주는 서비스</dd>
+                        </dl>
+                        <div class="flex-box">
+                            <strong class="discount-pay">월 1,100원</strong>
+                        </div>
+                        <div class="box-btn flex-box">
+                            <button class="btns md-ripples ripples-light not-allow-open" type="button">신청하기</button>
+                            <div class="not-allow">
+                                <p>통화도우미 APP에서 신청가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-service">
+                <!-- .accordian에 open 클래스 넣으면 페이지 진입 시 열려있는 상태로 노출 -->
+                <section class="accordian type-01 c-unit open">
+                    <button class="acc-trigger">
+                        <h2 class="unit-tit">서비스 안내</h2>
+                    </button>
+                    <!-- 서비스 안내 -->
+                    <div class="acc-conts">
+                        <div class="unit-sec-tit">
+                            <h3>서비스 특징</h3>
+                            <p>저장된 음성 메시지를 듣고 보관 및 삭제 등 관리할 수 있는 서비스입니다.</p>
+                            <ul class="notification">
+                                <li>음성사서함의 청취/보관을 편리하게 설정</li>
+                                <li>상대방이 고객님께 음성메시지를 남기는 경우, 문자알림을 통해 바로 확인</li>
+                            </ul>
+                        </div>
+                        <div class="unit-sec-tit">
+                            <h3>이용요금</h3>
+                            <ul class="list">
+                                <li class="discount-pay">무료</li>
+                            </ul>
+                        </div>
+                        <div class="unit-sec-tit">
+                            <h3>신청방법</h3>
+                            <section class="payment-detail-card-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-headSet.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>고객센터</strong>
+                                            <p>
+                                                추가 문의는 고객센터에서
+                                                전화상담 가능<br>
+                                                자사 휴대폰 114 (무료)<br>
+                                                1644-5353 (유료)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-shop.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>유플러스 직영매장</strong>
+                                            <p>
+                                               유플러스 직영매장에서도 방문신청 가능
+                                            </p>
+                                            <div class="box-btn">
+                                                <a href="#" class="btn-text-arrow">U+직영매장 찾기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //서비스 안내 -->
+                </section>
+                <section class="accordian type-01 c-unit">
+                    <button class="acc-trigger">
+                        <h2 class="unit-tit">이용방법</h2>
+                    </button>
+                    <!-- 이용방법 -->
+                    <div class="acc-conts">
+                        <div class="unit-sec-tit">
+                            <h3>U+통화도우미 APP  다운로드</h3>
+                            <ul class="notification">
+                                <li>구글 Play 스토어, 앱스토어 접속 > “통화도우미” 검색 > 앱 다운로드</li>
+                                <li>통화 도우미 앱 접속 → 앱 실행 → 음성사서함 선택 → Check Box 선택 → 음성사서함전환 선택 → 음성사서함 전환 옵션 선택</li>
+                            </ul>
+                        </div>
+                        <div class="unit-sec-tit">
+                            <h3>음성사서함 접속</h3>
+                            <ul class="notification">
+                                <li>본인 휴대폰으로 이용할 경우 : *88 → 음성통화 또는 영상통화 버튼</li>
+                                <li>타인 휴대폰 또는 유선 전화를 이용할 경우 : 본인 번호로 전화 → 음성사서함 연결 → 숫자 3과 비밀번호 입력</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //이용방법 -->
+                </section>
+                <section class="accordian type-01 c-unit">
+                    <button class="acc-trigger">
+                        <h2 class="unit-tit">유의사항</h2>
+                    </button>
+                    <!-- 유의사항 -->
+                    <div class="acc-conts">
+                        <div class="unit-sec-tit">
+                            <ul class="notification">
+                                <li>음성메시지 청취 후, 저장한 메시지의 보관기간은 7일이며, 최대 저장 개수는 20개 입니다. - 보관 기간 내 재 청취 후 다시 보관하면 지속적으로 7일간 연장보관 가능 - 저장된 메시지 20건 초과 시, 신규 메시지 녹음 불가</li>
+                                <li>삭제한 음성메시지는 복구가 불가능합니다.</li>
+                                <li>인사말 녹음 시간은 3분 이며, 음성메시지 녹음시간은 5분 입니다.</li>
+                                <li>미 청취 메시지는 3개월간 저장되며, 청취 후 저장하지 않은 메시지는 3일간 저장됩니다.</li>
+                                <li>최초 비밀번호는 휴대폰 번호 뒤 4자리로 되어 있으므로, 고객정보 보호를 위해 다른 번호로 변경이 필요합니다.</li>
+                                <li>음성메시지 청취 후, 저장되어 있는 음성메시지를 타인에게 전달해 주는 ‘메시지 전달’ 기능은 지원되지 않습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //유의사항 -->
+                </section>
+            </section>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

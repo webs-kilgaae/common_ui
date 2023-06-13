@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '카앤피플 요금제 변경 안내 | U+유모바일',
+    ogTitle: '카앤피플 요금제 변경 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+</head>
+<body>
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap my show">
+        <div class="layer-popup-item rate-plan-popup">
+            <div class="popup-header">
+                <strong class="txt-main">카앤피플 요금제 변경 안내</strong>
+            </div>
+
+            <div class="popup-body">
+                <p class="txt-sub">
+                    카앤피플 요금제에서 타 요금제로 변경 시 카앤피플 포인트 쿠폰 지급은 즉시 중단됩니다.<br>
+                    또한 다시 카앤피플 요금제로 재변경이 불가하오니, 이점 유의하시기 바랍니다.
+                </p>
+                <div class="notification-wrap">
+                    <h3>꼭! 알아두세요.</h3>
+                    <strong>제공 세차 포인트 유의사항</strong>
+                    <ul class="notification">
+                        <li>카앤피플 요금제 전월 정상 이용 시에만 개통한 번호로만 쿠폰수신 쿠폰 발송됩니다. <br>(명의변경 / 요금제 변경 / 정지 / 해지 등 비정상 이용 시 대상 제외)</li>
+                        <li>포인트 쿠폰은 개통 후 24개월까지 총 12회(2개월 마다) 제공됩니다.</li>
+                        <li>포인트 쿠폰 최초 발송은 개통한 익월(D+1월) 15일에 문자로 일괄 발송 됩니다.<br>
+                            (예시. 21년 4월 개통 완료 → 21년 5월 15일 최초 발송, 이후 격월 15일 발송)</li>
+                        <li>
+                            발행된 포인트 쿠폰은 카앤피플 전용 App을 통하여 사용 가능합니다. (회원가입 필요)
+                        </li>
+                        <li>발행된 포인트 쿠폰의 사용 유효기간은 1년입니다.<br>
+                            (예시. 21년 5월 15일 쿠폰 수령 → 22년 5월 14일 포인트 자동소멸)</li>
+                        <li>
+                            발행 된 포인트 쿠폰의 분실 및 삭제에 따른 재발송은 불가합니다.
+                        </li>
+                        <li>요금제 개통 시, 카앤피플 ‘서비스 가능 지역’이 → ‘불가능 지역’으로 변경 시에는 ‘서비스 가능<br>지역’에서만 사용 가능합니다.<br>
+                            (출장 세차 서비스 가능지역 변경에 따른 불이익은 U+유모바일과 카앤피플에서는 책임지지 않습니다.)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-light" type="button">취소</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">요금제 변경</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

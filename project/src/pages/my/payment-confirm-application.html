@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    /* 개발쪽에는 가져가지 마시오! */
+    .layer-popup{z-index: 101 !important; display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+</head>
+<body>
+    <div id="test-bottom01" class="layer-popup my bottom-sheet-wrap layer-popup-print">
+        <div class="layer-popup-item payment-confirm-application">
+            <div class="popup-header">
+                <strong class="txt-main">납부확인서 발급 신청</strong>
+            </div>
+            <div class="popup-body">
+                <div class="rq-form">
+                    <h2 class="main-txt">납부확인서 발급을 위해 아래 정보를 입력해 주세요.</h2>
+                    <!-- 2022.11.14 텍스트 수정 -->
+                    <!-- <p class="txt">납부방법은 본인명의의 계좌 또는 신용카드만 가능합니다.</p> -->
+                    <p class="txt">당월 포함 최대 12개월 전까지 신청이 가능합니다.</p>
+                    <div class="box-input-wrap">
+                        <h3 class="form-tit">조회기간 <em class="txt-rd">*</em></h3>
+                        <div class="inner">
+                            <div class="box-input error">
+                                <input id="monthpicker1" type="text" placeholder="시작월" class="input-default month-picker">
+                                <span class="txt-error">날짜를 선택해 주세요.</span>
+                            </div>
+                            <div class="box-input">
+                                <input id="monthpicker2" type="text" placeholder="종료월" class="input-default month-picker">
+                                <span class="txt-error">날짜를 선택해 주세요.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio-group-wrap">
+                        <h3 class="group-tit">개인정보 가리기 <em class="txt-rd">*</em></h3>
+                        <ul class="btn-radio-group group-free">
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-1" name="dan4" checked>
+                                <label for="dan4-1">정보 가리기</label>
+                            </li>
+                            <li class="btn-radio">
+                                <input type="radio" id="dan4-2" name="dan4">
+                                <label for="dan4-2">정보 모두보기</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input error email-input">
+                        <label for="input2" class="input-label">이메일 주소 <em class="txt-rd">*</em></label>
+                        <div class="input-wrap">
+                            <input id="input2" type="text" placeholder="이메일 주소 입력" class="input-default is-delete">
+                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-error">이메일을 입력하셔야 합니다.</span>
+                    </div>
+                    <div class="box-select delivery-rq">
+                        <label for="select1" class="select-label">발급용도 및 제출서 <em class="txt-rd">*</em></label>
+                        <select name="select1" id="select1" class="select-default is-textArea">
+                            <option value="1">종합소득세 신고</option>
+                            <option value="2">정부기관 제출</option>
+                            <option value="3">회사 제출</option>
+                            <!-- 2022.10.24 value에 self 값 삭제 후 etc-select 클래스 추가 -->
+                            <option value="4" class="etc-select">기타</option>
+                        </select>
+                        <div class="textarea-wrap box-input self-write-wrap">
+                            <div class="input-wrap">
+                                <input id="phone" type="text" placeholder="직접입력" class="input-default is-delete">
+                                <button class="ico-delete" style="display: none;" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="popup-footer">
+               <div class="btn-group">
+                    <button class="btns w-sm lightgray md-ripples ripples-dark popup-close" type="button">인쇄하기</button>
+                    <button class="btns w-sm md-ripples ripples-light" type="button">발송하기</button>
+                </div>
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

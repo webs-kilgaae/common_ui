@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '가입정보 | U+유모바일',
+    ogTitle: '가입정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '가입정보/변경',
+            depth4: '가입정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보/변경</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#" class="on">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">가입정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">가입정보</a></li>
+                <li><a href="#">요금제 변경</a></li>
+                <li><a href="#">부가서비스 변경</a></li>
+                <li><a href="#">일시정지 신청</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts subscript-name-assignee-new">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>명의변경</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <div class="rq-form bottom-no my-bundle">
+                        <div class="main-txt-group">
+                            <h2 class="main-txt">신규 명의자 정보</h2>
+                            <p>휴대폰을 양도 받을 고객정보를 입력해 주세요.</p>
+                        </div>
+                        <div class="box-input">
+                            <label for="input1" class="input-label">이름 <em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="이름을 입력하세요." class="input-default " readonly>
+                            </div>
+                        </div>
+                        <div class="box-flex">
+                            <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                            <div class="box-input error">
+                                <label for="input4" class="input-label">연락가능 휴대폰번호 <em class="txt-rd">*</em></label>
+                                <div class="input-wrap">
+                                    <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm is-delete">
+                                    <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                </div>
+                                <span class="txt-error">휴대폰 번호를 정확하게 입력해 주세요.
+                                </span>
+                            </div>
+                            <div class="box-btn">
+                                <button class="btn-dark-gray md-ripples ripples-light" type="button">인증 요청</button>
+                            </div>
+                        </div>
+                        <div class="input-depth">
+                            <div class="box-flex w630">
+                                <div class="box-input no-top w470">
+                                    <label for="input5-1" class="input-label">주소 <em class="txt-rd">*</em></label>
+                                    <div class="input-wrap">
+                                        <input id="input5-1" type="text" placeholder="우편번호" class="input-default is-delete" title="우편번호">
+                                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </div>
+                                <div class="box-btn">
+                                    <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                                </div>
+                            </div>
+                        <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                        <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                        <div class="box-input no-top">
+                            <div class="input-wrap">
+                                <input id="input5-2" type="text" placeholder="기본주소" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러에러</span>
+                        </div>
+                        <div class="box-input no-top">
+                            <div class="input-wrap">
+                                <input id="input5-3" type="text" placeholder="상세주소 (선택)" class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">에러에러</span>
+                        </div>
+                        <div class="btn-check">
+                            <input type="checkbox" id="check5">
+                            <label for="check5"><span class="ico-check"></span>상세 주소 없음</label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="rq-form bottom-no my-bundle">
+                        <div class="main-txt-group">
+                            <h2 class="main-txt">기존 명의자 정보</h2>
+                            <p>휴대폰 명의의 기존고객(기존 명의자)정보를 입력해 주세요.</p>
+                        </div>
+                        <div class="box-input">
+                            <label for="input1" class="input-label">기존 명의자 이름 <em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="이름을 입력하세요." class="input-default " readonly>
+                            </div>
+                        </div>
+                        <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                        <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                        <div class="box-input error">
+                            <label for="input1" class="input-label">기존 명의자 휴대폰번호 <em class="txt-rd">*</em></label>
+                            <div class="input-wrap">
+                                <input id="input1" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default is-delete">
+                                <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                            </div>
+                            <span class="txt-error">휴대폰 번호를 정확하게 입력해 주세요.</span>
+                        </div>
+                    </div>
+                    <div class="btn-group my-bundle">
+                        <button class="btns md-ripples ripples-light" type="button">가입 정보 작성</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

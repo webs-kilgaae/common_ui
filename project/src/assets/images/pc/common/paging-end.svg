@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <g data-name="&gt;&gt;" transform="translate(19 1)">
+        <rect data-name="사각형 340934" width="50" height="50" rx="7" transform="translate(-19 -1)" style="fill:#fff"/>
+        <g data-name="그룹 465328">
+            <path data-name="^" d="M8 16 0 8l8-8" transform="rotate(180 3.5 16)" style="fill:none;stroke:#959595;stroke-linecap:round;stroke-linejoin:round"/>
+            <path data-name="^" d="M8 16 0 8l8-8" transform="rotate(180 6.5 16)" style="fill:none;stroke:#959595;stroke-linecap:round;stroke-linejoin:round"/>
+        </g>
+    </g>
+</svg>

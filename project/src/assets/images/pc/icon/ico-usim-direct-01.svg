@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81">
+    <defs>
+        <filter id="5rsh749esa" x="13" y="3" width="46" height="72" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="zbkk6862cb" x="28.999" y="43" width="38" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486307">
+        <g data-name="그룹 484205">
+            <g data-name="그룹 484204">
+                <g style="filter:url(#5rsh749esa)">
+                    <rect data-name="사각형 350232" width="40" height="66" rx="10" transform="translate(16.005 4.004)" style="fill:#e3e6f9"/>
+                </g>
+                <path data-name="선 126776" transform="translate(33 11.001)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px" d="M0 0h6"/>
+            </g>
+        </g>
+        <g style="filter:url(#zbkk6862cb)">
+            <path data-name="합치기 63" d="m28.022 31.317-7.652-7.652a12.981 12.981 0 1 1 3.3-3.3l7.651 7.651a2.331 2.331 0 0 1-3.3 3.3z" transform="translate(32 44.005)" style="fill:#6f98f8"/>
+        </g>
+        <path data-name="패스 862540" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" transform="translate(36.5 48.5)" style="fill:#fff"/>
+    </g>
+</svg>

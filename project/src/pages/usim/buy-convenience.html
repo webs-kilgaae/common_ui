@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '편의점에서 구매하기 | U+유모바일',
+    ogTitle: '편의점에서 구매하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['유모바일에서 구매하기', '오픈마켓에서 구매하기', '편의점에서 구매하기']
+    })
+    <!--09.29
+    @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '유심/eSIM',
+            depth3: 'USIM 카드구매',
+            depth4: '편의점에서 구매하기'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">USIM/eSIM</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">유심/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">USIM 카드구매</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">유심/eSIM 가입</a></li>
+                <li><a href="#" class="on">USIM 카드구매</a></li>
+                <li><a href="#">USIM/eSIM 가입 안내</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">편의점에서 구매하기</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">유모바일에서 구매하기</a></li>
+                <li><a href="#">오픈마켓에서 구매하기</a></li>
+                <li><a href="#" class="on">편의점에서 구매하기</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container usim">
+
+        <div class="sub-conts buy-convenience fix-unit-wide">
+            <div class="page-tit unit-origin">
+                <h1>편의점에서 구매하기</h1>
+            </div>
+            <!-- 컨텐츠 -->
+            <div class="slide-box unit-wide">
+                <div class="slick-default">
+                    <div><img src="/assets/images/pc/temp/temp-slider-openmarket.png" alt=""></div>
+                    <div><img src="/assets/images/pc/temp/temp-slider-openmarket.png" alt=""></div>
+                    <div><img src="/assets/images/pc/temp/temp-slider-openmarket.png" alt="지"></div>
+                </div>
+            </div>
+            <div class="unit-origin fix-unit-group">
+            <h2 class="unit-tit-b">가까운 편의점 또는 마트에서 구매할 수 있습니다.</h2>
+            <div class="openmarket-list">
+                <div class="cardList-wrap">
+                    <div class="cardList using-market">
+                        <div class="item-left">
+                                <div class="market">
+                                    <span class="logo">
+                                        <img src="../../assets/images/pc/icon/logo-gs25.png" alt="gs25">
+                                    </span>
+                                    <strong class="info">LTE, 5G 호환 (NFC)</strong>
+                                </div>
+                            <div class="point">75% 할인</div>
+                        </div>
+                        <div class="item-right">
+                            <div class="pay-amount">
+                                <span class="origin-pay">23,500원</span>
+                                <strong class="discount-pay">9,900원</strong>
+                            </div>
+                            <button class="btns lightgray md-ripples ripples-light" type="button">
+                                GS25 판매점 조회
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardList-wrap">
+                    <div class="cardList using-market">
+                        <div class="item-left">
+                                <div class="market">
+                                    <span class="logo">
+                                        <img src="../../assets/images/pc/icon/logo-emart24.png" alt="emart24">
+                                    </span>
+                                    <strong class="info">LTE, 5G 호환 (NFC)</strong>
+                                </div>
+                            <div class="point">75% 할인</div>
+                        </div>
+                        <div class="item-right">
+                            <div class="pay-amount">
+                                <span class="origin-pay">23,500원</span>
+                                <strong class="discount-pay">9,900원</strong>
+                            </div>
+                            <button class="btns lightgray md-ripples ripples-light" type="button">
+                               e마트24 판매점 조회
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardList-wrap">
+                    <div class="cardList using-market">
+                        <div class="item-left">
+                                <div class="market">
+                                    <span class="logo">
+                                        <img src="../../assets/images/pc/icon/logo-7eleven.png" alt="7eleven">
+                                    </span>
+                                    <strong class="info">LTE, 5G 호환 (NFC)</strong>
+                                </div>
+                            <div class="point">75% 할인</div>
+                        </div>
+                        <div class="item-right">
+                            <div class="pay-amount">
+                                <span class="origin-pay">23,500원</span>
+                                <strong class="discount-pay">9,900원</strong>
+                            </div>
+                            <button class="btns lightgray md-ripples ripples-light" type="button">
+                               세븐일레븐 판매점 조회
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardList-wrap">
+                    <div class="cardList using-market">
+                        <div class="item-left">
+                                <div class="market">
+                                    <span class="logo">
+                                        <img src="../../assets/images/pc/icon/logo-homeplus.png" alt="homeplus">
+                                    </span>
+                                    <strong class="info">LTE, 5G 호환 (NFC)</strong>
+                                </div>
+                        </div>
+                        <div class="item-right">
+                            <div class="pay-amount">
+                                <span class="origin-pay">23,500원</span>
+                                <strong class="discount-pay">9,900원</strong>
+                            </div>
+                            <button class="btns lightgray md-ripples ripples-light" type="button">
+                               홈플러스 판매점 조회
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

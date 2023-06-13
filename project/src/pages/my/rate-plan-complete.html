@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '요금제변경완료 | U+유모바일',
+    ogTitle: '요금제변경완료 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+<style>
+    .show{z-index: 100 !important; display: flex;}
+    .layer-popup{display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+</head>
+<body>
+    <!-- 레이어 팝업 -->
+    <div id="test-layer02" class="layer-popup">
+        <div class="layer-popup-item ">
+            <div class="popup-body">
+                <p class="txt-sub"><span class="txt-vt">$선택한 요금제명$</span> 요금제로 변경이 완료되었습니다.</p>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

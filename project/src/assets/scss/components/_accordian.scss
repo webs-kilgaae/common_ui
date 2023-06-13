@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.acc-conts {display:none;}
+
+.accordian {
+    & > .acc-trigger {
+        display:block;width:100%;position:relative;margin-bottom:20px; @include defaultTxt;
+        &:after {content: "";position:absolute;right:0;top:50%;width:13px;height:8px;background:url(../../assets/images/pc/icon/ico-arrow-bottom.svg) no-repeat 0 0;background-size:100%;transform:translateY(-50%);}
+        &.on{
+            border-bottom:0;
+            &:after {transform:translateY(-50%) rotate(180deg);}
+        }
+    }
+    &.type-01 {
+        .acc-conts {padding:32px 40px;border-radius:7px;background:$gray01;}
+    }
+    &.type-02 {
+        background:$gray01;border-radius:7px;padding:30px;
+        .acc-trigger{margin-bottom:0;border-bottom:0;padding-bottom:0;}
+        .acc-conts {padding-top: 40px;}
+    }
+}
+
+// 꼭 확인하세요!
+.notification-wrap {
+    h3, h4 {display:block;margin-bottom:10px;@include mainTxt;}
+    ul.notification{
+        li{
+            a{
+                @include defaultTxt; color: $deepblue; text-decoration: underline;
+            }
+            .box-btn{
+                .btn-text-right{
+                    @include normalTxt; text-decoration: none;
+                    &-s{
+                        @include smallTxt; text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

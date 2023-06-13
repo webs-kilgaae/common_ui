@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '첨부 가능한 영수증 예시 | U+유모바일',
+    ogTitle: '첨부 가능한 영수증 예시 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap products show">
+        <div class="layer-popup-item breakage-receipt">
+            <div class="popup-header">
+                <strong class="txt-main">첨부 가능한 영수증 예시</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="fix-unit-group">
+                    <strong class="unit-tit-m">1) 카드 결제 내역 및 문자</strong>
+                    <div class="unit-img">
+                        <img src="/assets/images/pc/subpage/receipt-01.png" alt="">
+                    </div>
+
+                    <strong class="unit-tit-m">2) 온라인 주문 내역 캡쳐화면</strong>
+                    <div class="unit-img">
+                        <img src="/assets/images/pc/subpage/receipt-02.png" alt="">
+                    </div>
+
+                    <strong class="unit-tit-m">3) 그 외 구매일자 및 금액 확인되는 증빙 서류</strong>
+                </div>
+            </div>
+
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">신청 완료</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

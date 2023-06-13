@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '부가서비스 신청하기, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 신청하기 | U+유모바일',
+    ogTitle: '부가서비스 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div class="products">
+        <div class="popup-space">
+            <div class="popup-body addition-service-pop">
+                <div class="page-desc">
+                    <h2>부가서비스 신청하기</h2>
+                    <!-- <h2>부가서비스 해지하기</h2> -->
+                </div>
+                <!-- 신청 성공 -->
+                <div style="display:block;">
+                    <section class="cardList-wrap">
+                        <h2 class="cardList-title">발신자미표시번호차단 서비스 신청이 완료되었습니다.</h2>
+                        <div class="cardList">
+                            <dl>
+                                <dt>휴대폰 번호</dt>
+                                <dd>010-**34-**78</dd>
+                                <dt>신청일</dt>
+                                <dd>2022-06-16</dd>
+                                <dt>이용금액</dt>
+                                <dd>무료</dd>
+                            </dl>
+                        </div>
+                    </section>
+                </div>
+                <!-- //신청 성공 -->
+
+                <!-- 신청 실패 -->
+                <div style="display:none;">
+                    <div class="appli-result">
+                        <h2>발신자미표시번호차단 서비스 신청이 실패했습니다.</h2>
+                        <p class="u-cube-msg">
+                            U Cube 실패 메세지 출력 영역
+                        </p>
+                    </div>
+                </div>
+                <!-- //신청 실패 -->
+
+                <!-- 해지 성공 -->
+                <div style="display:none;">
+                    <section class="cardList-wrap">
+                        <h2 class="cardList-title">통화연결음(필링) 서비스가 해지 되었습니다.</h2>
+                        <div class="cardList">
+                            <dl>
+                                <dt>휴대폰 번호</dt>
+                                <dd>010-**34-**78</dd>
+                                <dt>신청일</dt>
+                                <dd>2022-06-16</dd>
+                                <dt>이용금액</dt>
+                                <dd>무료</dd>
+                            </dl>
+                        </div>
+                    </section>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 알아두세요!!</h3>
+                        <ul class="notification">
+                            <li>부가서비스는 신청 당일 해지는 불가합니다.</li>
+                            <li>부가서비스 월중 신청/해지시 해당월 기본요금 및 무료제공 혜택은 각각 일할 적용 됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //해지 성공 -->
+
+                <!-- 해지 실패 -->
+                <div style="display:none;">
+                    <div class="appli-result">
+                        <h2>통화연결음(필링) 서비스 해지에 실패했습니다.</h2>
+                        <p class="u-cube-msg">
+                            U Cube 실패 메세지 출력 영역
+                        </p>
+                    </div>
+
+                    <div class="notification-wrap">
+                        <h3>꼭 알아두세요!!</h3>
+                        <ul class="notification">
+                            <li>부가서비스는 신청 당일 해지는 불가합니다.</li>
+                            <li>부가서비스 월중 신청/해지시 해당월 기본요금 및 무료제공 혜택은 각각 일할 적용 됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //해지 실패 -->
+
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+                <!-- //실패 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

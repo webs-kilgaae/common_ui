@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <circle data-name="타원 4" cx="20" cy="20" r="20" style="fill:#ddd"/>
+    <path data-name="사각형 92" transform="translate(18 12)" style="fill:#fff" d="M0 0h4v10H0z"/>
+    <path data-name="사각형 93" transform="translate(18 24)" style="fill:#fff" d="M0 0h4v4H0z"/>
+</svg>

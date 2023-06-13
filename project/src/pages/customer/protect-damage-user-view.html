@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '최신 이용자 피해예방 정보 | U+유모바일',
+    ogTitle: '최신 이용자 피해예방 정보 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '', '']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '고객 보호',
+            depth4: '최신 이용자 피해예방 정보'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">고객 보호</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#" class="on">고객 보호</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">최신 이용자 피해예방 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">부정가입ㆍ명의도용 방지</a></li>
+                <li><a href="#">이용자 피해예방 안내</a></li>
+                <li><a href="#">웹툰으로 보는 피해예방법</a></li>
+                <li><a href="#">동영상으로 보는 피해예방법</a></li>
+                <li><a href="#" class="on">최신 이용자 피해예방 정보</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <div class="sub-conts customer-protect">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>최신 이용자 피해예방 정보</h1>
+            </div>
+
+            <div class="box-board">
+                <div class="list-wrap type-ul">
+                    <dl class="list-view">
+                        <dt class="date-right"><!-- 09.07 클래스 추가-->
+                            <strong class="view-tit">'질병관리청 예방접종증명서' 사칭 스미싱 주의안내 '질병관리청 예방접종증명서' 사칭 스미싱 주 '질병관리청 예방접종증명서' 사칭 스미싱 주의안내 '질병관리청 예방접종증명서' 사칭 스미싱 주</strong>
+                            <!-- 09.07 태그 변경 -->
+                            <!--<time datetime="2022-05-24">2022-05-24</time>-->
+                            <p class="date">2022-05-24</p>
+                            <!-- //09.07 태그 변경 -->
+                        </dt>
+                        <dd>
+                            <p class="view-txt">
+                                안녕하세요.<br>
+                                U+유모바일 입니다.<br>
+                                <br>
+                                ■ 개 요<br>
+                                '질병관리청 예방정보증명서' 사칭 스미싱 문자가 발견되었습니다.<br>
+                                스미싱 문자의 링크를 클릭 또는 접속 할 경우 악성앱이 설치되어 개인정보 유출 또는 소액 결제 피해가 발생할 수 있으니,<br>
+                                스마트폰 사용자는 스미싱 문자의 링크를 클릭하지 않도록 주의하시기 바랍니다.<br>
+                                <br>
+                                ■ 내 용(문자 발신 내용)<br>
+                                [Web발신]<br>
+                                [질병관리청]코로나19 디지털 예방접종증명서의 발급 및 저장 본인확인 https"//ko.gl/rL**W<br>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="box-paging">
+                    <button class="btns line">목록</button>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

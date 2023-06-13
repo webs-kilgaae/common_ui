@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="129.5" viewBox="0 0 120 129.5">
+    <defs>
+        <filter id="u0w15yfhja" x="12.5" y=".5" width="77" height="115" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="qdnpb2l4vb" x="44.5" y="66.5" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="icon">
+        <g data-name="그룹 484268">
+            <g style="filter:url(#u0w15yfhja)">
+                <rect data-name="사각형 348907" width="62" height="100" rx="12" transform="translate(20 3)" style="fill:#d2d5e8"/>
+            </g>
+            <path data-name="선 126777" transform="translate(46.999 15)" style="stroke-linejoin:round;stroke-width:4px;stroke:#fff;fill:none;stroke-linecap:round" d="M0 0h8"/>
+            <g data-name="그룹 486023">
+                <path data-name="선 126605" transform="translate(36 36)" style="stroke-width:6px;stroke:#fff;fill:none;stroke-linecap:round" d="M0 0h30"/>
+                <path data-name="선 126607" transform="translate(36 52)" style="stroke-width:6px;stroke:#fff;fill:none;stroke-linecap:round" d="M0 0h16"/>
+            </g>
+            <g data-name="icon">
+                <g style="filter:url(#qdnpb2l4vb)">
+                    <path data-name="bg" d="M135.645 93.353a24 24 0 1 0-24 24 24 24 0 0 0 24-24z" transform="translate(-35.64 -.35)" style="fill:#f76bb8"/>
+                </g>
+                <path data-name="패스 862625" d="M-3.808-29.863a5.964 5.964 0 0 0-.486 2.5V-19c0 .993-.035 1.986 0 2.9a10.428 10.428 0 0 0 .243 1.867C-3.426-12.521-.1-12.4.528-14.19a10.2 10.2 0 0 0 .243-3.1v-6.776c0-1.708.52-6.077-1.422-6.673a5.742 5.742 0 0 0-1.457-.119 2 2 0 0 0-1.7.995zM.181-9.264A2.823 2.823 0 0 0-2.212-9.9a1.556 1.556 0 0 0-1.63 1.033 4.668 4.668 0 0 0 .035 2.582C-3.357-4.9-1.415-4.7-.409-5.173.736-5.729.805-7.358.528-8.47a2.64 2.64 0 0 0-.347-.794z" transform="translate(77.707 111.251)" style="stroke-width:.4px;stroke:#fff;fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

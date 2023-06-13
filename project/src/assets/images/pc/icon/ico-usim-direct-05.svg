@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <path style="fill:none" d="M0 0h80v80H0z"/>
+    <g data-name="icon">
+        <path data-name="패스 842239" d="m63.347 41.808 6.628-7.628V20.17h-22.1v21.638z" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" transform="translate(3.001 9)"/>
+        <path data-name="사각형 341162" transform="translate(50.872 34.436)" style="fill:#cfb8f4" d="M0 0h11.049v11.106H0z"/>
+        <path data-name="사각형 341163" transform="translate(50.872 34.436)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h11.049v11.106H0z"/>
+        <path data-name="선 126652" transform="translate(57.263 35.394)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0v9.191"/>
+        <path data-name="선 126653" transform="translate(57.263 39.989)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M3.83 0H0"/>
+        <g transform="translate(1.001 9)">
+            <rect data-name="사각형 343817" width="42" height="61" rx="6" transform="translate(7 1)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="선 126655" transform="translate(7 51.333)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h40.667"/>
+            <path data-name="선 126656" transform="translate(23.999 56.667)" style="stroke:#191919;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h6.667"/>
+        </g>
+    </g>
+</svg>

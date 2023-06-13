@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '영상 | U+유모바일',
+    ogTitle: '영상 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '', '']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+           depth1: '홈',
+            depth2: 'UTIL',
+            depth3: 'U+유모바일 소개',
+            depth4: '영상'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">유모바일</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#" class="on">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">영상</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#" class="on">영상</a></li>
+                <li><a href="#">유모바일 SNS</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container customer">
+        <div class="sub-conts customer-list">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>영상</h1>
+            </div>
+
+            <div class="box-board">
+                <div class="list-wrap type-ul">
+                    <dl class="list-view">
+                        <!--2022-09-14 .date-right 추가-->
+                        <dt class="date-right">
+                            <strong class="view-tit">'U+유모바일, 바로고와 ‘라이더 전용 요금제’ 출시</strong>
+                            <!--2022-09-14 태그 변경-->
+                            <p class="date">2022-05-24</p>
+                        </dt>
+                        <dd>
+                            <!-- 이 안에서 데이터 넣어주세요 .mov --->
+                            <div class="mov-detail">
+                                <p class="view-txt">
+                                        라이더를 위한 알뜰폰 요금제 탄생!<br>U+유모바일, 바로고와 ‘라이더 전용 요금제’ 출시
+                                </p>
+                                <div class="view-img">
+                                    <img src="/assets/images/pc/banner/appDownLoad-banner.png" alt="">
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="box-btn">
+                    <button class="btns line">목록</button>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

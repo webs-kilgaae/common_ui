@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '로그인 | U+유모바일',
+    ogTitle: '로그인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'main-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6']
+    })
+
+    <main class="container util">
+        <div class="sub-conts login util-width login-info">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>아이디와 비밀번호를 입력해 주세요.</h1>
+            </div>
+            <div class="rq-form">
+                <div class="main-txt-group">
+                    <h2 class="main-txt">가입한 아이디와 비밀번호를 확인합니다.</h2>
+                </div>
+                <div class="box-input">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="아이디 입력" class="input-default is-delete" title="이름">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                </div>
+                <div class="box-input">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="비밀번호 입력" class="input-default is-delete" title="이름">
+                        <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                </div>
+                <div class="tooltip-wrap">
+                    <div class="btn-check">
+                        <input type="checkbox" id="check2">
+                        <label for="check2"><span class="ico-check"></span>아이디 저장</label>
+                    </div>
+                </div>
+                <button class="btns wid md-ripples ripples-light" type="button">로그인</button>
+            </div>
+            <ul class="btn-list">
+                <li><a href="#" class="btn-text-right">아이디 또는 비밀번호를 잊어버렸나요?</a></li>
+                <li><a href="#" class="btn-text-right">회원가입하고 U<sup>+</sup> 유모바일 서비스를 이용해 보세요.</a></li>
+            </ul>
+            <a href="#" class="btn-underline">SNS(소셜 네트워크 서비스) 계정으로 간편 로그인</a>
+            <div class="box-sns">
+                <ul class="icon-list">
+                    <li><a href="#" class="icon-sns-naver"><span class="hidden">네이버 로그인</span></a></li>
+                    <li><a href="#" class="icon-sns-google"><span class="hidden">구글 로그인</span></a></li>
+                    <li><a href="#" class="icon-sns-apple"><span class="hidden">애플 로그인</span></a></li>
+                </ul>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+        @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

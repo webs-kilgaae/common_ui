@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '월별 사용량 | U+유모바일',
+    ogTitle: '월별 사용량 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['실시간 사용량', '월별 사용량', '실시간 요금']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '사용량 조회',
+            depth4: '월별 사용량'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">사용량 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">월별 사용량</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">실시간 사용량</a></li>
+                <li><a href="#">실시간 요금</a></li>
+                <li><a href="#" class="on">월별 사용량</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts use-amount month">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>월별 사용량</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <!-- 2022.09.23 텍스트 수정 -->
+                    <div class="chart-info">
+                        <strong>최근 <span class="txt-vt">3개월</span> 의 사용량을 알려 드릴게요.
+                        </strong>
+                        <p class="date">
+                            <span>이번 달 사용내역</span> YYYY. MM ~ YYYY. MM
+                        </p>
+                    </div>
+
+                    <div class="chart-graph">
+                        <!-- 데이터 -->
+                        <section class="data">
+                            <div class="chart-title">데이터</div>
+                                <div class="box-chart-wrap">
+                                <div class="box-chart">
+                                    <div class="chart-line">
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                    </div>
+                                    <!-- 2022.09.22 .chart-bar에 각각 id 추가 -->
+                                    <div class="chart-wrap">
+                                        <div class="chart-conts">
+                                            <!-- .chart-bar의 height를 퍼센트로 조절할수있습니다 -->
+                                            <div class="chart-bar" id="bar-data-01">
+                                                <span class="bar">10GB</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">03월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-data-02">
+                                                <span class="bar">8.1GB</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">04월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-data-03">
+                                                <span class="bar">11.1GB</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">05월</span>
+                                        </div>
+                                        <!-- 값을 퍼센트로 입력하면 라인 위치가 변경됩니다 -->
+                                        <div class="box-average">
+                                            <hr class="average-line">
+                                            <span class="average-txt">평균 9.81GB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //데이터 -->
+
+                        <!-- 음성통화 -->
+                        <section class="call">
+                            <div class="chart-title">음성통화</div>
+                            <div class="box-chart-wrap">
+                                <div class="box-chart">
+                                    <div class="chart-line">
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                    </div>
+                                    <div class="chart-wrap">
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-call-01">
+                                                <span class="bar">80분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">03월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-call-02">
+                                                <span class="bar">70분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">04월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-call-03">
+                                                <span class="bar">150분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">05월</span>
+                                        </div>
+                                        <!-- 값을 퍼센트로 입력하면 라인 위치가 변경됩니다 -->
+                                        <div class="box-average">
+                                            <hr class="average-line">
+                                            <span class="average-txt">평균 80분 사용</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //음성통화 -->
+
+                        <!-- 문자메세지 -->
+                        <section class="sms">
+                            <div class="chart-title">문자 메시지</div>
+                            <div class="box-chart-wrap">
+                                <div class="box-chart">
+                                    <div class="chart-line">
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                        <hr>
+                                    </div>
+                                    <div class="chart-wrap">
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-sms-01">
+                                                <span class="bar">80분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">03월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-sms-02">
+                                                <span class="bar">70분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">04월</span>
+                                        </div>
+                                        <div class="chart-conts">
+                                            <div class="chart-bar" id="bar-sms-03">
+                                                <span class="bar">150분</span>
+                                                <!-- <span class="shadow"></span> -->
+                                            </div>
+                                            <span class="chart-month">05월</span>
+                                        </div>
+                                        <!-- 값을 퍼센트로 입력하면 라인 위치가 변경됩니다 -->
+                                        <div class="box-average">
+                                            <hr class="average-line">
+                                            <span class="average-txt">평균 93건 사용</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- //문자메세지 -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

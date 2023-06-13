@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '5G 삼성 갤럭시 A52s | U+유모바일',
+    ogTitle: '5G 삼성 갤럭시 A52s | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: false,
+        subArr : ['', '', '', '']
+    })
+
+    <main class="container phone">
+        <div class="sub-conts tel-join">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>
+                    5G 삼성 갤럭시 A52s
+                </h1>
+            </div>
+
+            <h2 class="sub-title">
+                U+유모바일 전문 상담원이 <br>
+                직접 전화해서 신청을 도와 드립니다!
+            </h2>
+
+            <ul class="tel-join-step">
+                <li><span>전화<br>상담 신청</span></li>
+                <li><span>상담원과 <br>전화 상담</span></li>
+                <li><span>개통완료</span></li>
+            </ul>
+
+            <div class="tel-join-info">
+                <div class="cardList-wrap product-imgCard">
+                    <div class="cardList">
+                        <div class="card-list-header">
+                            <div class="chip-wrap">
+                                <span class="chip hotpink">NEW</span>
+                                <span class="chip purple">인기</span>
+                            </div>
+                            <div class="btn-check">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"> <span>비교</span></label>
+                            </div>
+                        </div>
+                        <div class="item-left">
+                            <div class="item-img">
+                                <img src="/assets/images/pc/temp/imsi-phone.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item-right">
+                            <div class="item-txt">
+                                <div class="item-txt-wrap">
+                                    <span class="product-badge">LTE</span>
+                                    <strong class="item-txt-tit">삼성 갤럭시 A52s</strong>
+                                </div>
+                                <div class="desc">가성비 좋은 5G (10GB/200분)</div>
+                                <p class="item-price">
+                                    <span>월 할부금</span>
+                                    <strong><em>7,150</em>원</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="emphasis-txt">가입 유형</h3>
+                <div class="btn-radio-group">
+                    <div class="btn-radio">
+                        <input type="radio" id="dan3-1" name="dan3">
+                        <label for="dan3-1">번호이동</label>
+                    </div>
+                    <div class="btn-radio">
+                        <input type="radio" id="dan3-2" name="dan3">
+                        <label for="dan3-2">신규가입</label>
+                    </div>
+                    <div class="btn-radio">
+                        <input type="radio" id="dan3-3" name="dan3">
+                        <label for="dan3-3">기기변경</label>
+                    </div>
+                </div>
+
+                <!-- 기본 인풋 , delete 버튼이 있어야 할 경우 input에 is-delete 클래스 추가-->
+                <!-- 에러 시 .box-input 에 error 클래스 추가 -->
+                <h3 class="emphasis-txt">신청인 이름</h3>
+                <div class="box-input">
+                    <div class="input-wrap">
+                        <input id="input1" type="text" placeholder="신청인 이름" class="input-default is-delete">
+                        <button class="ico-delete"><span class="hidden">삭제</span></button>
+                    </div>
+                    <span class="txt-error">이름은 2글자 이상 입력하셔야 합니다.</span>
+                </div>
+
+                <h3 class="emphasis-txt">현재 이용중인 통신사</h3>
+                <ul class="box-radio box-present-corp">
+                    <li>
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="corp1" name="present-corp">
+                            <label for="corp1"><span class="ico-radio"></span>LG U+</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="corp2" name="present-corp">
+                            <label for="corp2"><span class="ico-radio"></span>SKT</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="corp3" name="present-corp">
+                            <label for="corp3"><span class="ico-radio"></span>KT</label>
+                        </div>
+                    </li>
+                    <li class="btn-combo">
+                        <div class="btn-radio-type2">
+                            <input type="radio" id="corp4" name="present-corp">
+                            <label for="corp4"><span class="ico-radio"></span></label>
+                        </div>
+                        <div class="box-select">
+                            <select name="present-corp" id="select4" class="select-default">
+                                <option value="1">알뜰폰</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="emphasis-txt">상담 받을 휴대폰 번호</h3>
+                <div class="box-flex">
+                    <!-- 인증완료 시 .box-input 에 success 클래스 추가 -->
+                    <div class="box-input">
+                        <div class="input-wrap">
+                            <input id="input4" type="text" placeholder="'-' 없이 숫자만 입력해주세요." class="input-default input-sm">
+                            <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                        </div>
+                        <span class="txt-description">인증번호가 발송되었습니다.</span>
+                    </div>
+                    <div class="box-btn">
+                        <button class="btn-dark-gray md-ripples ripples-light">인증 요청</button>
+                    </div>
+                </div>
+                <div class="box-flex column">
+                    <div class="box-input">
+                        <!--  입력시간 나오는 input 은 is-time 클래스 추가 -->
+                        <div class="input-wrap">
+                            <input id="input5" type="text" placeholder="인증번호" class="input-default is-delete is-time">
+                            <span class="txt-time">02:30</span>
+                            <button class="ico-delete" style="display: none;"><span class="hidden">삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="box-btn">
+                        <!-- 인증 미완료 시 disabled 추가,md-ripples ripples-light 클래스 제거 -->
+                        <!-- <button class="btns" disabled>인증완료</button> -->
+                        <!-- 인증 완료 시 disabled 삭제 -->
+                        <button class="btns md-ripples ripples-light">인증완료</button>
+                    </div>
+                </div>
+                <!-- 임시 -->
+                <div class="box-btn">
+                    <a href="#" class="text-btn-gray">최근 2주간 작성하신 신청서가 있습니다.(4) <span class="ico-arrow-right">더보기</span></a>
+                </div>
+                <!-- //임시 -->
+
+                <h3 class="emphasis-txt">상담 희망 일시</h3>
+                <div class="counsel-date">
+                    <div class="box-select box-counsel">
+                        <select name="counsel" id="select-date" class="select-default">
+                            <option value="1">2022.06.17(금)</option>
+                        </select>
+                    </div>
+                    <div class="box-select">
+                        <select name="counsel" id="select-time" class="select-default">
+                            <option value="1">1시간 이내</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3 class="emphasis-txt">기기변경 전화 상담 안내</h3>
+                <ul class="notification">
+                    <li>평일 09:30 ~ 19:00</li>
+                </ul>
+            </div>
+
+            <div class="btn-group ">
+                <button class="btns sticky md-ripples ripples-light">다음</button>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '실명인증 api 검증되지 않을시 노출 | U+유모바일',
+    ogTitle: '실명인증 api 검증되지 않을시 노출 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+    .layer-popup{display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+<body>
+    <!-- 레이어 팝업 -->
+    <div id="test-layer02" class="layer-popup">
+        <div class="layer-popup-item ">
+            <div class="popup-header">
+                <strong class="txt-main">입력하신 이름과 주민등록번호가 <br>유효하지 않습니다.<br>확인 후 정확하게 입력해 주세요.</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="breakage-noApply">
+                    <p>&bull; 개명 및 주민등록번호 변경이 되신 경우 실명인증이 안되는 경우가 있습니다. <br>아래 웹사이트를 방문하여 실명을 등록하시면 본인인증을 할 수 있습니다. </p>
+                    <p>&bull; 본인인증 등록 신청 인터넷 주소(URL)<br>
+                        <a href="https://www.siren24.com/mysiren/customer/sir_g0201_01.jsp" target="_blank" class="link-txt">https://www.siren24.com/mysiren/customer/sir_g0201_01.jsp</a>
+                    </p>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

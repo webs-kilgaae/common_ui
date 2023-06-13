@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="121.499" viewBox="0 0 125 121.499">
+    <defs>
+        <filter id="sneq7yzeta" x="0" y="16.5" width="111" height="87" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="al7nxwctic" x="62" y="58.499" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="27vvu0eljb" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 486295">
+        <g data-name="그룹 481583">
+            <g style="filter:url(#sneq7yzeta)">
+                <rect data-name="사각형 350186" width="96" height="72" rx="20" transform="translate(7.503 19.001)" style="fill:url(#27vvu0eljb)"/>
+            </g>
+            <g data-name="그룹 484236" transform="translate(6.083 10.161)">
+                <rect data-name="사각형 348910" width="9" height="20" rx="4.5" transform="translate(23.416 .839)" style="fill:#dadef8"/>
+                <rect data-name="사각형 348911" width="9" height="20" rx="4.5" transform="translate(66.416 .839)" style="fill:#dadef8"/>
+            </g>
+            <path data-name="패스 862734" d="M-13.282-20.988c-1.386.4-2.739.957-4.125 1.419-1.287.4-2.211 1.155-2.046 2.541.132 1.353 1.221 1.617 2.376 1.485.363 0 2.64-.363 2.772-.759 0 5.874-.1 11.352.2 17.127 0 .726.033 1.617.825 1.881a3.049 3.049 0 0 0 2.574-.2c.924-.66.693-1.914.693-2.838v-16.861a10.619 10.619 0 0 0-.2-3.4c-.363-.759-1.584-.759-2.244-.594-.265.034-.529.133-.825.199zM-2.953-2.442a3.615 3.615 0 0 0-2.447.759A1.513 1.513 0 0 0-5.956-.2 1.827 1.827 0 0 0-5.1 1.155a6.92 6.92 0 0 0 1.749.363h13.664A2.073 2.073 0 0 0 12.26.759a2.252 2.252 0 0 0-.528-2.871 3.349 3.349 0 0 0-1.749-.4H8.432c-.4 0-2.772-.132-3.135-.132v-.033c0-.495 0-2.607-.066-3.564a7.647 7.647 0 0 0 2.375-1.184 6.139 6.139 0 0 0 2.64-4.983 5.856 5.856 0 0 0-1.253-3.762h.792a1.884 1.884 0 0 0 1.98-1.749 1.888 1.888 0 0 0-1.98-1.781H4.7v-1.683c0-.858-1.023-1.485-2.112-1.485-1.056 0-2.244.627-2.244 1.485v1.683h-4.683a1.878 1.878 0 0 0-1.947 1.782 1.874 1.874 0 0 0 1.947 1.748h1.023a5.842 5.842 0 0 0-1.221 3.762c0 2.9 1.914 4.917 4.389 5.94a7.042 7.042 0 0 0 1.419.429c-.066 1.056-.1 2.9-.132 3.4-.561-.001-3.927.131-4.092.197zM18.2-4.356v-11.187c0-1.485-.033-3.663-.1-4.488-.033-.165-.033-.3-.066-.429a3.022 3.022 0 0 0-.693-2.046 1.8 1.8 0 0 0-1.254-.5 2.557 2.557 0 0 0-1.485.462 3.9 3.9 0 0 0-.66 2.442V-.66c0 1.551.2 4.125 2.343 4.224h.066a1.608 1.608 0 0 0 1.089-.429c.792-.825.759-2.508.759-3.663V-.99a56.37 56.37 0 0 0 .001-3.366zM3.481-9.768c-1.815.363-3.894-.264-3.894-2.64 0-2.079 1.65-2.772 3.3-2.706 1.617.033 3.234.759 3.234 2.706.001 1.683-1.221 2.376-2.64 2.64z" transform="translate(55.5 60)" style="fill:#fff"/>
+        </g>
+        <g data-name="그룹 486305">
+            <g style="filter:url(#al7nxwctic)">
+                <circle data-name="box" cx="24" cy="24" r="24" transform="translate(69.503 61.003)" style="fill:#42ccb0"/>
+            </g>
+            <g data-name="그룹 484099">
+                <path data-name="선 442" transform="translate(84.117 85.639)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px" d="m0 0 5.617 5.617"/>
+                <path data-name="선 443" transform="translate(89.732 78.618)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px" d="M12.639 0 0 12.639"/>
+            </g>
+        </g>
+    </g>
+</svg>

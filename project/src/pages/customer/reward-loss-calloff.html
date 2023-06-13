@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '보낼 문자 확인 | U+유모바일',
+    ogTitle: '보낼 문자 확인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+    .layer-popup{display: flex;}
+    .layer-popup-item{opacity: 1 !important;}
+</style>
+<body>
+
+    <div id="test-layer01" class="layer-popup show">
+        <div class="layer-popup-item">
+            <div class="popup-header">
+                <strong class="txt-main">휴대폰 분실 신고 해제</strong>
+            </div>
+            <div class="popup-body">
+                <p class="txt-sub">
+                    휴대폰 분실신고가 해제되었습니다. <br>
+                    기타 궁금한 사항은 고객지원 또는 1:1문의를 통해서 확인해주세요.
+                </p>
+            </div>
+            <div class="popup-footer">
+               <div class="btn-group">
+                    <button class="btns w-sm md-ripples ripples-light popup-close" type="button">확인</button>
+                </div>
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</body>
+</html>

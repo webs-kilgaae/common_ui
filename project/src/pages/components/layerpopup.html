@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('../src/pages/includes/guide/head.html', {title: '레이어팝업 가이드 - DK BMC'})
+<!-- <body onload="uiCommon.systemLayer.init('alert','가나\n다라\n마바사아');"> -->
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="wsg.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html" class="guideOn">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+            <section class="sample">
+                <h2 class="sampleTitle">레이어 팝업</h2>
+                <button class="btn-dark-gray md-ripples ripples-light" data-popup="test-layer01">기본팝업</button>
+                <!-- <button class="btn-dark-gray md-ripples ripples-light" data-popup="test-bottom01">버텀시트</button> -->
+
+                <!-- <div class="box-btn">
+                    <button class="btn-dark-gray md-ripples ripples-light btn-toast">토스트팝업</button>
+                    <div class="pop-toast">복사되었습니다.</div>
+                </div> -->
+
+                <div class="description">
+                    <h3>GUIDE</h3>
+                    <p>
+                        공통 <strong>pages/includes/layerpopup.html</strong> 파일에서 팝업 내용 작업, include 해야함
+                    </p>
+                    <h3>MARKUP</h3>
+                    <h4>버튼</h4>
+                    <pre>
+&lt;button data-popup="test-layer01"&gt;팝업열기버튼&lt;/button&gt;
+                    </pre>
+                    <h4>레이어</h4>
+                    <pre>
+&lt;div id="test-layer01" class="layer-popup"&gt;
+    &lt;div class="popup-header"&gt;
+        상단
+    &lt;/div&gt;
+    &lt;div class="popup-body"&gt;
+        내용
+    &lt;/div&gt;
+    &lt;div class="popup-footer"&gt;
+        하단
+        &lt;button class="btn-close-x"&gt;닫기&lt;/a&gt;
+    &lt;/div&gt;
+    <!--&lt;a href="javascript:void(0);" class="popup-close"&gt;닫기&lt;/a&gt;-->
+&lt;/div&gt;
+                    </pre>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- LAYER POPUP -->
+    @@include('./pages/includes/layerpopup.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+
+</html>

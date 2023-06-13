@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="81xnsuhtka" x="8" y="25" width="64" height="48" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="5t0n1yl8ic" x="3.501" y="21.5" width="73" height="17" filterUnits="userSpaceOnUse">
+            <feOffset dy="1"/>
+            <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="p5d4falkeb" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#be91ff"/>
+            <stop offset="1" stop-color="#9550ff"/>
+        </linearGradient>
+    </defs>
+    <g data-name="icon">
+        <g style="filter:url(#81xnsuhtka)">
+            <path data-name="사각형 350158" d="M0 0h58v30a12 12 0 0 1-12 12H12A12 12 0 0 1 0 30V0z" transform="translate(10.997 25.997)" style="fill:url(#p5d4falkeb)"/>
+        </g>
+        <g data-name="그룹 484228">
+            <path data-name="패스 862468" d="m38.044 15.184-13.235 17" transform="translate(-7.308 -3.184)" style="fill:none;stroke:#dadef8;stroke-linecap:round;stroke-width:5px"/>
+            <path data-name="패스 862530" d="m24.809 15.184 13.235 17" transform="translate(24.457 -3.184)" style="fill:none;stroke:#dadef8;stroke-linecap:round;stroke-width:5px"/>
+        </g>
+        <g data-name="그룹 484270" transform="translate(6.166 9.667)">
+            <rect data-name="사각형 348920" width="4" height="13" rx="2" transform="translate(17.834 33.333)" style="fill:#fff"/>
+            <rect data-name="사각형 350230" width="4" height="13" rx="2" transform="translate(31.834 33.333)" style="fill:#fff"/>
+            <rect data-name="사각형 350231" width="4" height="13" rx="2" transform="translate(45.834 33.333)" style="fill:#fff"/>
+        </g>
+        <g style="filter:url(#5t0n1yl8ic)">
+            <rect data-name="사각형 348876" width="64" height="8" rx="4" transform="translate(7.997 24.997)" style="fill:#dadef8"/>
+        </g>
+    </g>
+</svg>

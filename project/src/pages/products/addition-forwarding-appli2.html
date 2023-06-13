@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: '부가서비스 신청하기, U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '부가서비스 신청하기 | U+유모바일',
+    ogTitle: '부가서비스 신청하기 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+
+
+    <!--바텀 시트-->
+    <div class="products">
+        <div class="popup-space">
+            <div class="popup-body addition-service-pop add-forwarding">
+                <div class="page-desc hidden">
+                    <h2>부가서비스 신청하기</h2>
+                </div>
+                <div class="identification">
+                    <p>
+                        <span class="img">
+                            <!---2022-11-04 아이콘 변경-->
+                            <img src="../../assets/images/pc/icon/ico-phone-password.svg" alt="" >
+                        </span>
+
+                        <strong>서비스 신청을 완료하기 위해서는 본인확인이 필요합니다.</strong>
+                        <span>소유하고 계신 범용 인증서로 본인확인을 진행합니다.</span>
+                    </p>
+                    <div class="btn-group">
+                        <button class="btns w-sm md-ripples ripples-light" type="button">범용 공인인증서 인증</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

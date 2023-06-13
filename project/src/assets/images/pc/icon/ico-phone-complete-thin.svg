@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="133" viewBox="0 0 120 133">
+    <defs>
+        <filter id="lb4qlobgza" x="11.501" y="0" width="79" height="119" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="ryzne54x1b" x="45.502" y="70" width="63" height="63" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 486237">
+        <g data-name="그룹 484205">
+            <g data-name="그룹 484204">
+                <g style="filter:url(#lb4qlobgza)">
+                    <path data-name="패스 862700" d="M12 0h40a12 12 0 0 1 12 12v80a12 12 0 0 1-12 12H12A12 12 0 0 1 0 92V12A12 12 0 0 1 12 0z" transform="translate(18.996 2.504)" style="fill:#e3e6f9"/>
+                </g>
+                <path data-name="선 126776" transform="translate(46.003 14.501)" style="stroke-width:4px;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" d="M0 0h10"/>
+                <g data-name="그룹 486095">
+                    <path data-name="합치기 29" d="M3.6 28.8A3.6 3.6 0 0 1 0 25.2v-1.342a12 12 0 0 1 8.256-11.4A6.762 6.762 0 0 1 12 0a6.762 6.762 0 0 1 3.744 12.454A12 12 0 0 1 24 23.858V25.2a3.6 3.6 0 0 1-3.6 3.6z" transform="translate(39.001 32.499)" style="fill:#aeaae8;stroke:transparent;stroke-miterlimit:10"/>
+                </g>
+            </g>
+        </g>
+        <g data-name="그룹 486236">
+            <g style="filter:url(#ryzne54x1b)">
+                <circle data-name="타원 24" cx="24" cy="24" r="24" transform="translate(53.002 72.5)" style="fill:#42ccb0"/>
+            </g>
+            <g data-name="그룹 484097">
+                <path data-name="선 442" transform="translate(67.093 96.639)" style="stroke-width:6px;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" d="m0 0 6.155 6.222"/>
+                <path data-name="선 443" transform="translate(73.245 88.862)" style="stroke-width:6px;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round" d="M13.848 0 0 14"/>
+            </g>
+        </g>
+    </g>
+</svg>

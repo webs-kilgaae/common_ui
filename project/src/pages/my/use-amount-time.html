@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '실시간 사용량 | U+유모바일',
+    ogTitle: '실시간 사용량 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['실시간 사용량', '월별 사용량', '실시간 요금']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '사용량 조회',
+            depth4: '실시간 사용량'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">내 정보</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#" class="on">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">사용량 조회</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">실시간 사용량</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">실시간 사용량</a></li>
+                <li><a href="#">실시간 요금</a></li>
+                <li><a href="#">월별 사용량</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <main class="container my">
+        <div class="sub-conts use-amount time">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>실시간 사용량</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('../src/pages/includes/my-use-amount.html', {
+                        titTxt : '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <section class="progress-amount">
+                        <div class="title-wrap month">
+                            <strong>이번달 사용량</strong>
+                            <span>YYYY.MM.DD ~ YYYY.MM.DD</span>
+                        </div>
+                        <!-- 2022.09.23 progress 그래프 삭제 -->
+                        <!-- <div class="title-wrap day">
+                            <strong>오늘까지 <span>16일</span> 사용하였습니다.</strong>
+                        </div>
+                        <div class="progress-wrap">
+                            <div class="progress-track">
+                                <span class="progress-bar" style="width: 46.6667%;"></span>
+                            </div>
+                            <div class="progress-txt">
+                                <em>제공기간 <span>30일</span></em>
+                                <em class="left-date">14일 남음</em>
+                            </div>
+                        </div> -->
+                    </section>
+                    <div class="graph-wrap">
+                        <section class="box-usage-wrap data">
+                            <strong class="usage-title">데이터</strong>
+                            <div class="box-usage">
+                                <div class="usage-wrap">
+                                    <div class="circle-wrap progress-ani">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15" class="background" />
+                                            <!--ex)
+                                                 uiCommon.progressAni.amountCircle('ID', 퍼센트 값);
+                                                 uiCommon.progressAni.amountCircle('bar01', 0.86);
+                                            -->
+                                            <circle cx="16" cy="16" r="15" id="bar01" class="progress bar" />
+                                        </svg>
+                                        <div class="txt-data">
+                                            <span>8.6</span>GB
+                                        </div>
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="usage-desc">월 10GB 데이터 제공</strong>
+                                        <div class="usage-amount"><span class="highlight">8.6GB 남음</span> / 1.4GB 사용</div>
+                                        <p class="usage-detail">소진 시 최대 3Mbps 속도로 제공</p>
+                                    </div>
+                                </div>
+                                <div class="usage-wrap">
+                                    <div class="circle-wrap progress-ani">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15" class="background" />
+                                            <circle cx="16" cy="16" r="15" id="bar02" class="progress bar" />
+                                        </svg>
+                                        <div class="txt-data">
+                                            <span>8.6</span>GB
+                                        </div>
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="usage-desc">핫스팟 월 10GB 제공</strong>
+                                        <div class="usage-amount"><span class="highlight">8.6GB 남음</span> / 1.4GB 사용</div>
+                                        <p class="usage-detail">소진 시 자동 차단</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box-usage-wrap call">
+                            <strong class="usage-title">음성통화</strong>
+                            <div class="box-usage">
+                                <div class="usage-wrap">
+                                    <div class="circle-wrap progress-ani">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15" class="background" />
+                                            <circle cx="16" cy="16" r="15" id="bar03" class="progress bar" />
+                                        </svg>
+                                        <div class="txt-data">
+                                            <span>100</span>분
+                                        </div>
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <!-- 2022.09.23 텍스트 수정 -->
+                                        <strong class="usage-desc">음성통화 월 200분 제공</strong>
+                                        <div class="usage-amount"><span class="highlight">100분 남음</span> / 100분 사용</div>
+                                        <p class="usage-detail">제공 통화량 초과시 정상 요금
+                                            과금</p>
+                                    </div>
+                                </div>
+                                <div class="usage-wrap">
+                                    <div class="circle-wrap progress-ani">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15" class="background" />
+                                            <circle cx="16" cy="16" r="15" id="bar04" class="progress bar" />
+                                        </svg>
+                                        <div class="txt-data">
+                                            <span>60</span>분
+                                        </div>
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="usage-desc">
+                                            영상/부가 통화 월 120분 제공
+                                            <div class="tooltip-wrap">
+                                                <div class="box-tooltip">
+                                                    <button class="btn-tooltip"><span class="hidden">툴팁보기</span></button>
+                                                    <div class="txt-tooltip">
+                                                        <span>
+                                                            영상통화는 영상/부가 기본제공량이 1.66배빨리 줄어듭니다.<br><br>
+                                                            부가전화란 15XX, 16XX 등 전국대표번호, 0505 등 평생개인번호, 013 등 <br>주파수 공용 통신 등의 전화를 말합니다.
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </strong>
+                                        <div class="usage-amount"><span class="highlight">60분 남음</span> / 10분 사용</div>
+                                        <p class="usage-detail">제공 통화량 초과시 정상 요금
+                                            과금</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="box-usage-wrap sms">
+                            <strong class="usage-title">문자 메시지</strong>
+                            <div class="box-usage">
+                                <div class="usage-wrap">
+                                    <div class="circle-wrap progress-ani">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+                                            <circle cx="16" cy="16" r="15" class="background" />
+                                            <circle cx="16" cy="16" r="15" id="bar05" class="progress bar" />
+                                        </svg>
+                                        <div class="txt-data">
+                                            <span>100</span>건
+                                        </div>
+                                    </div>
+                                    <div class="txt-wrap">
+                                        <strong class="usage-desc">월 200건 문자메시지 제공</strong>
+                                        <div class="usage-amount"><span class="highlight">100건 남음</span> / 100건 사용</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="notification-wrap">
+                        <h3>꼭 확인하세요!</h3>
+                        <ul class="notification">
+                            <!-- 2022.11.17 텍스트 수정 -->
+                            <!-- 2022.11.21 텍스트 수정 -->
+                            <li><span class="txt-vt">프로모션(eSIM 다운로드 비용 2,750원 포함) 등 요금할인 내역은 개통 익월 15일 이후부터 홈페이지/고객센터앱에서 확인 하실 수 있습니다.</span>(단, 제휴카드 할인은 카드사 명세서에서 하실 수 있습니다.)</li>
+                            <li>남은 사용량 표시는 시스템 전산반영으로 인해 지연될 수 있습니다.</li>
+                            <li>요금제를 변경하신 경우, 실시간 잔여량은 요금제를 변경한 다음 날 부터 정상적으로 표시됩니다.</li>
+                            <li>월 중간에 가입 혹은 요금제 변경 시에는 요금 및 기본제공량이 날짜 계산되며, 초과 이용분에 대한 추가요금이 발생할 수 있습니다.</li>
+                            <li>
+                                사용하신 서비스 종류에 따라 실시간 확인이 되지 않는 요금이 있으므로 청구요금과 차이가 있을 수 있습니다.<br>
+                                (국제전화, 수신자부담, 해외로밍, 정보이용료 등은 실시간 조회불가로 제외되었음을 알려드립니다.)
+                            </li>
+                            <li>제휴카드 할인내역은 표기되지 않으며, 카드사 이용요금 명세서에서 확인하시기 바랍니다.</li>
+                            <li>제휴카드 신청 고객은 해당 카드로 납부 방법을 변경하셔야 할인이 적용됩니다. [<a href="#">납부방법 변경하기</a>]</li>
+                            <li>타통신사 및 유선전화 통화도 기본제공으로 사용 가능합니다.</li>
+                            <li>타통신사 및 유선전화 통화도 기본제공으로 사용 가능합니다. (유선전화는 지역번호(02,031)와 인터넷전화(070)를 말합니다.)</li>
+                            <!-- 2022.09.23 br태그 추가 -->
+                            <li>영상통화는 동영상/부가 기본제공량이 1.66배 빨리 줄어듭니다.<br>
+                                (부가전화란 전국대표번호(15xx,16xx),평생개인번호(0505), 주파수 공용통신(013) 등을 말합니다.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

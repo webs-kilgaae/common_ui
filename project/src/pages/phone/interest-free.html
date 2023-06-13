@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '무이자할부 카드 안내 | U+유모바일',
+    ogTitle: '무이자할부 카드 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<style>
+    .bottom-sheet-wrap{z-index: 100 !important; display: flex;}
+    .bottom-sheet-wrap .layer-popup-item{opacity: 1;}
+</style>
+
+    <!--바텀 시트-->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap phone show">
+        <div class="layer-popup-item interest-free">
+            <div class="popup-header">
+                <strong class="txt-main">무이자할부 카드 안내</strong>
+            </div>
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>행사카드로 기준금액 이상 결제 시, 무이자 할부 혜택</h2>
+                </div>
+                <ul class="gb-gy">
+                    <li>신한카드 2~6개월 (5만원 이상)</li>
+                    <li>하나카드 2~6개월 (5만원 이상)</li>
+                    <li>현대카드 2~7개월 (1만원 이상)</li>
+                    <li>KB국민카드 2~6개월 (5만원 이상)</li>
+                    <li>삼성카드 2~6개월 (5만원 이상</li>
+                    <li>BC카드 2~6개월 (5만원 이상)</li>
+                    <li>우리카드 2~7개월 (5만원 이상)</li>
+                    <li>NH농협카드 2~6개월 (5만원 이상)</li>
+                    <li>씨티카드 2~6개월 (5만원 이상</li>
+                    <li>롯데카드 2~4개월 (5만원 이상)</li>
+                    <li>롯데클래식카드 12/24개월(10만원 이상)</li>
+                    <li>전북카드 2~3개월 (5만원 이상)</li>
+                    <li>광주카드 2~5개월 (5만원 이상)</li>
+                </ul>
+                <ul class="notification">
+                    <li>신한BC, 국민BC, 하나BC, 씨티BC 제외</li>
+                    <li> 법인/개인사업자 기업카드/체크/기프트/선불/하이브리드/은행계열 카드 제외</li>
+                    <li>공공기관 및 오프라인 제외(비즈페이나우 무이자 적용)/카드사 사정에 따라 일부 변경될 수 있습니다.</li>
+                    <li>결제창에 ‘무’ 표시가 되어있어도 제외카드는 무이자할부가 적용되지 않습니다.</li>
+                    <li>무이자건은 포인트/마일리지적립/할인서비스 등 다른혜택과 중복 적용되지 않습니다.</li>
+                </ul>
+            </div>
+            <div class="popup-footer">
+                <button type="button" class="btn-close-x">닫기</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</body>
+</html>

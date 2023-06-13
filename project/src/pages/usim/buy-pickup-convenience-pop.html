@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '픽업 가능 편의점 조회 | U+유모바일',
+    ogTitle: '픽업 가능 편의점 조회 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<style>
+    .show{z-index: 100 !important; display: flex;}
+</style>
+<body>
+<div id="wrap">
+    <!-- 레이어 팝업 -->
+    <div id="test-bottom01" class="layer-popup bottom-sheet-wrap usim show">
+        <div class="layer-popup-item  buy-pickup-convenience-pop buy-pickup">
+            <div class="popup-header">
+                <!-- 2022.10.17 텍스트 수정 -->
+                <strong class="txt-main">픽업할 수 있는 편의점 조회</strong>
+            </div>
+
+            <div class="popup-body">
+                <div class="page-desc">
+                    <h2>방문 전 반드시 매장에 유심카드가 있는지 전화로 확인해 주세요.</h2>
+                </div>
+                <div class="box-tab tab-ctrl">
+                    <ul class="tab-btn-wrap">
+                        <li><a href="javascript:;" class="on">주소/매장명</a></li>
+                        <li><a href="javascript:;">지하철</a></li>
+                        <li><a href="javascript:;">내 위치</a></li>
+                    </ul>
+                    <div class="tab-contents-wrap">
+                        <!--주소 / 매장명 -->
+                        <div aria-hidden="false">
+                            <section class="filter-wrap">
+                                <div class="radio-group-wrap">
+                                    <ul class="btn-radio-group">
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan4-1" name="dan4">
+                                            <label for="dan4-1">전체</label>
+                                        </li>
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan4-2" name="dan4">
+                                            <label for="dan4-2">바로픽업</label>
+                                        </li>
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan4-3" name="dan4">
+                                            <label for="dan4-3">유심 카드 판매</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-flex">
+                                    <div class="box-input">
+                                        <div class="input-wrap">
+                                            <input id="input4" type="text" placeholder="주소 또는 매장명" class="input-default input-sm is-delete" title="주소 또는 매장명 입력">
+                                            <button class="ico-delete" type="button"><span class="hidden">삭제</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-btn">
+                                        <button class="btn-dark-gray md-ripples ripples-light" type="button">검색</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--검색 하기 전 .hidden 삭제 노출-->
+                            <div class="no-result hidden">픽업할 수 있는 편의점을 검색하세요.
+                            </div>
+                            <!--검색 후-->
+                            <div class="place-search-result-wrap">
+                                <div class="place-search-result">
+                                    <p class="info">검색결과 <span class="txt-vt">총 10</span>건</p>
+                                    <div class="result-list cms">
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>서울특별시 마포구 월드컵북로 5(서교동)</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btns w-sm md-ripples ripples-light" type="button">더보기</button>
+                            </div>
+                        </div>
+                        <!-- 지하철 -->
+                        <div aria-hidden="true">
+                            <section class="filter-wrap">
+                                <div class="radio-group-wrap">
+                                    <ul class="btn-radio-group">
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan5-1" name="dan5">
+                                            <label for="dan5-1">전체</label>
+                                        </li>
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan5-2" name="dan5">
+                                            <label for="dan5-2">바로픽업</label>
+                                        </li>
+                                        <li class="btn-radio">
+                                            <input type="radio" id="dan5-3" name="dan5">
+                                            <label for="dan5-3">유심판매</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="select-input-wrap">
+                                    <div class="box-select">
+                                        <select name="select1" id="select1" class="select-default" title="지역 선택">
+                                            <option value="1">지역선택</option>
+                                            <option value="2">지역선택2</option>
+                                            <option value="3">지역선택3</option>
+                                            <option value="4">지역선택4</option>
+                                        </select>
+                                    </div>
+                                    <div class="box-select">
+                                        <select name="select2" id="select2" class="select-default" title="노선 선택">
+                                            <option value="1">노선 선택1</option>
+                                            <option value="2">노선 선택2</option>
+                                            <option value="3">노선 선택3</option>
+                                            <option value="4">노선 선택4</option>
+                                        </select>
+                                    </div>
+                                    <div class="box-select">
+                                        <select name="select3" id="select3" class="select-default" title="역 선택">
+                                            <option value="1">역 선택1</option>
+                                            <option value="2">역 선택2</option>
+                                            <option value="3">역 선택3</option>
+                                            <option value="4">역 선택4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--검색 하기 전 .hidden 삭제 노출-->
+                            <div class="no-result hidden">픽업할 수 있는 편의점을 검색하세요.</div>
+                            <!--검색 후-->
+                            <div class="place-search-result-wrap">
+                                <div class="place-search-result">
+                                    <p class="info">검색결과 <span class="txt-vt">총 10</span>건</p>
+                                    <div class="result-list cms">
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btns w-sm md-ripples ripples-light" type="button">더보기</button>
+                            </div>
+                        </div>
+                        <!-- 내위치 -->
+                        <div aria-hidden="true">
+                            <!--검색 후-->
+                            <div class="place-search-result-wrap">
+                                <div class="place-search-result">
+                                    <p class="info">검색결과 <span class="txt-vt">총 10</span>건</p>
+                                    <div class="result-list cms">
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                        <div class="place-address loc">
+                                            <dl>
+                                                <dt>
+                                                    <div class="chip-wrap">
+                                                        <span class="chip">바로픽업</span>
+                                                        <span class="chip">유심판매</span>
+                                                    </div>
+                                                   <h3>GS25 강릉 교동점</h3>
+                                                </dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>강원 강릉시 가작로 14 (교1동 187-6) / 033-647-2924</li>
+                                                        <li class="txt-vt">재고 12개</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                            <a href="#" class="btn-loc">지도보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btns w-sm md-ripples ripples-light" type="button">더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="btn-close-x" type="button">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

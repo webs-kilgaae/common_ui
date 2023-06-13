@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '유심 카드 구매 내역 | U+유모바일',
+    ogTitle: '유심 카드 구매 내역 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['차단/설정 변경이력 확인', '이용한도 설정', '이용한도 변경이력 확인']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '내정보',
+            depth3: '주문/신청 내역',
+            depth4: '유심 카드 구매 내역'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">내정보</a></li>
+        <li>
+            <a href="#">주문/신청 내역</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">사용량 조회</a></li>
+                <li><a href="#">요금/납부 조회</a></li>
+                <li><a href="#">가입정보/변경</a></li>
+                <li><a href="#">나의 구독 서비스</a></li>
+                <li><a href="#" class="on">주문/신청 내역</a></li>
+                <li><a href="#">나의 포인트</a></li>
+                <li><a href="#">정보열람 신청</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">유심 카드 구매 내역</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">최근 가입신청 이력</a></li>
+                <li><a href="#" class="on">유심 카드 구매 내역</a></li>
+                <li><a href="#">입고 알림 신청 내역</a></li>
+                <li><a href="#">최근 본 상품</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container my">
+        <div class="sub-conts order-usim">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>유심 카드 구매 내역</h1>
+            </div>
+            <div class="my-conts">
+                <div class="fix-area">
+                    @@include('./pages/includes/my-use-amount.html', {
+                        titTxt: '가입 휴대폰번호',
+                        plan: true
+                    })
+                </div>
+                <div class="info-area">
+                    <ul class="notification">
+                        <li>결제 완료일을 기준으로 1개월 이내의 내역만 확인할 수 있습니다.</li>
+                        <li>1개월이 지난 구매 내역은 고객 정보보호를 위해 삭제되어 조회하실 수 없습니다.</li>
+                    </ul>
+                    <section>
+                        <div class="box-select my-bundle">
+                            <select name="select1" id="select1" class="select-default" title="주문번호 내역서">
+                                <option value="1">주문번호 10012341</option>
+                                <option value="2">주문번호 10012342</option>
+                                <option value="3">주문번호 10012343</option>
+                                <option value="4">주문번호 10012344</option>
+                            </select>
+                        </div>
+                        <div class="my-bundle">
+                            <div class="cardList-wrap">
+                            <h2 class="cardList-title">주문내역</h2>
+                            <div class="cardList usim-card">
+                                <dl>
+                                    <dt>2022-12-12 10:32</dt>
+                                    <dd class="txt-vt">결제 완료</dd>
+                                    <!--수령정보 시 노출
+                                        <dd class="txt-vt">수령 대기</dd>
+                                    -->
+                                </dl>
+                                <div class="flex-box">
+                                    <div class="img">
+                                        <img src="/assets/images/pc/common/card-usim-sm.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <h2 class="tit">유심카드</h2>
+                                        <p class="txt">주문수량 : 1개</p>
+                                        <strong class="txt-vt amount">8,800원</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="table-list-wrap my-bundle">
+                            <h2 class="table-title">결제 정보</h2>
+                            <table class="table-default2">
+                                <caption class="hidden">유심 카드 구매 내역</caption>
+                                <colgroup>
+                                    <col width="100%">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="item-title">
+                                        <th>
+                                            <dl>
+                                                <dt>상품금액</dt>
+                                                <dd>8,800원</dd>
+                                            </dl>
+                                        </th>
+                                    </tr>
+                                    <tr class="item-title">
+                                        <th>
+                                            <dl>
+                                                <dt>포인트 사용</dt>
+                                                <dd class="txt-vt">-2,000원</dd>
+                                            </dl>
+                                        </th>
+                                    </tr>
+                                    <tr class="item-title">
+                                        <th>
+                                            <dl>
+                                                <dt>신용카드 결제</dt>
+                                                <dd>6,800원</dd>
+                                            </dl>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="table-result">
+                                        <th>
+                                            <dl>
+                                                <dt>총 결제금액</dt>
+                                                <dd class="txt-vt">6,800원</dd>
+                                            </dl>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="cardList-wrap my-bundle">
+                            <h3 class="cardList-title">가입정보</h3>
+                            <div class="cardList">
+                                <dl>
+                                    <dt>배송방법</dt>
+                                    <dd>오늘배송</dd>
+                                    <dt>받는 사람 이름</dt>
+                                    <dd>홍길동</dd>
+                                    <dt>휴대폰 번호</dt>
+                                    <dd>010-1234-1234</dd>
+                                    <dt>배송지 주소</dt>
+                                    <dd>서울특별시 마포구 월드컵북로 104 304호</dd>
+                                    <dt>배송 시 요청사항</dt>
+                                    <dd>부재 시 문 앞에 두고 가주세요.</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!--배송 시작 전-->
+                        <div class="btn-group my-bundle">
+                            <button class="btns md-ripples ripples-light" type="button">배송지 변경</button>
+                            <button class="btns lightgray  md-ripples ripples-dark" type="button">주문 취소</button>
+                        </div>
+                        <!--배송 시작 이후 -->
+                        <!-- <div class="btn-group my-bundle">
+                            <button class="btns md-ripples ripples-light" type="button">배송 조회</button>
+                        </div> -->
+                        <!--배송 시작 이후 -->
+                        <!-- <div class="btn-group my-bundle">
+                            <button class="btns md-ripples ripples-light" type="button">배송 조회</button>
+                        </div> -->
+                    </section>
+
+                    <!-- 최근 구매한 유심이 없을 경우 노출 --->
+                    <section class="no-result">
+                        <p class="no-result-txt">
+                            최근 유심 카드 구매 내역이 없습니다.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

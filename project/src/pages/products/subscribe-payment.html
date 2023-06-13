@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '생활 구독 서비스 | U+유모바일',
+    ogTitle: '생활 구독 서비스 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '상품',
+            depth3: '생활 구독 서비스',
+            depth4: ''
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">생활 구독 서비스</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#" class="on">생활 구독 서비스</a></li>
+                <li><a href="#">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container products">
+        <div class="sub-conts subscribe-payment">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>구독 신청하기</h1>
+            </div>
+
+            <div class="fix-unit-group">
+                <!-- 09.13 html 교체-->
+                <section class="cardList-wrap">
+                    <h2 class="cardList-title">결제하기</h2>
+                    <div class="cardList notice-card">
+                        <h2 class="title">결제금액</h2>
+                        <strong>
+                            <em class="txt-vt">6,500원</em>
+                            <span>(월 정기 결제금액)</span>
+                        </strong>
+                    </div>
+                </section>
+                <ul class="notification">
+                    <li>자동결제 신청 동의가 필요하며, 결제한 카드가 자동결제 수단으로 지정됩니다.</li>
+                    <li>매월 <span class="txt-vt">%숫자%</span>일 자동결제됩니다.</li>
+                </ul>
+                <!-- //09.13 html 교체-->
+
+                <h3 class="unit-tit-s">자동결제 출금 동의</h3>
+                <div class="btn-box btn-check btn-text-line">
+                    <input type="checkbox" id="check999">
+                    <label for="check999"> <span class="ico-check"></span>매월 자동결제 출금 신청에 동의 합니다.</label>
+                </div>
+                <!-- 09.13 html 교체-->
+                <ul class="notification">
+                    <li>본인(카드회원)이 입력한 카드번호로 지정된 결제일에 별도의 통지 없이 월 이용요금이 결제됩니다.</li>
+                </ul>
+                <!-- //09.13 html 교체-->
+            </div>
+
+            <div class="btn-group">
+                <button class="btns lightgray" type="button">이전</button>
+                <button class="btns md-ripples ripples-light" type="button">결제하기</button>
+            </div>
+        <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : 'U+유모바일',
+    ogTitle: 'U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['가입사실확인서', '가입신청서', '통화내역', '유심잠금해제(PUK) 번호', '수사기관 통신자료 제공 사실', '열람 신청 내역']
+    })
+
+    <main class="container my ">
+        <div class="sub-conts find-no-data privacy-info-no-list">
+            <!-- 컨텐츠 -->
+            <div class="page-tit tit-bang">
+                <h1>
+                    고객님께서 신청하신 내역을 <br>알려드립니다.
+                </h1>
+            </div>
+            <p class="bang-notice">신청하신 내역은 1개월 후 지체없이 정보가 파기됩니다.</p>
+            <div class="img">
+                <img src="../../assets/images/pc/icon/ico-search-dot.svg" alt="온라인 가입 신청서 에러 아이콘">
+            </div>
+
+            <div class="result">
+                <b>최근 1개월 이내 신청한 신청 내역이 없습니다.</b>
+            </div>
+
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

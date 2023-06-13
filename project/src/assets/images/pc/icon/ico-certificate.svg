@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="84.5" viewBox="0 0 80 84.5">
+    <defs>
+        <filter id="mo7eyp10oa" x="3.499" y="27.5" width="73" height="57" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".051"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 484278">
+        <path data-name="패스 862558" d="M92 40.712V28.356C92 21.532 97.82 16 105 16s13 5.532 13 12.356V42" transform="translate(-65 -8.001)" style="fill:none;stroke:#dadef8;stroke-linecap:round;stroke-linejoin:round;stroke-width:6px;opacity:.9"/>
+        <g style="filter:url(#mo7eyp10oa)">
+            <rect data-name="사각형 348925" width="58" height="42" rx="10" transform="translate(11.003 30.003)" style="fill:#6f98f8"/>
+        </g>
+        <path data-name="합치기 15" d="M2.858 15.858V9.519a5 5 0 1 1 4.285 0v6.339a2.142 2.142 0 0 1-4.285 0z" transform="translate(35 43)" style="fill:#fff"/>
+    </g>
+</svg>

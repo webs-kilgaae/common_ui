@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <filter id="사각형_348906" x="13" y="6" width="46" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_862461" x="38" y="24" width="31" height="37" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon" transform="translate(-228 -147)">
+    <rect id="area" width="80" height="80" transform="translate(228 147)" fill="#ff7676" opacity="0"/>
+    <g id="그룹_486199" data-name="그룹 486199" transform="translate(0.75 3)">
+      <g id="그룹_486198" data-name="그룹 486198" transform="translate(-3.75 -2)">
+        <g id="그룹_484205" data-name="그룹 484205" transform="translate(246.667 152.333)">
+          <g id="그룹_484204" data-name="그룹 484204" transform="translate(0 0)">
+            <g transform="matrix(1, 0, 0, 1, -15.67, -6.33)" filter="url(#사각형_348906)">
+              <rect id="사각형_348906-2" data-name="사각형 348906" width="40" height="66" rx="10" transform="translate(16 7)" fill="#e3e6f9"/>
+            </g>
+            <line id="선_126776" data-name="선 126776" x2="6" transform="translate(17.333 7.668)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+      </g>
+      <g id="유심" transform="translate(-1814.001 -5026.268)">
+        <g transform="matrix(1, 0, 0, 1, 2041.25, 5170.27)" filter="url(#패스_862461)">
+          <path id="패스_862461-2" data-name="패스 862461" d="M5.208,0H12.5A12.45,12.45,0,0,1,25,12.4V25.833A5.188,5.188,0,0,1,19.792,31H5.208A5.188,5.188,0,0,1,0,25.833V5.167A5.188,5.188,0,0,1,5.208,0Z" transform="translate(41 25)" fill="#f76bb8"/>
+        </g>
+        <rect id="사각형_348813" data-name="사각형 348813" width="15" height="12" rx="3" transform="translate(2087.25 5209.268)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

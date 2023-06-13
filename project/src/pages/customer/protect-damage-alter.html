@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '이용자 피해예방 안내 | U+유모바일',
+    ogTitle: '이용자 피해예방 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['이용자 피해예방 안내', '웹툰으로 보는 피해예방법', '동영상으로 보는 피해예방법', '최신 이용자 피해예방법']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '고객 보호',
+            depth4: '이용자 피해예방 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">고객 보호</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#" class="on">고객 보호</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이용자 피해예방 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">부정가입ㆍ명의도용 방지</a></li>
+                <li><a href="#" class="on">이용자 피해예방 안내</a></li>
+                <li><a href="#">웹툰으로 보는 피해예방법</a></li>
+                <li><a href="#">동영상으로 보는 피해예방법</a></li>
+                <li><a href="#">최신 이용자 피해예방 정보</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container customer">
+        <div class="sub-conts customer-protect alter fix-unit-wide"><!-- 09.15 wide관련 클래스 추가-->
+            <!-- 컨텐츠 -->
+            <div class="page-tit unit-origin"><!-- 09.15 wide관련 클래스 추가-->
+                <h1>이용자 피해예방 안내</h1>
+            </div>
+
+            <!-- tab -->
+            <div class="box-tab on unit-origin"><!-- 09.15 wide관련 클래스 추가-->
+                <ul class="tab-btn-wrap swiper-wrapper">
+                    <!-- 활성화 된 메뉴에 on class 추가 -->
+                    <li class="swiper-slide"><a href="#">스팸</a></li>
+                    <li class="swiper-slide"><a href="#">스미싱</a></li>
+                    <li class="swiper-slide"><a href="#">보이스피싱</a></li>
+                    <li class="swiper-slide"><a href="#">불법 텔레마케팅(TM)</a></li>
+                    <li class="swiper-slide"><a href="#">파밍</a></li>
+                    <li class="swiper-slide"><a href="#">큐싱</a></li>
+                    <li class="swiper-slide"><a href="#" class="on">발신번호 변작</a></li>
+                    <li class="swiper-slide"><a href="#">예방 관련 사이트</a></li>
+                    <li class="swiper-slide"><a href="#">스마트 통신서비스 스쿨</a></li>
+                </ul>
+            </div>
+            <!-- //tab -->
+
+            <!-- 09.15 html 재작업 -->
+            <div class="protect-visual unit-wide">
+                <div class="visual">
+                    <h3 class="title">발신번호 변작(거짓표시)이란?</h3>
+                    <p class="desc">
+                       보이스피싱, 스미싱과 같은 전기통신금융사기 또는 불법 광고성 정보 전송 등 목적으로 전화, 문자메시지 발송 시 타인의 전화번호나 없는 전화번호 등으로 발신 전화번호를 거짓으로 표시하는 행위를 말합니다. <br>승인받지 않은 발신번호 변작(거짓표시)은 위법으로 처벌 받을 수 있습니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="fix-unit-group unit-origin">
+                <h2 class="unit-tit-b">1. 본인(개인)의 전화번호를 도용한 발신번호 변작(거짓표시) 방지 방법</h2>
+                <p class="unit-txt">
+                   U<sup>+</sup>유모바일에서 무료로 제공하는 번호 도용 문자메시지 차단 부가서비스에 가입하세요.
+                    <a href="#" class="btn-text-right-s underline-bk">번호 도용 문자 차단 서비스 신청하기</a>
+                </p>
+
+                <h2 class="unit-tit-b">2. 발신번호 변작(거짓표시) 의심 문자메시지 &middot; 전화 신고방법</h2>
+                <ul class="notification">
+                    <li>국번없이 <span class="ico-red-phone"></span>118(유료)로 전화하여 신고하실 수 있습니다.</li>
+                    <li>
+                        한국인터넷진흥원<a href="https://anti-forgery.kisa.or.kr" target="_blank" title="새창 열기" class="underline-vt"> https://anti-forgery.kisa.or.kr</a>에서 휴대폰 본인 인증 후, 신고하실 수 있습니다.</li>
+                    <li>신고인은 발신번호 거짓표시 신고 접수를 위하여 신고페이지에 &lsquo;수신번호, 서비스유형, 수신시각, 유형, 발신번호 등&rsquo; 필수 항목을 정확하게 입력하셔야 합니다.</li>
+                    <li>
+                        사업자별 업무 처리에 시간이 걸리므로 <span class="txt-vt">30일 이내의 수신 건에 대해서만 신고접수</span>할 수 있습니다.</li>
+                </ul>
+
+                <h2 class="unit-tit-b">3. 웹에서 발송된 발신번호 변작 구분 방법</h2>
+                <p class="unit-txt">
+                    웹에서 발신 된 문자메시지에 대해 [Web발신] 문구를 표기해 주는 부가서비스를 가입하여,  &lsquo;발신번호 변작/스팸/스미싱&rsquo; 여부를 확인하세요.<a href="#" class="btn-text-right-s underline-bk">웹 발신 문자 알림 서비스 신청하기</a>
+                </p>
+
+                <h2 class="unit-tit-b">4. 국제전화에 대한 구별법</h2>
+                <p class="unit-txt">해외로부터 발신된 음성전화는 &ldquo;국제전화입니다.&rdquo; 라는 음성 메시지 또는 단말 식별 창에 국제전화 식별번호 3 또는 5자리(001,00345)가 표시됨</p>
+            </div>
+            <!-- //09.15 html 재작업 -->
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

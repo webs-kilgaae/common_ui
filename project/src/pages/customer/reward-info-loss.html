@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '분실/파손 접수 및 보상 안내 | U+유모바일',
+    ogTitle: '분실/파손 접수 및 보상 안내 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['분실/파손 접수 및 보상 안내', '분실 신고', '분실 해제', '분실폰 위치 찾기']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '고객지원',
+            depth3: '휴대폰 분실/파손 보상',
+            depth4: '분실/파손 접수 및 보상 안내'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">고객지원</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#" class="on">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">휴대폰 분실/파손 보상</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">온라인 상담</a></li>
+                <li><a href="#">고객지원 매장</a></li>
+                <li><a href="#">APP 소개</a></li>
+                <li><a href="#" class="on">휴대폰 분실/파손 보상</a></li>
+                <li><a href="#">고객 보호</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">분실/파손 접수 및 보상 안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#" class="on">분실/파손 접수 및 보상 안내</a></li>
+                <li><a href="#">분실 등록</a></li>
+                <li><a href="#">분실 등록 해제</a></li>
+                <li><a href="#">분실폰 위치 찾기</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container customer">
+        <div class="sub-conts reward">
+            <!-- 컨텐츠 -->
+            <div class="page-tit">
+                <h1>분실/파손 접수 및 보상 안내</h1>
+            </div>
+
+            <!-- tab -->
+            <!-- 탭 활성화 시 tab-ctrl 클래스 추가 -->
+            <div class="box-tab">
+                <ul class="tab-btn-wrap">
+                    <!-- tab-ctrl 클래스 없을 시, 활성화 된 메뉴에 on class 추가 -->
+                    <li><a href="#" class="on">휴대폰 분실</a></li>
+                    <li><a href="#">휴대폰 파손</a></li>
+                </ul>
+            </div>
+            <!-- //tab -->
+
+            <section>
+                <div class="loss-receipt">
+                    <h2>분실 접수! 어디서 하나요?</h2>
+                    <ul class="notification">
+                        <li>&lsquo;분실등록/위치정보조회&rsquo; 서비스는 유심 이용 휴대폰 등록(확정기변) 후 이용하실 수 있습니다.</li>
+                        <li>분실 접수를 빠르게 신청하면 부가사용료 및 소액결제 등의 피해를 예방할 수 있습니다.</li>
+                        <li>고객센터 상담전화나 홈페이지를 통해 접수하실 수 있습니다.</li>
+                    </ul>
+                </div>
+
+                <div class="appli-group-wrap">
+                    <div class="appli-01">
+                        <h3>홈페이지</h3>
+                        <div class="box-btn">
+                            <a href="#" class="btns md-ripples ripples-light">분실 접수하기</a>
+                        </div>
+                    </div>
+
+                    <div class="appli-02">
+                        <h3>고객센터</h3>
+                        <div class="cs">
+                            <!--2022-11-03 아이콘 변경-->
+                            <img src="../../assets/images/pc/icon/ico-phone-call.svg" alt="ars 아이콘">
+                            <p>
+                                <strong>자사 휴대폰 <span class="txt-vt">114(무료)</span></strong>
+                                <strong>유선전화 / 타사 휴대폰 <span class="txt-vt">1644-5353(유료)</span></strong>
+                            </p>
+                            <div>
+                                <dl>
+                                    <dt>운영 시간</dt>
+                                    <dd>평일 9시 ~ 18시 (점심시간 12시~13시 제외)</dd>
+                                </dl>
+                                <p>분실상담은 24시간 365일 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>분실 접수할 때 필요한 서류가 있나요?</h2>
+                <ul class="img-list">
+                    <li>
+                        <span class="img"><img src="../../assets/images/pc/icon/ico-person.svg" alt="본인"></span>
+                        <div class="info">
+                            <b class="tit">본인이 접수할 때</b>
+                            <p class="txt">
+                                분실한 휴대폰 번호, 고객 이름, 분실내역<br>
+                                (분실일자, 장소, 습득 시 연락처 등)
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="img"><img src="../../assets/images/pc/icon/ico-person-women.svg" alt="대리인"></span>
+                        <div class="info">
+                            <b class="tit">대리인이 접수할 때</b>
+                            <p class="txt">
+                                분실한 휴대폰 번호, 명의자 이름, 분실내역 (분실 일자, 장소, 습득 시<br>
+                                연락처 등), 대리인 정보 (이름, 명의자와 관계, 연락처)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <h2>내 휴대폰 분실 접수 상태를 알 수 있나요?</h2>
+                <div class="box-gy box-log">
+                    <div class="wrap">
+                        <b>유모바일 홈페이지 회원전용 서비스입니다.</b>
+                        <p>비회원일 경우 회원가입 후 이용하시고 회원일 경우 로그인 후 이용하시기 바랍니다.</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btns md-ripples ripples-dark lightgray">회원가입</a>
+                        <a href="#" class="btns md-ripples ripples-light">로그인</a>
+                    </div>
+                </div>
+                <section class="cardList-wrap box-login">
+                    <div class="table-list-wrap">
+                        <table class="table-list">
+                            <caption class="hidden">휴대폰 번호, 분실신고 일자, 분실신고 해제 일자, 위치정보 조회 정보 제공</caption>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">휴대폰 번호</th>
+                                    <th scope="col">분실신고 일자</th>
+                                    <th scope="col">분실신고 해제 일자</th>
+                                    <th scope="col">위치정보 조회</th>
+                                </tr>
+                                <tr>
+                                    <td>010-**34-**56</td>
+                                    <td>2022.04.11 13:00:24</td>
+                                    <td>-</td>
+                                    <td>
+                                        <button class="btns w-xs line" type="button">조회하기</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>010-**34-**56</td>
+                                    <td>-</td>
+                                    <td>2022.04.11 13:00:24</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <h2>누가 내 휴대폰을 사용하진 않았을까?</h2>
+                <div class="phone-used-info">
+                    <ul class="img-list arro-rt">
+                        <li>
+                            <a href="#">
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-won.svg" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">실시간 요금 조회</b>
+                                    <p class="txt">
+                                        실시간으로 이용 요금을 확인할 수 있습니다.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-phone-reading.svg" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">통화내역열람신청</b>
+                                    <p class="txt">
+                                        통화내역 열람신청을 통해 발신 통화내역 열람할 수 있습니다.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-phone-won.svg" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">소액결제이용내역</b>
+                                    <p class="txt">
+                                        휴대폰을 통한 소액결제 내역을 조회할 수 있습니다.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <!---2022-11-03 아이콘 변경-->
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-pause.svg" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">일시정지신청</b>
+                                    <p class="txt">
+                                        휴대폰 일시정지가 필요한 경우 일시정지 신청을 할 수 있습니다.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>휴대폰 분실 시 도움이 되는 사이트</h2>
+                <h3>위치 추적 서비스</h3>
+                <div class="phone-used-info">
+                    <ul class="img-list device-link">
+                        <li>
+                            <span class="img"><img src="../../assets/images/pc/icon/logo-loc-samsung.png" alt="samsung"></span>
+                            <div class="info">
+                                <p class="txt">
+                                    삼성 디바이스 찾기 서비스로 <br>
+                                    분실된 삼성 휴대폰을 찾아보세요.
+                                </p>
+                            </div>
+                            <a href="https://findmymobile.samsung.com/" target="_blank" class="btns w-xs line btn-device">삼성 디바이스 찾기</a>
+                        </li>
+                        <li>
+                            <span class="img"><img src="../../assets/images/pc/icon/logo-loc-apple.png" alt="apple"></span>
+                            <div class="info">
+                                <p class="txt">
+                                    애플 아이클라우드에서 휴대폰과 연결된 <br>
+                                    계정 비밀번호를 변경하세요.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="img"><img src="../../assets/images/pc/icon/logo-loc-google.png" alt="google"></span>
+                            <div class="info">
+                                <p class="txt">
+                                    구글 계정 위치 추적으로 분실된 <br>
+                                    구글(안드로이드) 휴대폰을 찾아보세요.
+                                </p>
+                            </div>
+                            <a href="https://www.google.com/android/find" target="_blank" class="btns w-xs line btn-device">구글 디바이스 찾기</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>분실물 보관센터 안내</h3>
+                <div class="phone-used-info">
+                    <ul class="img-list arro-rt img-wd">
+                        <li>
+                            <a href="https://www.lost112.go.kr/" target="_blank">
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-lost112.png" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">경찰청유실물 통합 포털</b>
+                                    <p class="txt">관할 경찰서에 분실신고 및 전국의 습득신고 된 <br>휴대폰 정보를 조회 할 수 있습니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.handphone.or.kr/" target="_blank">
+                                <span class="img"><img src="../../assets/images/pc/icon/ico-phone-find-center.png" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">핸드폰 찾기 콜센터</b>
+                                    <p class="txt">전국 우체국에서 수집된 휴대폰을 보관했다<br> 찾아주는 센터입니다.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.seoul.go.kr/v2012/find.html" target="_blank">
+                                <span class="img"><img src="../../assets/images/pc/icon/seoul-logo.png" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">서울시 대중교통 분실물 센터</b>
+                                    <p class="txt">대중교통(버스, 지하철등)에서 분실하였을 경우</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.stj.or.kr/bbs/board.php?bo_table=sta03_02" target="_blank">
+                                <span class="img"><img src="../../assets/images/pc/icon/taxi-logo.png" alt=""></span>
+                                <div class="info">
+                                    <b class="tit">서울택시 유실물 센터</b>
+                                    <p class="txt">서울 택시에서 분실하였을 경우</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="notification-wrap">
+                    <h4>꼭 확인하세요!</h4>
+                    <ul class="notification">
+                        <li>분실등록과 일시정지를 함께 하면 더 안전합니다.</li>
+                        <li>휴대폰과 유심(가입자정보저장)카드에 저장 되어 있는 T머니 또는 신용카드는 해당 기관에 별도로 신고하세요.</li>
+                        <li>&lsquo;분실등록/위치정보조회&rsquo;서비스는 유심 이용 휴대폰등록(확정기변) 후 이용하실 수 있습니다.</li>
+                    </ul>
+                </div>
+
+                <h2>보상 신청은 어디서 하나요?</h2>
+                <div class="request-compensation">
+                    <h3>휴대폰 분실/파손 보험 가입자는 새 휴대폰으로 보상받을 수 있습니다.</h3>
+                    <ul class="notification">
+                        <li>서비스에 가입된 모델과 동일 모델로 보상하며 자기부담금이 발생</li>
+                        <li>동일 모델이 없는 경우에 한해 보상 시점의 가입 단말기 출고가 이내의 동급 혹은 유사기종(재생단말기 포함) 모델로 보상<br>(보상 휴대폰은 U+유모바일과 보험사가 선정)</li>
+                    </ul>
+                    <div class="wrap">
+
+                        <div class="box-callcenter">
+                            <b>휴대폰 분실/판손 보상센터</b>
+                            <strong>전화신청 1644-9471</strong>
+                            <p class="txt">
+                                상담시간 : 월요일~금요일 오전 9시~오후 6시
+                            </p>
+                        </div>
+                        <div class="box-insurance">
+                            <a href="#">
+                                <b>분실 보상 및 파손 수리비 지원해주는 휴대폰 분실/파손 보험</b>
+                                <strong>휴대폰 분실/파손 보험 알아보기</strong>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>분실보상 신청방법</h3>
+                    <div class="appli-way-step">
+                        <ol class="num-process-wrap">
+                            <li>
+                                <span class="number">1</span>
+                                <div class="txt-wrap">
+                                    <strong>분실등록 및 사고접수하기</strong>
+                                    <p>고객센터에(1644-5353) 휴대폰 분실 등록 → 휴대폰 분실 및 파손 보상 센터에 사고 접수</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">2</span>
+                                <div class="txt-wrap">
+                                    <strong>서류 접수하기</strong>
+                                    <p>팩스로 신청서류 접수</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">3</span>
+                                <div class="txt-wrap">
+                                    <strong>보상 심의 및 승인 받기</strong>
+                                    <p>팩스로 신청서류 접수</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="number">4</span>
+                                <div class="txt-wrap">
+                                    <strong>보상 휴대폰을 택배로 받기</strong>
+                                    <p>보상센터 승인 → 보상 휴대폰 택배로 수령</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <ul class="notification">
+                        <li>제출서류 : 보험청구서, 개인정보처리동의서 보상 심사 단계에서 필요 시, 통화내역서를 요청할 수 있습니다.</li>
+                    </ul>
+                </div>
+
+                <h2>보상 금액은 어떻게 계산하나요?</h2>
+                <p class="txt">가입 상품에 따라 보상금액과 고객부담금이 달라집니다.<br>자세한 내용은 휴대폰 분실/파손 보상센터 (1644-9471)에서 확인하세요.</p>
+                <div class="amount-money">
+                    <section class="reward-card-wrap">
+                        <dl>
+                            <dt>
+                                <strong>예)폰 분실/파손보험 100 상품 기준</strong>
+                                <span class="txt">출고가가 100만원인 휴대폰을 분실했을 때</span>
+                            </dt>
+                            <dd>
+                                <div class="wrap">
+                                    <b class="txt-vt">보상금 : 70만원</b>
+                                    <b>고객부담금 : 30만원</b>
+                                </div>
+                                <p class="txt">
+                                    고객부담금 : 손해금액의 30%
+                                </p>
+                            </dd>
+                        </dl>
+                    </section>
+
+                    <section class="reward-card-wrap">
+                        <dl>
+                            <dt>
+                                <strong>예)폰 분실/파손보험 40 상품 기준</strong>
+                                <span class="txt">출고가가 30만원인 휴대폰을 분실했을 때</span>
+                            </dt>
+                            <dd>
+                                <div class="wrap">
+                                    <b class="txt-vt">보상금 : 21만원</b>
+                                    <b>고객부담금 : 9만원</b>
+                                </div>
+                                <p class="txt">
+                                    고객부담금 : 손해금액의 30%
+                                </p>
+                            </dd>
+                        </dl>
+                    </section>
+                </div>
+
+                <div class="notification-wrap">
+                    <h4>꼭 확인하세요!</h4>
+                    <ul class="notification">
+                        <li>&lsquo;휴대폰 분실/파손 보상&rsquo;은 U+유모바일과 KB손해보험이 함께 제공하는 서비스입니다.</li>
+                        <li>서비스에 가입하면 잃어버린 휴대폰과 똑같은 새 휴대폰을 보상 받을 수 있습니다.(단, 같은 모델이 없으면 기존 휴대폰 출고가 이내 등급 혹은 유사 기종 모델로 보상)</li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

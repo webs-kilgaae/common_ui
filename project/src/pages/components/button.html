@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('../src/pages/includes/guide/head.html', {title: '버튼 가이드 - DK BMC'})
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class=""><a href="/index.html">웹스타일가이드</a></li>
+                    <li class="on"><a href="slider.html">컴포넌트</a></li>
+                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
+                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
+                </ul>
+            </nav>
+        </header>
+        <ul class="guideSubmenu">
+            <li><a href="./slider.html">슬라이더</a></li>
+            <li><a href="./button.html" class="guideOn">버튼</a></li>
+            <li><a href="./tab.html">탭</a></li>
+            <li><a href="./form.html">폼</a></li>
+            <li><a href="./list.html">리스트</a></li>
+            <li><a href="./accordian.html">아코디언</a></li>
+            <li><a href="./layerpopup.html">팝업</a></li>
+            <li><a href="./unit.html">유닛</a></li>
+        </ul>
+
+        <div class="guideContainer">
+            <section class="sample">
+                <h2 class="sampleTitle">01. Button Spec</h2>
+                <div class="sampleContent">
+                    <h3><strong>CTA Type1 - H1 / H2 / 인풋 버튼</strong></h3>
+                    <div class="box-btn">
+                        <button class="btns md-ripples ripples-light">로그인</button>
+                        <button class="btns wid md-ripples ripples-light">로그인</button>
+
+                        <button class="btns w-sm md-ripples ripples-light">확인 w-sm</button>
+                        <button class="btns w-md md-ripples ripples-light">확인 w-md</button>
+                        <button class="btn-dark-gray md-ripples ripples-light">인증번호 요청</button>
+                    </div>
+                    <br><br>
+                    <h3><strong>Line Type2 - .line</strong></h3>
+                    <button class="btns lightgray  md-ripples ripples-dark">확인</button>
+                    <button class="btns w-sm lightgray  md-ripples ripples-dark">확인 w-sm</button>
+                    <button class="btns w-md lightgray  md-ripples ripples-dark">확인 w-md</button>
+                    <button class="btns w-xs line">버튼</button>
+                    <br><br>
+                    <button class="btns line">목록</button>
+
+                    <div class="description">
+                        <h3>GUIDE</h3>
+                        <p style="line-height:1.6;">
+                            * 기본 버튼은 H1 purple와 lightgray만 사용<br>
+                            * gray line버튼은 목록 전용으로만 사용<br>
+                            * w-sm은 팝업 버튼<br>
+                            * w-xs line버튼은 컨텐츠 내 버튼<br>
+                            <br>
+                            ** 상황에 따라 GUIDE 이외 용도로 사용할 수 있음<br>
+                            ** GUIDE 이외의 용도에서 사용시엔 Component로 구성<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">btn-group</h2>
+                <div class="sampleContent">
+                    <div class="btn-group">
+                            <button class="btns w-sm lightgray md-ripples ripples-dark" type="button">동의 안함</button>
+                            <button class="btns w-sm md-ripples ripples-light">확인 w-sm</button>
+                    </div>
+
+                    <br><br>
+
+                    <div class="btn-box btn-check btn-text-line">
+                        <input type="checkbox" id="check999">
+                        <label for="check999"> <span class="ico-check"></span>개인정보 수집 이용 동의 <strong> (필수)</strong></label>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="sample">
+                <h2 class="sampleTitle">수량 버튼</h2>
+                <div class="sampleContent">
+                    <div class="count-wrap">
+                        count-num이 1이하로 내려가지못하게 1일경우 .minus 에 .disabled 추가
+                        <button class="count-btn minus disabled"><span class="hidden">빼기</span></button>
+                        <span class="count-num">1</span>
+                        <button class="count-btn plus"><span class="hidden">더하기</span></button>
+                        <p class="total-count"><span>8,800</span>원</p>
+                    </div>
+                </div>
+            </section> -->
+            <section class="sample">
+                <h2 class="sampleTitle">downLoad-list</h2>
+                <div class="sampleContent">
+                    <ul class="downLoad-list">
+                        <li>
+                             <a href="#">
+                                <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                                <span class="ico-downLoad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                               <span class="ico-downLoad"></span>
+                           </a>
+                       </li>
+                        <li>
+                             <a href="#">
+                                <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                                <span class="ico-downLoad"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                               <span class="ico-downLoad"></span>
+                           </a>
+                       </li>
+                        <li>
+                             <a href="#">
+                                <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                                <span class="ico-downLoad"></span>
+                            </a>
+                        </li>   
+                        <li>
+                            <a href="#">
+                               <p class="downLoad-tit">파일다운로드<br> (PDF)</p>
+                               <span class="ico-downLoad"></span>
+                           </a>
+                       </li>                                                                                                                   
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">link-list</h2>
+                <div class="sampleContent">
+                    <ul class="link-list">
+                        <li>
+                             <a href="#">
+                                <p class="link-tit">API 주도 연결을 통한 비즈니스 민첩성 확보</p>
+                                <span class="ico-link"><img src="../../assets/images/pc/icon/ico-arrow-thin-right.svg" alt="더보기"></span>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <p class="link-tit">프로세스 자동화로 새로운 수익 인식 속도 향상</p>
+                                <span class="ico-link"><img src="../../assets/images/pc/icon/ico-arrow-thin-right.svg" alt="더보기"></span>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <p class="link-tit">데이터에 관한 신뢰성 확보</p>
+                                <span class="ico-link"><img src="../../assets/images/pc/icon/ico-arrow-thin-right.svg" alt="더보기"></span>
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#">
+                                <p class="link-tit">프로세스의 End-to-End 가시성 확보</p>
+                                <span class="ico-link"><img src="../../assets/images/pc/icon/ico-arrow-thin-right.svg" alt="더보기"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">Disable</h2>
+                <div class="box-btn">
+                    <button class="btns" disabled>확인</button>
+                    <button class="btn-dark-gray" disabled>인증확인</button>
+                    <button class="btns h-sm  md-ripples ripples-light" disabled>확인</button>
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">Text Button </h2>
+                <div class="sampleContent">
+                    <h3><strong>클래스명 .btn-underline</strong></h3>
+                     <a href="#" class="btn-underline">회원탈퇴</a>
+                    <h3><strong>클래스명 .btn-text-right</strong></h3>
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-right">Text Button</a>
+                    </div>
+                    <br><br>
+                    <h3><strong>클래스명 .btn-text-right-s</strong></h3>
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-right-s">Text Button</a>
+                    </div>
+                    <br><br>
+                    <h3><strong>클래스명 .btn-text-plus</strong></h3>
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-plus">Text Button</a>
+                    </div>
+                    <br><br>
+                    <h3><strong>클래스명 .btn-text-more</strong></h3>
+                    <div class="box-btn">
+                        <button class="btn-text-more md-ripples ripples-dark">Text Button <span class="count">(1/15)</span></button>
+                    </div>
+                    <br><br>
+                    <h3><strong>클래스명 .btn-check</strong></h3>
+                    <div class="btn-box btn-check">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"> <span class="ico-check"></span><em class="txt-vt">(필수)</em> 서비스 이용약관서비스 이용약관서비스 이용약관서비스 이용약관서비스 이용약관서비스 이용약관</label>
+                        <a href="#" class="ico-arrow-right">더보기</a>
+                    </div>
+                    <div class="btn-box btn-check">
+                        <input type="checkbox" id="check1">
+                        <label for="check1"> <span class="ico-check"></span><em class="txt-vt">(선택)</em> 서비스 이용약관</label>
+                        <a href="#" class="ico-arrow-right">더보기</a>
+                    </div>
+                    <br><br>
+                    <h3><strong>클래스명 .btn-text-num</strong></h3>
+                    <div class="btn-box">
+                        <a href="#" class="btn-text-num ripples-dark">
+                            <span class="text">아이디/비밀번호를 잊어버리셨나요? <span class="num">2</span></span>
+                            <span class="ico-arrow-right">더보기</span>
+                        </a>
+                    </div>
+
+                    <br><br>
+                    <h3><strong>클래스명 .underline-bk</strong></h3>
+                    <div class="box-btn">
+                        <a href="#" class="btn-text-right underline-bk">Text Button</a>
+                    </div>
+                    <br><br>
+
+                    <h3><strong>클래스명 .underline-vt</strong></h3>
+                    <div class="box-btn">
+                        <a href="#" class="underline-vt">Text link</a>
+                    </div>
+                    <br><br>
+
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">Tool Tip</h2>
+                <div class="tooltip-wrap">
+                    <div class="btn-check">
+                        <input type="checkbox" id="check2">
+                        <label for="check2"><span class="ico-check"></span> 아이디 저장</label>
+                    </div>
+                    <div class="box-tooltip">
+                        <button class="btn-tooltip"><span class="hidden">툴팁보기</span></button>
+                        <div class="txt-tooltip">
+                            <span>
+                                자동로그인을 설정하시면 로그인 절차 없이
+                                더스타트 서비스를 이용하실 수 있습니다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sample">
+                <h2 class="sampleTitle">셀렉트모양 버튼</h2>
+                <div class="btn-select">
+                    <button>통신사</button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+    <!-- LAYER POPUP -->
+    @@include('./pages/includes/layerpopup.html')
+</body>
+
+</html>

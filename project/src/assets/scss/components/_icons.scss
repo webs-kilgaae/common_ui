@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.chip-wrap {
+    display:flex;align-items:center;gap:0 5px;flex-wrap:wrap;
+    .chip {
+        display:inline-flex;border-radius:5px;height:21px;padding:0px 6px;text-align:center;
+        @include chipTxt;
+    }
+    img{height: 20px; display: block;}
+}
+.badge {
+     display:flex;justify-content:center;align-items:center;width:60px;height:60px;border-radius:50%;
+     @include text(400,20px,1.36,#fff,-1px);
+}
+// .product-badge {
+//     display:inline-block;margin-right:10px;padding:3px 9px 4px 10px;border-radius:7px;background-color:$black;
+//     @include text(600,20px,1.36,#fff,-1px);
+// }

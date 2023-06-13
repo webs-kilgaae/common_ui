@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '웹 발신 문자 알림 | U+유모바일',
+    ogTitle: '웹 발신 문자 알림 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+    })
+
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">통신 부가 서비스</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#">생활 구독 서비스</a></li>
+                <li><a href="#" class="on">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container extra">
+        <div class="sub-conts addition-page fix-unit-wide">
+            <!-- 컨텐츠 -->
+            <div class="page-tit unit-origin">
+                <h1>통신 부가 서비스</h1>
+            </div>
+            <section class="unit-wide info-bg">
+                <div class="info-wrap unit-origin">
+                    <div class="info-img">
+                        <img src="/assets/images/extra/web-sms.png" alt="웹 발신 문자 알림">
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>웹 발신 문자 알림</dt>
+                            <dd>웹에서 발신된 문자에 대해 [web 발신]을 표기해주는 서비스</dd>
+                        </dl>
+                        <div class="flex-box">
+                            <strong class="discount-pay">무료</strong>
+                        </div>
+                        <div class="box-btn flex-box">
+                            <button class="btns md-ripples ripples-light not-allow-open" type="button">신청하기</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-service">
+                <!-- .accordian에 open 클래스 넣으면 페이지 진입 시 열려있는 상태로 노출 -->
+                <section class="accordian type-01 c-unit open">
+                    <button class="acc-trigger">
+                        <h2 class="unit-tit">서비스 안내</h2>
+                    </button>
+                    <!-- 서비스 안내 -->
+                    <div class="acc-conts">
+                        <div class="unit-sec-tit">
+                            <h3>서비스 특징</h3>
+                            <p>수신되는 문자가 웹에서 전송된 문자인지 아닌지 메시지 내용 안에 식별문구가 추가되어 고객님이 알 수 있도록 제공하는 서비스입니다.</p>
+                            <ul class="notification">
+                                <li>
+                                    메시지 길이에 따라 본문 앞에 [Web 발신] 식별 문구가 추가되거나, 해당 메시지에 바로 이어서 웹발신 안내 메시지가 한번 더 발송<br>
+                                    (안내 SMS 내용 : 방금 수신하신 메시지는 인터넷에서 발신되었습니다.)
+                                </li>
+                                <li>웹에서 보낸 문자메시지가 도착하면 무료 알림</li>
+                                <li>웹에서 보낸 스팸 문자메시지가 도착하면 알림</li>
+                                <li>스미싱 피해 예방</li>
+                            </ul>
+                        </div>
+                        <div class="unit-sec-tit">
+                            <h3>이용요금</h3>
+                            <ul class="list">
+                                <li class="discount-pay">무료</li>
+                            </ul>
+                        </div>
+                        <div class="unit-sec-tit">
+                            <h3>신청방법</h3>
+                            <section class="payment-detail-card-wrap">
+                                <ul>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-computer.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>홈페이지</strong>
+                                            <p>온라인으로 빠르고 간편하게 신청</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-appUplus.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>유모바일 앱</strong>
+                                            <p>APP을 설치하여 쉽고 편하게 신청</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-headSet.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>고객센터</strong>
+                                            <p>
+                                                추가 문의는 고객센터에서
+                                                전화상담 가능<br>
+                                                자사 휴대폰 114 (무료)<br>
+                                                1644-5353 (유료)
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img"><img src="/assets/images/extra/ico-shop.svg" alt=""></div>
+                                        <div class="detail">
+                                            <strong>유플러스 직영매장</strong>
+                                            <p>
+                                               유플러스 직영매장에서도 방문신청 가능
+                                            </p>
+                                            <div class="box-btn">
+                                                <a href="#" class="btn-text-arrow">U+직영매장 찾기</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!--// 서비스 안내 -->
+                </section>
+            </section>
+            <!-- //컨텐츠 -->
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+    <defs>
+        <clipPath id="94hxrhdzna">
+            <path data-name="사각형 118" style="fill:none" d="M0 0h48v40H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-293 -967)">
+        <rect data-name="사각형 116" width="108" height="108" rx="54" transform="translate(293 967)" style="fill:#662d91"/>
+        <g data-name="그룹 186">
+            <path transform="translate(323 997)" style="fill:transparent;opacity:.3" d="M0 0h48v48H0z"/>
+            <g data-name="그룹 37" transform="translate(323 1000)" style="clip-path:url(#94hxrhdzna)">
+                <path data-name="패스 61" d="M39 36.033H9V12.1h30zm0-27.924H9A4 4 0 0 0 5 12.1v23.933a4 4 0 0 0 4 3.989h30a4 4 0 0 0 4-3.989V12.1a4 4 0 0 0-4-3.989" transform="translate(0 -.022)" style="fill:#fff"/>
+                <path data-name="선 6" transform="translate(24 1.995)" style="stroke:#fff;stroke-linejoin:round;stroke-width:4px;fill:none" d="M0 0v9.997"/>
+                <path data-name="패스 62" d="M6 29.082c-2.209 0-4-2.233-4-4.986s1.791-4.986 4-4.986" transform="translate(0 -.052)" style="stroke:#fff;stroke-linejoin:round;stroke-width:4px;fill:none"/>
+                <path data-name="패스 63" d="M42 19.109c2.209 0 4 2.233 4 4.986s-1.791 4.986-4 4.986" transform="translate(0 -.052)" style="stroke:#fff;stroke-linejoin:round;stroke-width:4px;fill:none"/>
+                <path data-name="패스 64" d="M16.7 21.109a2.992 2.992 0 1 0 3 2.992 3 3 0 0 0-3-2.992" transform="translate(0 -.057)" style="fill:#fff"/>
+                <path data-name="패스 65" d="M31.3 21.109a2.992 2.992 0 1 0 3 2.992 3 3 0 0 0-3-2.992" transform="translate(0 -.057)" style="fill:#fff"/>
+                <path data-name="선 7" transform="translate(19 1.995)" style="stroke-linecap:round;stroke:#fff;stroke-linejoin:round;stroke-width:4px;fill:none" d="M0 0h10"/>
+            </g>
+            <g transform="translate(-2140 110)">
+                <rect data-name="사각형 120" width="26" height="16" rx="8" transform="translate(2493 894)" style="fill:#e0007a"/>
+                <g data-name="그룹 39" transform="translate(-1)">
+                    <circle data-name="타원 11" cx="2" cy="2" r="2" transform="translate(2511 900)" style="fill:#fff"/>
+                    <circle data-name="타원 12" cx="2" cy="2" r="2" transform="translate(2505 900)" style="fill:#fff"/>
+                    <circle data-name="타원 10" cx="2" cy="2" r="2" transform="translate(2499 900)" style="fill:#fff"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

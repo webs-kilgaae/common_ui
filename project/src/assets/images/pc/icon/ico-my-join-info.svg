@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 492564">
+        <g data-name="그룹 492471">
+            <g data-name="그룹 492563">
+                <g data-name="그룹 465504" transform="translate(7 8.026)">
+                    <rect data-name="사각형 341209" width="24" height="20" rx="6" style="stroke-linejoin:round;stroke-linecap:round;stroke:#191919;stroke-width:1.5px;fill:#fff"/>
+                    <g data-name="그룹 484240">
+                        <path data-name="선 126659" style="fill:none;stroke-linejoin:round;stroke-linecap:round;stroke:#191919;stroke-width:1.5px" d="M0 0h5" transform="translate(14.529 5.665)"/>
+                        <path data-name="선 126660" transform="translate(14.529 8.665)" style="fill:none;stroke-linejoin:round;stroke-linecap:round;stroke:#191919;stroke-width:1.5px" d="M0 0h5"/>
+                    </g>
+                    <g data-name="그룹 484248">
+                        <path data-name="합치기 29" d="M1.005 7.817A1 1 0 0 1 0 6.812v-.243a3.351 3.351 0 0 1 2.31-3.185 1.822 1.822 0 0 1-.874-1.544A1.878 1.878 0 0 1 3.351 0a1.878 1.878 0 0 1 1.914 1.84 1.822 1.822 0 0 1-.874 1.544A3.351 3.351 0 0 1 6.7 6.569v.243a1 1 0 0 1-1 1.005z" transform="translate(4.143 4.058)" style="fill:#bfbfbf"/>
+                    </g>
+                </g>
+            </g>
+            <path data-name="패스 862719" d="m5.3 5.121 5 5" transform="translate(24.7 21.904)" style="fill:none;stroke-linecap:round;stroke:#191919;stroke-width:1.5px"/>
+            <path data-name="패스 862540" d="M5 0a5 5 0 1 1-5 5 5 5 0 0 1 5-5z" transform="translate(23 20.025)" style="stroke:#191919;stroke-width:1.5px;fill:#fff"/>
+        </g>
+    </g>
+</svg>

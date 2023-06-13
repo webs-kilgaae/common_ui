@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '이메일 무단 수집 거부 | U+유모바일',
+    ogTitle: '이메일 무단 수집 거부 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['요금제', '생활구독 서비스', '통신 부가 서비스','휴대폰 분실 / 파손 보험','고객후기']
+    })
+    <!--09.28
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '이메일 무단 수집 거부',
+            depth3: ''
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">이메일 무단 수집 거부</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">개인정보 이용내역</a></li>
+                <li><a href="#" class="on">이메일 무단 수집 거부</a></li>
+                <li><a href="#">이용자 피해예방</a></li>
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">명의도용방지서비스</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container footer">
+        <div class="sub-conts terms terms-email-collection">
+            <div class="page-tit">
+                <h1>이메일 무단 수집 거부</h1>
+            </div>
+            <div class="page-desc">
+                <h2>
+                    본 웹사이트에 게시된 전자우편주소를 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망 이용촉진 및 정 보보호 등에 관한 법률에 의해 형사 처벌됨을 유념하시기 바랍니다.
+                </h2>
+            </div>
+            <div class="fix-unit-group">
+                <h4 class="unit-tit-s">정보통신망 이용촉진 및 정보보호 등에 관한 법률 제 50조의 2(전자우편주소의 무단 수집행위 등 금지)</h4>
+                <ol class="unit-txt">
+                    <li>
+                        1) 누구든지 인터넷 홈페이지 운영자 또는 관리자의 사전 동의 없이 인터넷 홈페이지에서 자동으로 전자우편주소를 수집하는 프로그램이나 그 밖의 기술적 장치를 이용하여 전자 우편주소를 수집하여서는 아니된다.
+                    </li>
+                    <li>
+                        2) 누구든지 제1항을 위반하여 수집된 전자우편주소를 판매 유통하여서는 아니된다.
+                    </li>
+                    <li>
+                        3) 누구든지 제1항과 제2항을 따라 수집 판매 및 유통이 금지된 전자우편주소 임을 알면서 이를 정보 전송에 이용하여서는 아니된다.
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+</div>
+</body>
+</html>

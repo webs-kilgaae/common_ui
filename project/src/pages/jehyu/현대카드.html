@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+@@include('./pages/includes/head.html', {
+    metaDescription: 'U+유모바일',
+    metaKeywords: 'U+유모바일, 유플러스유모바일,유모바일',
+    pageTitle : '제휴카드 할인 | U+유모바일',
+    ogTitle: '제휴카드 할인 | U+유모바일',
+    ogUrl: 'https://www.uplusumobile.com',
+    ogImage: '/assets/images/og/upplus-umobile-og.png',
+    ogDesc: 'U+유모바일',
+    cssPath : '/assets/css/common.min.css'
+})
+</head>
+<body>
+<div id="wrap">
+    @@include('../src/pages/includes/header.html', {
+        type : 'sub-type',
+        gnb : true,
+        subDepth: true,
+        subArr : ['셀프개통', '바로픽업', '배송 안내','제휴카드 할인', '선택약정 할인','휴대폰 정보 등록']
+    })
+    <!--09.29
+        @@include('./pages/includes/breadcrumb.html', {
+        breadcrumb: {
+            depth1: '홈',
+            depth2: '상품',
+            depth3: '이용안내',
+            depth4: '제휴카드 할인'
+        }
+    })-->
+    <ul class="breadcrumb">
+        <li><a href="#">홈</a></li>
+        <li>
+            <a href="#">상품</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">USIM/eSIM</a></li>
+                <li><a href="#">휴대폰</a></li>
+                <li><a href="#" class="on">상품</a></li>
+                <li><a href="#">이벤트/혜택</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">내 정보</a></li>
+                <li><a href="#">유모바일</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이용안내</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">요금제</a></li>
+                <li><a href="#">생활 구독 서비스</a></li>
+                <li><a href="#">통신 부가 서비스</a></li>
+                <li><a href="#">휴대폰 분실/파손 보험</a></li>
+                <li><a href="#">고객 후기</a></li>
+                <li><a href="#" class="on">이용안내</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">제휴카드 할인</a>
+            <ul class="breadcrumb-sub">
+                <li><a href="#">셀프개통</a></li>
+                <li><a href="#">바로픽업</a></li>
+                <li><a href="#">배송 안내</a></li>
+                <li><a href="#" class="on">제휴카드 할인</a></li>
+                <li><a href="#">선택약정 할인</a></li>
+                <li><a href="#">휴대폰 정보 등록</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <main class="container jehyu">
+        <div class="sub-conts use-card-detail">
+            <div class="page-tit">
+                <h1>제휴카드 할인</h1>
+            </div>
+            <section class="card-thumb">
+                <div class="card-thumbnail">
+                    <img src="/assets/images/jehyu/hyundai-card.png" alt="">
+                </div>
+                <div class="card-txt">
+                    <strong class="main-contents-title">현대카드</strong>
+                    <ul class="notification">
+                        <li>매월 1.3만원~2만원 할인</li>
+                        <li>전월 카드 이용 실적이 30만/70만/100만원 이상일 경우</li>
+                        <li>해당 카드로 U+유모바일 통신료 자동이체 시</li>
+                        <li>카드사 청구서에서 할인내역 확인</li>
+                        <li>자세한 내용은 안내 페이지 참조</li>
+                    </ul>
+                    <div class="box-table">
+                        <a href="https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardflag=J&cardWcd=MLGTRE3&eventCode=00000" target="_blank" class="btn-text-right-s">카드 혜택 자세히 보기</a>
+                        <table class="table-type-04">
+                            <caption class="hidden">지난 달 카드 이용금액별 카드혜택</caption>
+                            <colgroup>
+                                <col width="50%">
+                                <col width="50%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">지난 달 카드 이용금액별 카드혜택</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>30만원 이상</td>
+                                    <td>13,000원 청구할인</td>
+                                </tr>
+                                <tr>
+                                    <td>70만원 이상</td>
+                                    <td>18,000원 청구할인</td>
+                                </tr>
+                                <tr>
+                                    <td>100만원 이상</td>
+                                    <td>20,000원 청구 할인</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <div class="box-tab tab-ctrl">
+                <ul class="tab-btn-wrap">
+                    <li><a href="javascript:;" class="on">카드혜택</a></li>
+                    <li><a href="javascript:;" >제휴카드 발급 및 등록 안내</a></li>
+                </ul>
+                <div class="tab-contents-wrap">
+                    <div aria-hidden="false">
+                        <!-- 첫번째 탭 -->
+                        <section class="c-unit ">
+                            <div class="round-gy">
+                                <h3 class="c-tit">통신료 <span class="txt-vt">자동이체 신청</span>하면 <br>지난 달 카드 이용 실적에 <br>따라 <span class="txt-vt">할인 적용</span></h3>
+                                <div class="graph-wrap">
+                                    <h4 class="graph-tit">지난 달 카드 <span class="txt-vt">이용금액</span> </h4>
+                                    <div class="graph-layout">
+                                        <ul>
+                                            <li>
+                                                <div class="average-txt">통신료 청구 할인</div>
+                                                <p class="count">100만원 이상</p>
+                                                <div class="graph">
+                                                    <span class="light">20,000원</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="count">70만원 이상</p>
+                                                <div class="graph m-sm">
+                                                    <span class="light">18,000원</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="count">30만원 이상</p>
+                                                <div class="graph x-sm">
+                                                    <span class="light">13,000원</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="notification">
+                                <li>통신료 자동이체 24개월 차까지 적용</li>
+                                <li>25개월 차부터 전원 이용금액 30만원 이상 시 6,000원 할인</li>
+                            </ul>
+                        </section>
+                        <section class="c-unit">
+                            <h3 class="c-tit">유의사항</h3>
+                            <ul class="notification">
+                                <li>유모바일 통신료 자동이체 청구 할인 적용 시 당월 이용금액 M포인트 적립 제외</li>
+                                <li>M포인트 적립 및 사용 상세 기준은 M포인트 적립·사용 참고</li>
+                                <li>전월 이용금액 30만원 미만 시 청구 할인 제외</li>
+                                <li>전월 이용금액이란 전월 1일부터 말일까지 U+유모바일-현대카드M Edition3 본인+가족카드의 일시불 및 할부 이용금액</li>
+                                <li>사후 승인 가맹점 이용금액은 매출전표 접수일 기준으로 해당 월 이용금액에 실적 포함</li>
+                                <li>신규 발급 시 발급월 포함 2개월간 전월 이용금액 무관하게 13,000원 할인 혜택 제공, 전월 이용금액 70만원 이상 시 18,000원, 100만원 이상 시 20,000원 할인 혜택 제공<br>(교체/재발급/해지 후 재가입 시 할인 제외)</li>
+                                <li>전월 이용금액 및 할인한도는 본인+가족카드 합산 적용</li>
+                                <li>청구 할인 헤택은 월 할인한도 내 적용되며, 유모바일 통신료 자동이체금액이 청구 할인금액보다 적을 경우 자동이체 청구금액만큼 할인 적용<br>(카드와 휴대폰명의가 다른 경우에도 제휴서비스 이용 가능)</li>
+                                <li>자동이체 등록한 유모바일 통신료가 카드사에 청구되는 시점부터 청구 할인서비스 적용</li>
+                                <li>유모바일 통신료를 U+유모바일-현대카드M Edition3 카드로 결제하더라도 자동이체가 아닌 경우 및 통신료 자동이체일 경과 후 결제된 경우에는 청구 할인 적용 불가</li>
+                                <li>유모바일 통신료 자동이체는 카드 수령 후 유모바일 고객센터(1644-5353)로 직접 신청</li>
+                                <li>1~24개월 차에 적용되는 유모바일 통신료 할인은 U+유모바일-현대카드M Edition3 최초 신규 발급 시에 한해 제공</li>
+                                <li>전월 이용금액 제외 대상<br>
+                                    청구 할인 통신료, 결제 취소금액, 장기카드대출(카드론), 단기카드대출(현금서비스), 연회비, 제수수료, 이자, 공과금 납부액(국세, 관세, 지방세, 지방세외수입, 상하수도요금, 벌과금, 과태료,
+                                    인지세, 송달료, 민원 발급수수료 등 국가 또는 공공단체가 부과하는 부담금), 전기요금, 도시가스요금, 아파트관리비, 초·중·고교 학교납입금, 대학·대학원 등록금 납부 결제건, 자동납부서비스 이용수수료,
+                                    상품권 등 현금성 유가증권 구매 및 선불카드 구매·충전금액, 건강보험, 국민연금, 고용보험, 산재보험 및 장애인 고용부담금, 고속도로 통행요금, 고속버스(차내 단말기 및 고속버스 앱 결제 포함),
+                                    당사의 모든 할인서비스 및 무이자할부 이용금액, 후불하이패스 이용금액</li>
+                                <li><strong>카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체이자율이 적용됩니다.(회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)<br>
+                                    단, 연체 발생시점에 약정금리가 없는 경우 아래와 같이 적용<br>
+                                    - 일시불 : 거래 발생시점 기준 최소 기간(2개월)의 유이자할부 약정금리 + 연체가산금리 3%<br>
+                                    - 무이자할부 : 거래 발생시점 기준 동일한 할부 계약 기간의 유이자할부 약정금리 + 연체가산금리 3%<br>
+                                    - 상환 능력에 비해 신용카드 이용금액이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.<br>
+                                    - 개인신용평점 하락 시 금융거래와 관련된 불이익이 발생할 수 있습니다.<br>
+                                    - 일정 기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.<br>
+                                    - 신용카드 발급이 부적정한 경우(연체금 보유, 개인신용평점 낮음 등) 카드 발급이 제한될 수 있습니다.<br>
+                                    - 카드 이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.<br>
+                                    - 금융소비자는 금융소비자보호법 제19조 제1항에 따라 해당 상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.<br>
+                                    - 자세한 내용 및 이용 조건은 카드 신청 전 현대카드 홈페이지 및 상품설명서, 약관 참고</strong></li>
+                                <li><strong class="sm">준법감시심의필 제 220607-019 (2022.06.07~2023.06.06)</strong></li>
+                                <li><strong class="sm">여신금융협회 심의필 제 2022-C1h-04566호 (2022.06.13~2023.06.12)</strong></li>
+                            </ul>
+                        </section>
+                        <!-- //첫번째 탭 -->
+                    </div>
+                    <div aria-hidden="true">
+                        <!-- 두번째 탭 -->
+                        <section class="c-unit">
+                            <h3 class="c-tit">연회비</h3>
+                            <ul class="notification">
+                                <li>
+                                    국내전용 / 국내외겸용(VISA/MasterCard)<br>
+                                    30,000원(기본연회비 10,000원+제휴연회비 20,000원) / 가족카드 10,000원
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="c-unit">
+                            <h3 class="c-tit">카드 발급 및 등록방법</h3>
+                            <ol class="num-process-wrap">
+                                <li>
+                                    <span class="number">1</span>
+                                    <div class="txt-wrap">
+                                        <strong>U+ U MOBILE <br>제휴카드 발급</strong>
+                                        <p>
+                                            <a href="https://www.hyundaicard.com/cpc/cr/CPCCR0201_01.hc?cardflag=J&cardWcd=MLGTRE3&eventCode=00000" target="_blank" class="btn-text-right-s">카드 신청하기</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="number">2</span>
+                                    <div class="txt-wrap">
+                                        <strong><em class="txt-vt">필수!!</em><br> 통신료 자동이체 수단 변경</strong>
+                                        <p> <a href="#" class="btn-text-right-s">납부방법 변경하기</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="number">3</span>
+                                    <div class="txt-wrap">
+                                        <strong>지난 달 카드 이용금액 충족하면<br> 통신료 할인</strong>
+                                    </div>
+                                </li>
+                            </ol>
+                            <p class="bang-notice">상품 관련 세부 사항은 홈페이지(www.hyundaicard.com) 참조 또는 고객센터 (1577-6000)로 문의하여 주시기 바랍니다.</p>
+                        </section>
+                        <section class="c-unit">
+                            <h3 class="c-tit">카드문의</h3>
+                            <p>현대카드 고객센터 : <span class="txt-vt">1577-6000</span></p>
+                        </section>
+                        <!-- //두번째 탭 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('./pages/includes/footer.html')
+
+    <!-- SCRIPT IMPORT -->
+    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+
+</div>
+</body>
+</html>

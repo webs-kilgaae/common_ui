@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="w5sfv25mfa" x="4" y="9" width="66" height="56" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="8mgr3ikemb" x="38" y="37" width="38" height="38" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="bg" d="M125.852 88.457a19.1 19.1 0 1 0-19.1 19.1 19.1 19.1 0 0 0 19.1-19.1z" transform="translate(-49.232 -33.226)" style="fill:none"/>
+    <g data-name="그룹 484264">
+        <g data-name="그룹 465504">
+            <g style="filter:url(#w5sfv25mfa)">
+                <rect data-name="사각형 341209" width="60" height="50" rx="12" transform="translate(6.999 10.001)" style="fill:#e3e6f9"/>
+            </g>
+            <g data-name="그룹 484240">
+                <path data-name="선 126659" transform="translate(43 23.999)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;fill:none" d="M0 0h12"/>
+                <path data-name="선 126660" transform="translate(43 31.999)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;fill:none" d="M0 0h12"/>
+            </g>
+            <g data-name="그룹 484248">
+                <path data-name="합치기 29" d="M2.25 18.214A2.25 2.25 0 0 1 0 15.964V15a7.5 7.5 0 0 1 5.155-7.127 4.286 4.286 0 1 1 4.69 0A7.5 7.5 0 0 1 15 15v.964a2.25 2.25 0 0 1-2.25 2.25z" transform="translate(18 20.999)" style="fill:#aeaae8;stroke:transparent;stroke-miterlimit:10"/>
+            </g>
+        </g>
+        <g style="filter:url(#8mgr3ikemb)">
+            <path data-name="합치기 63" d="m28.022 31.317-7.652-7.652a12.981 12.981 0 1 1 3.3-3.3l7.651 7.651a2.331 2.331 0 0 1-3.3 3.3z" transform="translate(41.001 38.004)" style="fill:#6f98f8"/>
+        </g>
+        <path data-name="패스 862540" d="M8.5 0A8.5 8.5 0 1 1 0 8.5 8.5 8.5 0 0 1 8.5 0z" transform="translate(45.501 42.499)" style="fill:#fff"/>
+    </g>
+</svg>
