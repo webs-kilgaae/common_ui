@@ -220,7 +220,7 @@
                             top: -40px; right: 0; min-width: 110px; white-space: nowrap; left: unset; transform: translateX(0); padding: 5px 4px 5px 12px;
                             &::after{
                                 content: ''; display: inline-block;  width: 20px; height: 20px; vertical-align: middle;
-                                @include backgroundImg('../../assets/images/pc/icon/ico-arrow-white-sm.svg', center,contain);
+                                @include backgroundImg('../../assets/images/icon/ico-arrow-white-sm.svg', center,contain);
                             }
                         }
                     }
@@ -236,7 +236,7 @@
                         .speech-bubble{
                             width: 338px; height: 40px; text-align: center; margin-bottom: 10px;
                             @include smallDepthTxt2; color: $white; line-height: 40px;
-                            @include backgroundImg('/assets/images/pc/subpage/speech-bubble.png', center,contain);
+                            @include backgroundImg('/assets/images/subpage/speech-bubble.png', center,contain);
                         }
                         .btn-text-right{
                             position: relative;
@@ -285,9 +285,9 @@
                     }
                     .slick-arrow{
                         width: 30px; height: 30px; text-indent: -9999px; font-size: 0;
-                        @include backgroundImg('../../assets/images/pc/icon/ico-slide.svg',center,contain);
+                        @include backgroundImg('../../assets/images/icon/ico-slide.svg',center,contain);
                         &.disabled{
-                            background-image: url('../../assets/images/pc/icon/ico-slide-disabled.svg');
+                            background-image: url('../../assets/images/icon/ico-slide-disabled.svg');
                             cursor: default;
                         }
                         &.slick-prev{
@@ -406,7 +406,7 @@
                     }
                 }
                 .card-area{
-                    @include backgroundImg('../../assets/images/pc/icon/ico-credit-card.svg',left center,20px 20px );
+                    @include backgroundImg('../../assets/images/icon/ico-credit-card.svg',left center,20px 20px );
                     padding-left: 30px;
                     * {vertical-align: middle;}
                     strong{
@@ -542,7 +542,7 @@
 
                 .ico-pop-btn{
                     display: block; position: absolute;top: 50%;left: 50%; width: 20px; height: 20px; font-size: 0; text-indent: -9999px; transform: translateX(-50%) rotate(180deg); transition: transform 0.3s;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-purple-type2.svg',center, contain);
+                    @include backgroundImg('../../assets/images/icon/ico-arrow-purple-type2.svg',center, contain);
                 }
             }
             .show-conts{
@@ -764,7 +764,7 @@
     .phone-recommend-no-result{
         .no-result-txt{
             margin-bottom: 150px;
-            @include backgroundImg('../../assets/images/pc/icon/ico-search-dot.svg',center center,120px 120px);
+            @include backgroundImg('../../assets/images/icon/ico-search-dot.svg',center center,120px 120px);
         }
     }
     //요금제 선택
@@ -843,7 +843,7 @@
         .irs--flat .irs-bar {top:20px;height:0px;}
         .irs--flat .irs-handle {
             top:10px;width:24px;height:24px;
-            @include backgroundImg('../../assets/images/pc/icon/ico-range-slider.svg', center, contain);
+            @include backgroundImg('../../assets/images/icon/ico-range-slider.svg', center, contain);
 
         }
         .irs--flat .irs-line{
@@ -905,13 +905,13 @@
                     label{
                         width:310px; justify-content: flex-start;  position: relative; padding-left: 70px;
                         &::before{
-                            width:20px; height: 20px; content: ''; position: absolute; top:50%; transform: translateY(-50%); left:40px; @include backgroundImg('../../assets/images/pc/icon/ico-checkbox.svg', center center, 20px 20px); display: block;
+                            width:20px; height: 20px; content: ''; position: absolute; top:50%; transform: translateY(-50%); left:40px; @include backgroundImg('../../assets/images/icon/ico-checkbox.svg', center center, 20px 20px); display: block;
                         }
                     }
                     input[type=radio] {
                         &:checked + label{
                             &::before{
-                            width:20px; height: 20px; content: ''; position: absolute; top:50%; transform: translateY(-50%); left:40px; @include backgroundImg('../../assets/images/pc/icon/ico-checkbox-on.svg', center center, 20px 20px); display: block;
+                            width:20px; height: 20px; content: ''; position: absolute; top:50%; transform: translateY(-50%); left:40px; @include backgroundImg('../../assets/images/icon/ico-checkbox-on.svg', center center, 20px 20px); display: block;
                         }
 
                         }

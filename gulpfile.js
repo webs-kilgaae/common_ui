@@ -81,7 +81,7 @@ const paths = {
 		},
 		sprite:{
 			src: './project/src/assets/sp_images/*.png',
-			dest: './project/dist/assets/images/pc/sp_images/'
+			dest: './project/dist/assets/images/sp_images/'
 		}
 	}
 };

@@ -35,7 +35,7 @@
     o.style.height = "40px";
     o.style.background = "rgba(0, 0, 0, .1)";
     o.style.borderRadius = "100%";
-    o.innerHTML = '<img src="../../assets/images/pc/icon/ico-close.svg" alt="" style="width:5.5vw; height: 5.5vw;">';
+    o.innerHTML = '<img src="../../assets/images/icon/ico-close.svg" alt="" style="width:5.5vw; height: 5.5vw;">';
     o.style.zIndex = 1e7;
     o.style.cursor = "pointer";
     var r = l.createElement("div");

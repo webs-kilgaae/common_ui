@@ -5,7 +5,7 @@
 .accordian {
     & > .acc-trigger {
         display:block;width:100%;position:relative;margin-bottom:20px; @include defaultTxt;
-        &:after {content: "";position:absolute;right:0;top:50%;width:13px;height:8px;background:url(../../assets/images/pc/icon/ico-arrow-bottom.svg) no-repeat 0 0;background-size:100%;transform:translateY(-50%);}
+        &:after {content: "";position:absolute;right:0;top:50%;width:13px;height:8px;background:url(../../assets/images/icon/ico-arrow-bottom.svg) no-repeat 0 0;background-size:100%;transform:translateY(-50%);}
         &.on{
             border-bottom:0;
             &:after {transform:translateY(-50%) rotate(180deg);}

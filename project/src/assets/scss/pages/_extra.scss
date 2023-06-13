@@ -169,7 +169,7 @@
                             margin-top: 20px;
                             .btn-text-arrow{
                                     padding-right: 22px;
-                                    background: url(../../assets/images/pc/icon/ico-arrow-right.svg) no-repeat right;
+                                    background: url(../../assets/images/icon/ico-arrow-right.svg) no-repeat right;
                                     background-size: 15px 15px;
                                     display: inline-block;
                                     @include smallTxt;
@@ -216,7 +216,7 @@
                         margin-top: 0;
                     }
                     &:after{
-                        content: ''; position: absolute; top: 110px; right: 30px; width: 40px; height: 40px; @include backgroundImg('../../assets/images/pc/icon/ico-right-arrow-thin.svg', 0 , 100%)
+                        content: ''; position: absolute; top: 110px; right: 30px; width: 40px; height: 40px; @include backgroundImg('../../assets/images/icon/ico-right-arrow-thin.svg', 0 , 100%)
                     }
                     &:last-child{
                         &:after{

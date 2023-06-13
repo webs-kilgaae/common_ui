@@ -45,11 +45,11 @@
   }
 
   &-prev {
-    left: 0; background-image: url('../../assets/images/pc/icon/datepicker-prev.svg');
+    left: 0; background-image: url('../../assets/images/icon/datepicker-prev.svg');
   }
 
   &-next {
-    right: 0; background-image: url('../../assets/images/pc/icon/datepicker-next.svg');
+    right: 0; background-image: url('../../assets/images/icon/datepicker-next.svg');
   }
 
   &-title {
@@ -220,11 +220,11 @@
 }
 .ui-datepicker-next{
   &.ui-state-hover{
-   width: 25px !important; height: 25px !important; background: url('../../assets/images/pc/icon/datepicker-next.svg') no-repeat 0 0 !important; border-color: transparent;
+   width: 25px !important; height: 25px !important; background: url('../../assets/images/icon/datepicker-next.svg') no-repeat 0 0 !important; border-color: transparent;
   }
 }
 .ui-datepicker-prev{
   &.ui-state-hover{
-   width: 25px !important; height: 25px !important; background: url('../../assets/images/pc/icon/datepicker-prev.svg') no-repeat 0 0 !important; border-color: transparent;
+   width: 25px !important; height: 25px !important; background: url('../../assets/images/icon/datepicker-prev.svg') no-repeat 0 0 !important; border-color: transparent;
   }
 }

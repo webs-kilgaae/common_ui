@@ -47,7 +47,7 @@ body.white{
                 display: block; padding: 10px 30px; background-color: rgba(0,0,0, 0.7); border-radius: 24px; color: $white; 
             }
             button{
-                position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; @include backgroundImg('../../assets/images/pc/icon/ico-delete.svg', 0, 100%); font-size: 0;
+                position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; @include backgroundImg('../../assets/images/icon/ico-delete.svg', 0, 100%); font-size: 0;
             }
         }
     }    
@@ -61,7 +61,7 @@ body.white{
                 position:absolute;top:13px;right:0;
                 .btn-more {
                     display:inline-block;padding-right:22px;@include normalTxt;color:$gray05;
-                    @include backgroundImg('/assets/images/pc/main/ico-more-gray.svg', right center, 18px 18px);
+                    @include backgroundImg('/assets/images/main/ico-more-gray.svg', right center, 18px 18px);
                     &+.btn-more {margin-left:20px;}
                     &>b {@include normalTxt;color:$black;font-weight:bold;}
                 }
@@ -152,10 +152,10 @@ body.white{
         }
         .slick {
             &.on {display:block;}
-            &-prev {@include backgroundImg('/assets/images/pc/main/visual-prev.svg', center, 20px 20px);}
-            &-next {@include backgroundImg('/assets/images/pc/main/visual-next.svg', center, 20px 20px);}
-            &-play {display:none;@include backgroundImg('/assets/images/pc/main/visual-play.svg', center, 20px 20px);}
-            &-pause {display:none;@include backgroundImg('/assets/images/pc/main/visual-pause.svg', center, 20px 20px);}
+            &-prev {@include backgroundImg('/assets/images/main/visual-prev.svg', center, 20px 20px);}
+            &-next {@include backgroundImg('/assets/images/main/visual-next.svg', center, 20px 20px);}
+            &-play {display:none;@include backgroundImg('/assets/images/main/visual-play.svg', center, 20px 20px);}
+            &-pause {display:none;@include backgroundImg('/assets/images/main/visual-pause.svg', center, 20px 20px);}
             &-page {padding:0 20px;}
         }
     }
@@ -179,7 +179,7 @@ body.white{
         }
         .info {
             display:flex;flex-direction:column;justify-content:flex-start;padding:0 80px;
-            @include backgroundImg('/assets/images/pc/main/ico-more-black.svg', right 60px center, 20px 20px);
+            @include backgroundImg('/assets/images/main/ico-more-black.svg', right 60px center, 20px 20px);
             strong {display:block;@include mainTxt;}
             p {display:block;margin-top:10px;@include defaultTxt;color:$black;}
         }
@@ -229,8 +229,8 @@ body.white{
                     }
                     .slick-arrow {
                         width:50px;height:50px;border-radius:50%;font-size:0;background-color:rgba(0,0,0,0.6) !important;
-                        &.slick-prev {left:-25px;@include backgroundImg('/assets/images/pc/main/btn-prev-white.svg', center, 30px 30px);}
-                        &.slick-next {right:-25px;@include backgroundImg('/assets/images/pc/main/btn-next-white.svg', center, 30px 30px);}
+                        &.slick-prev {left:-25px;@include backgroundImg('/assets/images/main/btn-prev-white.svg', center, 30px 30px);}
+                        &.slick-next {right:-25px;@include backgroundImg('/assets/images/main/btn-next-white.svg', center, 30px 30px);}
                         &.slick-disabled{
                             display: none !important;
                         }
@@ -320,8 +320,8 @@ body.white{
         }
         .slick-arrow {
             top:auto;width:32px;height:32px;font-size:0;
-            &.slick-prev {left:50%; bottom: 16px; transform: rotate(180deg); margin-left:-42px;@include backgroundImg('/assets/images/pc/main/btn-cir-next.svg', center, 32px 32px);}
-            &.slick-next {right:50%; bottom:0;  margin-right:-42px;@include backgroundImg('/assets/images/pc/main/btn-cir-next.svg', center, 32px 32px);}
+            &.slick-prev {left:50%; bottom: 16px; transform: rotate(180deg); margin-left:-42px;@include backgroundImg('/assets/images/main/btn-cir-next.svg', center, 32px 32px);}
+            &.slick-next {right:50%; bottom:0;  margin-right:-42px;@include backgroundImg('/assets/images/main/btn-cir-next.svg', center, 32px 32px);}
         }
     }
 }

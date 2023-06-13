@@ -105,13 +105,13 @@
                     &.icon-iphone{
                         &::before {
                             content: ''; display: block; width: 24px; height: 24px;
-                            @include backgroundImg('../../assets/images/pc/icon/ico-apple-logo.png', center, contain);
+                            @include backgroundImg('../../assets/images/icon/ico-apple-logo.png', center, contain);
                         }
                     }
                     &.icon-galaxy{
                         &::before {
                             content: ''; display: block; width: 64px; height: 18px;
-                            @include backgroundImg('../../assets/images/pc/icon/ico-galaxy-logo.png', center, contain);
+                            @include backgroundImg('../../assets/images/icon/ico-galaxy-logo.png', center, contain);
                         }
                     }
                 }
@@ -121,7 +121,7 @@
             margin-top: 100px;
             .no-result-txt {
                 padding-top: 170px; background-position: center top;
-                background-image: url('../../assets/images/pc/icon/ico-phone-check-big.svg');
+                background-image: url('../../assets/images/icon/ico-phone-check-big.svg');
             }
         }
         .box-table{
@@ -358,7 +358,7 @@
                 }
                 .today-noti{
                     @include normalTxt; color: $purple; padding-left: 30px;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-today-noti.svg',left center,20px 20px);
+                    @include backgroundImg('../../assets/images/icon/ico-today-noti.svg',left center,20px 20px);
                 }
             }
             .form-title{
@@ -490,8 +490,8 @@
                 button {
                     display:block;overflow:hidden;width:60px;height:60px;border-radius:7px;background-color:$gray02 !important;font-size:0;text-indent:-70px;transition:0.3s;
                     &:focus {background-color:$purple !important;}
-                    &.btn-minus {@include backgroundImg('../../assets/images/pc/icon/ico-minus-wh.svg', center center, 26px 4px);}
-                    &.btn-plus {@include backgroundImg('../../assets/images/pc/icon/ico-plus-wh.svg', center center, 26px 26px);}
+                    &.btn-minus {@include backgroundImg('../../assets/images/icon/ico-minus-wh.svg', center center, 26px 4px);}
+                    &.btn-plus {@include backgroundImg('../../assets/images/icon/ico-plus-wh.svg', center center, 26px 26px);}
 
                 }
             }
@@ -550,17 +550,17 @@
                         &::before {
                             content: '';
                             display: inline-block; margin-right: 10.0001px; width: 26px; height: 26px;
-                            @include backgroundImg('../../assets/images/pc/icon/logo-skt.svg', center, contain);
+                            @include backgroundImg('../../assets/images/icon/logo-skt.svg', center, contain);
                         }
                     }
                     &:nth-of-type(2) {
                         label::before {
-                            background-image: url('../../assets/images/pc/icon/logo-kt.svg');
+                            background-image: url('../../assets/images/icon/logo-kt.svg');
                         }
                     }
                     &:nth-of-type(3) {
                         label::before {
-                            background-image: url('../../assets/images/pc/icon/logo-lg.svg');
+                            background-image: url('../../assets/images/icon/logo-lg.svg');
                         }
                     }
                 }
@@ -723,7 +723,7 @@
                     &:not(:first-of-type) {
                         &::before{
                             content: ''; position: absolute; left: -70px; top: 102px; display: block; width: 40px; height: 40px;
-                            @include backgroundImg('../../assets/images/pc/icon/ico-right-arrow-thin.svg');
+                            @include backgroundImg('../../assets/images/icon/ico-right-arrow-thin.svg');
                         }
                     }
                     &:nth-of-type(5) {

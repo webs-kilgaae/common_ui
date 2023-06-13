@@ -20,7 +20,7 @@ aside {display:none;}
 .breadcrumb {
     position: absolute; left: 50%; transform: translateX(-50%); z-index: 1; width:1280px;margin:20px auto 0;text-align:right;font-size:0; z-index: 2;
     &>li {
-        display:inline-block;position:relative;padding:0 26px 11px 0;@include backgroundImg('/assets/images/pc/common/breadcrumb-ico-arrow.svg', 100% 5px, 10px);
+        display:inline-block;position:relative;padding:0 26px 11px 0;@include backgroundImg('/assets/images/common/breadcrumb-ico-arrow.svg', 100% 5px, 10px);
         &+li {margin-left: 16px;}
         &:first-child {
             &>a {border-bottom:none !important;}
@@ -121,8 +121,8 @@ aside {display:none;}
                         span {
                             display: block;position: relative; padding-left:30px;
                             @include defaultTxt;
-                            &.ico-call {@include backgroundImg('../../assets/images/pc/icon/ico-call-fill.svg', left center, 20px 20px);width: auto;height:auto;}
-                            &.ico-sms {@include backgroundImg('../../assets/images/pc/icon/ico-sms-fill.svg', left center, 20px 20px);width: auto;height:auto;}
+                            &.ico-call {@include backgroundImg('../../assets/images/icon/ico-call-fill.svg', left center, 20px 20px);width: auto;height:auto;}
+                            &.ico-sms {@include backgroundImg('../../assets/images/icon/ico-sms-fill.svg', left center, 20px 20px);width: auto;height:auto;}
                         }
                     }
                     .use-time {
@@ -156,7 +156,7 @@ aside {display:none;}
                         border-top: 1px solid $gray02;
                     }
                     a{
-                        display: flex; align-items: center; gap: 20px; height: 60px; @include backgroundImg('../../assets/images/pc/icon/ico-arrow-thin-right.svg', 100% 50%, 20px); @include normalTxt;
+                        display: flex; align-items: center; gap: 20px; height: 60px; @include backgroundImg('../../assets/images/icon/ico-arrow-thin-right.svg', 100% 50%, 20px); @include normalTxt;
                     }
                 }
             }
@@ -198,7 +198,7 @@ iframe[title='읽지 않은 메시지 수'] {display:none;}
     .open{
         display: block; width: 54px; height: 54px;
         em{
-            position: absolute; right: 0; top: 0; z-index: 10; width: 54px; height: 54px; @include backgroundImg('../../assets/images/pc/icon/ico-floating-chatbot.svg', 100% 0, 54px); border-radius: 27px; font-size: 0;
+            position: absolute; right: 0; top: 0; z-index: 10; width: 54px; height: 54px; @include backgroundImg('../../assets/images/icon/ico-floating-chatbot.svg', 100% 0, 54px); border-radius: 27px; font-size: 0;
         }
         &.on{
            width: 200px;
@@ -214,7 +214,7 @@ iframe[title='읽지 않은 메시지 수'] {display:none;}
         }
     }
     .close{
-        display: none; width: 54px; height: 54px; @include backgroundImg('../../assets/images/pc/icon/ico-float-btn-close.svg', 0, 100%); font-size: 0;
+        display: none; width: 54px; height: 54px; @include backgroundImg('../../assets/images/icon/ico-float-btn-close.svg', 0, 100%); font-size: 0;
     }
 }
 .chat-box{
@@ -230,7 +230,7 @@ iframe[title='읽지 않은 메시지 수'] {display:none;}
 .float-top{
     position: fixed; right: 60px; bottom: 60px;
     a{
-        display: block; width: 50px; height: 54px; @include backgroundImg('../../assets/images/pc/icon/ico-top.svg', 0 , 100%); font-size: 0;
+        display: block; width: 50px; height: 54px; @include backgroundImg('../../assets/images/icon/ico-top.svg', 0 , 100%); font-size: 0;
     }
 }
 .survey-wrap{

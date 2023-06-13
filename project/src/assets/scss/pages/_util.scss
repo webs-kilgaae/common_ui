@@ -97,7 +97,7 @@
                     &::before{
                         content: '';
                         display: inline-block; margin-right: 10.0001px; width: 26px; height: 26px;
-                        @include backgroundImg('../../assets/images/pc/icon/logo-skt.svg', center, contain);
+                        @include backgroundImg('../../assets/images/icon/logo-skt.svg', center, contain);
                     }
                 }
                 label{
@@ -108,13 +108,13 @@
                     &.ico-kt {
                         @extend .ico;
                         &::before {
-                            background-image: url('../../assets/images/pc/icon/logo-kt.svg');
+                            background-image: url('../../assets/images/icon/logo-kt.svg');
                         }
                     }
                     &.ico-lg {
                         @extend .ico;
                         &::before {
-                            background-image: url('../../assets/images/pc/icon/logo-lg.svg');
+                            background-image: url('../../assets/images/icon/logo-lg.svg');
                         }
                     }
                 }
@@ -165,9 +165,9 @@
                     & > a{
                             display: block; width: 64px; height: 64px;
                         &.icon {
-                            &-sns-naver{@include backgroundImg('../../assets/images/pc/icon/ico-sns-naver.png', center,contain);}
-                            &-sns-google{@include backgroundImg('../../assets/images/pc/icon/ico-sns-google.png', center,contain);}
-                            &-sns-apple{@include backgroundImg('../../assets/images/pc/icon/ico-sns-apple.png', center,contain);}
+                            &-sns-naver{@include backgroundImg('../../assets/images/icon/ico-sns-naver.png', center,contain);}
+                            &-sns-google{@include backgroundImg('../../assets/images/icon/ico-sns-google.png', center,contain);}
+                            &-sns-apple{@include backgroundImg('../../assets/images/icon/ico-sns-apple.png', center,contain);}
                         }
                     }
                 }
@@ -297,7 +297,7 @@
             margin-top: 50px;
         }
         .box-ico-txt{
-            background-image: url('../../assets/images/pc/icon/ico-corp-no-data.svg');
+            background-image: url('../../assets/images/icon/ico-corp-no-data.svg');
         }
     }
 
@@ -368,7 +368,7 @@
     .introduce-ualmo{
         .brand-banner{
             display: flex; justify-content: center; align-items: center;  width: 100%; height: 800px;
-            @include backgroundImg('/assets/images/pc/subpage/introduce-ualmo/ualmo-visual.jpg',center, cover);
+            @include backgroundImg('/assets/images/subpage/introduce-ualmo/ualmo-visual.jpg',center, cover);
         }
         .brand-main-txt{
             font-size: 60px; font-weight: 600; line-height: 1.3; letter-spacing: -1.8px; color: $black;
@@ -397,7 +397,7 @@
             }
         }
         .easy-ualmo{
-            margin-top: 60px; background-image: url('/assets/images/pc/subpage/introduce-ualmo/easy-ualmo.jpg');
+            margin-top: 60px; background-image: url('/assets/images/subpage/introduce-ualmo/easy-ualmo.jpg');
             .unit-origin{
                 display: flex; flex-direction: column; align-items: flex-end;
                 .txt-wrap{
@@ -521,7 +521,7 @@
                     }
                     .btn-search {
                         flex-shrink:1;overflow:hidden;width:24px;height:24px;font-size:0;
-                        @include backgroundImg('/assets/images/pc/common/header-btn-search.svg', center, 24px 24px);
+                        @include backgroundImg('/assets/images/common/header-btn-search.svg', center, 24px 24px);
                     }
                 }
             }
@@ -536,7 +536,7 @@
                 position:relative;padding-right:30px;@include normalTxt;
                 &::after {
                     content:'';display:block;position:absolute;right:0;top:0;width:20px;height:20px;
-                    @include backgroundImg('/assets/images/pc/common/search-more.svg', right top, 20px 20px);
+                    @include backgroundImg('/assets/images/common/search-more.svg', right top, 20px 20px);
                 }
                 &.fold {
                     &::after {transform:rotate(180deg);}
@@ -562,7 +562,7 @@
                 border-top:1px solid $black;
                 dl {
                     display:flex;justify-content:flex-start;align-items:center;gap:0 20px;padding:25px 80px 25px 40px;border-bottom:1px solid $gray02;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-gray-s.svg', right 40px center, 20px 20px);
+                    @include backgroundImg('../../assets/images/icon/ico-arrow-gray-s.svg', right 40px center, 20px 20px);
                     dt {
                         width:360px;
                         .title {@include mainTxt;}
@@ -574,13 +574,13 @@
                             span {
                                 width:165px;height:20px;padding-left:30px;@include defaultTxt;color:$black;line-height:20px;
                                 &.vol {
-                                    &::before {@include backgroundImg('../../assets/images/pc/icon/ico-data-black.svg', center, 20px 20px);}
+                                    &::before {@include backgroundImg('../../assets/images/icon/ico-data-black.svg', center, 20px 20px);}
                                 }
                                 &.limit {
-                                    &::before {@include backgroundImg('../../assets/images/pc/icon/ico-call-fill-black.svg', center, 20px 20px);}
+                                    &::before {@include backgroundImg('../../assets/images/icon/ico-call-fill-black.svg', center, 20px 20px);}
                                 }
                                 &.supply {
-                                    &::before {@include backgroundImg('../../assets/images/pc/icon/ico-sms-fill-black.svg', center, 20px 20px);}
+                                    &::before {@include backgroundImg('../../assets/images/icon/ico-sms-fill-black.svg', center, 20px 20px);}
                                 }
                             }
                         }
@@ -597,7 +597,7 @@
                     }
                     dl {
                         display:flex;justify-content:space-between;padding-right:40px;
-                        @include backgroundImg('../../assets/images/pc/icon/ico-arrow-gray-s.svg', right center, 20px 20px);
+                        @include backgroundImg('../../assets/images/icon/ico-arrow-gray-s.svg', right center, 20px 20px);
                         dt {
                             .title {@include mainTxt;}
                         }
@@ -723,7 +723,7 @@
 .error-wrap{
     display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh;
     .error-conts{
-        width: 1280px; padding-top: 166px; @include backgroundImg('/assets/images/pc/subpage/img-error.png', 50% 0, auto); text-align: center;
+        width: 1280px; padding-top: 166px; @include backgroundImg('/assets/images/subpage/img-error.png', 50% 0, auto); text-align: center;
         h1{
             margin-bottom: 30px; color: $purple; font-size: 44px; font-weight: 600; letter-spacing: -0.88px;
         }

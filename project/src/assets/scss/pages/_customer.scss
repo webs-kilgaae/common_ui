@@ -58,7 +58,7 @@
             li{
                 flex:1; width:30%;
                 .btns{
-                    width:100%; padding-left: 30px; @include backgroundImg('../../assets/images/pc/icon/ico-arrow-right.svg', 363px 50%, 20px); background-color: $gray06; text-align: left;
+                    width:100%; padding-left: 30px; @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg', 363px 50%, 20px); background-color: $gray06; text-align: left;
                 }
             }
         }
@@ -198,11 +198,11 @@
                                     &.on{
                                         background: #f9f5ff;
                                         a{
-                                            background-image: url('../../assets/images/pc/icon/ico-location-wh.svg');
+                                            background-image: url('../../assets/images/icon/ico-location-wh.svg');
                                         }
                                     }
                                     a{
-                                        display: block; padding: 20px 120px 20px 30px; @include backgroundImg('../../assets/images/pc/icon/ico-location.svg', 520px 50%, 80px);
+                                        display: block; padding: 20px 120px 20px 30px; @include backgroundImg('../../assets/images/icon/ico-location.svg', 520px 50%, 80px);
                                         strong{
                                             @include normalTxt;
                                         }
@@ -688,17 +688,17 @@
     }
     &.spam{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/spam-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/spam-visual.jpg', center center);
         }
     }
     &.smishing{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/smishing-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/smishing-visual.jpg', center center);
         }
     }
     &.voice{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/voice-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/voice-visual.jpg', center center);
         }
         .app_list{
             margin-top: 10px;
@@ -706,29 +706,29 @@
     }
     &.tm{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/tm-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/tm-visual.jpg', center center);
         }
     }
     &.pharming{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/pharming-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/pharming-visual.jpg', center center);
         }
     }
     &.qshing{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/qshing-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/qshing-visual.jpg', center center);
         }
     }
     &.alter{
         .protect-visual{
-             @include backgroundImg('/assets/images/pc/subpage/alter-visual.jpg', center center);
+             @include backgroundImg('/assets/images/subpage/alter-visual.jpg', center center);
         }
     }
     .balloon-list {
         display:flex;flex-wrap:wrap;gap:30px 50px;margin-bottom:70px;
         p {
             flex:0 1 300px;height:186px;padding:30px 30px 60px;border-radius:10px;@include defaultTxt;color:$black;
-            @include backgroundImg('/assets/images/pc/subpage/img-balloon-purble.png', left top, 300px 186px);
+            @include backgroundImg('/assets/images/subpage/img-balloon-purble.png', left top, 300px 186px);
         }
     }
     .app_list {
@@ -820,7 +820,7 @@
             li{
                 a{
                     &:after{
-                        content: ''; position: absolute; left: 50%; top: 75px; transform: translateX(-50%); width: 100px; height: 100px; @include backgroundImg('../../assets/images/pc/icon/ico-cir-play.png', 0, 100%);
+                        content: ''; position: absolute; left: 50%; top: 75px; transform: translateX(-50%); width: 100px; height: 100px; @include backgroundImg('../../assets/images/icon/ico-cir-play.png', 0, 100%);
                     }
                 }
             }
@@ -881,7 +881,7 @@
             &+li {
                 &::before {
                     content:'';display:block;position:absolute;top:50%;width:40px;height:40px;margin-top:-20px;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-thin-right.svg', center, auto 20px);
+                    @include backgroundImg('../../assets/images/icon/ico-arrow-thin-right.svg', center, auto 20px);
                 }
             }
            .txt {margin-top:20px;color:$black;}
@@ -1029,7 +1029,7 @@
                 display:flex;flex:1 1 40%;border-radius:7px;border:solid 1px $gray02; padding: 0;
                 ::before {
                     content:'';display:block;position:absolute;right:40px;top:50%;width:20px;height:20px;margin-top:-10px;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-thin-right.svg', center center, 20px 20px);
+                    @include backgroundImg('../../assets/images/icon/ico-arrow-thin-right.svg', center center, 20px 20px);
                 }
                 a {display:flex;align-items:center;position:relative;width:100%;padding:40px 60px 40px 40px;}
 
@@ -1062,7 +1062,7 @@
         &.black {border:solid 2px $black;background:$white;color:$black;}
     }
     .loss-receipt {
-        height: 289px; padding: 50px 0 0 50px; @include backgroundImg('/assets/images/pc/subpage/img-reward-loss.png', 100% 50%, auto); border: 1px solid $gray02; border-radius: 10px;
+        height: 289px; padding: 50px 0 0 50px; @include backgroundImg('/assets/images/subpage/img-reward-loss.png', 100% 50%, auto); border: 1px solid $gray02; border-radius: 10px;
         h2 {margin-top:0;}
         .txt {margin-top:0;}
         &+.appli-group-wrap {margin-top:30px;}
@@ -1155,13 +1155,13 @@
             .txt {margin:10px 0 0;}
             &::after {content:'';display:block;position:absolute;right:36px;top:50%;width:20px;height:20px;margin-top:-10px;}
         }
-        &-callcenter {padding:50px 40px 40px 120px; @include backgroundImg('../../assets/images/pc/icon/ico-phone-call.svg', 20px center); background-size:80px 80px;}
+        &-callcenter {padding:50px 40px 40px 120px; @include backgroundImg('../../assets/images/icon/ico-phone-call.svg', 20px center); background-size:80px 80px;}
         &-insurance {
             display: flex; align-items: center;
             a{
                 padding:52px 40px; display: block; height: 100%; width: 100%;
             }
-            &::after {@include backgroundImg('../../assets/images/pc/icon/ico-arrow-thin-right.svg', center center, 20px 20px);}
+            &::after {@include backgroundImg('../../assets/images/icon/ico-arrow-thin-right.svg', center center, 20px 20px);}
         }
     }
     .request-compensation {

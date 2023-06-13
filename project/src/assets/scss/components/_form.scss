@@ -12,7 +12,7 @@
 }
 .ico-delete{
     width: 24px;height: 24px;
-    @include backgroundImg('../../assets/images/pc/icon/ico-delete.svg', center, contain);
+    @include backgroundImg('../../assets/images/icon/ico-delete.svg', center, contain);
 }
 
 .nec {padding:0 0 0 4px !important;@include normalTxt;color:#cf192b !important;}
@@ -47,8 +47,8 @@
     .ico{
         &-delete {display: none; position: absolute; top: 50%;right: 20px;transform: translateY(-50%);}
         &-eye {
-            display: block;position: absolute; top: 50%;right: 20px; width: 25px; height: 25px;@include backgroundImg('../../assets/images/pc/icon/ico-eye-off.svg', center, contain); transform: translateY(-50%); cursor: default;
-            &.show{background-image: url('../../assets/images/pc/icon/ico-eye-on.svg');}
+            display: block;position: absolute; top: 50%;right: 20px; width: 25px; height: 25px;@include backgroundImg('../../assets/images/icon/ico-eye-off.svg', center, contain); transform: translateY(-50%); cursor: default;
+            &.show{background-image: url('../../assets/images/icon/ico-eye-on.svg');}
             &.on{right:64px;}
         }
     }
@@ -89,16 +89,16 @@
         &-item{
             position: relative; padding-left: 24px; @include smallDepthTxt;
             &::before{
-                content: '';display: inline-block;position: absolute; left: 0; top: 50%; width: 15px;height: 15px;@include backgroundImg('../../assets/images/pc/icon/ico-check.svg', center, contain); transform: translateY(-50%);
+                content: '';display: inline-block;position: absolute; left: 0; top: 50%; width: 15px;height: 15px;@include backgroundImg('../../assets/images/icon/ico-check.svg', center, contain); transform: translateY(-50%);
             }
             &+.validation-list-item{margin-top: 16px;}
             &.success {
                 color: #1baa46;
-                &::before{background-image: url('../../assets/images/pc/icon/ico-check-success.svg');}
+                &::before{background-image: url('../../assets/images/icon/ico-check-success.svg');}
             }
             &.error {
                 color: $red;
-                &::before{background-image: url('../../assets/images/pc/icon/ico-check-error.svg');}
+                &::before{background-image: url('../../assets/images/icon/ico-check-error.svg');}
             }
         }
     }
@@ -107,7 +107,7 @@
             padding-right:100px;
         }
         .ico-search{
-            position: absolute; top: 50%; right:30px; width:20px; height:100%; background: url('../../assets/images/pc/icon/ico-search.svg') no-repeat center center; background-size: contain; transform: translateY(-50%); font-size: 0;
+            position: absolute; top: 50%; right:30px; width:20px; height:100%; background: url('../../assets/images/icon/ico-search.svg') no-repeat center center; background-size: contain; transform: translateY(-50%); font-size: 0;
         }
     }
 }
@@ -128,7 +128,7 @@
 .btn-select{
     max-width: 180px; width: 100%;
     button{
-        @extend %input;cursor: pointer;@include backgroundImg('../../assets/images/pc/icon/ico-arrow-bottom.svg', calc(100% - 20px) center, 10px 10px);
+        @extend %input;cursor: pointer;@include backgroundImg('../../assets/images/icon/ico-arrow-bottom.svg', calc(100% - 20px) center, 10px 10px);
         text-align: left;
         &:disabled {
             background-color: $gray01;
@@ -228,7 +228,7 @@
         &-label{@extend %label;}
         &-default{
             @extend %input; cursor: pointer; @include smallTxt;
-            &:disabled{color: #afafaf;cursor: default;background-image: url('../../assets/images/pc/icon/ico-arrow-bottom-gray.svg');}
+            &:disabled{color: #afafaf;cursor: default;background-image: url('../../assets/images/icon/ico-arrow-bottom-gray.svg');}
         }
     }
     &.select-more{
@@ -240,7 +240,7 @@
         cursor: pointer;
         padding: 0 30px 0 0;
         border:none;
-        // @include backgroundImg('../../assets/images/pc/icon/ico-arrow-bottom.svg', no-repeat calc(210px - 30px) center, 13px 13px );
+        // @include backgroundImg('../../assets/images/icon/ico-arrow-bottom.svg', no-repeat calc(210px - 30px) center, 13px 13px );
         @include normalTxt;
     }
 
@@ -274,7 +274,7 @@
 }
 
 .date-picker{
-    @include backgroundImg('../../assets/images/pc/icon/ico-calendar.svg', calc(100% - 20px) center, 20px 20px);
+    @include backgroundImg('../../assets/images/icon/ico-calendar.svg', calc(100% - 20px) center, 20px 20px);
 }
 
 //체크박스
@@ -297,7 +297,7 @@
                     background-color:$purple; transition: all 0.3s ease-out;
                 }
                 &::after{
-                    @include backgroundImg('../../assets/images/pc/icon/ico-check-on.svg', center, contain);
+                    @include backgroundImg('../../assets/images/icon/ico-check-on.svg', center, contain);
                 }
             }
         }
@@ -307,7 +307,7 @@
                color:$gray05;
                &::after{
                     content: ""; position:absolute; top: 4px; left:4px;display: inline-block; width: 15px; height: 15px;
-                    @include backgroundImg('../../assets/images/pc/icon/ico-check-disable.svg', center,contain);
+                    @include backgroundImg('../../assets/images/icon/ico-check-disable.svg', center,contain);
                }
             }
         }
@@ -322,7 +322,7 @@
             }
             &::after{
                 content: ""; position:absolute; top: 4px; left:4px;display: inline-block; width: 15px; height: 15px;
-                @include backgroundImg('../../assets/images/pc/icon/ico-check-on.svg', center, contain);
+                @include backgroundImg('../../assets/images/icon/ico-check-on.svg', center, contain);
             }
         }
         // 필수
@@ -351,7 +351,7 @@
                 }
                 &::after{
 
-                    @include backgroundImg('../../assets/images/pc/icon/ico-check-on.svg', center,contain );
+                    @include backgroundImg('../../assets/images/icon/ico-check-on.svg', center,contain );
                 }
             }
         }
@@ -379,14 +379,14 @@
         @include hidden;
         &:checked + label{
             span{color: $purple; transition: all 0.3s ease-out;}
-            &::before{background-image: url('../../assets/images/pc/icon/ico-checkbox-on.svg');}
+            &::before{background-image: url('../../assets/images/icon/ico-checkbox-on.svg');}
         }
     }
     label{
         display: inline-flex; align-items: center; cursor: pointer;
         span{@include normalTxt; font-weight: 600; }
         &::before {
-            content: ''; display: inline-block; width: 20px; height: 20px; margin-right:4px;  @include backgroundImg('../../assets/images/pc/icon/ico-checkbox.svg', center, contain);
+            content: ''; display: inline-block; width: 20px; height: 20px; margin-right:4px;  @include backgroundImg('../../assets/images/icon/ico-checkbox.svg', center, contain);
         }
         &:nth-of-type(n+2){margin-left: 30px;}
     }
@@ -663,7 +663,7 @@
 
     .no-result {
         .no-result-txt {
-            @include backgroundImg('../../assets/images/pc/icon/ico-board-no-data.svg', center, 120px 120px);
+            @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center, 120px 120px);
             @include mainTxt;
         }
     }
@@ -792,7 +792,7 @@
             .file-name {
                 display:flex;align-items:center;height:40px;padding-left:50px;
                 // 임시 아이콘
-                @include backgroundImg('../../assets/images/pc/icon/ico-board-no-data.svg', left center, 40px 40px);
+                @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', left center, 40px 40px);
                 &+.ico-delete {margin-left:30px;}
             }
         }

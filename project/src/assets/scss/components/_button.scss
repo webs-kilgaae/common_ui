@@ -65,7 +65,7 @@
     @include normalTxt;
     &-right{
         @extend .btn-text; padding-right:25px;
-        @include backgroundImg('../../assets/images/pc/icon/ico-arrow-right.svg', right,20px 20px); display: inline-block;
+        @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg', right,20px 20px); display: inline-block;
 
         &.line{
            width:100%; border:1px solid #ddd; padding:36px 40px; border-radius:7px;
@@ -73,10 +73,10 @@
     }
     &-right-s{
         @extend .btn-text; padding-right:22px;@include smallTxt;
-        @include backgroundImg('../../assets/images/pc/icon/ico-arrow-right.svg', right,15px 15px); display: inline-block;
+        @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg', right,15px 15px); display: inline-block;
     }
     &-plus{
-        @include backgroundImg('../../assets/images/pc/icon/ico-plus-sm.svg', calc(100% - 2px) center, contain);
+        @include backgroundImg('../../assets/images/icon/ico-plus-sm.svg', calc(100% - 2px) center, contain);
         @extend .btn-text; padding-right: 40px;
     }
     &-more{
@@ -84,7 +84,7 @@
         .count{
            @extend .btn-text; padding-right: 40px; position: relative;
            &::after{
-            @include backgroundImg('../../assets/images/pc/icon/ico-arrow-bottom.svg',center center, contain);
+            @include backgroundImg('../../assets/images/icon/ico-arrow-bottom.svg',center center, contain);
             content: ''; position:absolute; top:50%; right:10px; transform: translateY(-50%); width: 15px; height: 25px;
            }
         }
@@ -150,9 +150,9 @@
 .box-tooltip{
      display: inline-flex;align-items: center;  position: relative;font-size: 0;vertical-align:middle;  cursor: pointer;
     .btn-tooltip{
-         width: 16px;height: 16px;@include backgroundImg('../../assets/images/pc/icon/ico-tip.svg', center,contain); display: inline-block;    vertical-align: middle; z-index: 1;
+         width: 16px;height: 16px;@include backgroundImg('../../assets/images/icon/ico-tip.svg', center,contain); display: inline-block;    vertical-align: middle; z-index: 1;
         &.wh{
-            @include backgroundImg('../../assets/images/pc/icon/ico-tip-wh.svg', center,contain);
+            @include backgroundImg('../../assets/images/icon/ico-tip-wh.svg', center,contain);
         }
     }
 
@@ -169,12 +169,12 @@
     .btn-month {
         width:20px !important;height:20px !important;
         &.ico-arrow-left{
-            background-image: url('../../assets/images/pc/icon/ico-arrow-thin-right.svg');transform: rotate(-180deg);background-size:20px 20px;
-            &.disabled {background-image: url('../../assets/images/pc/icon/ico-arrow-gray.svg');}
+            background-image: url('../../assets/images/icon/ico-arrow-thin-right.svg');transform: rotate(-180deg);background-size:20px 20px;
+            &.disabled {background-image: url('../../assets/images/icon/ico-arrow-gray.svg');}
         }
         &.ico-arrow-right{
-            background-image: url('../../assets/images/pc/icon/ico-arrow-thin-right.svg');transform: rotate(0deg);background-size:20px 20px;
-            &.disabled {background-image: url('../../assets/images/pc/icon/ico-arrow-gray.svg');}
+            background-image: url('../../assets/images/icon/ico-arrow-thin-right.svg');transform: rotate(0deg);background-size:20px 20px;
+            &.disabled {background-image: url('../../assets/images/icon/ico-arrow-gray.svg');}
         }
     }
 }
@@ -195,15 +195,15 @@
     .count-btn{
         width: 40px; height: 40px;
         &.minus{
-            @include backgroundImg('../../assets/images/pc/icon/ico-btn-minus.svg',center center,contain);
+            @include backgroundImg('../../assets/images/icon/ico-btn-minus.svg',center center,contain);
             &.disabled{
-                background-image: url('../../assets/images/pc/icon/ico-btn-minus-disabled.svg');
+                background-image: url('../../assets/images/icon/ico-btn-minus-disabled.svg');
             }
         }
         &.plus{
-            @include backgroundImg('../../assets/images/pc/icon/ico-btn-plus.svg',center center,contain);
+            @include backgroundImg('../../assets/images/icon/ico-btn-plus.svg',center center,contain);
             &.disabled{
-                background-image: url('../../assets/images/pc/icon/ico-btn-plus-disabled.svg');
+                background-image: url('../../assets/images/icon/ico-btn-plus-disabled.svg');
             }
         }
     }

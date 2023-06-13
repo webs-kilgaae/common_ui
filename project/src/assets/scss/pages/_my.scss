@@ -41,12 +41,12 @@
             margin-top: 70px;
         }
         .result-icon-wrap{
-            background-image: url('../../assets/images/pc/icon/ico-phone-wifi.svg');
+            background-image: url('../../assets/images/icon/ico-phone-wifi.svg');
             &.under-nineteen{
-                background-image: url('../../assets/images/pc/icon/ico-under-19.svg');
+                background-image: url('../../assets/images/icon/ico-under-19.svg');
             }
             &.not-corp{
-                background-image: url('../../assets/images/pc/icon/ico-corp-no-data.svg');
+                background-image: url('../../assets/images/icon/ico-corp-no-data.svg');
             }
         }
     }
@@ -560,7 +560,7 @@
     }
     .payment-complete{
         .result-icon-wrap{
-            background-image: url('../../assets/images/pc/icon/ico-way-change.svg');
+            background-image: url('../../assets/images/icon/ico-way-change.svg');
         }
         .payment-wrap{margin: 70px 0 0;}
     }
@@ -627,7 +627,7 @@
                 @include normalTxt;
                 }
                 .bg-official-seal{
-                    @include backgroundImg('../../assets/images/pc/icon/official-seal-img.png',center center,contain);
+                    @include backgroundImg('../../assets/images/icon/official-seal-img.png',center center,contain);
                     width: 50px; height: 50px; margin-left: -23px;
                 }
             }
@@ -670,7 +670,7 @@
             }
         }
         .no-result-txt{
-            background-image: url('../../assets/images/pc/icon/ico-pay-change.svg');
+            background-image: url('../../assets/images/icon/ico-pay-change.svg');
         }
     }
     //요금상세팝업
@@ -791,7 +791,7 @@
                     @include mainTxt; margin-bottom: 20px;
                     &::before{
                         content: ''; display: block; width: 30px; height: 30px;
-                        @include backgroundImg('../../assets/images/pc/icon/ico-my-data.svg',center, contain);
+                        @include backgroundImg('../../assets/images/icon/ico-my-data.svg',center, contain);
                     }
 
                 }
@@ -863,18 +863,18 @@
                     //     display: inline-flex; vertical-align: middle;
                     //     .box-tooltip {
                     //         // position: absolute; right: 0; top: 2px;
-                    //         .btn-tooltip{width: 16px; height: 16px;@include backgroundImg('../../assets/images/pc/icon/ico-notice.svg',center, contain);}
+                    //         .btn-tooltip{width: 16px; height: 16px;@include backgroundImg('../../assets/images/icon/ico-notice.svg',center, contain);}
                     //     }
                     // }
                 }
                 &.call {
                     .usage-title::before{
-                        background-image: url('../../assets/images/pc/icon/ico-my-call.svg');
+                        background-image: url('../../assets/images/icon/ico-my-call.svg');
                     }
                 }
                 &.sms {
                     .usage-title::before{
-                        background-image: url('../../assets/images/pc/icon/ico-my-sms.svg');
+                        background-image: url('../../assets/images/icon/ico-my-sms.svg');
                     }
                 }
             }
@@ -895,17 +895,17 @@
                     display: flex; align-items: center; gap: 10px;margin-bottom:10px;@include mainTxt;
                     &::before{
                         content: ''; display: block; width: 30px; height: 30px;
-                        @include backgroundImg('../../assets/images/pc/icon/ico-my-data.svg',center, contain);
+                        @include backgroundImg('../../assets/images/icon/ico-my-data.svg',center, contain);
                     }
                 }
                 &.call {
                     .chart-title::before{
-                        background-image: url('../../assets/images/pc/icon/ico-my-call.svg');
+                        background-image: url('../../assets/images/icon/ico-my-call.svg');
                     }
                 }
                 &.sms {
                     .chart-title::before{
-                        background-image: url('../../assets/images/pc/icon/ico-my-sms.svg');
+                        background-image: url('../../assets/images/icon/ico-my-sms.svg');
                     }
                 }
             }
@@ -975,7 +975,7 @@
             }
         }
         .result-icon-wrap{
-            background-image: url('../../assets/images/pc/icon/ico-not-support.svg');
+            background-image: url('../../assets/images/icon/ico-not-support.svg');
         }
         .round-box {
             display:block; margin-top: 70px; padding:40px; border:1px solid $gray02; border-radius: 20px;
@@ -1003,10 +1003,10 @@
         }
 
         .text-ico-btn{
-            display: flex;align-items: center;justify-content: space-between; padding: 50px 40px 50px 120px;border: 2px solid $gray02; border-radius: 14px;@include subContsTitle; @include backgroundImg('../../assets/images/pc/icon/ico-inquiry.png', 40px center,60px 60px);
+            display: flex;align-items: center;justify-content: space-between; padding: 50px 40px 50px 120px;border: 2px solid $gray02; border-radius: 14px;@include subContsTitle; @include backgroundImg('../../assets/images/icon/ico-inquiry.png', 40px center,60px 60px);
             & + .text-ico-btn{
                 margin-top: 30px;
-                background-image: url('../../assets/images/pc/icon/ico-phone-plan.png');
+                background-image: url('../../assets/images/icon/ico-phone-plan.png');
             }
         }
 
@@ -1038,7 +1038,7 @@
     .layer-print{
         // transform: translateY(0) !important;
         // .popup-header{
-        //     @include backgroundImg('/assets/images/pc/subpage/img-print-logo.png', calc(100% - 30px) 50%, 66px 31px)
+        //     @include backgroundImg('/assets/images/subpage/img-print-logo.png', calc(100% - 30px) 50%, 66px 31px)
         // }
         .popup-body{
             // max-height: none !important; margin-top: 0 !important; overflow: visible !important;
@@ -1094,7 +1094,7 @@
         &>button {display:block;width:100%;position:relative;margin-bottom:20px;@include defaultTxt; text-align:left;}
         &>button:after {
             content: "";position: absolute;right: 0;top:50%;width: 25px;height: 16px;
-            @include backgroundImg('../../assets/images/pc/icon/ico-arrow-bottom.svg', 0 0, 100%);transform: translateY(-50%);
+            @include backgroundImg('../../assets/images/icon/ico-arrow-bottom.svg', 0 0, 100%);transform: translateY(-50%);
         }
         &>button.on:after {transform: translateY(-50%) rotate(180deg);}
         .acc-conts {padding:32px 40px;border-radius:20px;background:$gray01;}
@@ -1124,10 +1124,10 @@
                 display: inline-flex; padding-left: 40px;
                 @include defaultTxt; color: $gray05;
                 &:nth-child(1){
-                    @include backgroundImg('../../assets/images/pc/icon/ico-call-fill.svg', 0 50%, 40px)
+                    @include backgroundImg('../../assets/images/icon/ico-call-fill.svg', 0 50%, 40px)
                 }
                 &:nth-child(2){
-                    @include backgroundImg('../../assets/images/pc/icon/ico-sms-fill.svg', 0 50%, 40px)
+                    @include backgroundImg('../../assets/images/icon/ico-sms-fill.svg', 0 50%, 40px)
                 }
             }
         }
@@ -1226,7 +1226,7 @@
         .btn-group {margin-top:50px;}
         .no-result{
             &-txt{
-                background-image: url('../../assets/images/pc/icon/ico-search-dot.svg');
+                background-image: url('../../assets/images/icon/ico-search-dot.svg');
             }
         }
 
@@ -1299,13 +1299,13 @@
                         content: ''; display: inline-block; position: absolute; left: 40px; top: 50%; width: 20px; height: 20px; transform: translateY(-50%);
                     }
                     &.google-icon::before{
-                        @include backgroundImg('../../assets/images/pc/icon/ico-cir-google-play.png',center, contain);
+                        @include backgroundImg('../../assets/images/icon/ico-cir-google-play.png',center, contain);
                     }
                     &.appstore-icon::before{
-                        @include backgroundImg('../../assets/images/pc/icon/ico-cir-apple-store.png',center, contain);
+                        @include backgroundImg('../../assets/images/icon/ico-cir-apple-store.png',center, contain);
                     }
                     &.onestore-icon::before{
-                        @include backgroundImg('../../assets/images/pc/icon/logo-onestore.png',center, contain);
+                        @include backgroundImg('../../assets/images/icon/logo-onestore.png',center, contain);
                     }
                 }
             }
@@ -1375,7 +1375,7 @@
             padding:50px 0;
             p {
                 display:block;padding-top:170px;
-                @include backgroundImg('../../assets/images/pc/icon/ico-opening-success.svg', center top, 120px 120px);
+                @include backgroundImg('../../assets/images/icon/ico-opening-success.svg', center top, 120px 120px);
                 strong {display:block;@include mainTxt;text-align:center;}
                 span {
                     display:block;margin-top:10px;@include defaultTxt;text-align:center;
@@ -1384,7 +1384,7 @@
             }
         }
         .no-search-result-txt{
-            background-image: url('../../assets/images/pc/icon/ico-calender-60.svg');
+            background-image: url('../../assets/images/icon/ico-calender-60.svg');
         }
     }
     //모델명/일련번호 확인 방법

@@ -14,7 +14,7 @@ body{
                 #header{
                     &.on{
                         .logo{
-                            background-image: url('/assets/images/pc/common/header-logo-white.png');
+                            background-image: url('/assets/images/common/header-logo-white.png');
                         }
                         #gnb{
                             > ul{
@@ -36,7 +36,7 @@ body{
                         }
                         &.gnb-on{
                             .logo{
-                                background-image: url('/assets/images/pc/common/header-logo.png');
+                                background-image: url('/assets/images/common/header-logo.png');
                             }
                             #gnb{
                                 > ul{
@@ -82,7 +82,7 @@ body{
             header {
                 display:flex;justify-content:space-between;align-items:center;position:relative;width:1280px;height:80px;z-index:100;
                 .logo{
-                    width: 174px; height: 56px; @include backgroundImg('/assets/images/pc/common/header-logo.png', 0, 174px 56px);
+                    width: 174px; height: 56px; @include backgroundImg('/assets/images/common/header-logo.png', 0, 174px 56px);
                     img{
                         display: none;
                     }
@@ -129,7 +129,7 @@ body{
                 &::after {content:'';display:block;position:absolute;left:0;top:80px;z-index:101;width:100%;height:1px;background-color:#ddd;opacity:1;}
                 header {
                     .logo{
-                        background-image: url('/assets/images/pc/common/header-logo.png') !important;
+                        background-image: url('/assets/images/common/header-logo.png') !important;
                     }
                     .top-util {
                         button {
@@ -204,7 +204,7 @@ body{
             width:840px;margin:0 auto; position: relative;
             & > .btn-close{
             position:absolute;right:-230px;top:-70px;overflow:hidden;width:48px;height:48px;font-size:0;
-            @include backgroundImg('/assets/images/pc/common/ico-close-thin.svg', center, 48px 48px);
+            @include backgroundImg('/assets/images/common/ico-close-thin.svg', center, 48px 48px);
             }
             fieldset {
                 display:flex;justify-content:space-between;flex-wrap:nowrap;padding:28px 0;border-bottom:1px solid #191919;
@@ -218,7 +218,7 @@ body{
                     }
                     .btn-search {
                         flex-shrink:1;overflow:hidden;width:24px;height:24px;font-size:0;
-                        @include backgroundImg('/assets/images/pc/common/header-btn-search.svg', center, 24px 24px);
+                        @include backgroundImg('/assets/images/common/header-btn-search.svg', center, 24px 24px);
                     }
                 }
             }
@@ -283,7 +283,7 @@ body{
     }
     .btn-close {
         position:absolute;right:80px;top:60px;overflow:hidden;width:48px;height:48px;font-size:0;
-        @include backgroundImg('/assets/images/pc/common/ico-close-thin.svg', center, 48px 48px);
+        @include backgroundImg('/assets/images/common/ico-close-thin.svg', center, 48px 48px);
     }
     &.on {
         display: block; opacity: 1; left:0;animation:totalMenu_on 0.3s forwards;
@@ -341,7 +341,7 @@ body{
             display:flex; align-items: center; padding:30px 70px 30px 30px;@include mainTxt;
             &+.info-basic {border-top:1px solid $gray02;}
             .mem-modi{
-                display: inline-block; width: 22px; height: 22px; margin-left: 10px; @include backgroundImg('../../assets/images/pc/icon/ico-pencil.svg', 0, 100%); font-size: 0;
+                display: inline-block; width: 22px; height: 22px; margin-left: 10px; @include backgroundImg('../../assets/images/icon/ico-pencil.svg', 0, 100%); font-size: 0;
             }
         }
         &-basic {
@@ -408,10 +408,10 @@ body{
                     }
                 }
 
-                .btn-request-inquire {@include backgroundImg('/assets/images/pc/common/log-doc.svg', left top, 20px 20px);}
-                .btn-num-auth {@include backgroundImg('/assets/images/pc/common/log-phone.svg', left top, 20px 20px);}
-                .btn-join-info {@include backgroundImg('/assets/images/pc/common/log-doc-pen.svg', left top, 20px 20px);}
-                .btn-charge-inquire {@include backgroundImg('/assets/images/pc/common/log-note-page.svg', left top, 20px 20px);}
+                .btn-request-inquire {@include backgroundImg('/assets/images/common/log-doc.svg', left top, 20px 20px);}
+                .btn-num-auth {@include backgroundImg('/assets/images/common/log-phone.svg', left top, 20px 20px);}
+                .btn-join-info {@include backgroundImg('/assets/images/common/log-doc-pen.svg', left top, 20px 20px);}
+                .btn-charge-inquire {@include backgroundImg('/assets/images/common/log-note-page.svg', left top, 20px 20px);}
             }
 
             .guide-box {
@@ -420,7 +420,7 @@ body{
                     display:block;position:relative;
                     &::after {
                         content:'';display:block;position:absolute;right:0;top:50%;width:20px;height:20px;margin-top:-10px;
-                        @include backgroundImg('/assets/images/pc/common/log-arrow-right.svg', left top, 20px 20px);
+                        @include backgroundImg('/assets/images/common/log-arrow-right.svg', left top, 20px 20px);
                     }
                     p {
                         @include normalTxt;
@@ -434,6 +434,6 @@ body{
     .logbox-btm {
         padding:0 30px;text-align:center;
         .btn-logout {margin-bottom:30px;}
-        .btn-close-x {position:absolute;right:30px;top:30px;width:30px;height:30px;@include backgroundImg('/assets/images/pc/common/log-close-x.svg', center, 30px 30px);font-size:0;}
+        .btn-close-x {position:absolute;right:30px;top:30px;width:30px;height:30px;@include backgroundImg('/assets/images/common/log-close-x.svg', center, 30px 30px);font-size:0;}
     }
 }

@@ -102,10 +102,10 @@
                             @include defaultTxt;
                         }
                         &.faq-call{
-                            @include backgroundImg('../../assets/images/pc/icon/ico-phone-call.svg',left center, 80px 80px);
+                            @include backgroundImg('../../assets/images/icon/ico-phone-call.svg',left center, 80px 80px);
                         }
                         &.faq-time{
-                            @include backgroundImg('../../assets/images/pc/icon/ico-watch.svg',left center, 80px 80px);
+                            @include backgroundImg('../../assets/images/icon/ico-watch.svg',left center, 80px 80px);
                         }
                     }
                 }
@@ -218,7 +218,7 @@
                             padding-right: 0; background: none;
                             &::after{
                                 content: ''; display: inline-block; width: 20px; height: 20px;
-                                @include backgroundImg('../../assets/images/pc/icon/ico-arrow-right.svg',center center,contain); vertical-align: middle; margin-left: 10px;
+                                @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg',center center,contain); vertical-align: middle; margin-left: 10px;
                             }
                         }
                     }
@@ -232,7 +232,7 @@
     &.type-compare {
         .total {
             display:inline-flex;justify-content:flex-end;position:absolute;right:40px;bottom:39px;height:24px;
-            @include backgroundImg('../../assets/images/pc/icon/ico-plus-big.svg', 50% 0 ,24px 24px);
+            @include backgroundImg('../../assets/images/icon/ico-plus-big.svg', 50% 0 ,24px 24px);
             dl {
                 display:inline-flex;
                 &+dl {margin-left:84px;}
@@ -260,7 +260,7 @@
                     &::after {
                         content: '';
                         display: block; position: absolute; top: 50%; right: 0;width: 24px; height: 24px; transform: translateY(-50%);
-                        @include backgroundImg('../../assets/images/pc/icon/ico-plus-big.svg', center ,contain);
+                        @include backgroundImg('../../assets/images/icon/ico-plus-big.svg', center ,contain);
                     }
                 }
                 dt {
@@ -359,7 +359,7 @@
 //문구가 고정인 경우
 .result-icon-wrap{
     padding-bottom: 170px;
-    @include backgroundImg('../../assets/images/pc/icon/ico-opening-success.svg', center bottom, 120px 120px);
+    @include backgroundImg('../../assets/images/icon/ico-opening-success.svg', center bottom, 120px 120px);
     h2{
         @include subContsTitle;
     }
@@ -369,19 +369,19 @@
         h2{text-align: center;}
     }
     &.phone-recheck{
-        background-image: url('../../assets/images/pc/icon/ico-phone-recheck.svg');
+        background-image: url('../../assets/images/icon/ico-phone-recheck.svg');
     }
     &.phone-fail{
-        background-image: url('../../assets/images/pc/icon/ico-phone-fail.svg');
+        background-image: url('../../assets/images/icon/ico-phone-fail.svg');
     }
     &.mem-change{
-        background-image: url('../../assets/images/pc/icon/ico-change-mem.svg');
+        background-image: url('../../assets/images/icon/ico-change-mem.svg');
     }
 }
 
 // 완료탬플릿
 .complete-template{
-    @include backgroundImg('../../assets/images/pc/icon/ico-num-change.svg', center top, 120px 120px);
+    @include backgroundImg('../../assets/images/icon/ico-num-change.svg', center top, 120px 120px);
     padding-top: 170px; text-align: center;
 }
 //안내메세지
@@ -597,9 +597,9 @@
     &>span {
         position:relative;margin-right:10px;padding-left:25px;@include defaultTxt;white-space:nowrap;
         &::before {content:'';position:absolute;left:0;top:50%; transform: translateY(-50%);width:20px;height:100%;}
-        &.vol::before {@include backgroundImg('../../assets/images/pc/icon/ico-data.svg', center center, auto 16px);}
-        &.limit::before {@include backgroundImg('../../assets/images/pc/icon/ico-call-fill.svg', center center, auto 24px);}
-        &.supply::before {@include backgroundImg('../../assets/images/pc/icon/ico-sms-fill.svg', center center, auto 24px);}
+        &.vol::before {@include backgroundImg('../../assets/images/icon/ico-data.svg', center center, auto 16px);}
+        &.limit::before {@include backgroundImg('../../assets/images/icon/ico-call-fill.svg', center center, auto 24px);}
+        &.supply::before {@include backgroundImg('../../assets/images/icon/ico-sms-fill.svg', center center, auto 24px);}
     }
 }
 
@@ -617,7 +617,7 @@
         }
         .ico-filter{
             position:absolute;right:0;top:0;width:116px;height:116px;flex-shrink:0;font-size:0;
-            @include backgroundImg('../../assets/images/pc/icon/ico-filter.svg', center , 38px 35px); background-color: $gray01;
+            @include backgroundImg('../../assets/images/icon/ico-filter.svg', center , 38px 35px); background-color: $gray01;
         }
     }
 }
@@ -737,7 +737,7 @@
 // 아이콘 밑에 설명나오는 레이아웃
 .box-ico-txt{
     padding-top: 170px;margin: 100px 0 50px;
-    @include backgroundImg('../../assets/images/pc/icon/ico-join-complete.svg', center top,120px 120px);
+    @include backgroundImg('../../assets/images/icon/ico-join-complete.svg', center top,120px 120px);
     .ico {
         &-title{
             @include mainTxt; text-align: center;
@@ -747,19 +747,19 @@
     }
     .cardList-wrap{margin-top: 50px;}
     &.nodata{
-        background-image: url('../../assets/images/pc/icon/ico-join-nodata.svg');
+        background-image: url('../../assets/images/icon/ico-join-nodata.svg');
     }
     &.set-password{
-        background-image: url('../../assets/images/pc/icon/ico-set-password-done.svg');
+        background-image: url('../../assets/images/icon/ico-set-password-done.svg');
     }
     &.dormant{
-        background-image: url('../../assets/images/pc/icon/ico-dormant-member.svg');
+        background-image: url('../../assets/images/icon/ico-dormant-member.svg');
     }
     &.phone-complete{
-        background-image: url('../../assets/images/pc/icon/ico-phone-complete.svg');
+        background-image: url('../../assets/images/icon/ico-phone-complete.svg');
     }
     &.pw-lock{
-        background-image: url('../../assets/images/pc/icon/ico-pw-lock.svg');
+        background-image: url('../../assets/images/icon/ico-pw-lock.svg');
     }
 }
 

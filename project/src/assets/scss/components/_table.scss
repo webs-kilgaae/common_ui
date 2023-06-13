@@ -81,7 +81,7 @@ ul.bang-notice {
     margin-top:30px;
     li {
         @include text(400,26px,1.46,$gray05,-1px);
-        @include backgroundImg('../../assets/images/pc/icon/ico-notice.svg',top left,  32px 32px);
+        @include backgroundImg('../../assets/images/icon/ico-notice.svg',top left,  32px 32px);
          padding-left:42px;
          &+li {margin-top:10px;}
     }
@@ -198,7 +198,7 @@ ul.bang-notice {
                 @extend .ball;background-color:$gray04;position:relative;margin-left:50px;
                 &::before {
                     content:'';display:inline-block;position:absolute;left:-50px;top:50%;width:40px;height:40px;transform:translateY(-50%);
-                    @include backgroundImg('../../assets/images/pc/icon/ico-arrow-gray.svg', center, contain);
+                    @include backgroundImg('../../assets/images/icon/ico-arrow-gray.svg', center, contain);
                 }
             }
         }
@@ -320,7 +320,7 @@ ul.bang-notice {
     .no-result {
         .no-result-txt {
             display:block;padding-top:270px;@include mainTxt;text-align:center;
-            @include backgroundImg('../../assets/images/pc/icon/ico-board-no-data.svg', center center, 120px 120px);
+            @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center center, 120px 120px);
             .small-txt {display:block;margin-top:10px;@include defaultTxt;text-align:center;}
         }
     }
@@ -374,10 +374,10 @@ ul.bang-notice {
 .no-result {
     .no-result-txt {
         display:block;padding-top:270px;@include mainTxt;text-align:center;
-        @include backgroundImg('../../assets/images/pc/icon/ico-board-no-data.svg', center 100px, 120px 120px);
+        @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center 100px, 120px 120px);
         .small-txt {display:block;margin-top:20px;@include defaultTxt;text-align:center;}
         &.not-exist {
-            background-image: url('../../assets/images/pc/icon/ico-not-exist.svg');
+            background-image: url('../../assets/images/icon/ico-not-exist.svg');
         }
     }
 }
@@ -385,10 +385,10 @@ ul.bang-notice {
 .no-search-result {
     .no-search-result-txt {
         display:block;padding-top:270px;@include mainTxt;text-align:center;
-        @include backgroundImg('../../assets/images/pc/icon/ico-search-dot.svg', center  100px, 120px 120px);
+        @include backgroundImg('../../assets/images/icon/ico-search-dot.svg', center  100px, 120px 120px);
         .small-txt {display:block;margin-top:20px;@include defaultTxt;text-align:center;}
         &.empty-box{
-             @include backgroundImg('../../assets/images/pc/icon/ico-board-no-data.svg',center center,120px 120px);
+             @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg',center center,120px 120px);
         }
     }
 
@@ -397,7 +397,7 @@ ul.bang-notice {
 .error-result {
     .error-result-txt {
         display:block;padding:270px 0 100px;@include mainTxt;text-align:center;
-        @include backgroundImg('../../assets/images/pc/icon/ico-plan-error.svg', center 100px, 120px 120px);
+        @include backgroundImg('../../assets/images/icon/ico-plan-error.svg', center 100px, 120px 120px);
         .small-txt {display:block;margin-top:10px;@include defaultTxt;text-align:center;}
     }
 }

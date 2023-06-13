@@ -127,7 +127,7 @@
         }
         .btn-close-x {
             display:block;position:absolute;right:25px;top:30px;width:30px;height:30px;font-size:0;z-index:1;
-            @include backgroundImg('../../assets/images/pc/icon/ico-close.svg', center, 20px 20px);
+            @include backgroundImg('../../assets/images/icon/ico-close.svg', center, 20px 20px);
         }
         // 정보 존재하지 않습니다 팝업
         &.type-info{
@@ -259,7 +259,7 @@
         display: flex; justify-content: space-between; align-items: center; position:fixed; left: 0; top: 0; z-index: 102; width:100%; height: 120px; border-bottom: 2px solid #ddd; box-sizing: border-box; background: #fff;
         h1{display: inline-flex; margin-left: 40px; @include subContsTitle;}
         h2{display: inline-flex; margin-left: 40px; @include subContsTitle;}
-        button{display: inline-flex; width: 80px; height: 80px; margin-right: 20px; @include backgroundImg('/assets/images/pc/common/header-btn-close.png', 50%, 32px); font-size: 0;}
+        button{display: inline-flex; width: 80px; height: 80px; margin-right: 20px; @include backgroundImg('/assets/images/common/header-btn-close.png', 50%, 32px); font-size: 0;}
     }
     .full-popup-conts{
         .inner{

@@ -89,7 +89,7 @@
             margin:0;
             &>span {
                 &.vol {
-                    &::before {@include backgroundImg('../../assets/images/pc/icon/ico-call-fill.svg', center, 24px 24px)}
+                    &::before {@include backgroundImg('../../assets/images/icon/ico-call-fill.svg', center, 24px 24px)}
                 }
             }
        }
@@ -131,13 +131,13 @@
                                     min-width:80px;margin:0;padding:90px 0 0;@include mainTxt;text-align:center;
                                     &::before {top:0;width:100%;height:80px;transform:none;}
                                     &.vol {
-                                        &::before {@include backgroundImg('../../assets/images/pc/icon/ico-data-color.svg', center top, 80px 80px)}
+                                        &::before {@include backgroundImg('../../assets/images/icon/ico-data-color.svg', center top, 80px 80px)}
                                     }
                                     &.limit {
-                                        &::before {@include backgroundImg('../../assets/images/pc/icon/ico-ars-line.svg', center top, 80px 80px)}
+                                        &::before {@include backgroundImg('../../assets/images/icon/ico-ars-line.svg', center top, 80px 80px)}
                                     }
                                     &.supply {
-                                        &::before {@include backgroundImg('../../assets/images/pc/icon/ico-email-color.svg', center top, 80px 80px)}
+                                        &::before {@include backgroundImg('../../assets/images/icon/ico-email-color.svg', center top, 80px 80px)}
                                     }
                                 }
                             }
@@ -171,8 +171,8 @@
             margin-bottom:50px;
             .group-tit {
                 display:inline-block;margin-bottom:20px;padding-right:30px;@include mainTxt;
-                @include backgroundImg('../../assets/images/pc/icon/ico-check.svg', right center, 20px 20px);
-                &.on {@include backgroundImg('../../assets/images/pc/icon/ico-purple-check.svg', right center, 20px 20px);}
+                @include backgroundImg('../../assets/images/icon/ico-check.svg', right center, 20px 20px);
+                &.on {@include backgroundImg('../../assets/images/icon/ico-purple-check.svg', right center, 20px 20px);}
                 /*.number{
                     display: inline-block; width: 30px; height:30px; background-color: $purple; border-radius: 50%; text-align: center; @include defaultTxt; color: $white;line-height:30px; margin-right: 10px;
                 }*/
@@ -661,7 +661,7 @@
             ul {
                 display:flex;justify-content:flex-start;align-items:center;gap:0 40px;
                 li {
-                    p {padding-left:22px;@include backgroundImg('../../assets/images/pc/icon/ico-black-check.svg', left center, 16px 16px);@include defaultTxt;}
+                    p {padding-left:22px;@include backgroundImg('../../assets/images/icon/ico-black-check.svg', left center, 16px 16px);@include defaultTxt;}
                 }
             }
             img {width:231px;}
@@ -1167,7 +1167,7 @@
             margin-top:-40px;padding-left:370px;
             &>p {
                 height:240px;padding:143px 0 0 226px;
-                @include backgroundImg('/assets/images/pc/subpage/img-select-discount-customer.png', left top, 538px 240px);
+                @include backgroundImg('/assets/images/subpage/img-select-discount-customer.png', left top, 538px 240px);
                 strong {@include mainTxt;color:$purple;}
             }
         }
